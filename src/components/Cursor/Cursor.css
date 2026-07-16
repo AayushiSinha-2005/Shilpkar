@@ -1,0 +1,76 @@
+.tcursor-dot,
+.tcursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.tcursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  transition: opacity 0.2s ease;
+}
+
+.tcursor-ring {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  transition: width 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    border-radius 0.28s ease, background 0.28s ease;
+  mix-blend-mode: difference;
+}
+
+.tcursor-ring.is-locked {
+  background: rgba(200, 169, 106, 0.08);
+}
+
+.tcursor-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--gold);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.is-locked .tcursor-corner {
+  opacity: 1;
+}
+.tcursor-corner.tl { top: -4px; left: -4px; border-right: none; border-bottom: none; }
+.tcursor-corner.tr { top: -4px; right: -4px; border-left: none; border-bottom: none; }
+.tcursor-corner.bl { bottom: -4px; left: -4px; border-right: none; border-top: none; }
+.tcursor-corner.br { bottom: -4px; right: -4px; border-left: none; border-top: none; }
+
+.tcursor-label {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+@media (pointer: coarse) {
+  .tcursor-dot,
+  .tcursor-ring {
+    display: none;
+  }
+}
+
+body {
+  cursor: default;
+}
+@media (pointer: fine) {
+  a, button, input, textarea, [data-cursor] {
+    cursor: none;
+  }
+}

@@ -1,0 +1,17 @@
+.circular-text {
+  animation-name: circular-spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+}
+
+.circular-text text {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@keyframes circular-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

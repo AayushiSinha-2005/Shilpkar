@@ -1,0 +1,11 @@
+.services-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.services-cta__inner .section-title {
+  color: var(--off-white);
+}

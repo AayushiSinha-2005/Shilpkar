@@ -1,0 +1,19 @@
+.split-text {
+  overflow: visible;
+}
+
+.split-text__row {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.split-text__mask {
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 0.08em;
+}
+
+.split-text__piece {
+  display: inline-block;
+  will-change: transform;
+}

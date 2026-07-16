@@ -1,0 +1,26 @@
+.circular-text {
+  position: relative;
+  animation: spin linear infinite;
+}
+
+.circular-text__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circular-text {
+    animation: none;
+  }
+}

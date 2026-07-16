@@ -1,0 +1,116 @@
+.magic-bento {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 20px;
+}
+
+.bento-card--wide {
+  grid-column: span 2;
+}
+
+.bento-card--tall {
+  grid-row: span 2;
+}
+
+.bento-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.35s var(--ease-lux);
+  border: 1px solid rgba(198, 161, 91, 0.18);
+}
+
+.bento-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-lux);
+}
+
+.bento-card:hover .bento-card__img {
+  transform: scale(1.08);
+}
+
+.bento-card__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 23, 18, 0.05) 30%, rgba(8, 23, 18, 0.92) 100%);
+}
+
+.bento-card__glow {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(198, 161, 91, 0.35), transparent 60%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.bento-card:hover .bento-card__glow {
+  opacity: 1;
+}
+
+.bento-card__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 26px;
+  color: var(--off-white);
+}
+
+.bento-card__index {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-soft);
+}
+
+.bento-card__title {
+  color: var(--off-white);
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+
+.bento-card__desc {
+  margin-top: 10px;
+  font-size: 0.86rem;
+  font-weight: 300;
+  color: var(--off-white-dim);
+  max-width: 32ch;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.bento-card:hover .bento-card__desc {
+  opacity: 1;
+  max-height: 100px;
+}
+
+@media (max-width: 980px) {
+  .magic-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-card--wide { grid-column: span 2; }
+}
+
+@media (max-width: 620px) {
+  .magic-bento {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 260px;
+  }
+  .bento-card--wide, .bento-card--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

@@ -1,0 +1,56 @@
+.silk {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.silk__layer {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  border-radius: 40%;
+  opacity: 0.5;
+  filter: blur(60px);
+  mix-blend-mode: screen;
+}
+
+.l1 {
+  background: radial-gradient(circle at 30% 30%, rgba(200, 169, 106, 0.25), transparent 60%);
+  animation: silkFlow 22s ease-in-out infinite;
+}
+.l2 {
+  background: radial-gradient(circle at 70% 60%, rgba(19, 59, 59, 0.5), transparent 60%);
+  animation: silkFlow 26s ease-in-out infinite reverse;
+}
+.l3 {
+  background: radial-gradient(circle at 50% 80%, rgba(200, 169, 106, 0.14), transparent 55%);
+  animation: silkFlow 30s ease-in-out infinite;
+}
+
+@keyframes silkFlow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  33% { transform: translate(4%, -3%) rotate(8deg) scale(1.05); }
+  66% { transform: translate(-3%, 4%) rotate(-6deg) scale(0.98); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .silk__layer { animation: none; }
+}
+
+/* Silk wipe — hover transition used on masonry project cards */
+.silk-wipe {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(200, 169, 106, 0.55) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.9s var(--ease);
+  z-index: 2;
+  pointer-events: none;
+}
+.silk-wipe-trigger:hover .silk-wipe {
+  transform: translateX(120%);
+}
