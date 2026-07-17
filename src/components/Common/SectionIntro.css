@@ -1,0 +1,41 @@
+.franchise-intro{
+
+padding:110px 0;
+
+background:#fff;
+
+}
+
+.franchise-intro__content{
+
+max-width:820px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.franchise-intro h2{
+
+font-size:clamp(2rem,4vw,3rem);
+
+font-weight:600;
+
+color:#111;
+
+margin-bottom:28px;
+
+line-height:1.2;
+
+}
+
+.franchise-intro p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#666;
+
+}

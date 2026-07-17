@@ -33,7 +33,6 @@
   gap:40px;
 
 }
-
 /* ===========================
 LOGO
 =========================== */
@@ -44,79 +43,34 @@ display:flex;
 
 align-items:center;
 
-gap:14px;
-
 text-decoration:none;
 
 flex-shrink:0;
 
 }
 
-.navbar__logo-icon{
+.navbar__logo-image{
 
-width:48px;
+height:85px;
 
-height:48px;
+width:auto;
 
-border-radius:50%;
+display:block;
 
-border:1px solid #D4AF37;
+object-fit:contain;
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-color:#D4AF37;
-
-font-weight:700;
-
-font-size:14px;
-
-transition:.35s;
+transition:.35s ease;
 
 }
 
-.navbar__logo:hover .navbar__logo-icon{
-
-transform:rotate(-8deg);
-
-box-shadow:0 0 18px rgba(212,175,55,.3);
-
+.navbar__logo:hover .navbar__logo-image{
+transform:scale(1.04);
 }
 
-.navbar__logo-text{
-
-display:flex;
-
-flex-direction:column;
-
-line-height:1;
-
-}
-
-.navbar__logo-text span{
-
-font-size:24px;
-
-font-weight:700;
-
-color:#fff;
-
-}
-
-.navbar__logo-text small{
-
-margin-top:4px;
-
-font-size:11px;
-
-letter-spacing:.28em;
-
-text-transform:uppercase;
-
-color:#D4AF37;
+.navbar--scrolled{
+  height:82px;
+  background:rgba(8,16,14,.96);
+  box-shadow:0 15px 40px rgba(0,0,0,.28);
 
 }
 

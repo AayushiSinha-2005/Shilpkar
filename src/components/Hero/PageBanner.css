@@ -38,3 +38,17 @@
   color: var(--off-white);
   max-width: 20ch;
 }
+
+.page-banner__description{
+
+margin-top:22px;
+
+max-width:720px;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:rgba(255,255,255,.88);
+
+}

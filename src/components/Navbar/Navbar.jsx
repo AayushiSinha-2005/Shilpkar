@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import navigation from "../../data/navigation";
+import logo from "../../assets/logos/logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -30,17 +31,12 @@ export default function Navbar() {
           {/* Logo */}
 
           <NavLink to="/" className="navbar__logo">
-
-            <div className="navbar__logo-icon">
-              SF
-            </div>
-
-            <div className="navbar__logo-text">
-              <span>Shilpkar</span>
-              <small>Factory</small>
-            </div>
-
-          </NavLink>
+  <img
+    src={logo}
+    alt="Shilpkar Factory"
+    className="navbar__logo-image"
+  />
+</NavLink>
 
           {/* Desktop Navigation */}
 

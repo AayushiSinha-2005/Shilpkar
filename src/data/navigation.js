@@ -35,9 +35,29 @@ const navigation = [
   },
 
   {
+  label: "Franchise",
+  children: [
+    {
+      label: "Dealership",
+      path: "/franchise/dealership",
+    },
+    {
+      label: "Associate",
+      path: "/franchise/associate",
+    },
+    {
+      label: "Installation Training",
+      path: "/franchise/installation-training",
+    },
+  ],
+},
+
+  {
     label: "Projects",
     path: "/projects",
   },
+
+
   
   {
     label: "Gallery",

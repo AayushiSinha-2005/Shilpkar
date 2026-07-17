@@ -5,6 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 import Services from "../pages/Services.jsx";
+import Dealership from "../pages/franchise/Dealership.jsx";
+import Associate from "../pages/franchise/Associate.jsx";
+import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
 import Gallery from "../pages/Gallery.jsx";
 import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
 import Projects from "../pages/Projects.jsx";
@@ -92,6 +95,33 @@ export default function AppRouter() {
   element={
     <Page>
       <ProductDetail />
+    </Page>
+  }
+/>
+
+<Route
+  path="/franchise/dealership"
+  element={
+    <Page>
+      <Dealership />
+    </Page>
+  }
+/>
+
+<Route
+  path="/franchise/associate"
+  element={
+    <Page>
+      <Associate />
+    </Page>
+  }
+/>
+
+<Route
+  path="/franchise/installation-training"
+  element={
+    <Page>
+      <InstallationTraining />
     </Page>
   }
 />
