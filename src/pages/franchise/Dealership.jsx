@@ -1,26 +1,46 @@
 import PageBanner from "../../components/Hero/PageBanner";
 import SectionIntro from "../../components/Common/SectionIntro";
-import FeatureCards from "../../components/Franchise/FeatureCards";
+import FeatureGrid from "../../components/Common/FeatureGrid";
 import images from "../../data/images";
 
 export default function Dealership() {
   return (
     <>
       <PageBanner
-        eyebrow="Franchise Program"
+        eyebrow="FRANCHISE PROGRAM"
         title="Become an Authorized Dealership Partner"
-        description="Join Shilpkar Factory and represent a premium interior brand offering innovative ceiling, wall, flooring and decorative solutions across India."
         image={images.projects[0].img}
         height="65vh"
       />
 
       <SectionIntro
         title="Welcome to the Shilpkar Dealer Network"
-        subtitle="Join one of India's emerging premium interior brands and grow your business with innovative ceiling, wall, flooring and decorative solutions. We provide complete product support, technical guidance and marketing assistance to help our partners succeed."
+        subtitle="Join one of India's emerging premium interior brands and grow your business with innovative ceiling, wall, flooring and decorative solutions."
       />
 
-      
-
+      <FeatureGrid
+        title="Why Become Our Dealership Partner?"
+        cards={[
+          {
+            icon: "🤝",
+            title: "Business Support",
+            description:
+              "Complete guidance for sales, project execution and customer handling.",
+          },
+          {
+            icon: "📈",
+            title: "Marketing Assistance",
+            description:
+              "Branding support, brochures and lead generation assistance.",
+          },
+          {
+            icon: "🛠️",
+            title: "Technical Training",
+            description:
+              "Product knowledge, installation guidance and continuous technical support.",
+          },
+        ]}
+      />
     </>
   );
 }
