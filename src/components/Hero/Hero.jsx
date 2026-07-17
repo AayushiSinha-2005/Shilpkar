@@ -63,9 +63,7 @@ export default function Hero() {
           <a href="/contact" className="btn hero__cta" data-cursor="target" data-cursor-label="Enquire">
             Start Your Project
           </a>
-          <a href="/projects" className="hero__link" data-cursor="target">
-            View Projects →
-          </a>
+          
         </AnimatedContent>
       </div>
 

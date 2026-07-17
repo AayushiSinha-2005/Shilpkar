@@ -10,7 +10,7 @@ import Associate from "../pages/franchise/Associate.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
 import Gallery from "../pages/Gallery.jsx";
 import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
-import Projects from "../pages/Projects.jsx";
+import Certifications from "../pages/company/Certifications";
 import Contact from "../pages/Contact.jsx";
 import Solutions from "../pages/Solutions.jsx";
 import SolutionCategory from "../pages/SolutionCategory.jsx";
@@ -59,7 +59,6 @@ export default function AppRouter() {
           <Route path="/services" element={<Page><Services /></Page>} />
           <Route path="/gallery" element={<Page><Gallery /></Page>} />
           <Route path="/gallery/circular" element={<Page><CircularGalleryPage /></Page>} />
-          <Route path="/projects" element={<Page><Projects /></Page>} />
           <Route path="/contact" element={<Page><Contact /></Page>} />
           <Route
   path="/solutions"
@@ -126,7 +125,14 @@ export default function AppRouter() {
   }
 />
 
-
+<Route
+  path="/certifications"
+  element={
+    <Page>
+      <Certifications />
+    </Page>
+  }
+/>
           <Route path="*" element={<Page><NotFound /></Page>} />
         </Routes>
       </AnimatePresence>

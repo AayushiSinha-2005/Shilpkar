@@ -52,13 +52,12 @@ const navigation = [
   ],
 },
 
+
   {
-    label: "Projects",
-    path: "/projects",
+    label: "Certifications",
+    path: "/certifications",
   },
 
-
-  
   {
     label: "Gallery",
     path: "/gallery",

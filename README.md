@@ -38,7 +38,7 @@ src/
  │       └── BubbleMenu.jsx       # mobile navigation overlay
  ├── pages/
  │   ├── Home.jsx, About.jsx, Services.jsx, Gallery.jsx,
- │   │   CircularGalleryPage.jsx, Projects.jsx, Contact.jsx, NotFound.jsx
+ │   │   CircularGalleryPage.jsx,  Contact.jsx, NotFound.jsx
  ├── data/
  │   ├── images.js       # single source of truth for every image URL
  │   └── services.js     # service card copy

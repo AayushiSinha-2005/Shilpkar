@@ -29,11 +29,7 @@ export default function GalleryModal({ project, onClose }) {
               <p className="eyebrow">{project.category}</p>
               <h3>{project.title}</h3>
               <p className="gallery-modal__desc">{project.description}</p>
-              {project.slug && (
-                <Link to={`/project/${project.slug}`} className="gallery-modal__link" data-cursor="Open">
-                  View Full Project →
-                </Link>
-              )}
+              
             </div>
           </motion.div>
         </motion.div>
