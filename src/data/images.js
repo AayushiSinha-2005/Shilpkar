@@ -9,6 +9,8 @@
  * -----------------------------------------------------------------------
  */
 
+
+import ownerPortrait from "../assets/images/ProfilePhoto.png";
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
@@ -17,7 +19,7 @@ export const images = {
   heroAlt: u("photo-1616486338812-3dadae4b4ace", 2000),
 
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
-  ownerPortrait: u("photo-1560250097-0b93528c311a", 1200),
+  ownerPortrait,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
 
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),

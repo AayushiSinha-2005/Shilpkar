@@ -10,9 +10,9 @@ export default function OwnerSection() {
     <Lightfall className="owner-section">
       <div className="container owner-section__grid">
         <div className="owner-section__portrait">
-          <img src={images.ownerPortrait} alt="Asif Ali, Founder of Shilpkar Factory" />
+          <img src={images.ownerPortrait} alt="MOHD ADIL,Founder & Principal Designer of Shilpkar Factory" />
           <div className="owner-section__circular">
-            <CircularText text="FOUNDER • ASIF ALI • " diameter={110} speed={18} />
+            <CircularText text="Founder  • MOHD ADIL • " diameter={110} speed={18} />
           </div>
         </div>
 
@@ -23,8 +23,8 @@ export default function OwnerSection() {
             className="owner-section__quote chisel"
             text="“Good design should feel inevitable — as if the room could not have been any other way.”"
           />
-          <p className="owner-section__name">Asif Ali</p>
-          <p className="owner-section__role">Founder &amp; Principal Designer, Shilpkar Factory</p>
+          <p className="owner-section__name">MOHD ADIL</p>
+          <p className="owner-section__role">Founder &amp; Director, Shilpkar Factory</p>
         </div>
       </div>
     </Lightfall>
