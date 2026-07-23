@@ -12,7 +12,7 @@ export default function OwnerSection() {
         <div className="owner-section__portrait">
           <img src={images.ownerPortrait} alt="MOHD ADIL,Founder & Principal Designer of Shilpkar Factory" />
           <div className="owner-section__circular">
-            <CircularText text="Founder  • MOHD ADIL • " diameter={110} speed={18} />
+            <CircularText text="Founder  • MOHAMMAD ADIL • " diameter={110} speed={18} />
           </div>
         </div>
 
@@ -23,7 +23,7 @@ export default function OwnerSection() {
             className="owner-section__quote chisel"
             text="“Good design should feel inevitable — as if the room could not have been any other way.”"
           />
-          <p className="owner-section__name">MOHD ADIL</p>
+          <p className="owner-section__name">MOHAMMAD ADIL</p>
           <p className="owner-section__role">Founder &amp; Director, Shilpkar Factory</p>
         </div>
       </div>

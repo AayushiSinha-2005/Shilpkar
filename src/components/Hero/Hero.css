@@ -100,6 +100,9 @@
 
 .hero__eyebrow {
   margin-bottom: 26px;
+  font-size: 16px;
+  letter-spacing: 0.30em;
+  font-weight: 700;
 }
 
 .hero__heading {
@@ -175,6 +178,91 @@
   text-transform: uppercase;
   color: var(--ivory-dim);
 }
+
+/* ==========================================
+   Floating Contact Icons
+========================================== */
+
+.hero__socials{
+  position:absolute;
+  right:42px;
+  bottom:40px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:5;
+}
+.hero__social {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(200, 169, 106, 0.92);   /* Gold */
+  border: 1px solid rgba(255,255,255,0.25);
+
+  color: var(--deep);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.30);
+
+  transition: all .35s ease;
+}
+
+.hero__social svg{
+  font-size:22px;
+}
+
+.hero__social:hover{
+
+  transform: translateY(-6px) scale(1.08);
+
+  background: #f2d18b;   /* lighter gold */
+
+  color: var(--deep);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.35);
+
+}
+.hero__social:active{
+
+  transform:scale(.96);
+
+}
+
+@media(max-width:768px){
+
+.hero__socials{
+
+right:18px;
+
+bottom:20px;
+
+}
+
+.hero__social{
+
+width:48px;
+
+height:48px;
+
+}
+
+.hero__social svg{
+
+font-size:18px;
+
+}
+
+}
+
 
 @media (max-width: 720px) {
   .hero__circular { display: none; }

@@ -8,14 +8,20 @@
   align-items: center;
 }
 .home-gallery-preview__text h2 {
-  font-size: clamp(30px, 4.4vw, 46px);
-  margin: 16px 0 20px;
+  font-size: clamp(42px, 5vw, 64px);
+  margin: 18px 0 24px;
 }
 .home-gallery-preview__text p {
   color: #3c4a45;
-  line-height: 1.85;
-  max-width: 440px;
-  margin-bottom: 30px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 36px;
+}
+
+.home-gallery-preview__text .eyebrow {
+  font-size: 16px;
+  letter-spacing: 0.28em;
+  font-weight: 700;
 }
 
 .home-cta {

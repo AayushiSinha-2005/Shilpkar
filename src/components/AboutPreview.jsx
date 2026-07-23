@@ -11,7 +11,7 @@ export default function AboutPreview() {
       <div className="container about-preview__grid">
         <AnimatedContent direction="left" className="about-preview__image-wrap">
           <div className="about-preview__frame">
-            <img src={images.aboutPreview} alt="MOHD ADIL reviewing a materials board in the Shilpkar Factory studio" />
+            <img src={images.aboutPreview} alt="MOHAMMAD ADIL reviewing a materials board in the Shilpkar Factory studio" />
           </div>
           <div className="about-preview__badge">
             <span>25+</span>
@@ -23,14 +23,14 @@ export default function AboutPreview() {
           <span className="eyebrow">The Studio</span>
           <SplitText as="h2" className="chisel" text="Led by hand, not by trend" />
           <p className="about-preview__lede">
-            Shilpkar Factory was founded & directed by <strong>MOHD ADIL</strong> on a
+            Shilpkar Factory was founded & directed by <strong>MOHAMMAD ADIL</strong> on a
             simple conviction — that an interior should be built the way a
             good piece of furniture is built: joint by joint, material by
             material, with nothing hidden.
           </p>
           <p>
             What began as a small carpentry workshop has grown into a
-            full-service interior atelier, but the instinct hasn't changed.
+            full-service interior solutions, but the instinct hasn't changed.
             Every project still passes through Asif's hands before it
             reaches yours — sketched, sourced, and signed off personally.
           </p>

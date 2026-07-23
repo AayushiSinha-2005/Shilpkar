@@ -2,20 +2,20 @@ import images from "./images.js";
 
 export const services = [
   {
-    title: "Residential Interiors",
+    title: "Residential Projects",
     desc: "Full-home design from spatial planning to the final finish — kitchens, living spaces, bedrooms built around how you live.",
     icon: "①",
     image: images.service1,
     big: true,
   },
   {
-    title: "Modular Furniture",
+    title: "Commerical Projects",
     desc: "Custom wardrobes, kitchens and storage systems engineered for fit and finished by hand.",
     icon: "②",
     image: images.service2,
   },
   {
-    title: "Space Planning",
+    title: "Space Projects",
     desc: "Layouts that resolve flow, light and function before a single material is chosen.",
     icon: "③",
     image: images.service3,

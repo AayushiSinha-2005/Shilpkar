@@ -108,13 +108,13 @@ ul {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: var(--font-body);
-  font-size: 12px;
-  letter-spacing: 0.32em;
+  font-size: 18px;
+  letter-spacing: 0.30em;
   text-transform: uppercase;
   color: var(--gold);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .eyebrow::before {

@@ -12,7 +12,7 @@ export default function Services({ preview = false }) {
       <div className="container">
         <div className="services-section__head">
           <span className="eyebrow">What We Do</span>
-          <SplitText as="h2" className="chisel" text="Services, built like a craft" />
+          <SplitText as="h2" className="chisel" text=" Built like a Craft" />
           {preview && (
             <a href="/services" className="services-section__more" data-cursor="target">
               All Services →

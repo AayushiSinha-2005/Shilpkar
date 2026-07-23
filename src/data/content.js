@@ -47,7 +47,6 @@ export const services = [
 ];
 
 
-
 export const testimonials = [
   {
     name: 'Ritika Malhotra',

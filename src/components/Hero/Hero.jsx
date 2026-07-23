@@ -4,11 +4,13 @@ import SplitText from "../Effects/SplitText.jsx";
 import AnimatedContent from "../Effects/AnimatedContent.jsx";
 import CircularText from "../Effects/CircularText.jsx";
 import images from "../../data/images.js";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
 import "./Hero.css";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero ">
       <div className="hero__bg">
         <img src={images.hero} alt="Sunlit living room with sculptural furniture and natural textures" />
         <div className="hero__scrim" />
@@ -28,7 +30,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__circular">
-        <CircularText text="EST. MUMBAI • HANDCRAFTED • " speed={22} diameter={132} />
+        <CircularText text="EST.SHILPKAR FACTORY • INTERIOR SOLUTIONS • " speed={22} diameter={132} />
       </div>
 
       <div className="container hero__content">
@@ -38,13 +40,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
         >
-          Shilpkar Factory — Interior Atelier
+          Shilpkar Factory — Interior Solutions
         </motion.span>
 
         <SplitText
           as="h1"
           className="hero__heading chisel"
-          text="Transforming Spaces with Art & Texture"
+          text="Transforming Spaces"
+          delay={0.25}
+        />
+
+        <SplitText
+          as="h1"
+          className="hero__heading chisel"
+          text=" with Art & Texture"
           delay={0.25}
         />
 
@@ -66,6 +75,38 @@ export default function Hero() {
           
         </AnimatedContent>
       </div>
+
+      <div className="hero__socials">
+
+  <a
+    href="https://www.instagram.com/shilpkar_factory/"
+    target="_blank"
+    rel="noreferrer"
+    className="hero__social"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="https://wa.me/918171771229"
+    target="_blank"
+    rel="noreferrer"
+    className="hero__social"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp />
+  </a>
+
+  <a
+    href="tel:+918171771229"
+    className="hero__social"
+    aria-label="Call"
+  >
+    <FiPhoneCall />
+  </a>
+
+</div>
 
       <div className="hero__scroll">
         <span />

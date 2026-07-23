@@ -95,13 +95,14 @@ export default function Navbar() {
 
           {/* CTA */}
 
-          <NavLink
-            to="/contact"
-            className="navbar__cta"
-          >
-            Book a Consult
-          </NavLink>
-
+          <a
+  href="https://www.shilpkaradmin.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="navbar__cta"
+>
+  Login
+</a>
           {/* Mobile Button */}
 
           <button
