@@ -39,93 +39,210 @@ const products = {
         heroImage: "",
 
         products: [
-          {
-            ...defaultProduct,
-            title: "3D Printed Stretch Ceiling",
-            slug: "3d-printed-stretch-ceiling",
-
-            shortDescription:
-              "Luxury illuminated printed stretch ceiling.",
-
-            description:
-              "3D Printed Stretch Ceiling combines premium translucent membrane with high-resolution UV printing to create stunning luxury interiors.",
-
-            features: [
-              "Custom Printed",
-              "LED Compatible",
-              "Fire Retardant",
-              "Moisture Resistant",
-              "Easy Maintenance",
-            ],
-
-            applications: [
-              "Luxury Homes",
-              "Hotels",
-              "Restaurants",
-              "Hospitals",
-              "Corporate Offices",
-            ],
-
-            specifications: [
-              {
-                name: "Material",
-                value: "PVC Stretch Membrane",
-              },
-              {
-                name: "Finish",
-                value: "Printed",
-              },
-              {
-                name: "Lighting",
-                value: "Backlit LED",
-              },
-              {
-                name: "Warranty",
-                value: "Up to 10 Years",
-              },
-            ],
-          },
+  
 
           {
-            ...defaultProduct,
-            title: "3D All Shape Stretch Ceiling",
-            slug: "3d-all-shape-stretch-ceiling",
-          },
+  title: "Translucent Stretch Ceiling",
+  slug: "translucent-stretch-ceiling",
 
-          {
-            ...defaultProduct,
-            title: "Translucent Stretch Ceiling",
-            slug: "translucent-stretch-ceiling",
-          },
+  variants: [
 
-          {
-            ...defaultProduct,
-            title: "RGBWW Pixel Stretch Ceiling",
-            slug: "rgbww-pixel-stretch-ceiling",
-          },
+    {
+      ...defaultProduct,
 
-          {
-            ...defaultProduct,
-            title: "Gloss Stretch Ceiling",
-            slug: "gloss-stretch-ceiling",
-          },
+      title: "4K White LED",
 
-          {
-            ...defaultProduct,
-            title: "Tunable & Dimmable Stretch Ceiling",
-            slug: "tunable-dimmable-stretch-ceiling",
-          },
+      slug: "4k-white-led",
 
-          {
-            ...defaultProduct,
-            title: "DALI Compatible Stretch Ceiling",
-            slug: "dali-compatible-stretch-ceiling",
-          },
-        ],
+      shortDescription:
+        "Premium 4K White LED translucent stretch ceiling.",
+
+      description:
+        "Premium translucent stretch ceiling with 4K White LED illumination designed for luxury interiors.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+        "Corporate Offices",
+        "Hospitals",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "Dimmable + Tunable",
+
+      slug: "dimmable-tunable",
+
+      shortDescription:
+        "Dimmable & Tunable translucent stretch ceiling.",
+
+      description:
+        "Adjust brightness and colour temperature with advanced dimmable and tunable lighting technology.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+        "Corporate Offices",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "RGBW",
+
+      slug: "rgbw",
+
+      shortDescription:
+        "RGBW illuminated translucent stretch ceiling.",
+
+      description:
+        "Premium RGBW lighting system offering millions of colour combinations.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "RGBW Programming",
+
+      slug: "rgbw-programming",
+
+      shortDescription:
+        "Programmable RGBW stretch ceiling.",
+
+      description:
+        "Smart programmable RGBW lighting with scene control and automation.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Showrooms",
+      ],
+    },
+
+  ],
+},
+
+  {
+  title: "Printed Stretch Ceiling",
+  slug: "printed-stretch-ceiling",
+
+  variants: [
+
+    {
+      ...defaultProduct,
+
+      title: "4K White LED",
+
+      slug: "4k-white-led",
+
+      shortDescription:
+        "Premium printed stretch ceiling with 4K White LED.",
+
+      description:
+        "Customized printed stretch ceiling with brilliant 4K White LED illumination for luxury interiors.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+        "Showrooms",
+        "Commercial Spaces",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "Dimmable + Tunable",
+
+      slug: "dimmable-tunable",
+
+      shortDescription:
+        "Printed stretch ceiling with dimmable & tunable lighting.",
+
+      description:
+        "Premium printed stretch ceiling featuring adjustable brightness and tunable white technology.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+        "Showrooms",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "RGBW",
+
+      slug: "rgbw",
+
+      shortDescription:
+        "Printed stretch ceiling with RGBW lighting.",
+
+      description:
+        "Create stunning colour-changing ceiling effects with advanced RGBW lighting technology.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Restaurants",
+        "Commercial Spaces",
+      ],
+    },
+
+    {
+      ...defaultProduct,
+
+      title: "RGBW Programming",
+
+      slug: "rgbw-programming",
+
+      shortDescription:
+        "Programmable RGBW printed stretch ceiling.",
+
+      description:
+        "Smart programmable RGBW lighting with dynamic scenes and automation.",
+
+      applications: [
+        "Luxury Homes",
+        "Hotels",
+        "Showrooms",
+        "Commercial Spaces",
+      ],
+    },
+
+  ],
+},
+
+  {
+    ...defaultProduct,
+    title: "Glossy Stretch Ceiling",
+    slug: "glossy-stretch-ceiling",
+  },
+
+  {
+    ...defaultProduct,
+    title: "2×2 Ceiling Panel",
+    slug: "2x2-ceiling-panel",
+  },
+],
       },
 
      "skylume-ceiling": {
-  title: "SkyLume Ceiling",
+  title: "Sunlight Virtual Ceilings",
 
   shortDescription:
     "Artificial daylight ceiling systems that recreate the feeling of natural open skies indoors.",
@@ -138,7 +255,7 @@ const products = {
   products: [
     {
       ...defaultProduct,
-      title: "SkyLume Pure",
+title: "Sunlight Virtual Ceilings",
       slug: "skylume-pure",
 
       shortDescription:

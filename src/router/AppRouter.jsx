@@ -15,6 +15,7 @@ import Contact from "../pages/Contact.jsx";
 import Solutions from "../pages/Solutions.jsx";
 import SolutionCategory from "../pages/SolutionCategory.jsx";
 import ProductCategory from "../pages/ProductCategory.jsx";
+import VariantCategory from "../pages/VariantCategory.jsx";
 import ProductDetail from "../pages/ProductDetail.jsx";
 import NotFound from "../pages/NotFound.jsx";
 
@@ -85,6 +86,24 @@ export default function AppRouter() {
   element={
     <Page>
       <ProductCategory />
+    </Page>
+  }
+/>
+
+<Route
+  path="/solutions/:category/:product/:item"
+  element={
+    <Page>
+      <VariantCategory />
+    </Page>
+  }
+/>
+
+<Route
+  path="/solutions/:category/:product/:item/:variant"
+  element={
+    <Page>
+      <ProductDetail />
     </Page>
   }
 />

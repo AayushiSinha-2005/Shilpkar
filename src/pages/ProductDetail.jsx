@@ -3,8 +3,7 @@ import products from "../data/products";
 import "./ProductDetail.css";
 
 export default function ProductDetail() {
- const { category, product, item } = useParams();
-
+const { category, product, item, variant } = useParams();
 const section = products[category];
 
 if (!section)
@@ -27,13 +26,17 @@ if (category === "ceilings") {
   if (!productData)
     return <Navigate to={`/solutions/${category}`} replace />;
 
-  selected = productData.products.find(
-    (p) => p.slug === item
-  );
+ const parentProduct = productData.products.find(
+  (p) => p.slug === item
+);
 
-  if (!selected)
-    return <Navigate to={`/solutions/${category}/${product}`} replace />;
-}
+if (!parentProduct)
+  return <Navigate to={`/solutions/${category}/${product}`} replace />;
+
+selected =
+  parentProduct.variants?.find(
+    (v) => v.slug === variant
+  ) || parentProduct;}
 
 /*
 ----------------------------------------
@@ -88,6 +91,14 @@ else {
               {productData.title}
             </Link>
 
+            <span>/</span>
+
+{variant && (
+  <Link to={`/solutions/${category}/${product}/${item}`}>
+    {item.replace(/-/g, " ")}
+  </Link>
+)}
+
           </div>
 
           <h1>{selected.title}</h1>
@@ -137,6 +148,17 @@ else {
   {selected.description ||
     "Detailed product description will be added soon."}
 </p>
+{selected.features?.length > 0 && (
+  <>
+    <h2 style={{ marginTop: "40px" }}>Available Options</h2>
+
+    <ul>
+      {selected.features.map((feature) => (
+        <li key={feature}>{feature}</li>
+      ))}
+    </ul>
+  </>
+)}
 
           </div>
 
