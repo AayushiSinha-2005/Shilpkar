@@ -11,6 +11,7 @@
 
 
 import ownerPortrait from "../assets/images/ProfilePhoto.png";
+import creativeDirector from "../assets/images/CreativeDirector.jpeg";
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
@@ -20,6 +21,7 @@ export const images = {
 
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
   ownerPortrait,
+  creativeDirector,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
 
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),

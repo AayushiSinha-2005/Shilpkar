@@ -5,15 +5,19 @@ import CircularText from "./Effects/CircularText.jsx";
 import images from "../data/images.js";
 import "./OwnerSection.css";
 
-export default function OwnerSection() {
+export default function OwnerSection( ) {
   return (
     <Lightfall className="owner-section">
       <div className="container owner-section__grid">
         <div className="owner-section__portrait">
-          <img src={images.ownerPortrait} alt="MOHD ADIL,Founder & Principal Designer of Shilpkar Factory" />
-          <div className="owner-section__circular">
-            <CircularText text="Founder  • MOHAMMAD ADIL • " diameter={110} speed={18} />
-          </div>
+<img
+  src={images.creativeDirector}
+  alt="Mohammad AMIR, Creative Director of Shilpkar Factory"/>          <div className="owner-section__circular">
+<CircularText
+  text="Creative Director • Mohammad AMIR • "
+  diameter={110}
+  speed={18}
+/>          </div>
         </div>
 
         <div className="owner-section__text">
@@ -21,10 +25,11 @@ export default function OwnerSection() {
           <SplitText
             as="h2"
             className="owner-section__quote chisel"
-            text="“Good design should feel inevitable — as if the room could not have been any other way.”"
-          />
-          <p className="owner-section__name">MOHAMMAD ADIL</p>
-          <p className="owner-section__role">Founder &amp; Director, Shilpkar Factory</p>
+text="“Every great space begins with a creative idea and comes alive through thoughtful design.”"          />
+          <p className="owner-section__name">Mohammad AMIR</p>
+<p className="owner-section__role">
+  Creative Director, Shilpkar Factory
+</p>
         </div>
       </div>
     </Lightfall>

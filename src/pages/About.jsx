@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SplitText from "../components/Effects/SplitText.jsx";
 import AnimatedContent from "../components/Effects/AnimatedContent.jsx";
 import OwnerSection from "../components/OwnerSection.jsx";
@@ -13,6 +13,7 @@ const values = [
 ];
 
 export default function About() {
+  const [expanded, setExpanded] = useState(false);
   return (
     <div className="about-page">
       <section className="section-dark about-hero">
@@ -43,21 +44,110 @@ solutions crafted for luxury residential and commercial interiors.
             <img src={images.ownerBackdrop} alt="Shilpkar Factory workshop with timber and material samples" />
           </div>
           <div className="about-story__text">
-            <SplitText as="h2" className="chisel" text="From workshop floor to design studio" />
-            <p>
-              Shilpkar — a Hindi word for craftsman — is not a name we chose
-              lightly. It's a promise that no matter how large the studio
-              grows, the work stays rooted in the workshop: measured,
-              hand-checked, and built to be lived in for decades, not
-              photographed for a season.
-            </p>
-            <p>
-              Today the studio runs residential, commercial and turnkey
-              projects across Mumbai and beyond, but every brief still opens
-              the same way it did on day one — with a conversation about how
-              you actually want to live.
-            </p>
-          </div>
+
+  <SplitText
+    as="h2"
+    className="chisel"
+    text="About Shilpkar Factory"
+  />
+
+  <p>
+    <strong>Creative Design • Premium Printing • Innovative Interiors • Pan-India Execution</strong>
+  </p>
+
+  <p>
+    Shilpkar Factory is a multidisciplinary creative design,
+    premium printing, interior innovation and project execution
+    company with over 10 years of experience, delivering
+    innovative solutions for commercial, retail, hospitality
+    and luxury interior spaces across India.
+  </p>
+
+  <p>
+    Built on the philosophy that every surface can become an
+    experience, we combine creative design, advanced printing,
+    international materials and expert craftsmanship to transform
+    ceilings, walls, floors and complete interiors into visually
+    stunning environments.
+  </p>
+
+  <p>
+    From concept development and design to production,
+    installation and turnkey execution, our team delivers
+    complete end-to-end solutions with reliable Pan-India
+    execution.
+  </p>
+
+  <button
+    className="read-more-btn"
+    onClick={() => setExpanded(!expanded)}
+  >
+    {expanded ? "Read Less ↑" : "Read More ↓"}
+  </button>
+
+  {expanded && (
+
+    <div className="about-more-content">
+
+      <h3>Leadership</h3>
+
+      <p>
+        <strong>Mohammad Adil</strong> brings over 15 years of
+        experience across India and the Gulf in advertising,
+        branding, exhibition design and premium project execution,
+        combining international quality standards with practical
+        execution expertise.
+      </p>
+
+      <blockquote>
+        “We don't just decorate spaces — we create experiences
+        people remember.”
+      </blockquote>
+
+      <p>
+        <strong>Mohammad AMIR</strong>, Creative Director and
+        Mass Communication graduate from Jamia Millia Islamia,
+        leads the company's creative vision through innovative
+        design concepts and impactful visual communication.
+      </p>
+
+      <h3>Our Expertise</h3>
+
+      <ul>
+        <li>Stretch Ceiling Systems</li>
+        <li>Textile Ceiling Systems</li>
+        <li>Luxury Interior Designing</li>
+        <li>Wall & Ceiling Murals</li>
+        <li>Virtual Ceiling & Virtual Windows</li>
+        <li>Retail Branding & Store Design</li>
+        <li>3D Epoxy Flooring</li>
+        <li>Restaurant & Hospitality Design</li>
+        <li>Game Zone & Entertainment Spaces</li>
+      </ul>
+
+      <h3>Why Shilpkar Factory?</h3>
+
+      <ul>
+        <li>10+ Years of Industry Experience</li>
+        <li>15+ Years of Gulf Expertise</li>
+        <li>International Material Options</li>
+        <li>Creative + Technical Execution</li>
+        <li>Pan-India Installation</li>
+        <li>Customized Design Solutions</li>
+      </ul>
+
+      <p>
+        We don't simply supply products—we develop complete
+        creative environments where design, materials,
+        lighting and execution work together to create
+        extraordinary spaces.
+      </p>
+
+    </div>
+
+  )}
+
+</div>
         </div>
       </section>
 
