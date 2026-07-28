@@ -105,7 +105,7 @@ solutions crafted for luxury residential and commercial interiors.
       </blockquote>
 
       <p>
-        <strong>Mohammad AMIR</strong>, Creative Director and
+        <strong>Mohammad AAMIR</strong>, Creative Director and
         Mass Communication graduate from Jamia Millia Islamia,
         leads the company's creative vision through innovative
         design concepts and impactful visual communication.

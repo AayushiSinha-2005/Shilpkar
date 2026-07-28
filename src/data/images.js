@@ -32,6 +32,9 @@ export const images = {
   service4: u("photo-1598928506311-c55ded91a20c", 1200),
   service5: u("photo-1591474200742-8e512e6f98f8", 1200),
   service6: u("photo-1524758631624-e2822e304c36", 1200),
+  service7: u("photo-1616137466211-f939a420be84", 1200),
+  service8: u("photo-1598928506311-c55ded91a20c", 1200),
+
 
   gallery: [
     u("photo-1519710164239-da123dc03ef4", 1400),

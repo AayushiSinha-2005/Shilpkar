@@ -5,6 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 import Services from "../pages/Services.jsx";
+import ServiceCategory from "../pages/ServiceCategory.jsx";
+import ServiceDetail from "../pages/ServiceDetail.jsx";
+import ServiceType from "../pages/ServiceType.jsx";
 import Dealership from "../pages/franchise/Dealership.jsx";
 import Associate from "../pages/franchise/Associate.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
@@ -58,6 +61,32 @@ export default function AppRouter() {
           <Route path="/" element={<Page><Home /></Page>} />
           <Route path="/about" element={<Page><About /></Page>} />
           <Route path="/services" element={<Page><Services /></Page>} />
+          <Route
+  path="/services/:serviceSlug"
+  element={
+    <Page>
+      <ServiceCategory />
+    </Page>
+  }
+/>
+
+<Route
+  path="/services/:serviceSlug/:categorySlug"
+  element={
+    <Page>
+      <ServiceDetail />
+    </Page>
+  }
+/>
+<Route
+  path="/services/:serviceSlug/:categorySlug/:typeSlug"
+  element={
+    <Page>
+      <ServiceType />
+    </Page>
+  }
+/>
+
           <Route path="/gallery" element={<Page><Gallery /></Page>} />
           <Route path="/gallery/circular" element={<Page><CircularGalleryPage /></Page>} />
           <Route path="/contact" element={<Page><Contact /></Page>} />
