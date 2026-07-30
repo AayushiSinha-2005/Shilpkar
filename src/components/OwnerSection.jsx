@@ -11,13 +11,13 @@ export default function OwnerSection( ) {
       <div className="container owner-section__grid">
         <div className="owner-section__portrait">
 <img
-  src={images.creativeDirector}
-  alt="Mohammad AAMIR, Creative Director of Shilpkar Factory"/>          <div className="owner-section__circular">
+  src={images.ownerPhoto}
+  alt="Mohammad Adil, Founder & Managing Director of Shilpkar Factory"/>          <div className="owner-section__circular">
 <CircularText
-  text="Creative Director • Mohammad AAMIR • "
+  text="Founder • Director • Mohammad Adil • "
   diameter={110}
   speed={18}
-/>          </div>
+/>         </div>
         </div>
 
         <div className="owner-section__text">
@@ -25,10 +25,11 @@ export default function OwnerSection( ) {
           <SplitText
             as="h2"
             className="owner-section__quote chisel"
-text="“Every great space begins with a creative idea and comes alive through thoughtful design.”"          />
-          <p className="owner-section__name">Mohammad AAMIR</p>
+  text="“Vision is not just about building beautiful spaces—it's about creating experiences that inspire every day.”"
+         />
+          <p className="owner-section__name">Mohammad Adil</p>
 <p className="owner-section__role">
-  Creative Director, Shilpkar Factory
+  Founder &amp; Managing Director, Shilpkar Factory
 </p>
         </div>
       </div>

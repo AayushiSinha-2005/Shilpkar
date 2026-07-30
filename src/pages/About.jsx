@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import SplitText from "../components/Effects/SplitText.jsx";
 import AnimatedContent from "../components/Effects/AnimatedContent.jsx";
-import OwnerSection from "../components/OwnerSection.jsx";
-import images from "../data/images.js";
+import AboutOwnerSection from "../components/AboutOwnerSection.jsx";import images from "../data/images.js";
 import "./About.css";
 
 const values = [
@@ -167,7 +166,7 @@ solutions crafted for luxury residential and commercial interiors.
         </div>
       </section>
 
-      <OwnerSection />
+<AboutOwnerSection />
     </div>
   );
 }

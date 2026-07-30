@@ -186,14 +186,18 @@ ul {
   transform: translateX(0);
 }
 .btn-dark {
-  color: var(--deep);
-  border-color: var(--deep);
-}
-.btn-dark::before {
   background: var(--deep);
-}
-.btn-dark:hover {
   color: var(--ivory);
+  border: 1px solid var(--deep);
+}
+
+.btn-dark::before {
+  background: var(--gold);
+}
+
+.btn-dark:hover {
+  color: var(--deep);
+  border-color: var(--gold);
 }
 
 .btn-outline-light {

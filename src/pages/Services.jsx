@@ -12,13 +12,14 @@ export default function Services({ preview = false }) {
       <div className="container">
 
         <div className="services-section__head">
-          <span className="eyebrow">What We Do</span>
+          <span className="eyebrow">OUR EXPERTISE</span>
 
-          <SplitText
-            as="h2"
-            className="chisel"
-            text="Crafted Solutions"
-          />
+<SplitText
+  as="h2"
+  className="chisel"
+  text="Luxury Ceiling Solutions"
+/>
+
 
           {preview && (
             <a href="/services" className="services-section__more">

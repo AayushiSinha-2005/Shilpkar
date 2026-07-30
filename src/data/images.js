@@ -20,7 +20,7 @@ export const images = {
   heroAlt: u("photo-1616486338812-3dadae4b4ace", 2000),
 
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
-  ownerPortrait,
+  ownerPhoto: ownerPortrait,
   creativeDirector,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
 
