@@ -1,5 +1,4 @@
 import images from "./images";
-
 const serviceDetails = {
   "stretch-ceiling": {
     translucent: {

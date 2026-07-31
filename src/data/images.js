@@ -9,14 +9,22 @@
  * -----------------------------------------------------------------------
  */
 
-
 import ownerPortrait from "../assets/images/ProfilePhoto.png";
 import creativeDirector from "../assets/images/CreativeDirector.jpeg";
+import hero1 from "../assets/images/hero1.webp";
+import hero2 from "../assets/images/hero2.webp";
+import hero3 from "../assets/images/hero3.webp";
+import hero4 from "../assets/images/hero4.webp";
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export const images = {
-  hero: u("photo-1618221195710-dd6b41faaea6", 2000),
+heroSlides: [
+  hero1,
+  hero2,
+  hero3,
+  hero4,
+],
   heroAlt: u("photo-1616486338812-3dadae4b4ace", 2000),
 
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),

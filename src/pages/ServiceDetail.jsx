@@ -85,15 +85,14 @@ export default function ServiceDetail() {
                       className="spec-card"
                       key={spec.label}
                     >
-
+                      
                       <span>
-                        {spec.label}
+                      {spec.label}
                       </span>
 
                       <h4>
                         {spec.value}
                       </h4>
-
                     </div>
 
                   ))}
