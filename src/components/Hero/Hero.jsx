@@ -74,13 +74,9 @@ export default function Hero() {
     />
   ))}
 </div>
-
-
-
         <div className="hero__scrim" />
 
       </div>
-
       {/* Decorative Shapes */}
 
       <div className="hero__florals" aria-hidden="true">
@@ -97,8 +93,8 @@ export default function Hero() {
           <circle cx="100" cy="100" r="90" />
         </svg>
 
-      </div>
 
+      </div>
       <div className="hero__circular">
         <CircularText
           text="EST. SHILPKAR FACTORY • LUXURY INTERIORS • "

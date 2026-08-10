@@ -1,46 +1,1423 @@
-import PageBanner from "../../components/Hero/PageBanner";
-import SectionIntro from "../../components/Common/SectionIntro";
-import FeatureGrid from "../../components/Common/FeatureGrid";
+import { motion } from "framer-motion";
 import images from "../../data/images";
+import "./Associate.css";
 
 export default function Associate() {
   return (
-    <>
-      <PageBanner
-        eyebrow="FRANCHISE PROGRAM"
-        title="Become a Shilpkar Associate"
-        image={images.projects[1].img}
-        height="65vh"
-      />
+    <main className="associate-page">
 
-      <SectionIntro
-        title="Work & Grow with Shilpkar Factory"
-        subtitle="Join our associate network and become a part of India's growing premium interior solutions brand. Collaborate with us to deliver innovative products and exceptional customer experiences."
-      />
+      {/* =========================================================
+          HERO — ASSOCIATE PROGRAM
+      ========================================================= */}
 
-      <FeatureGrid
-        title="Why Become an Associate?"
-        cards={[
-          {
-            icon: "🤝",
-            title: "Business Opportunities",
-            description:
-              "Expand your network and work on premium interior projects.",
-          },
-          {
-            icon: "📈",
-            title: "Professional Growth",
-            description:
-              "Access new opportunities through our growing business network.",
-          },
-          {
-            icon: "🏆",
-            title: "Dedicated Support",
-            description:
-              "Receive continuous guidance from our experienced team.",
-          },
-        ]}
-      />
-    </>
+      <section className="associate-hero">
+
+        {/* Background Image */}
+        <div className="associate-hero__image">
+          <img
+            src={images.associateCover || images.servicesCover}
+            alt="Shilpkar Associate Program"
+          />
+        </div>
+
+        {/* Dark Luxury Overlay */}
+        <div className="associate-hero__overlay" />
+
+        {/* Decorative Lines */}
+        <div className="associate-hero__line associate-hero__line--left" />
+        <div className="associate-hero__line associate-hero__line--right" />
+
+
+        {/* Content */}
+        <div className="container associate-hero__container">
+
+          <motion.div
+            className="associate-hero__content"
+
+            initial={{ opacity: 0, y: 35 }}
+
+            animate={{ opacity: 1, y: 0 }}
+
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
+
+            {/* Eyebrow */}
+            <motion.div
+              className="associate-hero__eyebrow"
+
+              initial={{ opacity: 0, y: 15 }}
+
+              animate={{ opacity: 1, y: 0 }}
+
+              transition={{
+                duration: 0.8,
+                delay: 0.15,
+              }}
+            >
+              <span />
+
+              SHILPKAR FACTORY
+
+              <span />
+            </motion.div>
+
+
+            {/* Main Heading */}
+            <motion.h1
+              initial={{ opacity: 0, y: 25 }}
+
+              animate={{ opacity: 1, y: 0 }}
+
+              transition={{
+                duration: 1,
+                delay: 0.25,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
+              Associate{" "}
+              <span>Program</span>
+            </motion.h1>
+
+
+            {/* Gold Line */}
+            <motion.div
+              className="associate-hero__gold-line"
+
+              initial={{ width: 0 }}
+
+              animate={{ width: 70 }}
+
+              transition={{
+                duration: 0.8,
+                delay: 0.7,
+              }}
+            />
+
+
+            {/* Sub Heading */}
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+
+              animate={{ opacity: 1, y: 0 }}
+
+              transition={{
+                duration: 0.8,
+                delay: 0.55,
+              }}
+            >
+              Partner. Promote. Profit.
+            </motion.h2>
+
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+
+              animate={{ opacity: 1, y: 0 }}
+
+              transition={{
+                duration: 0.8,
+                delay: 0.7,
+              }}
+            >
+              Partner with Shilpkar to offer premium interior solutions
+              with complete project and technical support.
+            </motion.p>
+
+
+            {/* Buttons */}
+            <motion.div
+              className="associate-hero__actions"
+
+              initial={{ opacity: 0, y: 20 }}
+
+              animate={{ opacity: 1, y: 0 }}
+
+              transition={{
+                duration: 0.8,
+                delay: 0.9,
+              }}
+            >
+
+              <a
+                href="#opportunity"
+                className="associate-btn associate-btn--primary"
+              >
+                Explore Opportunity
+                <span>→</span>
+              </a>
+
+
+              <a
+                href="#how-it-works"
+                className="associate-btn associate-btn--outline"
+              >
+                How It Works
+                <span>→</span>
+              </a>
+
+            </motion.div>
+
+          </motion.div>
+
+        </div>
+
+
+        {/* Scroll Indicator */}
+        <div className="associate-hero__scroll">
+
+          <span />
+
+          <p>Scroll</p>
+
+        </div>
+
+      </section>
+            {/* =========================================================
+          SECTION 2 — INVESTMENT
+      ========================================================== */}
+
+      <section className="associate-investment" id="investment">
+
+        <div className="container">
+
+          {/* Section Heading */}
+          <div className="associate-section-heading">
+
+            <div className="associate-eyebrow">
+              <span />
+              INVESTMENT
+              <span />
+            </div>
+
+            <h2>
+              Start With <span>Shilpkar</span>
+            </h2>
+
+            <div className="associate-heading-line" />
+
+          </div>
+
+
+          {/* Investment Box */}
+          <div className="associate-investment__box">
+
+            {/* Left Side */}
+            <div className="associate-investment__main">
+
+              <div className="associate-investment__label">
+                ONE-TIME INVESTMENT
+              </div>
+
+              <div className="associate-investment__price">
+                ₹50,000
+                <span> + GST</span>
+              </div>
+
+              <div className="associate-investment__line" />
+
+              <p>
+                Join the Shilpkar Associate Program with a one-time
+                investment of ₹50,000 + GST.
+              </p>
+
+            </div>
+
+
+            {/* Right Side */}
+            <div className="associate-investment__benefits">
+
+              {/* Benefit 01 */}
+              <div className="associate-investment__benefit">
+
+                <div className="associate-icon">
+                  ✦
+                </div>
+
+                <div>
+                  <h3>Zero Royalty</h3>
+
+                  <p>
+                    No recurring royalty is required under the
+                    Associate Program.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Benefit 02 */}
+              <div className="associate-investment__benefit">
+
+                <div className="associate-icon">
+                  ✦
+                </div>
+
+                <div>
+                  <h3>Dedicated Manager</h3>
+
+                  <p>
+                    Get dedicated assistance for your projects,
+                    quotations and coordination.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =========================================================
+          SECTION 3 — WHAT YOU GET
+      ========================================================== */}
+
+      <section className="associate-benefits" id="opportunity">
+
+        <div className="container">
+
+          {/* Heading */}
+          <div className="associate-section-heading">
+
+            <div className="associate-eyebrow">
+              <span />
+              WHAT YOU GET
+              <span />
+            </div>
+
+            <h2>
+              More Than Just <span>A Partnership</span>
+            </h2>
+
+            <div className="associate-heading-line" />
+
+            <p className="associate-section-description">
+              Build your business with the Shilpkar brand while we
+              support you with the complete project journey.
+            </p>
+
+          </div>
+
+
+          {/* Cards */}
+          <div className="associate-benefits__grid">
+
+            {/* 01 */}
+            <div className="associate-benefit-card">
+
+              <div className="associate-benefit-card__top">
+                <span className="associate-card-number">01</span>
+
+                <div className="associate-card-icon">
+                  ✦
+                </div>
+              </div>
+
+              <div className="associate-card-line" />
+
+              <h3>
+                Dedicated Manager
+              </h3>
+
+              <p>
+                Get dedicated assistance for project coordination,
+                quotations and business support.
+              </p>
+
+            </div>
+
+
+            {/* 02 */}
+            <div className="associate-benefit-card">
+
+              <div className="associate-benefit-card__top">
+                <span className="associate-card-number">02</span>
+
+                <div className="associate-card-icon">
+                  ✦
+                </div>
+              </div>
+
+              <div className="associate-card-line" />
+
+              <h3>
+                Fixed Price System
+              </h3>
+
+              <p>
+                Work with a structured pricing system that makes
+                project discussions and quotations easier.
+              </p>
+
+            </div>
+
+
+            {/* 03 */}
+            <div className="associate-benefit-card">
+
+              <div className="associate-benefit-card__top">
+                <span className="associate-card-number">03</span>
+
+                <div className="associate-card-icon">
+                  ✦
+                </div>
+              </div>
+
+              <div className="associate-card-line" />
+
+              <h3>
+                Complete Project Support
+              </h3>
+
+              <p>
+                Shilpkar supports the project from quotation and
+                execution through completion.
+              </p>
+
+            </div>
+
+
+            {/* 04 */}
+            <div className="associate-benefit-card">
+
+              <div className="associate-benefit-card__top">
+                <span className="associate-card-number">04</span>
+
+                <div className="associate-card-icon">
+                  ✦
+                </div>
+              </div>
+
+              <div className="associate-card-line" />
+
+              <h3>
+                Zero Royalty
+              </h3>
+
+              <p>
+                Join the Associate Program without recurring
+                royalty obligations.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* =========================================================
+    COMPLETE PROJECT SUPPORT
+========================================================= */}
+
+<section className="associate-project-support">
+  <div className="container">
+
+    <div className="associate-project-support__grid">
+
+      {/* LEFT — IMAGE */}
+      <div className="associate-project-support__image">
+  <img
+    src={images.associateProjectSupport}
+    alt="Shilpkar Associate Complete Project Support"
+  />
+</div>
+
+      {/* RIGHT — CONTENT */}
+      <div className="associate-project-support__content">
+
+        <div className="associate-project-support__eyebrow">
+          <span></span>
+          COMPLETE PROJECT SUPPORT
+          <span></span>
+        </div>
+
+        <h2>
+          You Bring The{" "}
+          <span>Opportunity.</span>
+          <br />
+          We Handle The{" "}
+          <span>Project.</span>
+        </h2>
+
+        <div className="associate-project-support__line"></div>
+
+        <p>
+          As an Associate, you can focus on bringing projects and
+          customers while Shilpkar supports the project with quotation,
+          technical coordination and execution.
+        </p>
+
+        <div className="associate-project-support__points">
+
+          <div className="associate-project-support__point">
+            <div className="associate-project-support__check">✓</div>
+            <span>Quotation support</span>
+          </div>
+
+          <div className="associate-project-support__point">
+            <div className="associate-project-support__check">✓</div>
+            <span>Technical project support</span>
+          </div>
+
+          <div className="associate-project-support__point">
+            <div className="associate-project-support__check">✓</div>
+            <span>Project execution</span>
+          </div>
+
+          <div className="associate-project-support__point">
+            <div className="associate-project-support__check">✓</div>
+            <span>Dedicated coordination</span>
+          </div>
+
+        </div>
+
+        <div className="associate-project-support__bottom">
+
+          <div className="associate-project-support__bottom-icon">
+            🤝
+          </div>
+
+          <div>
+            <h3>Your Referral. Our Execution.</h3>
+
+            <p>
+              Work together with Shilpkar to deliver a professional
+              project experience for your client.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+ {/* =====================================================
+          HOW IT WORKS
+      ===================================================== */}
+
+      <section className="associate-how-it-works">
+
+        <div className="associate-container">
+
+          {/* Section Heading */}
+          <div className="associate-section-heading">
+
+            <div className="associate-eyebrow">
+              <span></span>
+              HOW IT WORKS
+              <span></span>
+            </div>
+
+            <h2>
+              A Simple Path To <strong>Success</strong>
+            </h2>
+
+            <div className="associate-heading-line"></div>
+
+            <p>
+              Bring the opportunity to Shilpkar and let our team handle
+              the project journey from quotation to execution.
+            </p>
+
+          </div>
+
+
+          {/* Steps */}
+          <div className="associate-steps">
+
+            {/* 01 */}
+            <div className="associate-step">
+
+              <div className="associate-step-number">
+                01
+              </div>
+
+              <div className="associate-step-card">
+
+                <div className="associate-step-icon">
+                  ✦
+                </div>
+
+                <h3>
+                  You Refer
+                </h3>
+
+                <div className="associate-card-line"></div>
+
+                <p>
+                  Bring a potential client or project opportunity
+                  to Shilpkar.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* 02 */}
+            <div className="associate-step">
+
+              <div className="associate-step-number">
+                02
+              </div>
+
+              <div className="associate-step-card">
+
+                <div className="associate-step-icon">
+                  ✦
+                </div>
+
+                <h3>
+                  We Quote
+                </h3>
+
+                <div className="associate-card-line"></div>
+
+                <p>
+                  Our team prepares a structured quotation based
+                  on the project requirements.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* 03 */}
+            <div className="associate-step">
+
+              <div className="associate-step-number">
+                03
+              </div>
+
+              <div className="associate-step-card">
+
+                <div className="associate-step-icon">
+                  ✦
+                </div>
+
+                <h3>
+                  We Execute
+                </h3>
+
+                <div className="associate-card-line"></div>
+
+                <p>
+                  Shilpkar handles the technical coordination
+                  and project execution.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* 04 */}
+            <div className="associate-step">
+
+              <div className="associate-step-number">
+                04
+              </div>
+
+              <div className="associate-step-card">
+
+                <div className="associate-step-icon">
+                  ✦
+                </div>
+
+                <h3>
+                  Client Satisfied
+                </h3>
+
+                <div className="associate-card-line"></div>
+
+                <p>
+                  The project is completed professionally
+                  for your client.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* 05 */}
+            <div className="associate-step">
+
+              <div className="associate-step-number">
+                05
+              </div>
+
+              <div className="associate-step-card">
+
+                <div className="associate-step-icon">
+                  ✦
+                </div>
+
+                <h3>
+                  You Earn
+                </h3>
+
+                <div className="associate-card-line"></div>
+
+                <p>
+                  Earn from the successful project you bring
+                  to Shilpkar.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* =====================================================
+    ASSOCIATE MODEL
+===================================================== */}
+
+<section className="associate-model">
+
+  <div className="associate-container">
+
+    <div className="associate-model__layout">
+
+      {/* LEFT — VISUAL */}
+      <div className="associate-model__visual">
+
+        <div className="associate-model__visual-inner">
+
+          <div className="associate-model__visual-label">
+            SHILPKAR ASSOCIATE
+          </div>
+
+          <h3>
+            Refer.
+            <span>Connect.</span>
+            Grow.
+          </h3>
+
+          <div className="associate-model__visual-line"></div>
+
+          <p>
+            Bring the opportunity.
+            <br />
+            Build the relationship.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* RIGHT — CONTENT */}
+      <div className="associate-model__content">
+
+        <div className="associate-eyebrow associate-model__eyebrow">
+          <span></span>
+          BUSINESS OPPORTUNITY
+          <span></span>
+        </div>
+
+
+        <h2>
+          Your Network.
+          <br />
+          Your <strong>Opportunity.</strong>
+        </h2>
+
+
+        <div className="associate-heading-line associate-model__line"></div>
+
+
+        <p className="associate-model__description">
+          The Shilpkar Associate Program allows you to connect
+          customers and projects with our premium interior
+          solutions while our team manages quotation,
+          technical coordination and execution.
+        </p>
+
+
+        {/* BENEFITS */}
+
+        <div className="associate-model__benefits">
+
+          <div className="associate-model__benefit">
+
+            <div className="associate-model__check">
+              ✓
+            </div>
+
+            <div>
+              <h3>No Recurring Royalty</h3>
+              <p>
+                Build your association without recurring
+                royalty obligations.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div className="associate-model__benefit">
+
+            <div className="associate-model__check">
+              ✓
+            </div>
+
+            <div>
+              <h3>Dedicated Project Support</h3>
+              <p>
+                Get professional support throughout the
+                project journey.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div className="associate-model__benefit">
+
+            <div className="associate-model__check">
+              ✓
+            </div>
+
+            <div>
+              <h3>Structured Pricing</h3>
+              <p>
+                Work with a clear pricing system for easier
+                project discussions.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div className="associate-model__benefit">
+
+            <div className="associate-model__check">
+              ✓
+            </div>
+
+            <div>
+              <h3>Professional Execution</h3>
+              <p>
+                Shilpkar manages technical coordination and
+                project execution.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* =====================================================
+    WHO CAN BECOME AN ASSOCIATE
+===================================================== */}
+
+<section className="associate-who">
+
+  <div className="associate-container">
+
+    <div className="associate-who__layout">
+
+      {/* LEFT CONTENT */}
+      <div className="associate-who__content">
+
+        <div className="associate-eyebrow associate-who__eyebrow">
+          <span></span>
+          WHO CAN BECOME AN ASSOCIATE
+        </div>
+
+        <h2>
+          Turn Your <strong>Network</strong>
+          <br />
+          Into An <strong>Opportunity</strong>
+        </h2>
+
+        <div className="associate-heading-line associate-who__line"></div>
+
+        <p>
+          The Shilpkar Associate Program is designed for
+          professionals and business networks who can connect
+          customers with premium interior and architectural
+          solutions.
+        </p>
+
+
+        {/* Highlight Box */}
+        <div className="associate-who__highlight">
+
+          <h3>
+            Bring The Client.
+          </h3>
+
+          <h4>
+            Let Shilpkar Handle The Project.
+          </h4>
+
+          <p>
+            Build your business network with Shilpkar without
+            managing the complete project execution yourself.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* RIGHT — CATEGORIES */}
+      <div className="associate-who__categories">
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ✦
+          </div>
+
+          <h3>Interior Designers</h3>
+
+          <span>
+            01
+          </span>
+
+        </div>
+
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ◇
+          </div>
+
+          <h3>Architects</h3>
+
+          <span>
+            02
+          </span>
+
+        </div>
+
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ▣
+          </div>
+
+          <h3>Contractors</h3>
+
+          <span>
+            03
+          </span>
+
+        </div>
+
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ◈
+          </div>
+
+          <h3>Consultants</h3>
+
+          <span>
+            04
+          </span>
+
+        </div>
+
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ◆
+          </div>
+
+          <h3>Sales Professionals</h3>
+
+          <span>
+            05
+          </span>
+
+        </div>
+
+
+        <div className="associate-who-card">
+
+          <div className="associate-who-card__icon">
+            ⌂
+          </div>
+
+          <h3>Business Networks</h3>
+
+          <span>
+            06
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* =====================================================
+    ASSOCIATE BENEFITS
+===================================================== */}
+
+<section className="associate-benefits">
+
+  <div className="associate-container">
+
+    {/* Section Heading */}
+    <div className="associate-section-heading">
+
+      <div className="associate-eyebrow">
+        <span></span>
+        ASSOCIATE BENEFITS
+        <span></span>
+      </div>
+
+      <h2>
+        Why Become A <strong>Shilpkar Associate?</strong>
+      </h2>
+
+      <div className="associate-heading-line"></div>
+
+    </div>
+
+
+    {/* Benefits Grid */}
+    <div className="associate-benefits__grid">
+
+
+      {/* 01 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            01
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Low Entry Investment
+        </h3>
+
+        <p>
+          Start your association with a one-time investment
+          of ₹50,000 + GST.
+        </p>
+
+      </div>
+
+
+      {/* 02 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            02
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Zero Royalty
+        </h3>
+
+        <p>
+          No recurring royalty requirement under the
+          Associate Program.
+        </p>
+
+      </div>
+
+
+      {/* 03 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            03
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Dedicated Manager
+        </h3>
+
+        <p>
+          Get dedicated support for your projects
+          and coordination.
+        </p>
+
+      </div>
+
+
+      {/* 04 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            04
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Fixed Price System
+        </h3>
+
+        <p>
+          A structured pricing system makes quotation
+          and project discussions easier.
+        </p>
+
+      </div>
+
+
+      {/* 05 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            05
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Project Execution Support
+        </h3>
+
+        <p>
+          Shilpkar supports technical coordination
+          and execution of the project.
+        </p>
+
+      </div>
+
+
+      {/* 06 */}
+      <div className="associate-benefit-card">
+
+        <div className="associate-benefit-card__top">
+
+          <span className="associate-card-number">
+            06
+          </span>
+
+          <div className="associate-card-icon">
+            ✦
+          </div>
+
+        </div>
+
+        <div className="associate-card-line"></div>
+
+        <h3>
+          Earn From Referrals
+        </h3>
+
+        <p>
+          Generate business opportunities by referring
+          suitable projects to Shilpkar.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* =================================================
+        ASSOCIATE PROMISE
+    ================================================= */}
+
+    <div className="associate-promise">
+
+      <div className="associate-promise__content">
+
+        <div className="associate-promise__eyebrow">
+          THE SHILPKAR ASSOCIATE PROMISE
+        </div>
+
+        <h2>
+          You Focus On <strong>Relationships.</strong>
+          <br />
+          We Focus On <strong>Projects.</strong>
+        </h2>
+
+        <div className="associate-promise__line"></div>
+
+        <p>
+          Together, we create a professional experience
+          for your clients while creating new business
+          opportunities through the Shilpkar Associate Program.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* =====================================================
+    ASSOCIATE FAQ
+===================================================== */}
+
+<section className="associate-faq">
+
+  <div className="associate-container">
+
+    {/* Heading */}
+    <div className="associate-section-heading">
+
+      <div className="associate-eyebrow">
+        <span></span>
+        FREQUENTLY ASKED QUESTIONS
+        <span></span>
+      </div>
+
+      <h2>
+        Associate <strong>FAQ</strong>
+      </h2>
+
+      <div className="associate-heading-line"></div>
+
+    </div>
+
+
+    {/* FAQ List */}
+    <div className="associate-faq__list">
+
+
+      {/* FAQ 01 */}
+      <details className="associate-faq__item">
+
+        <summary>
+          <span>What is the Associate Program?</span>
+
+          <b>+</b>
+        </summary>
+
+        <div className="associate-faq__answer">
+          <p>
+            The Shilpkar Associate Program allows you to bring
+            project opportunities to Shilpkar while our team
+            supports the quotation, technical coordination
+            and project execution.
+          </p>
+        </div>
+
+      </details>
+
+
+      {/* FAQ 02 */}
+      <details className="associate-faq__item">
+
+        <summary>
+          <span>What is the investment?</span>
+
+          <b>+</b>
+        </summary>
+
+        <div className="associate-faq__answer">
+          <p>
+            The Associate Program requires a one-time investment
+            of ₹50,000 + GST.
+          </p>
+        </div>
+
+      </details>
+
+
+      {/* FAQ 03 */}
+      <details className="associate-faq__item">
+
+        <summary>
+          <span>Is there any royalty?</span>
+
+          <b>+</b>
+        </summary>
+
+        <div className="associate-faq__answer">
+          <p>
+            No. The Associate Program is offered with
+            zero royalty.
+          </p>
+        </div>
+
+      </details>
+
+
+      {/* FAQ 04 */}
+      <details className="associate-faq__item">
+
+        <summary>
+          <span>Will I get project support?</span>
+
+          <b>+</b>
+        </summary>
+
+        <div className="associate-faq__answer">
+          <p>
+            Yes. Shilpkar provides project and technical support,
+            along with dedicated coordination.
+          </p>
+        </div>
+
+      </details>
+
+
+      {/* FAQ 05 */}
+      <details className="associate-faq__item">
+
+        <summary>
+          <span>How does the referral process work?</span>
+
+          <b>+</b>
+        </summary>
+
+        <div className="associate-faq__answer">
+          <p>
+            You refer a suitable customer or project opportunity
+            to Shilpkar. Shilpkar handles the quotation and
+            project execution, and you earn from the successful
+            project.
+          </p>
+        </div>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+{/* =====================================================
+    FINAL CTA
+===================================================== */}
+
+<section className="associate-final-cta">
+
+  <div className="associate-container">
+
+    <div className="associate-final-cta__box">
+
+      <div className="associate-final-cta__eyebrow">
+        PARTNER WITH SHILPKAR
+      </div>
+
+      <h2>
+        Build Connections.
+        <br />
+        <strong>Grow With Shilpkar.</strong>
+      </h2>
+
+      <div className="associate-final-cta__line"></div>
+
+      <p>
+        Bring your next opportunity to Shilpkar and become
+        part of our growing Associate network.
+      </p>
+
+      <div className="associate-final-cta__actions">
+
+        <a
+          href="/franchise/associate"
+          className="associate-btn associate-btn--primary"
+        >
+          Become An Associate
+          <span>→</span>
+        </a>
+
+        <a
+          href="/franchise"
+          className="associate-btn associate-btn--secondary"
+        >
+          Back To Opportunities
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    </main>
   );
 }

@@ -15,6 +15,9 @@ import hero1 from "../assets/images/hero1.webp";
 import hero2 from "../assets/images/hero2.webp";
 import hero3 from "../assets/images/hero3.webp";
 import hero4 from "../assets/images/hero4.webp";
+import shilpkarDealershipTerritory from "../assets/images/shilpkar-dealership-territory.png";
+import shilpkarAssociateProjectSupport
+  from "../assets/images/shilpkar-associate-project-support.png";
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
@@ -26,7 +29,8 @@ heroSlides: [
   hero4,
 ],
   heroAlt: u("photo-1616486338812-3dadae4b4ace", 2000),
-
+  territory: shilpkarDealershipTerritory,
+  associateProjectSupport: shilpkarAssociateProjectSupport,
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
   ownerPhoto: ownerPortrait,
   creativeDirector,
