@@ -15,6 +15,8 @@ import Gallery from "../pages/Gallery.jsx";
 import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
 import Certifications from "../pages/company/Certifications";
 import Contact from "../pages/Contact.jsx";
+import WallpaperCategory from "../pages/shop/WallpaperCategory.jsx";
+import WallpaperProduct from "../pages/shop/WallpaperProduct.jsx";
 import Solutions from "../pages/Solutions.jsx";
 import SolutionCategory from "../pages/SolutionCategory.jsx";
 import ProductCategory from "../pages/ProductCategory.jsx";
@@ -120,6 +122,15 @@ export default function AppRouter() {
 />
 
 <Route
+  path="/shop/:categorySlug/:productSlug"
+  element={
+    <Page>
+      <WallpaperProduct />
+    </Page>
+  }
+/>
+
+<Route
   path="/solutions/:category/:product/:item"
   element={
     <Page>
@@ -142,6 +153,14 @@ export default function AppRouter() {
   element={
     <Page>
       <ProductDetail />
+    </Page>
+  }
+/>
+<Route
+  path="/shop/:categorySlug"
+  element={
+    <Page>
+      <WallpaperCategory />
     </Page>
   }
 />

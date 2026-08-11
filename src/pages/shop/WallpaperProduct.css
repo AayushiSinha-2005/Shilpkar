@@ -1,0 +1,747 @@
+/* ===========================
+   PRODUCT PAGE
+=========================== */
+
+.wallpaper-product {
+  min-height: 100vh;
+  background: #f8f7f3;
+}
+
+
+/* ===========================
+   MAIN PRODUCT SECTION
+=========================== */
+
+.wallpaper-product__top {
+  padding: 145px 0 90px;
+  background: #f8f7f3;
+}
+
+.wallpaper-product__layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 55px;
+  align-items: start;
+}
+
+
+/* ===========================
+   LEFT — GALLERY
+=========================== */
+
+.wallpaper-product__gallery {
+  position: sticky;
+  top: 110px;
+}
+
+.wallpaper-product__main-image {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background: #eeeae0;
+  border-radius: 4px;
+}
+
+.wallpaper-product__main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wallpaper-product__placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.wallpaper-product__placeholder span {
+  color: #a88735;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.wallpaper-product__placeholder small {
+  margin-top: 10px;
+  color: #888;
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+
+/* ===========================
+   THUMBNAILS
+=========================== */
+
+.wallpaper-product__thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.wallpaper-product__thumb {
+  height: 95px;
+  overflow: hidden;
+  background: #e8e5dd;
+  border: 1px solid rgba(20, 30, 25, .08);
+  cursor: pointer;
+}
+
+.wallpaper-product__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ===========================
+   RIGHT — CALCULATOR
+=========================== */
+
+.wallpaper-product__calculator-box {
+  background: #fff;
+  padding: 34px;
+  border: 1px solid rgba(20, 30, 25, .08);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .07);
+}
+
+
+/* ===========================
+   CALCULATOR HEADER
+=========================== */
+
+.wallpaper-product__calculator-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.wallpaper-product__calculator-header h2 {
+  margin: 0;
+
+  color: #222;
+
+  font-family: var(--font-heading);
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.wallpaper-product__wishlist {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border: none;
+  background: transparent;
+
+  color: #222;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.wallpaper-product__wishlist:first-letter {
+  font-size: 25px;
+}
+
+
+/* ===========================
+   UNIT SELECTOR
+=========================== */
+
+.wallpaper-product__units {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: 25px;
+
+  border: 1px solid #ddd;
+}
+
+.wallpaper-product__units button {
+  padding: 15px 10px;
+
+  border: none;
+  border-right: 1px solid #ddd;
+
+  background: #fff;
+
+  color: #777;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.wallpaper-product__units button:last-child {
+  border-right: none;
+}
+
+.wallpaper-product__units button:hover {
+  color: #222;
+}
+
+.wallpaper-product__units button.active {
+  background: #071410;
+  color: #fff;
+}
+
+
+/* ===========================
+   DIMENSIONS
+=========================== */
+
+.wallpaper-product__dimensions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.dimension-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dimension-field label {
+  color: #555;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dimension-input {
+  display: flex;
+
+  height: 52px;
+
+  border: 1px solid #d9d9d9;
+  background: #fff;
+
+  transition: .25s;
+}
+
+.dimension-input:focus-within {
+  border-color: #a88735;
+  box-shadow: 0 0 0 2px rgba(168, 135, 53, .08);
+}
+
+.dimension-input input {
+  width: 100%;
+
+  padding: 0 14px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #222;
+
+  font-size: 15px;
+}
+
+.dimension-input input::placeholder {
+  color: #aaa;
+}
+
+.dimension-input span {
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #ddd;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+
+/* ===========================
+   CALCULATION RESULT
+=========================== */
+
+.wallpaper-product__calculation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  padding: 17px 20px;
+
+  background: #f5f3ed;
+  border-radius: 4px;
+}
+
+.wallpaper-product__calculation span {
+  color: #777;
+  font-size: 14px;
+}
+
+.wallpaper-product__calculation strong {
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* ===========================
+   PREVIEW
+=========================== */
+
+.wallpaper-product__preview-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  color: #444;
+
+  font-size: 14px;
+}
+
+.preview-toggle {
+  position: relative;
+
+  width: 48px;
+  height: 27px;
+
+  padding: 3px;
+
+  border: 1px solid #999;
+  border-radius: 30px;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+.preview-toggle span {
+  display: block;
+
+  width: 19px;
+  height: 19px;
+
+  border-radius: 50%;
+
+  background: #555;
+
+  transition: .25s;
+}
+
+.preview-toggle.active {
+  background: #071410;
+  border-color: #071410;
+}
+
+.preview-toggle.active span {
+  transform: translateX(19px);
+  background: #d4af37;
+}
+
+
+/* ===========================
+   MATERIAL HEADING
+=========================== */
+
+.wallpaper-product__material-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.wallpaper-product__material-heading span {
+  color: #666;
+  font-size: 14px;
+}
+
+.wallpaper-product__material-heading button {
+  border: none;
+  background: transparent;
+
+  color: #555;
+
+  font-size: 13px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+
+/* ===========================
+   MATERIAL OPTIONS
+=========================== */
+
+.wallpaper-product__materials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+}
+
+.wallpaper-product__materials button {
+  min-height: 70px;
+
+  padding: 10px 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.wallpaper-product__materials button:hover {
+  border-color: #a88735;
+}
+
+.wallpaper-product__materials button.active {
+  background: #4d5654;
+  border-color: #4d5654;
+  color: #fff;
+}
+
+.wallpaper-product__materials strong {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wallpaper-product__materials span {
+  margin-top: 5px;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+.wallpaper-product__materials button.active span {
+  color: rgba(255, 255, 255, .8);
+}
+
+
+/* ===========================
+   SELECTED MATERIAL
+=========================== */
+
+.wallpaper-product__selected-material {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 14px;
+  padding: 20px;
+
+  background: #f5f3ed;
+  border-radius: 5px;
+}
+
+.wallpaper-product__selected-material h3 {
+  margin: 0 0 5px;
+
+  color: #222;
+
+  font-size: 18px;
+}
+
+.wallpaper-product__selected-material p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.selected-material__price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.selected-material__price strong {
+  color: #222;
+  font-size: 19px;
+}
+
+.selected-material__price span {
+  color: #777;
+
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.wallpaper-product__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.wallpaper-product__features span {
+  padding: 7px 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  color: #666;
+
+  font-size: 12px;
+}
+
+
+/* ===========================
+   ACTIONS
+=========================== */
+
+.wallpaper-product__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.wallpaper-product__actions button {
+  height: 52px;
+
+  border: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: .05em;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.wallpaper-product__add {
+  background: #071410;
+  color: #fff;
+}
+
+.wallpaper-product__add:hover {
+  background: #0d261f;
+}
+
+.wallpaper-product__sample {
+  background: #d4af37;
+  color: #071410;
+}
+
+.wallpaper-product__sample:hover {
+  background: #c19d29;
+}
+
+
+/* ===========================
+   PRODUCT INFORMATION
+=========================== */
+/* ===========================
+   PRODUCT INFORMATION
+=========================== */
+
+.wallpaper-product__information {
+  padding: 100px 0 120px;
+  background: #fff;
+}
+
+.wallpaper-product__information-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.wallpaper-product__details {
+  padding-right: 30px;
+}
+
+.wallpaper-product__details h2 {
+  margin: 18px 0 25px;
+
+  color: #111;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(40px, 4vw, 58px);
+  font-weight: 500;
+
+  line-height: 1.08;
+}
+
+.wallpaper-product__details .wallpaper-product__category {
+  color: #a88735;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.wallpaper-product__description {
+  color: #666;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+
+/* META */
+
+.wallpaper-product__meta {
+  display: flex;
+  gap: 50px;
+
+  margin: 30px 0;
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(20,30,25,.12);
+  border-bottom: 1px solid rgba(20,30,25,.12);
+}
+
+.wallpaper-product__meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wallpaper-product__meta strong {
+  color: #222;
+  font-size: 13px;
+}
+
+.wallpaper-product__meta span {
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* ===========================
+   ACCORDIONS
+=========================== */
+
+.wallpaper-product__accordions {
+  border-top: 1px solid rgba(20,30,25,.12);
+}
+
+.wallpaper-product__accordion {
+  border-bottom: 1px solid rgba(20,30,25,.12);
+}
+
+.wallpaper-product__accordion button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 0;
+
+  border: none;
+  background: transparent;
+
+  color: #222;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.wallpaper-product__accordion button strong {
+  color: #a88735;
+
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.wallpaper-product__accordion-content {
+  padding: 0 35px 22px 0;
+}
+
+.wallpaper-product__accordion-content p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* OPEN STATE */
+
+.wallpaper-product__accordion.is-open button {
+  color: #a88735;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .wallpaper-product__information-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .wallpaper-product__details {
+    padding-right: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .wallpaper-product__meta {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}

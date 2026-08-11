@@ -1,11 +1,13 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import solutions from "../data/solutions";
+import products from "../data/products";
 import "./SolutionCategory.css";
 
 export default function SolutionCategory() {
   const { category } = useParams();
 
   const data = solutions[category];
+  const productSection = products[category];
 
   if (!data) {
     return <Navigate to="/solutions" replace />;
@@ -14,11 +16,16 @@ export default function SolutionCategory() {
   return (
     <div className="solution-category">
 
+      {/* =========================
+          HERO
+      ========================== */}
+
       <section className="solution-category__hero">
+
         <div className="container">
 
           <span className="eyebrow">
-            Product Category
+            PRODUCT CATEGORY
           </span>
 
           <h1>{data.title}</h1>
@@ -26,56 +33,146 @@ export default function SolutionCategory() {
           <p>{data.description}</p>
 
         </div>
+
       </section>
 
+
+      {/* =========================
+          PRODUCTS
+      ========================== */}
+
       <section className="solution-category__products">
+
         <div className="container">
+
+          <div className="solution-category__intro">
+
+            <div>
+              <span className="solutions-eyebrow">
+                SHILPKAR FACTORY
+              </span>
+
+              <h2>
+                Explore <span>{data.title}</span>
+              </h2>
+            </div>
+
+            <p>
+              Explore our range of premium {data.title.toLowerCase()}
+              solutions designed for modern residential,
+              commercial and hospitality spaces.
+            </p>
+
+          </div>
+
 
           <div className="solution-category__grid">
 
-            {data.products.map((product) => (
+            {data.products.map((product, index) => {
 
-              <Link
-                key={product.slug}
-                className="product-card"
-                to={
-                  category === "ceilings"
-                    ? `/solutions/${category}/${product.slug}`
-                    : `/solutions/${category}/${product.slug}/${product.slug}`
-                }
-              >
+              const productData =
+                productSection?.categories?.[product.slug];
 
-                <div className="product-card__image">
+              const image =
+                productData?.heroImage ||
+                productData?.coverImage ||
+                productData?.thumbnail ||
+                "";
 
-                  <div className="product-card__placeholder">
-                    <span>SHILPKAR FACTORY</span>
-                    <small>Image Coming Soon</small>
+              const productCount =
+                productData?.products?.length ||
+                0;
+
+              return (
+
+                <Link
+                  key={product.slug}
+                  className="product-card"
+                  to={`/solutions/${category}/${product.slug}`}
+                >
+
+                  {/* IMAGE */}
+
+                  <div className="product-card__image">
+
+                    {image ? (
+
+                      <img
+                        src={image}
+                        alt={product.title}
+                      />
+
+                    ) : (
+
+                      <div className="product-card__placeholder">
+
+                        <span>
+                          SHILPKAR FACTORY
+                        </span>
+
+                        <small>
+                          {product.title}
+                        </small>
+
+                      </div>
+
+                    )}
+
+                    <div className="product-card__number">
+                      {String(index + 1).padStart(2, "0")}
+                    </div>
+
                   </div>
 
-                </div>
 
-                <div className="product-card__content">
+                  {/* CONTENT */}
 
-                  <h2>{product.title}</h2>
+                  <div className="product-card__content">
 
-                  <p>
-                    Premium interior solution designed for luxury
-                    residential and commercial spaces.
-                  </p>
+                    <span className="product-card__eyebrow">
+                      {data.title}
+                    </span>
 
-                  <span>
-                    View Details →
-                  </span>
+                    <h2>
+                      {productData?.title || product.title}
+                    </h2>
 
-                </div>
+                    <p>
+                      {productData?.shortDescription ||
+                        productData?.description ||
+                        `Premium ${product.title.toLowerCase()} solution designed for luxury interiors.`}
+                    </p>
 
-              </Link>
 
-            ))}
+                    <div className="product-card__footer">
+
+                      {productCount > 0 ? (
+                        <span>
+                          {productCount} Options
+                        </span>
+                      ) : (
+                        <span>
+                          Explore Product
+                        </span>
+                      )}
+
+                      <strong>
+                        →
+                      </strong>
+
+                    </div>
+
+                  </div>
+
+                </Link>
+
+              );
+            })}
 
           </div>
 
         </div>
+
       </section>
 
     </div>

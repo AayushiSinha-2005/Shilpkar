@@ -454,39 +454,73 @@ export default function Dealership() {
 
       </div>
 
-    </motion.div>
+      {/* ===============================
+    BUSINESS & INSTALLATION TRAINING
+================================ */}
+<div className="investment-card">
+
+  <div className="investment-number">
+    04
+  </div>
+
+  <div className="investment-icon">
+    ◇
+  </div>
+
+  <div className="investment-card-price">
+    ₹20,000
+  </div>
+
+  <h3>BUSINESS & INSTALLATION TRAINING</h3>
+
+  <div className="investment-card-line"></div>
+
+  <p>
+    Complete business setup guidance along with
+    professional installation training.
+  </p>
+
+</div>
+</motion.div>
 
 
-    {/* =====================
-        BOTTOM SUMMARY BAR
-    ====================== */}
-    <motion.div
-      className="investment-summary"
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-    >
 
-      <div>
-        <span>01</span>
-        <strong>RAW MATERIAL</strong>
-        <b>₹50,000</b>
-      </div>
+ {/* =====================
+    BOTTOM SUMMARY BAR
+====================== */}
+<motion.div
+  className="investment-summary"
+  initial={{ opacity: 0, y: 25 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+>
 
-      <div>
-        <span>02</span>
-        <strong>TOOL KIT</strong>
-        <b>₹25,000</b>
-      </div>
+  <div>
+    <span>01</span>
+    <strong>RAW MATERIAL</strong>
+    <b>₹50,000</b>
+  </div>
 
-      <div>
-        <span>03</span>
-        <strong>DISPLAY KIT</strong>
-        <b>₹5,000</b>
-      </div>
+  <div>
+    <span>02</span>
+    <strong>TOOL KIT</strong>
+    <b>₹25,000</b>
+  </div>
 
-    </motion.div>
+  <div>
+    <span>03</span>
+    <strong>DISPLAY KIT</strong>
+    <b>₹5,000</b>
+  </div>
+
+  <div>
+    <span>04</span>
+    <strong>BUSINESS & INSTALLATION TRAINING</strong>
+    <b>₹20,000</b>
+  </div>
+
+</motion.div>
 
   </div>
 

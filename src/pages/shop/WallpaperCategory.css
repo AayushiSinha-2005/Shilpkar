@@ -1,0 +1,387 @@
+/* ===========================
+   WALLPAPER CATEGORY
+=========================== */
+
+.wallpaper-category {
+  min-height: 100vh;
+  background: #f8f7f3;
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.wallpaper-category__hero {
+  padding: 175px 0 105px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #071410 0%,
+      #0b211b 100%
+    );
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.wallpaper-category__hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #d4af37;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.wallpaper-category__hero h1 {
+  margin: 22px auto 0;
+
+  max-width: 950px;
+
+  color: #ffffff !important;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(52px, 6vw, 78px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.035em;
+
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.wallpaper-category__line {
+  width: 72px;
+  height: 2px;
+
+  margin: 30px auto;
+
+  background: #d4af37;
+}
+
+.wallpaper-category__hero p {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.78) !important;
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+/* ===========================
+   PRODUCTS SECTION
+=========================== */
+.wallpaper-category__products {
+  padding: 100px 0 120px;
+
+  background: #f8f7f3;
+}
+
+.wallpaper-category__heading {
+  margin-bottom: 55px;
+
+  text-align: center;
+}
+
+.wallpaper-category__heading .eyebrow {
+  color: #a88735;
+}
+
+.wallpaper-category__heading h2 {
+  margin: 16px 0 0;
+
+  color: #111 !important;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(38px, 4vw, 56px);
+
+  font-weight: 500;
+
+  line-height: 1.1;
+}
+
+.wallpaper-category__heading h2 span {
+  color: #b18b2c !important;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.wallpaper-category__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+
+/* ===========================
+   CARD
+=========================== */
+
+.wallpaper-card {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  text-decoration: none;
+
+  background: #fff;
+
+  border: 1px solid rgba(20, 30, 25, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+
+.wallpaper-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(212, 175, 55, 0.4);
+
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.13);
+}
+
+
+/* ===========================
+   CARD IMAGE
+=========================== */
+
+.wallpaper-card__image {
+  position: relative;
+
+  height: 390px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eeeae0,
+      #f7f5ef
+    );
+}
+
+
+.wallpaper-card__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+
+.wallpaper-card:hover
+.wallpaper-card__image img {
+  transform: scale(1.04);
+}
+
+
+/* ===========================
+   PLACEHOLDER
+=========================== */
+
+.wallpaper-card__placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.wallpaper-card__placeholder span {
+  color: #a88735;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+
+.wallpaper-card__placeholder small {
+  margin-top: 10px;
+
+  color: #888;
+
+  font-size: 11px;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+/* ===========================
+   NUMBER
+=========================== */
+
+.wallpaper-card__number {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.6);
+
+  background: rgba(8, 17, 15, 0.88);
+
+  color: #d4af37;
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+}
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.wallpaper-card__content {
+  padding: 28px 30px 30px;
+}
+
+
+.wallpaper-card__content h3 {
+  margin: 0;
+
+  color: #111;
+
+  font-family: var(--font-heading);
+
+  font-size: 26px;
+
+  line-height: 1.2;
+}
+
+
+.wallpaper-card__content p {
+  margin: 14px 0 25px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+.wallpaper-card__bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 18px;
+
+  border-top:
+    1px solid rgba(20, 30, 25, 0.1);
+}
+
+
+.wallpaper-card__bottom span {
+  color: #a88735;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+.wallpaper-card__bottom strong {
+  color: #111;
+
+  font-size: 13px;
+
+  letter-spacing: 0.06em;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .wallpaper-category__hero {
+    padding: 145px 0 80px;
+  }
+
+  .wallpaper-category__products {
+    padding: 80px 0;
+  }
+
+  .wallpaper-category__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wallpaper-card__image {
+    height: 320px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .wallpaper-category__hero h1 {
+    font-size: 42px;
+  }
+
+  .wallpaper-category__hero p {
+    font-size: 15px;
+  }
+
+  .wallpaper-card__content {
+    padding: 24px;
+  }
+
+}

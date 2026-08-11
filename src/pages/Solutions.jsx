@@ -6,73 +6,183 @@ export default function Solutions() {
   return (
     <div className="solutions-page">
 
-      {/* HERO */}
+      {/* =========================
+          HERO
+      ========================== */}
 
       <section className="solutions-hero">
-
         <div className="container">
 
           <span className="eyebrow">
-            Product Solutions
+            OUR SOLUTIONS
           </span>
 
           <h1>
-            Explore Our Interior Solutions
+            Explore Our <span>Interior Solutions</span>
           </h1>
 
+          <div className="solutions-hero-line"></div>
+
           <p>
-            Discover our complete range of premium ceiling,
-            wall and flooring solutions designed for luxury
-            residential and commercial interiors.
+            Discover premium ceiling, wall and flooring solutions
+            designed to transform residential, commercial and
+            hospitality spaces.
           </p>
 
         </div>
-
       </section>
 
-      {/* GRID */}
 
-      <section className="solutions-grid-section">
+      {/* =========================
+          CATEGORY SHOWCASE
+      ========================== */}
+
+      <section className="solutions-showcase">
 
         <div className="container">
 
-          <div className="solutions-grid">
+          <div className="solutions-section-heading">
+
+            <div>
+              <span className="solutions-eyebrow">
+                SHILPKAR FACTORY
+              </span>
+
+              <h2>
+                Built For <span>Exceptional Spaces.</span>
+              </h2>
+            </div>
+
+            <p>
+              Explore our curated range of interior solutions,
+              developed for modern architecture and premium spaces.
+            </p>
+
+          </div>
+
+
+          <div className="solutions-category-grid">
 
             {Object.entries(solutions).map(([slug, item]) => (
 
               <Link
                 key={slug}
                 to={`/solutions/${slug}`}
-                className="solution-card"
+                className="solution-category-card"
               >
 
-                <div className="solution-card__image">
+                {/* IMAGE */}
 
-                  <div className="solution-card__placeholder">
+                <div className="solution-category-card__image">
 
-                    <span>SHILPKAR FACTORY</span>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                  />
 
-                    <small>Image Coming Soon</small>
+                  <div className="solution-category-card__overlay"></div>
 
-                  </div>
+                  <span className="solution-category-card__number">
+                    {item.label}
+                  </span>
+
+                  <span className="solution-category-card__explore">
+                    EXPLORE →
+                  </span>
 
                 </div>
 
-                <div className="solution-card__content">
 
-                  <h2>{item.title}</h2>
+                {/* CONTENT */}
 
-                  <p>{item.description}</p>
+                <div className="solution-category-card__content">
 
-                  <span>
-                    Explore →
-                  </span>
+                  <div>
+
+                    <span className="solution-category-card__label">
+                      INTERIOR SOLUTIONS
+                    </span>
+
+                    <h3>
+                      {item.title}
+                    </h3>
+
+                  </div>
+
+                  <p>
+                    {item.description}
+                  </p>
+
+
+                  <div className="solution-category-card__footer">
+
+                    <span>
+                      {item.products.length} Solutions
+                    </span>
+
+                    <span className="solution-arrow">
+                      →
+                    </span>
+
+                  </div>
 
                 </div>
 
               </Link>
 
             ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =========================
+          PRODUCT RANGE
+      ========================== */}
+
+      <section className="solutions-range">
+
+        <div className="container">
+
+          <div className="solutions-range__inner">
+
+            <span className="solutions-eyebrow">
+              COMPLETE INTERIOR RANGE
+            </span>
+
+            <h2>
+              One Factory.
+              <br />
+              <span>Multiple Possibilities.</span>
+            </h2>
+
+            <p>
+              From statement ceilings to premium wall finishes and
+              distinctive flooring systems, explore solutions designed
+              to bring creativity, functionality and finish together.
+            </p>
+
+            <div className="solutions-range__stats">
+
+              <div>
+                <strong>03</strong>
+                <span>Core Categories</span>
+              </div>
+
+              <div>
+                <strong>17+</strong>
+                <span>Product Solutions</span>
+              </div>
+
+              <div>
+                <strong>01</strong>
+                <span>Complete Ecosystem</span>
+              </div>
+
+            </div>
 
           </div>
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import navigation from "../../data/navigation";
+import shopCategories from "../../data/shopCategories";
 import logo from "../../assets/logos/logo.png";
 import "./Navbar.css";
 
@@ -9,7 +10,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
-
+  const [shopOpen, setShopOpen] = useState(false);
+  const [shopCloseTimer, setShopCloseTimer] = useState(null);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -90,6 +92,63 @@ export default function Navbar() {
 
               )
             )}
+
+{/* SHOP BY CATEGORY */}
+<div
+  className="navbar__mega-dropdown"
+  onMouseEnter={() => {
+    if (shopCloseTimer) {
+      clearTimeout(shopCloseTimer);
+    }
+    setShopOpen(true);
+  }}
+  onMouseLeave={() => {
+    const timer = setTimeout(() => {
+      setShopOpen(false);
+    }, 250);
+
+    setShopCloseTimer(timer);
+  }}
+>
+  <button className="navbar__link navbar__mega-btn">
+    SHOP BY CATEGORY
+    <FiChevronDown
+      className={shopOpen ? "navbar__mega-chevron--open" : ""}
+    />
+  </button>
+
+  <div
+    className={`navbar__mega-menu ${
+      shopOpen ? "navbar__mega-menu--open" : ""
+    }`}
+  >
+    <div className="navbar__mega-inner">
+
+      {shopCategories.map((category) => (
+        <div
+          className="navbar__mega-column"
+          key={category.title}
+        >
+          <h4>{category.title}</h4>
+
+          <div className="navbar__mega-line"></div>
+
+          {category.items.map((item) => (
+            <NavLink
+              key={item.slug}
+              to={`/shop/${item.slug}`}
+              className="navbar__mega-item"
+              onClick={() => setShopOpen(false)}
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
+      ))}
+
+    </div>
+  </div>
+</div>
 
           </nav>
 

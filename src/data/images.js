@@ -35,7 +35,6 @@ heroSlides: [
   ownerPhoto: ownerPortrait,
   creativeDirector,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
-
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),
 
   service1: u("photo-1600607687939-ce8a6c25118c", 1200),
