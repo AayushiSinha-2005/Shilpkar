@@ -385,7 +385,6 @@ const wallpaperCategories = {
     "rustic-wallpaper"
   ),
 
-
   /* =========================
      SPECIAL FEATURES
   ========================= */
@@ -415,7 +414,6 @@ const wallpaperCategories = {
     "temporary-wallpaper"
   ),
 
-
   /* =========================
      ANIMAL & WILDLIFE
   ========================= */
@@ -439,7 +437,6 @@ const wallpaperCategories = {
     "Underwater Wallpaper",
     "underwater-wallpaper"
   ),
-
 };
 
 

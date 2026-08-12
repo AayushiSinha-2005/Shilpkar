@@ -17,6 +17,7 @@ import Certifications from "../pages/company/Certifications";
 import Contact from "../pages/Contact.jsx";
 import WallpaperCategory from "../pages/shop/WallpaperCategory.jsx";
 import WallpaperProduct from "../pages/shop/WallpaperProduct.jsx";
+import ShopByCategory from "../pages/shop/ShopByCategory.jsx";
 import Solutions from "../pages/Solutions.jsx";
 import SolutionCategory from "../pages/SolutionCategory.jsx";
 import ProductCategory from "../pages/ProductCategory.jsx";
@@ -61,6 +62,7 @@ export default function AppRouter() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Page><Home /></Page>} />
+          <Route path="/shop" element={<Page><ShopByCategory /></Page>} />
           <Route path="/about" element={<Page><About /></Page>} />
           <Route path="/services" element={<Page><Services /></Page>} />
           <Route
