@@ -493,9 +493,10 @@ const closeWallpaperMenu = () => {
           </div>
 
 
-          <h1>
-            Shop By Category
-          </h1>
+         <h1 className="shop-category-page__main-title">
+  <span>Hand-Embroidered Wallpaper</span>
+  <span>Luxury Wall Art | Traditional Craft Meets Modern Design ✨</span>
+</h1>
 
 
           <div className="shop-category-page__line" />
