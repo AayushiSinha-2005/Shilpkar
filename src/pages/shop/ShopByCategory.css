@@ -402,20 +402,79 @@
 
 
 /* ===========================
-   CATEGORY CARDS
+   COLLECTIONS
 =========================== */
 
-.shop-category-page__cards {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 20px;
+.shop-category-page__collections {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
 }
 
 
-.shop-category-card {
+/* ===========================
+   SINGLE COLLECTION
+=========================== */
+
+.shop-category-page__collection {
+  width: 100%;
+}
+
+
+/* ===========================
+   COLLECTION HEADING
+=========================== */
+
+.shop-category-page__collection-heading {
+  margin-bottom: 28px;
+}
+
+.shop-category-page__collection-heading h3 {
+  margin: 0 0 8px;
+
+  color: #171717;
+
+  font-family: var(--font-heading);
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+}
+
+.shop-category-page__collection-heading p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* ===========================
+   HORIZONTAL CARD ROW
+=========================== */
+
+.shop-category-page__card-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 14px;
+
+  width: 100%;
+}
+
+
+/* ===========================
+   SMALL CARD
+=========================== */
+
+.shop-category-page__small-card {
   display: flex;
 
   flex-direction: column;
@@ -430,22 +489,96 @@
 
   color: inherit;
 
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, .05);
+  overflow: hidden;
 
   transition:
-    transform .35s ease,
-    box-shadow .35s ease;
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
 }
 
 
-.shop-category-card:hover {
-  transform: translateY(-8px);
+.shop-category-page__small-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(168, 135, 53, .35);
 
   box-shadow:
-    0 25px 55px rgba(0, 0, 0, .12);
+    0 18px 40px rgba(0, 0, 0, .10);
 }
 
+
+/* ===========================
+   IMAGE PLACEHOLDER
+=========================== */
+
+.shop-category-page__small-card-image {
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e9e5da,
+      #f5f2eb
+    );
+}
+
+
+/* ===========================
+   CARD INFO
+=========================== */
+
+.shop-category-page__small-card-info {
+  padding: 14px 13px 15px;
+}
+
+
+.shop-category-page__small-card-info h4 {
+  margin: 0;
+
+  color: #222;
+
+  font-family: var(--font-heading);
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+}
+
+
+.shop-category-page__small-card-info span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #a88735;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+}
+
+
+/* ===========================
+   HOVER ARROW
+=========================== */
+
+.shop-category-page__small-card-info span {
+  transition: transform .25s ease;
+}
+
+.shop-category-page__small-card:hover
+.shop-category-page__small-card-info span {
+  transform: translateX(4px);
+}
 
 /* ===========================
    IMAGE PLACEHOLDER
@@ -613,6 +746,66 @@
     grid-template-columns: 1fr;
 
     padding: 28px 25px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  .shop-category-page__card-row {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .shop-category-page__card-row {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .shop-category-page__collections {
+    gap: 60px;
+  }
+
+  .shop-category-page__collection-heading h3 {
+    font-size: 24px;
+  }
+
+  .shop-category-page__collection-heading p {
+    font-size: 14px;
+  }
+
+  .shop-category-page__card-row {
+    display: flex;
+
+    overflow-x: auto;
+
+    gap: 12px;
+
+    padding-bottom: 10px;
+
+    scroll-snap-type: x mandatory;
+  }
+
+  .shop-category-page__small-card {
+    flex: 0 0 170px;
+
+    scroll-snap-align: start;
+  }
+
+  .shop-category-page__small-card-info h4 {
+    font-size: 14px;
   }
 
 }

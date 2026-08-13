@@ -2,35 +2,390 @@ import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiArrowRight } from "react-icons/fi";
 import shopCategories from "../../data/shopCategories";
+import wallpaperCategories from "../../data/wallpaperCategories";
 import "./ShopByCategory.css";
-
-// Temporary cards
+// =========================
+// COLLECTION DATA
 // Images baad mein add karenge
-const shopCards = [
+// =========================
+
+const shopCollections = [
   {
-    title: "Pichwai Wallpaper",
-    slug: "pichwai-wallpaper",
-    description:
-      "Traditional Indian artistry reimagined for elegant contemporary spaces.",
+    title: "BespokeWall™",
+    subtitle: "Customized Wallpaper",
+    cards: [
+      {
+        title: "Custom Photo Wallpaper",
+        slug: "custom-photo-wallpaper",
+      },
+      {
+        title: "Personalized Name & Family Wallpaper",
+        slug: "personalized-name-family-wallpaper",
+      },
+      {
+        title: "Customized Nature Wallpaper",
+        slug: "customized-nature-wallpaper",
+      },
+      {
+        title: "Custom Kids Room Wallpaper",
+        slug: "custom-kids-room-wallpaper",
+      },
+      {
+        title: "Corporate Logo Wallpaper",
+        slug: "corporate-logo-wallpaper",
+      },
+      {
+        title: "Restaurant Theme Wallpaper",
+        slug: "restaurant-theme-wallpaper",
+      },
+      {
+        title: "Hotel & Resort Wallpaper",
+        slug: "hotel-resort-wallpaper",
+      },
+      {
+        title: "Religious & Spiritual Wallpaper",
+        slug: "religious-spiritual-wallpaper",
+      },
+      {
+        title: "Customized Map Wallpaper",
+        slug: "customized-map-wallpaper",
+      },
+      {
+        title: "Any Image, Any Size Wallpaper",
+        slug: "any-image-any-size-wallpaper",
+      },
+    ],
+  },
+
+  {
+    title: "PatternLine™",
+    subtitle: "Repeat Pattern Wallpaper",
+    cards: [
+      {
+        title: "Modern Geometric",
+        slug: "modern-geometric",
+      },
+      {
+        title: "Botanical & Tropical",
+        slug: "botanical-tropical",
+      },
+      {
+        title: "Floral Elegance",
+        slug: "floral-elegance",
+      },
+      {
+        title: "Minimal Patterns",
+        slug: "minimal-patterns",
+      },
+      {
+        title: "Classic Damask",
+        slug: "classic-damask",
+      },
+      {
+        title: "Art Deco",
+        slug: "art-deco",
+      },
+      {
+        title: "Abstract Patterns",
+        slug: "abstract-patterns",
+      },
+      {
+        title: "Kids Patterns",
+        slug: "kids-patterns",
+      },
+      {
+        title: "Brick, Stone & Concrete",
+        slug: "brick-stone-concrete",
+      },
+      {
+        title: "Wood & Natural Texture",
+        slug: "wood-natural-texture",
+      },
+      {
+        title: "Indian Heritage Patterns",
+        slug: "indian-heritage-patterns",
+      },
+      {
+        title: "Luxury Metallic Patterns",
+        slug: "luxury-metallic-patterns",
+      },
+    ],
+  },
+
+  {
+    title: "EmbroWall™",
+    subtitle: "Exclusive Embroidery Wallpaper",
+    cards: [
+      {
+        title: "Floral Embroidery",
+        slug: "floral-embroidery",
+      },
+      {
+        title: "Botanical Embroidery",
+        slug: "botanical-embroidery",
+      },
+      {
+        title: "Royal Motif Collection",
+        slug: "royal-motif-collection",
+      },
+      {
+        title: "Indian Heritage Embroidery",
+        slug: "indian-heritage-embroidery",
+      },
+      {
+        title: "Contemporary Line Art",
+        slug: "contemporary-line-art",
+      },
+      {
+        title: "Birds & Nature Collection",
+        slug: "birds-nature-collection",
+      },
+      {
+        title: "Geometric Threadwork",
+        slug: "geometric-threadwork",
+      },
+      {
+        title: "Golden Thread Collection",
+        slug: "golden-thread-collection",
+      },
+      {
+        title: "Customized Monogram Embroidery",
+        slug: "customized-monogram-embroidery",
+      },
+      {
+        title: "Designer Signature Collection",
+        slug: "designer-signature-collection",
+      },
+    ],
+  },
+
+  {
+    title: "WallSculpt™",
+    subtitle: "Architectural Wall Murals",
+    cards: [
+      {
+        title: "3D Architectural Murals",
+        slug: "3d-architectural-murals",
+      },
+      {
+        title: "Sculptural Wall Art",
+        slug: "sculptural-wall-art",
+      },
+      {
+        title: "Arch & Column Designs",
+        slug: "arch-column-designs",
+      },
+      {
+        title: "HDMR + CNC Wall Panels",
+        slug: "hdmr-cnc-wall-panels",
+      },
+      {
+        title: "Canvas Insert Wall Panels",
+        slug: "canvas-insert-wall-panels",
+      },
+      {
+        title: "Textured Relief Murals",
+        slug: "textured-relief-murals",
+      },
+      {
+        title: "Classical Architectural Art",
+        slug: "classical-architectural-art",
+      },
+      {
+        title: "Modern Luxury Wall Panels",
+        slug: "modern-luxury-wall-panels",
+      },
+      {
+        title: "Backlit Wall Art",
+        slug: "backlit-wall-art",
+      },
+      {
+        title: "Customized Feature Walls",
+        slug: "customized-feature-walls",
+      },
+    ],
   },
   {
-    title: "Indian Wallpaper",
-    slug: "indian-wallpaper",
-    description:
-      "Rich cultural patterns, heritage motifs and timeless Indian aesthetics.",
-  },
-  {
-    title: "Abstract Wallpaper",
-    slug: "abstract-wallpaper",
-    description:
-      "Modern artistic compositions created to bring character and depth to walls.",
-  },
-  {
-    title: "Artistic Wallpaper",
-    slug: "artistic-wallpaper",
-    description:
-      "Curated artistic designs for refined residential and commercial interiors.",
-  },
+  title: "Room-Wise Shopping",
+  subtitle: "Choose Wallpaper According to Your Space",
+  cards: [
+    {
+      title: "Living Room Wallpaper",
+      slug: "living-room-wallpaper",
+    },
+    {
+      title: "Drawing Room Wallpaper",
+      slug: "drawing-room-wallpaper",
+    },
+    {
+      title: "Bedroom Wallpaper",
+      slug: "bedroom-wallpaper",
+    },
+    {
+      title: "Kids Room Wallpaper",
+      slug: "kids-room-wallpaper",
+    },
+    {
+      title: "Dining Room Wallpaper",
+      slug: "dining-room-wallpaper",
+    },
+    {
+      title: "Kitchen Wallpaper",
+      slug: "kitchen-wallpaper",
+    },
+    {
+      title: "Office Wallpaper",
+      slug: "office-wallpaper",
+    },
+    {
+      title: "Reception Wallpaper",
+      slug: "reception-wallpaper",
+    },
+    {
+      title: "Restaurant & Café Wallpaper",
+      slug: "restaurant-cafe-wallpaper",
+    },
+    {
+      title: "Hotel & Resort Wallpaper",
+      slug: "hotel-resort-room-wallpaper",
+    },
+    {
+      title: "Retail & Showroom Wallpaper",
+      slug: "retail-showroom-wallpaper",
+    },
+    {
+      title: "Temple & Spiritual Wallpaper",
+      slug: "temple-spiritual-wallpaper",
+    },
+  ],
+},
+
+{
+  title: "Design-Wise Collections",
+  subtitle: "Explore Wallpaper by Design & Style",
+  cards: [
+    {
+      title: "Nature & Landscape",
+      slug: "nature-landscape",
+    },
+    {
+      title: "Floral & Botanical",
+      slug: "floral-botanical",
+    },
+    {
+      title: "Abstract Art",
+      slug: "abstract-art",
+    },
+    {
+      title: "Geometric",
+      slug: "geometric",
+    },
+    {
+      title: "Marble & Stone",
+      slug: "marble-stone",
+    },
+    {
+      title: "Wood & Concrete",
+      slug: "wood-concrete",
+    },
+    {
+      title: "Luxury Classic",
+      slug: "luxury-classic",
+    },
+    {
+      title: "Indian Heritage",
+      slug: "indian-heritage",
+    },
+    {
+      title: "Islamic Art",
+      slug: "islamic-art",
+    },
+    {
+      title: "Spiritual Art",
+      slug: "spiritual-art",
+    },
+    {
+      title: "Kids & Cartoon",
+      slug: "kids-cartoon",
+    },
+    {
+      title: "World Maps",
+      slug: "world-maps",
+    },
+    {
+      title: "Cityscapes",
+      slug: "cityscapes",
+    },
+    {
+      title: "Architecture",
+      slug: "architecture",
+    },
+    {
+      title: "Birds & Animals",
+      slug: "birds-animals",
+    },
+    {
+      title: "Texture & Minimal",
+      slug: "texture-minimal",
+    },
+    {
+      title: "Embroidery Art",
+      slug: "embroidery-art",
+    },
+    {
+      title: "3D Illusion",
+      slug: "3d-illusion",
+    },
+  ],
+  
+},
+
+{
+  title: "Premium Special Collections",
+  subtitle: "Exclusive Wallpaper & Architectural Wall Art",
+  cards: [
+    {
+      title: "Signature Walls™",
+      slug: "signature-walls",
+    },
+    {
+      title: "Heritage Loom™",
+      slug: "heritage-loom",
+    },
+    {
+      title: "NatureCanvas™",
+      slug: "nature-canvas",
+    },
+    {
+      title: "Royale Walls™",
+      slug: "royale-walls",
+    },
+    {
+      title: "Artisan Walls™",
+      slug: "artisan-walls",
+    },
+    {
+      title: "CorporateCanvas™",
+      slug: "corporate-canvas",
+    },
+    {
+      title: "LittleDreams™",
+      slug: "little-dreams",
+    },
+    {
+      title: "DivineWalls™",
+      slug: "divine-walls",
+    },
+    {
+      title: "Hotelique™",
+      slug: "hotelique",
+    },
+    {
+      title: "WallMuse™",
+      slug: "wall-muse",
+    },
+  ],
+},
 ];
 
 export default function ShopByCategory() {
@@ -181,55 +536,74 @@ const closeWallpaperMenu = () => {
           </div>
 
 
-          {/* =========================
-              CARDS
-          ========================= */}
+        {/* =========================
+    COLLECTION ROWS
+========================= */}
 
-          <div className="shop-category-page__cards">
+<div className="shop-category-page__collections">
 
-            {shopCards.map((card) => (
+  {shopCollections.map((collection) => (
+    <section
+      className="shop-category-page__collection"
+      key={collection.title}
+    >
 
-              <NavLink
-                key={card.slug}
-                to={`/shop/${card.slug}`}
-                className="shop-category-card"
-              >
+      {/* COLLECTION HEADING */}
 
-                {/* IMAGE AREA
-                    Image baad mein add karenge */}
+      <div className="shop-category-page__collection-heading">
 
-                <div className="shop-category-card__image">
-                </div>
+        <h3>
+          {collection.title}
+        </h3>
 
+        <p>
+          {collection.subtitle}
+        </p>
 
-                <div className="shop-category-card__content">
-
-                  <h3>
-                    {card.title}
-                  </h3>
-
-                  <p>
-                    {card.description}
-                  </p>
+      </div>
 
 
-                  <div className="shop-category-card__bottom">
+      {/* HORIZONTAL CARDS */}
 
-                    <span>
-                      Explore Collection
-                    </span>
+      <div className="shop-category-page__card-row">
 
-                    <FiArrowRight />
+        {collection.cards.map((card) => (
 
-                  </div>
+          <NavLink
+            key={card.slug}
+            to={`/shop/${card.slug}`}
+            className="shop-category-page__small-card"
+          >
 
-                </div>
+            {/* IMAGE — BAAD MEIN */}
+            <div className="shop-category-page__small-card-image">
+            </div>
 
-              </NavLink>
 
-            ))}
+            {/* CARD INFO */}
 
-          </div>
+            <div className="shop-category-page__small-card-info">
+
+              <h4>
+                {card.title}
+              </h4>
+
+              <span>
+                Explore →
+              </span>
+
+            </div>
+
+          </NavLink>
+
+        ))}
+
+      </div>
+
+    </section>
+  ))}
+
+</div>
 
 
         </div>

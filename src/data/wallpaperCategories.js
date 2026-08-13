@@ -1,443 +1,486 @@
 const createProducts = (categoryTitle, slug) => [
   {
-    title: `${categoryTitle} Collection 01`,
-    slug: `${slug}-collection-01`,
+    title: `${categoryTitle} Design 01`,
+    slug: `${slug}-design-01`,
     image: "",
     price: "₹129 / sq.ft",
-    description:
-      `A premium ${categoryTitle.toLowerCase()} wallpaper design created for elegant residential and commercial interiors.`,
+    description: `A premium ${categoryTitle.toLowerCase()} design created for elegant residential and commercial interiors.`,
   },
   {
-    title: `${categoryTitle} Collection 02`,
-    slug: `${slug}-collection-02`,
+    title: `${categoryTitle} Design 02`,
+    slug: `${slug}-design-02`,
     image: "",
     price: "₹129 / sq.ft",
-    description:
-      `A sophisticated ${categoryTitle.toLowerCase()} mural designed to add character and visual depth to your interiors.`,
+    description: `A sophisticated ${categoryTitle.toLowerCase()} design created to add character and visual depth to your interiors.`,
   },
   {
-    title: `${categoryTitle} Collection 03`,
-    slug: `${slug}-collection-03`,
+    title: `${categoryTitle} Design 03`,
+    slug: `${slug}-design-03`,
     image: "",
     price: "₹129 / sq.ft",
-    description:
-      `A contemporary ${categoryTitle.toLowerCase()} design combining premium aesthetics with timeless interior appeal.`,
+    description: `A contemporary ${categoryTitle.toLowerCase()} design combining premium aesthetics with timeless interior appeal.`,
   },
   {
-    title: `${categoryTitle} Collection 04`,
-    slug: `${slug}-collection-04`,
+    title: `${categoryTitle} Design 04`,
+    slug: `${slug}-design-04`,
     image: "",
     price: "₹129 / sq.ft",
-    description:
-      `A statement ${categoryTitle.toLowerCase()} mural designed for luxury residential and commercial spaces.`,
+    description: `A statement ${categoryTitle.toLowerCase()} design for luxury residential and commercial spaces.`,
   },
 ];
 
-
 const createCategory = (title, slug, description) => ({
   title,
+
   description:
     description ||
     `Explore our collection of ${title.toLowerCase()}, created to bring premium design and artistic character into contemporary interiors.`,
+
   heroImage: "",
+
   products: createProducts(title, slug),
 });
 
-
 const wallpaperCategories = {
+  /* ========================================
+     BESPOKEWALL™ — CUSTOMIZED WALLPAPER
+  ======================================== */
 
-  /* =========================
-     ART & DESIGN
-  ========================= */
-
-  "pichwai-wallpaper": {
-    title: "Pichwai Wallpaper",
-
-    description:
-      "Explore our collection of Pichwai-inspired wall murals, bringing traditional Indian artistry, intricate details and timeless elegance into contemporary interiors.",
-
-    heroImage: "",
-
-    products: [
-      {
-        title: "Shahi Aangan Wall Mural",
-        slug: "shahi-aangan-wall-mural",
-        image: "",
-        price: "₹129 / sq.ft",
-        description:
-          "A graceful Pichwai-inspired mural featuring royal Indian courtyard elements and intricate traditional detailing.",
-      },
-      {
-        title: "Peacock Dream Wall Mural",
-        slug: "peacock-dream-wall-mural",
-        image: "",
-        price: "₹129 / sq.ft",
-        description:
-          "An elegant mural inspired by peacocks, florals and the beauty of traditional Indian art.",
-      },
-      {
-        title: "Morning Grace Pichwai",
-        slug: "morning-grace-pichwai",
-        image: "",
-        price: "₹129 / sq.ft",
-        description:
-          "A serene Pichwai-inspired composition designed to bring warmth and artistic character to your interiors.",
-      },
-      {
-        title: "Krishna's Sanctuary",
-        slug: "krishnas-sanctuary",
-        image: "",
-        price: "₹129 / sq.ft",
-        description:
-          "A heritage-inspired mural celebrating Krishna, nature and traditional Indian decorative artistry.",
-      },
-    ],
-  },
-
-
-  "indian-wallpaper": createCategory(
-    "Indian Wallpaper",
-    "indian-wallpaper"
+  "custom-photo-wallpaper": createCategory(
+    "Custom Photo Wallpaper",
+    "custom-photo-wallpaper",
+    "Customer ki wall size, interior theme aur choice ke according specially designed wallpaper."
   ),
 
-  "abstract-wallpaper": createCategory(
-    "Abstract Wallpaper",
-    "abstract-wallpaper"
+  "personalized-name-family-wallpaper": createCategory(
+    "Personalized Name & Family Wallpaper",
+    "personalized-name-family-wallpaper"
   ),
 
-  "artistic-wallpaper": createCategory(
-    "Artistic Wallpaper",
-    "artistic-wallpaper"
+  "customized-nature-wallpaper": createCategory(
+    "Customized Nature Wallpaper",
+    "customized-nature-wallpaper"
   ),
 
-  "brushstroke-wallpaper": createCategory(
-    "Brushstroke Wallpaper",
-    "brushstroke-wallpaper"
+  "custom-kids-room-wallpaper": createCategory(
+    "Custom Kids Room Wallpaper",
+    "custom-kids-room-wallpaper"
   ),
 
-  "chinoiserie-wallpaper": createCategory(
-    "Chinoiserie Wallpaper",
-    "chinoiserie-wallpaper"
+  "corporate-logo-wallpaper": createCategory(
+    "Corporate Logo Wallpaper",
+    "corporate-logo-wallpaper"
   ),
 
-  "geometric-wallpaper": createCategory(
-    "Geometric Wallpaper",
-    "geometric-wallpaper"
+  "restaurant-theme-wallpaper": createCategory(
+    "Restaurant Theme Wallpaper",
+    "restaurant-theme-wallpaper"
   ),
 
-  "japanese-wallpaper": createCategory(
-    "Japanese Wallpaper",
-    "japanese-wallpaper"
+  "hotel-resort-wallpaper": createCategory(
+    "Hotel & Resort Wallpaper",
+    "hotel-resort-wallpaper"
   ),
 
-  "art-deco-wallpaper": createCategory(
-    "Art Deco Wallpaper",
-    "art-deco-wallpaper"
+  "religious-spiritual-wallpaper": createCategory(
+    "Religious & Spiritual Wallpaper",
+    "religious-spiritual-wallpaper"
   ),
 
-  "watercolor-wallpaper": createCategory(
-    "Watercolor Wallpaper",
-    "watercolor-wallpaper"
+  "customized-map-wallpaper": createCategory(
+    "Customized Map Wallpaper",
+    "customized-map-wallpaper"
   ),
 
-  "boho-wallpaper": createCategory(
-    "Boho Wallpaper",
-    "boho-wallpaper"
+  "any-image-any-size-wallpaper": createCategory(
+    "Any Image, Any Size Wallpaper",
+    "any-image-any-size-wallpaper"
   ),
 
-  "scandinavian-wallpaper": createCategory(
-    "Scandinavian Wallpaper",
-    "scandinavian-wallpaper"
+  /* ========================================
+     PATTERNLINE™ — REPEAT PATTERN WALLPAPER
+  ======================================== */
+
+  "modern-geometric": createCategory(
+    "Modern Geometric",
+    "modern-geometric"
   ),
 
-
-  /* =========================
-     NATURE & SCENERY
-  ========================= */
-
-  "forest-wallpaper": createCategory(
-    "Forest Wallpaper",
-    "forest-wallpaper"
+  "botanical-tropical": createCategory(
+    "Botanical & Tropical",
+    "botanical-tropical"
   ),
 
-  "jungle-wallpaper": createCategory(
-    "Jungle Wallpaper",
-    "jungle-wallpaper"
+  "floral-elegance": createCategory(
+    "Floral Elegance",
+    "floral-elegance"
   ),
 
-  "lake-wallpaper": createCategory(
-    "Lake Wallpaper",
-    "lake-wallpaper"
+  "minimal-patterns": createCategory(
+    "Minimal Patterns",
+    "minimal-patterns"
   ),
 
-  "landscape-wallpaper": createCategory(
-    "Landscape Wallpaper",
-    "landscape-wallpaper"
+  "classic-damask": createCategory(
+    "Classic Damask",
+    "classic-damask"
   ),
 
-  "mountain-wallpaper": createCategory(
-    "Mountain Wallpaper",
-    "mountain-wallpaper"
+  "art-deco": createCategory(
+    "Art Deco",
+    "art-deco"
   ),
 
-  "nature-wallpaper": createCategory(
-    "Nature Wallpaper",
-    "nature-wallpaper"
+  "abstract-patterns": createCategory(
+    "Abstract Patterns",
+    "abstract-patterns"
   ),
 
-  "ocean-wallpaper": createCategory(
-    "Ocean Wallpaper",
-    "ocean-wallpaper"
+  "kids-patterns": createCategory(
+    "Kids Patterns",
+    "kids-patterns"
   ),
 
-  "sky-cloud-wallpaper": createCategory(
-    "Sky Cloud Wallpaper",
-    "sky-cloud-wallpaper"
+  "brick-stone-concrete": createCategory(
+    "Brick, Stone & Concrete",
+    "brick-stone-concrete"
   ),
 
-  "tree-wallpaper": createCategory(
-    "Tree Wallpaper",
-    "tree-wallpaper"
+  "wood-natural-texture": createCategory(
+    "Wood & Natural Texture",
+    "wood-natural-texture"
   ),
 
-  "tropical-wallpaper": createCategory(
-    "Tropical Wallpaper",
-    "tropical-wallpaper"
+  "indian-heritage-patterns": createCategory(
+    "Indian Heritage Patterns",
+    "indian-heritage-patterns"
   ),
 
-  "hariyali-wallpaper": createCategory(
-    "Hariyali Wallpaper",
-    "hariyali-wallpaper"
+  "luxury-metallic-patterns": createCategory(
+    "Luxury Metallic Patterns",
+    "luxury-metallic-patterns"
   ),
 
+  /* ========================================
+     EMBROWALL™ — EXCLUSIVE EMBROIDERY WALLPAPER
+  ======================================== */
 
-  /* =========================
-     SURFACE
-  ========================= */
-
-  "brick-wallpaper": createCategory(
-    "Brick Wallpaper",
-    "brick-wallpaper"
+  "floral-embroidery": createCategory(
+    "Floral Embroidery",
+    "floral-embroidery"
   ),
 
-  "concrete-wallpaper": createCategory(
-    "Concrete Wallpaper",
-    "concrete-wallpaper"
+  "botanical-embroidery": createCategory(
+    "Botanical Embroidery",
+    "botanical-embroidery"
   ),
 
-  "luxurious-wallpaper": createCategory(
-    "Luxurious Wallpaper",
-    "luxurious-wallpaper"
+  "royal-motif-collection": createCategory(
+    "Royal Motif Collection",
+    "royal-motif-collection"
   ),
 
-  "marble-wallpaper": createCategory(
-    "Marble Wallpaper",
-    "marble-wallpaper"
+  "indian-heritage-embroidery": createCategory(
+    "Indian Heritage Embroidery",
+    "indian-heritage-embroidery"
   ),
 
-  "metal-wallpaper": createCategory(
-    "Metal Wallpaper",
-    "metal-wallpaper"
+  "contemporary-line-art": createCategory(
+    "Contemporary Line Art",
+    "contemporary-line-art"
   ),
 
-  "tile-wallpaper": createCategory(
-    "Tile Wallpaper",
-    "tile-wallpaper"
+  "birds-nature-collection": createCategory(
+    "Birds & Nature Collection",
+    "birds-nature-collection"
   ),
 
-  "wood-wallpaper": createCategory(
-    "Wood Wallpaper",
-    "wood-wallpaper"
+  "geometric-threadwork": createCategory(
+    "Geometric Threadwork",
+    "geometric-threadwork"
   ),
 
-
-  /* =========================
-     KIDS
-  ========================= */
-
-  "cartoon-wallpaper": createCategory(
-    "Cartoon Wallpaper",
-    "cartoon-wallpaper"
+  "golden-thread-collection": createCategory(
+    "Golden Thread Collection",
+    "golden-thread-collection"
   ),
 
-  "children-wallpaper": createCategory(
-    "Children Wallpaper",
-    "children-wallpaper"
+  "customized-monogram-embroidery": createCategory(
+    "Customized Monogram Embroidery",
+    "customized-monogram-embroidery"
   ),
 
-  "dinosaur-wallpaper": createCategory(
-    "Dinosaur Wallpaper",
-    "dinosaur-wallpaper"
+  "designer-signature-collection": createCategory(
+    "Designer Signature Collection",
+    "designer-signature-collection"
   ),
 
-  "hot-air-balloon": createCategory(
-    "Hot Air Balloon",
-    "hot-air-balloon"
+  /* ========================================
+     WALLSCULPT™ — ARCHITECTURAL WALL MURALS
+  ======================================== */
+
+  "3d-architectural-murals": createCategory(
+    "3D Architectural Murals",
+    "3d-architectural-murals"
   ),
 
-  "kids-map-wallpaper": createCategory(
-    "Kids Map Wallpaper",
-    "kids-map-wallpaper"
+  "sculptural-wall-art": createCategory(
+    "Sculptural Wall Art",
+    "sculptural-wall-art"
   ),
 
-  "kids-mountains-wallpaper": createCategory(
-    "Kids Mountains Wallpaper",
-    "kids-mountains-wallpaper"
+  "arch-column-designs": createCategory(
+    "Arch & Column Designs",
+    "arch-column-designs"
   ),
 
-  "nursery-wallpaper": createCategory(
-    "Nursery Wallpaper",
-    "nursery-wallpaper"
+  "hdmr-cnc-wall-panels": createCategory(
+    "HDMR + CNC Wall Panels",
+    "hdmr-cnc-wall-panels"
   ),
 
-  "pirate-wallpaper": createCategory(
-    "Pirate Wallpaper",
-    "pirate-wallpaper"
+  "canvas-insert-wall-panels": createCategory(
+    "Canvas Insert Wall Panels",
+    "canvas-insert-wall-panels"
   ),
 
-  "rainbow-wallpaper": createCategory(
-    "Rainbow Wallpaper",
-    "rainbow-wallpaper"
+  "textured-relief-murals": createCategory(
+    "Textured Relief Murals",
+    "textured-relief-murals"
   ),
 
-  "space-wallpaper": createCategory(
-    "Space Wallpaper",
-    "space-wallpaper"
+  "classical-architectural-art": createCategory(
+    "Classical Architectural Art",
+    "classical-architectural-art"
   ),
 
-
-  /* =========================
-     BOTANICAL
-  ========================= */
-
-  "floral-wallpaper": createCategory(
-    "Floral Wallpaper",
-    "floral-wallpaper"
+  "modern-luxury-wall-panels": createCategory(
+    "Modern Luxury Wall Panels",
+    "modern-luxury-wall-panels"
   ),
 
-  "flower-wallpaper": createCategory(
-    "Flower Wallpaper",
-    "flower-wallpaper"
+  "backlit-wall-art": createCategory(
+    "Backlit Wall Art",
+    "backlit-wall-art"
   ),
 
-  "leaf-wallpaper": createCategory(
-    "Leaf Wallpaper",
-    "leaf-wallpaper"
+  "customized-feature-walls": createCategory(
+    "Customized Feature Walls",
+    "customized-feature-walls"
   ),
 
-  "peony-wallpaper": createCategory(
-    "Peony Wallpaper",
-    "peony-wallpaper"
+    /* ========================================
+     ROOM-WISE SHOPPING CATEGORIES
+  ======================================== */
+
+  "living-room-wallpaper": createCategory(
+    "Living Room Wallpaper",
+    "living-room-wallpaper"
   ),
 
-  "botanical-wallpaper": createCategory(
-    "Botanical Wallpaper",
-    "botanical-wallpaper"
+  "drawing-room-wallpaper": createCategory(
+    "Drawing Room Wallpaper",
+    "drawing-room-wallpaper"
   ),
 
-
-  /* =========================
-     THEMATIC & STYLES
-  ========================= */
-
-  "classic-wallpaper": createCategory(
-    "Classic Wallpaper",
-    "classic-wallpaper"
+  "bedroom-wallpaper": createCategory(
+    "Bedroom Wallpaper",
+    "bedroom-wallpaper"
   ),
 
-  "feather-wallpaper": createCategory(
-    "Feather Wallpaper",
-    "feather-wallpaper"
+  "kids-room-wallpaper": createCategory(
+    "Kids Room Wallpaper",
+    "kids-room-wallpaper"
   ),
 
-  "modern-wallpaper": createCategory(
-    "Modern Wallpaper",
-    "modern-wallpaper"
+  "dining-room-wallpaper": createCategory(
+    "Dining Room Wallpaper",
+    "dining-room-wallpaper"
   ),
 
-  "monochrome-wallpaper": createCategory(
-    "Monochrome Wallpaper",
-    "monochrome-wallpaper"
+  "kitchen-wallpaper": createCategory(
+    "Kitchen Wallpaper",
+    "kitchen-wallpaper"
   ),
 
-  "nautical-wallpaper": createCategory(
-    "Nautical Wallpaper",
-    "nautical-wallpaper"
+  "office-wallpaper": createCategory(
+    "Office Wallpaper",
+    "office-wallpaper"
   ),
 
-  "ombre-wallpaper": createCategory(
-    "Ombre Wallpaper",
-    "ombre-wallpaper"
+  "reception-wallpaper": createCategory(
+    "Reception Wallpaper",
+    "reception-wallpaper"
   ),
 
-  "retro-wallpaper": createCategory(
-    "Retro Wallpaper",
-    "retro-wallpaper"
+  "restaurant-cafe-wallpaper": createCategory(
+    "Restaurant & Café Wallpaper",
+    "restaurant-cafe-wallpaper"
   ),
 
-  "vintage-wallpaper": createCategory(
-    "Vintage Wallpaper",
-    "vintage-wallpaper"
+  "hotel-resort-room-wallpaper": createCategory(
+    "Hotel & Resort Wallpaper",
+    "hotel-resort-room-wallpaper"
   ),
 
-  "rustic-wallpaper": createCategory(
-    "Rustic Wallpaper",
-    "rustic-wallpaper"
+  "retail-showroom-wallpaper": createCategory(
+    "Retail & Showroom Wallpaper",
+    "retail-showroom-wallpaper"
   ),
 
-  /* =========================
-     SPECIAL FEATURES
-  ========================= */
+  "temple-spiritual-wallpaper": createCategory(
+    "Temple & Spiritual Wallpaper",
+    "temple-spiritual-wallpaper"
+  ),
+    /* ========================================
+     DESIGN-WISE COLLECTIONS
+  ======================================== */
 
-  "latest-wallpaper": createCategory(
-    "Latest Wallpaper",
-    "latest-wallpaper"
+  "nature-landscape": createCategory(
+    "Nature & Landscape",
+    "nature-landscape"
   ),
 
-  "peel-and-stick-wallpaper": createCategory(
-    "Peel and Stick Wallpaper",
-    "peel-and-stick-wallpaper"
+  "floral-botanical": createCategory(
+    "Floral & Botanical",
+    "floral-botanical"
   ),
 
-  "removable-wallpaper": createCategory(
-    "Removable Wallpaper",
-    "removable-wallpaper"
+  "abstract-art": createCategory(
+    "Abstract Art",
+    "abstract-art"
   ),
 
-  "self-adhesive-wallpaper": createCategory(
-    "Self Adhesive Wallpaper",
-    "self-adhesive-wallpaper"
+  "geometric": createCategory(
+    "Geometric",
+    "geometric"
   ),
 
-  "temporary-wallpaper": createCategory(
-    "Temporary Wallpaper",
-    "temporary-wallpaper"
+  "marble-stone": createCategory(
+    "Marble & Stone",
+    "marble-stone"
   ),
 
-  /* =========================
-     ANIMAL & WILDLIFE
-  ========================= */
-
-  "birds-wallpaper": createCategory(
-    "Birds Wallpaper",
-    "birds-wallpaper"
+  "wood-concrete": createCategory(
+    "Wood & Concrete",
+    "wood-concrete"
   ),
 
-  "butterfly-wallpaper": createCategory(
-    "Butterfly Wallpaper",
-    "butterfly-wallpaper"
+  "luxury-classic": createCategory(
+    "Luxury Classic",
+    "luxury-classic"
   ),
 
-  "elephant-wallpaper": createCategory(
-    "Elephant Wallpaper",
-    "elephant-wallpaper"
+  "indian-heritage": createCategory(
+    "Indian Heritage",
+    "indian-heritage"
   ),
 
-  "underwater-wallpaper": createCategory(
-    "Underwater Wallpaper",
-    "underwater-wallpaper"
+  "islamic-art": createCategory(
+    "Islamic Art",
+    "islamic-art"
   ),
+
+  "spiritual-art": createCategory(
+    "Spiritual Art",
+    "spiritual-art"
+  ),
+
+  "kids-cartoon": createCategory(
+    "Kids & Cartoon",
+    "kids-cartoon"
+  ),
+
+  "world-maps": createCategory(
+    "World Maps",
+    "world-maps"
+  ),
+
+  "cityscapes": createCategory(
+    "Cityscapes",
+    "cityscapes"
+  ),
+
+  "architecture": createCategory(
+    "Architecture",
+    "architecture"
+  ),
+
+  "birds-animals": createCategory(
+    "Birds & Animals",
+    "birds-animals"
+  ),
+
+  "texture-minimal": createCategory(
+    "Texture & Minimal",
+    "texture-minimal"
+  ),
+
+  "embroidery-art": createCategory(
+    "Embroidery Art",
+    "embroidery-art"
+  ),
+
+  "3d-illusion": createCategory(
+    "3D Illusion",
+    "3d-illusion"
+  ),
+
+    /* ========================================
+     PREMIUM SPECIAL COLLECTIONS
+  ======================================== */
+
+  "signature-walls": createCategory(
+    "Signature Walls™",
+    "signature-walls"
+  ),
+
+  "heritage-loom": createCategory(
+    "Heritage Loom™",
+    "heritage-loom"
+  ),
+
+  "nature-canvas": createCategory(
+    "NatureCanvas™",
+    "nature-canvas"
+  ),
+
+  "royale-walls": createCategory(
+    "Royale Walls™",
+    "royale-walls"
+  ),
+
+  "artisan-walls": createCategory(
+    "Artisan Walls™",
+    "artisan-walls"
+  ),
+
+  "corporate-canvas": createCategory(
+    "CorporateCanvas™",
+    "corporate-canvas"
+  ),
+
+  "little-dreams": createCategory(
+    "LittleDreams™",
+    "little-dreams"
+  ),
+
+  "divine-walls": createCategory(
+    "DivineWalls™",
+    "divine-walls"
+  ),
+
+  "hotelique": createCategory(
+    "Hotelique™",
+    "hotelique"
+  ),
+
+  "wall-muse": createCategory(
+    "WallMuse™",
+    "wall-muse"
+  ),
+
+  
 };
-
 
 export default wallpaperCategories;
