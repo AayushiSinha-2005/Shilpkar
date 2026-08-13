@@ -7,134 +7,51 @@ export default function Dealership() {
     <main className="dealership-page">
 
       {/* =========================
-          SECTION 1 — HERO
-      ========================== */}
-      <section className="dealership-hero">
+    SECTION 1 — HERO
+========================= */}
+<section className="dealership-hero">
 
-        {/* Background Image */}
-        <div className="dealership-hero__image">
-          <img
-            src={images.servicesCover}
-            alt="Shilpkar premium interior solutions"
-          />
-        </div>
+  {/* Background Image */}
+  <div className="dealership-hero__image">
+    <img
+      src={images.shilpkarDealershipHero}
+      alt="Shilpkar Dealership"
+    />
+  </div>
 
-        {/* Dark Luxury Overlay */}
-        <div className="dealership-hero__overlay" />
+  {/* Dark Overlay */}
+  <div className="dealership-hero__overlay" />
 
-        {/* Decorative Gold Line */}
-        <div className="dealership-hero__line dealership-hero__line--left" />
-        <div className="dealership-hero__line dealership-hero__line--right" />
+  {/* Center Buttons */}
+  <div className="dealership-hero__actions">
+  <a
+    href="#dealer-form"
+    className="dealership-btn dealership-btn--primary"
+  >
+    BECOME A DEALER
+    <span>→</span>
+  </a>
 
-        {/* Content */}
-        <div className="container dealership-hero__container">
+  <a
+    href="/dealership-brochure.pdf"
+    className="dealership-btn dealership-btn--secondary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    DOWNLOAD PDF
+    <span>↓</span>
+  </a>
+</div>
 
-          <motion.div
-            className="dealership-hero__content"
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-          >
 
-            <motion.div
-              className="dealership-hero__eyebrow"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.15,
-              }}
-            >
-              <span />
-              SHILPKAR FACTORY
-              <span />
-            </motion.div>
 
-            <motion.h1
-  initial={{ opacity: 0, y: 25 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{
-    duration: 1,
-    delay: 0.25,
-    ease: [0.22, 1, 0.36, 1],
-  }}
->
-  <span className="dealership-title-light">Dealership</span>{" "}
-  <span className="dealership-title-gold">Program</span>
-</motion.h1>
-            <motion.div
-              className="dealership-hero__gold-line"
-              initial={{ width: 0 }}
-              animate={{ width: 70 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.7,
-              }}
-            />
+  {/* Bottom Scroll Indicator */}
+  <div className="dealership-hero__scroll">
+    <span />
+    <p>Scroll</p>
+  </div>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.55,
-              }}
-            >
-              One City. One Dealership.
-            </motion.h2>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.7,
-              }}
-            >
-              Build your own Shilpkar business with premium interior
-              solutions, professional training and dedicated business support.
-            </motion.p>
-
-            <motion.div
-              className="dealership-hero__actions"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.9,
-              }}
-            >
-              <a
-  href="#investment"
-  className="dealership-btn dealership-btn--primary"
->
-  Explore Investment
-  <span>→</span>
-</a>
-
-<a
-  href="#how-to-join"
-  className="dealership-btn dealership-btn--outline"
->
-  How To Join
-  <span>→</span>
-</a>
-            </motion.div>
-
-          </motion.div>
-
-        </div>
-
-        {/* Bottom Scroll Indicator */}
-        <div className="dealership-hero__scroll">
-          <span />
-          <p>Scroll</p>
-        </div>
-
-      </section>
+</section>
 
       {/* =========================
     SECTION 2 — DEALERSHIP ADVANTAGES

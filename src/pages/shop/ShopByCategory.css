@@ -361,6 +361,8 @@
 .shop-category-page__heading > span {
   color: #a88735;
 
+  font-family: var(--font-heading);
+
   font-size: 12px;
 
   font-weight: 700;

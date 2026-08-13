@@ -16,8 +16,9 @@ import hero2 from "../assets/images/hero2.webp";
 import hero3 from "../assets/images/hero3.webp";
 import hero4 from "../assets/images/hero4.webp";
 import shilpkarDealershipTerritory from "../assets/images/shilpkar-dealership-territory.png";
-import shilpkarAssociateProjectSupport
-  from "../assets/images/shilpkar-associate-project-support.png";
+import shilpkarAssociateProjectSupport from "../assets/images/shilpkar-associate-project-support.png";
+import shilpkarDealershipHero from "../assets/images/shilpkar-dealership-hero.png";
+
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
@@ -34,6 +35,7 @@ heroSlides: [
   aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
   ownerPhoto: ownerPortrait,
   creativeDirector,
+  shilpkarDealershipHero,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),
 
