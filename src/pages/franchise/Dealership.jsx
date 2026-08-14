@@ -53,404 +53,16 @@ export default function Dealership() {
 
 </section>
 
-      {/* =========================
-    SECTION 2 — DEALERSHIP ADVANTAGES
-========================== */}
-<section className="dealership-advantages">
-
-  <div className="container">
-
-    <motion.div
-      className="dealership-advantages__header"
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-    >
-      <div className="dealership-section-label">
-        <span />
-        THE DEALERSHIP ADVANTAGE
-        <span />
-      </div>
-
-      <h2>
-        Built for <em>Growth.</em>
-        <br />
-        Designed for <em>Success.</em>
-      </h2>
-
-      <p>
-        Partner with Shilpkar Factory and gain access to premium
-        interior solutions, dedicated business support and an
-        exclusive opportunity to build your market.
-      </p>
-    </motion.div>
-
-
-    <div className="dealership-advantages__grid">
-
-  {/* CARD 01 */}
-  <motion.div
-    className="advantage-card"
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, delay: 0.05 }}
-  >
-    <div className="advantage-card__number">01</div>
-
-    <div className="advantage-card__icon">✦</div>
-
-    <h3>Trusted Brand</h3>
-
-    <p>
-      High-quality products with proven market demand.
-    </p>
-
-    <div className="advantage-card__line" />
-  </motion.div>
-
-
-  {/* CARD 02 */}
-  <motion.div
-    className="advantage-card"
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, delay: 0.12 }}
-  >
-    <div className="advantage-card__number">02</div>
-
-    <div className="advantage-card__icon">↗</div>
-
-    <h3>High Profit Potential</h3>
-
-    <p>
-      Excellent margins and recurring business opportunities.
-    </p>
-
-    <div className="advantage-card__line" />
-  </motion.div>
-
-
-  {/* CARD 03 */}
-  <motion.div
-    className="advantage-card"
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, delay: 0.19 }}
-  >
-    <div className="advantage-card__number">03</div>
-
-    <div className="advantage-card__icon">✦</div>
-
-    <h3>Complete Support</h3>
-
-    <p>
-      Training, marketing, installation guidance and
-      after-sales support.
-    </p>
-
-    <div className="advantage-card__line" />
-  </motion.div>
-
-
-  {/* CARD 04 */}
-  <motion.div
-    className="advantage-card"
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, delay: 0.26 }}
-  >
-    <div className="advantage-card__number">04</div>
-
-    <div className="advantage-card__icon">◎</div>
-
-    <h3>Exclusive Territory</h3>
-
-    <p>
-      One City, One Dealership — you are the only one.
-    </p>
-
-    <div className="advantage-card__line" />
-  </motion.div>
-
-
-  {/* CARD 05 */}
-  <motion.div
-    className="advantage-card"
-    initial={{ opacity: 0, y: 35 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.7, delay: 0.33 }}
-  >
-    <div className="advantage-card__number">05</div>
-
-    <div className="advantage-card__icon">◈</div>
-
-    <h3>Timely Supply</h3>
-
-    <p>
-      Consistent product availability and fast delivery.
-    </p>
-
-    <div className="advantage-card__line" />
-  </motion.div>
-
-</div>
-
-  </div>
-
-</section>
-
 {/* =========================
-    SECTION 2 — INVESTMENT
-========================= */}
-<section className="dealership-investment" id="investment">
-
-  <div className="container">
-
-    {/* Section Heading */}
-    <motion.div
-      className="investment-heading"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.8 }}
-    >
-
-      <div className="investment-eyebrow">
-        <span></span>
-        INVESTMENT
-        <span></span>
-      </div>
-
-      <h2>
-        Start Your <span>Shilpkar Business</span>
-      </h2>
-
-      <div className="investment-heading-line"></div>
-
-      <p>
-        A complete dealership package designed to help you start
-        your Shilpkar business with the essential resources required
-        to get started.
-      </p>
-
-    </motion.div>
-
-
-    {/* Investment Main Grid */}
-    <motion.div
-      className="investment-grid"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.9 }}
-    >
-
-      {/* =====================
-          TOTAL INVESTMENT
-      ====================== */}
-      <div className="investment-total">
-
-        <div className="investment-label">
-          TOTAL INVESTMENT
-        </div>
-
-        <div className="investment-price">
-          ₹1,00,000
-          <small> + GST</small>
-        </div>
-
-        {/* Requested small line */}
-        <div className="investment-note">
-          <span></span>
-          Investment: ₹1,00,000 + GST
-          <span></span>
-        </div>
-
-        <div className="investment-divider"></div>
-
-        <p>
-          The dealership program requires a one-time investment of
-          ₹1,00,000 + GST.
-        </p>
-
-      </div>
-
-
-      {/* =====================
-          RAW MATERIAL
-      ====================== */}
-      <div className="investment-card">
-
-        <div className="investment-number">
-          01
-        </div>
-
-        <div className="investment-icon">
-          ◈
-        </div>
-
-        <div className="investment-card-price">
-          ₹50,000
-        </div>
-
-        <h3>RAW MATERIAL</h3>
-
-        <div className="investment-card-line"></div>
-
-        <p>
-          Initial raw material included as part of the dealership
-          package.
-        </p>
-
-      </div>
-
-
-      {/* =====================
-          TOOL KIT
-      ====================== */}
-      <div className="investment-card">
-
-        <div className="investment-number">
-          02
-        </div>
-
-        <div className="investment-icon">
-          ⚒
-        </div>
-
-        <div className="investment-card-price">
-          ₹25,000
-        </div>
-
-        <h3>TOOL KIT</h3>
-
-        <div className="investment-card-line"></div>
-
-        <p>
-          Professional tool kit included to support dealership
-          operations.
-        </p>
-
-      </div>
-
-
-      {/* =====================
-          DISPLAY KIT
-      ====================== */}
-      <div className="investment-card">
-
-        <div className="investment-number">
-          03
-        </div>
-
-        <div className="investment-icon">
-          ▣
-        </div>
-
-        <div className="investment-card-price">
-          ₹5,000
-        </div>
-
-        <h3>DISPLAY KIT</h3>
-
-        <div className="investment-card-line"></div>
-
-        <p>
-          Display kit included to help showcase Shilpkar products
-          professionally.
-        </p>
-
-      </div>
-
-      {/* ===============================
-    BUSINESS & INSTALLATION TRAINING
-================================ */}
-<div className="investment-card">
-
-  <div className="investment-number">
-    04
-  </div>
-
-  <div className="investment-icon">
-    ◇
-  </div>
-
-  <div className="investment-card-price">
-    ₹20,000
-  </div>
-
-  <h3>BUSINESS & INSTALLATION TRAINING</h3>
-
-  <div className="investment-card-line"></div>
-
-  <p>
-    Complete business setup guidance along with
-    professional installation training.
-  </p>
-
-</div>
-</motion.div>
-
-
-
- {/* =====================
-    BOTTOM SUMMARY BAR
-====================== */}
-<motion.div
-  className="investment-summary"
-  initial={{ opacity: 0, y: 25 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.7 }}
->
-
-  <div>
-    <span>01</span>
-    <strong>RAW MATERIAL</strong>
-    <b>₹50,000</b>
-  </div>
-
-  <div>
-    <span>02</span>
-    <strong>TOOL KIT</strong>
-    <b>₹25,000</b>
-  </div>
-
-  <div>
-    <span>03</span>
-    <strong>DISPLAY KIT</strong>
-    <b>₹5,000</b>
-  </div>
-
-  <div>
-    <span>04</span>
-    <strong>BUSINESS & INSTALLATION TRAINING</strong>
-    <b>₹20,000</b>
-  </div>
-
-</motion.div>
-
-  </div>
-
-</section>
-
-{/* =========================
-    SECTION 3 — WHAT YOU GET
+    SECTION 3 — WHAT YOU RECEIVE
 ========================= */}
 <section className="dealership-benefits" id="how-to-join">
 
   <div className="container">
 
-    {/* Section Heading */}
+    {/* =========================
+        SECTION HEADING
+    ========================= */}
     <motion.div
       className="benefits-heading"
       initial={{ opacity: 0, y: 35 }}
@@ -461,12 +73,12 @@ export default function Dealership() {
 
       <div className="benefits-eyebrow">
         <span></span>
-        WHAT YOU GET
+        WHAT YOU RECEIVE
         <span></span>
       </div>
 
       <h2>
-        Everything You Need <span>To Begin</span>
+        Dealership <span>Benefits</span>
       </h2>
 
       <div className="benefits-heading-line"></div>
@@ -474,234 +86,363 @@ export default function Dealership() {
     </motion.div>
 
 
-    {/* Benefits Cards */}
+    {/* =========================
+        BENEFITS GRID
+    ========================= */}
     <div className="benefits-grid">
 
-      {/* 01 */}
-      <motion.div
-        className="benefit-card"
-        initial={{ opacity: 0, y: 45 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7, delay: 0.05 }}
-      >
+      {[
+        {
+          number: "01",
+          icon: "◈",
+          title: "Raw Material",
+          value: "₹50,000",
+          description:
+            "Worth of raw material included in the dealership package.",
+        },
+        {
+          number: "02",
+          icon: "⚒",
+          title: "Professional Tool Kit",
+          value: "₹25,000",
+          description:
+            "Professional installation tool kit worth ₹25,000.",
+        },
+        {
+          number: "03",
+          icon: "▣",
+          title: "Display Kit",
+          value: "₹5,000",
+          description:
+            "Stretch Ceiling Display Kit worth ₹5,000.",
+        },
+        {
+          number: "04",
+          icon: "✦",
+          title: "Professional Training",
+          value: "₹20,000 Worth",
+          description:
+            "One person — Complete Installation Training. One person — Business Development & Sales Training.",
+        },
+        {
+          number: "05",
+          icon: "◉",
+          title: "Dedicated Manager",
+          value: "",
+          description:
+            "Every dealer receives a dedicated relationship manager for technical support, project queries, material guidance, order processing, business assistance and customer support.",
+        },
+        {
+          number: "06",
+          icon: "✦",
+          title: "Official Authorization",
+          value: "",
+          description:
+            "Dealers receive Authorized Dealership Certificate, Raw Material Price List and Dealer Support Documents.",
+        },
+        {
+          number: "07",
+          icon: "◇",
+          title: "Material Purchase",
+          value: "",
+          description:
+            "Dealers can purchase raw materials at dealer prices according to the official company price list.",
+        },
+        {
+          number: "08",
+          icon: "⌖",
+          title: "Exclusive Territory",
+          value: "",
+          description:
+            "One City — One Authorized Dealership. Exclusive dealership rights are provided city-wise, subject to company approval.",
+        },
+        {
+          number: "09",
+          icon: "◎",
+          title: "Company Website Visibility",
+          value: "",
+          description:
+            "Your dealer name and city will be showcased on the official Shilpkar company website.",
+        },
+        {
+          number: "10",
+          icon: "↗",
+          title: "100% Profit & Margin",
+          value: "",
+          description:
+            "Associates and dealers can earn 100% profit and margin on material and services.",
+        },
+        {
+          number: "11",
+          icon: "◫",
+          title: "Product Training & Upgradation",
+          value: "",
+          description:
+            "Receive regular product training and timely updates on new products, technologies and solutions.",
+        },
+        {
+          number: "12",
+          icon: "◇",
+          title: "Business Development",
+          value: "",
+          description:
+            "Get access to regular business development guidance and training programs designed.",
+        },
+        {
+          number: "13",
+          icon: "⚒",
+          title: "Installation Support",
+          value: "",
+          description:
+            "Get professional installation support from experienced company technicians whenever required.",
+        },
+        {
+          number: "14",
+          icon: "◈",
+          title: "Skilled Technician Training",
+          value: "",
+          description:
+            "Professional training to develop skilled technicians for Shilpkar product installation, technical execution and on-site project requirements.",
+        },
+      ].map((benefit, index) => (
 
-        <div className="benefit-top">
-          <span className="benefit-number">01</span>
+        <motion.div
+          className="benefit-card"
+          key={benefit.number}
+          initial={{ opacity: 0, y: 45 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{
+            duration: 0.7,
+            delay: index * 0.06,
+          }}
+        >
 
-          <div className="benefit-icon">
-            ✦
+          <div className="benefit-top">
+
+            <span className="benefit-number">
+              {benefit.number}
+            </span>
+
+            <div className="benefit-icon">
+              {benefit.icon}
+            </div>
+
           </div>
-        </div>
-
-        <div className="benefit-line"></div>
-
-        <h3>High Quality Products</h3>
-
-        <p>
-          Access high-quality Shilpkar products designed to meet
-          market demand.
-        </p>
-
-      </motion.div>
 
 
-      {/* 02 */}
-      <motion.div
-        className="benefit-card"
-        initial={{ opacity: 0, y: 45 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7, delay: 0.12 }}
-      >
-
-        <div className="benefit-top">
-          <span className="benefit-number">02</span>
-
-          <div className="benefit-icon">
-            ✦
-          </div>
-        </div>
-
-        <div className="benefit-line"></div>
-
-        <h3>Training & Installation Support</h3>
-
-        <p>
-          Receive training and installation guidance to help you
-          and your team get started.
-        </p>
-
-      </motion.div>
+          <div className="benefit-line"></div>
 
 
-      {/* 03 */}
-      <motion.div
-        className="benefit-card"
-        initial={{ opacity: 0, y: 45 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7, delay: 0.19 }}
-      >
-
-        <div className="benefit-top">
-          <span className="benefit-number">03</span>
-
-          <div className="benefit-icon">
-            ✦
-          </div>
-        </div>
-
-        <div className="benefit-line"></div>
-
-        <h3>Marketing & Promotional Support</h3>
-
-        <p>
-          Get marketing and promotional support to help build
-          your local Shilpkar presence.
-        </p>
-
-      </motion.div>
+          <h3>
+            {benefit.title}
+          </h3>
 
 
-      {/* 04 */}
-      <motion.div
-        className="benefit-card"
-        initial={{ opacity: 0, y: 45 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7, delay: 0.26 }}
-      >
-
-        <div className="benefit-top">
-          <span className="benefit-number">04</span>
-
-          <div className="benefit-icon">
-            ✦
-          </div>
-        </div>
-
-        <div className="benefit-line"></div>
-
-        <h3>Best Price Advantage</h3>
-
-        <p>
-          Benefit from the best price advantage available through
-          the dealership program.
-        </p>
-
-      </motion.div>
+          {benefit.value && (
+            <div className="benefit-value">
+              {benefit.value}
+            </div>
+          )}
 
 
-      {/* 05 */}
-      <motion.div
-        className="benefit-card"
-        initial={{ opacity: 0, y: 45 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7, delay: 0.33 }}
-      >
+          <p>
+            {benefit.description}
+          </p>
 
-        <div className="benefit-top">
-          <span className="benefit-number">05</span>
+        </motion.div>
 
-          <div className="benefit-icon">
-            ✦
-          </div>
-        </div>
-
-        <div className="benefit-line"></div>
-
-        <h3>Dedicated Support</h3>
-
-        <p>
-          Receive dedicated support from the Shilpkar team
-          throughout your business journey.
-        </p>
-
-      </motion.div>
+      ))}
 
     </div>
 
   </div>
 
 </section>
-
 {/* =========================================================
-    SECTION 4 — EXCLUSIVE TERRITORY
+    SECTION 4 — DEALER MATERIALS
 ========================================================= */}
 
-<section className="dealership-territory">
+<section className="dealer-materials">
 
   <div className="container">
 
-    <div className="territory-grid">
+    {/* =========================
+        HEADING
+    ========================== */}
+
+    <motion.div
+      className="dealer-materials__heading"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8 }}
+    >
+
+      <div className="dealer-materials__eyebrow">
+        <span />
+        DEALER MATERIALS
+        <span />
+      </div>
+
+      <h2>
+        Stretch Ceiling <span>Material & Pricing</span>
+      </h2>
+
+      <div className="dealer-materials__line" />
+
+    </motion.div>
+
+
+    {/* =========================
+        MAIN MATERIALS LAYOUT
+    ========================== */}
+
+    <div className="dealer-materials__layout">
 
       {/* =========================
-          LEFT CONTENT
+          LEFT — PRICE LIST
       ========================== */}
 
       <motion.div
-        className="territory-content"
-        initial={{ opacity: 0, x: -40 }}
+        className="dealer-materials__price-panel"
+        initial={{ opacity: 0, x: -35 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{
-          duration: 0.9,
-          ease: [0.22, 1, 0.36, 1],
-        }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.8 }}
       >
 
-        {/* Eyebrow */}
+        <div className="dealer-materials__panel-label">
+          PRODUCT LIST & PRICING
+        </div>
 
-        <div className="territory-eyebrow">
-          <span />
-          EXCLUSIVE TERRITORY
-          <span />
+        <h3>
+          Dealer Price List
+        </h3>
+
+        <div className="dealer-materials__small-line" />
+
+
+        {/* FABRIC MATERIALS */}
+
+        <div className="material-group">
+
+          <div className="material-group__title">
+            <span>◈</span>
+            FABRIC MATERIALS
+          </div>
+
+          <div className="material-row">
+            <span>White Fabric 120 Inch</span>
+            <strong>₹35 – 45 <small>/ Sqft</small></strong>
+          </div>
+
+          <div className="material-row">
+            <span>White Fabric 196 Inch</span>
+            <strong>₹45 – 55 <small>/ Sqft</small></strong>
+          </div>
+
+          <div className="material-row">
+            <span>UV Printed Fabric 120 Inch</span>
+            <strong>₹55 – 65 <small>/ Sqft</small></strong>
+          </div>
+
+          <div className="material-row">
+
+            <span>
+              <b className="material-new">NEW</b>
+              UV Printed Fabric 196 Inch
+            </span>
+
+            <strong>₹80 – 90 <small>/ Sqft</small></strong>
+
+          </div>
+
+          <div className="material-row">
+
+            <span>
+              <b className="material-new">NEW</b>
+              UV Printed Fabric 196 Inch
+            </span>
+
+            <strong>₹120 <small>/ Sqft</small></strong>
+
+          </div>
+
         </div>
 
 
-        {/* Heading */}
+        {/* LED COMPONENTS */}
 
-        <h2>
-          One City.
-          <br />
-          <span>One Dealership.</span>
-        </h2>
+        <div className="material-group">
 
-
-        {/* Gold line */}
-
-        <div className="territory-line" />
-
-
-        {/* Description */}
-
-        <p className="territory-description">
-          Operate exclusively in your assigned city and become
-          the sole Shilpkar representative in your territory.
-        </p>
-
-
-        {/* Highlight Card */}
-
-        <div className="territory-card">
-
-          <div className="territory-card__icon">
-            ✦
+          <div className="material-group__title">
+            <span>◉</span>
+            LED COMPONENTS
           </div>
 
-          <div className="territory-card__content">
+          <div className="material-row">
+            <span>LED Direct Block Light</span>
+            <strong>₹35 <small>/ Pcs</small></strong>
+          </div>
 
-            <h3>
-              Your City. Your Territory.
-            </h3>
+          <div className="material-row">
+            <span>LED 8 Eye Block Light (Dimmable & Tunable)</span>
+            <strong>₹75 <small>/ Pcs</small></strong>
+          </div>
 
-            <p>
-              Build your local presence with the Shilpkar brand
-              and grow your business within your assigned city.
-            </p>
+          <div className="material-row">
+            <span>RGBW 6 Eye Block LED <b className="material-new">NEW</b></span>
+            <strong>₹75 <small>/ Pcs</small></strong>
+          </div>
 
+          <div className="material-row">
+            <span>LED Block Light Controller</span>
+            <strong>₹1250 <small>/ Pcs</small></strong>
+          </div>
+
+          <div className="material-row">
+            <span>LED Block Light Remote</span>
+            <strong>₹850 <small>/ Pcs</small></strong>
+          </div>
+
+        </div>
+
+
+        {/* INSTALLATION ACCESSORIES */}
+
+        <div className="material-group">
+
+          <div className="material-group__title">
+            <span>⚒</span>
+            INSTALLATION ACCESSORIES
+          </div>
+
+          <div className="material-row">
+            <span>Profile PVC 48 Inch</span>
+            <strong>₹50 <small>/ Running Foot</small></strong>
+          </div>
+
+          <div className="material-row">
+            <span>Harpoon</span>
+            <strong>₹15 <small>/ Running Foot</small></strong>
+          </div>
+
+        </div>
+
+
+        {/* PREMIUM PRODUCT */}
+
+        <div className="material-group">
+
+          <div className="material-group__title">
+            <span>◆</span>
+            PREMIUM PRODUCT
+          </div>
+
+          <div className="material-row">
+            <span>2×2 Backlit Printed Panel</span>
+            <strong>₹1800 <small>/ Panel</small></strong>
           </div>
 
         </div>
@@ -710,27 +451,88 @@ export default function Dealership() {
 
 
       {/* =========================
-          RIGHT IMAGE
+          RIGHT — WHY CHOOSE US
       ========================== */}
 
       <motion.div
-        className="territory-image"
-        initial={{ opacity: 0, x: 40 }}
+        className="dealer-materials__why-panel"
+        initial={{ opacity: 0, x: 35 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{
-          duration: 0.9,
-          delay: 0.1,
-          ease: [0.22, 1, 0.36, 1],
-        }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
       >
 
-        <div className="territory-image__frame">
+        <div className="dealer-materials__panel-label">
+          WHY CHOOSE US
+        </div>
 
-          <img
-            src={images.territory}
-            alt="Shilpkar Factory authorised dealership"
-          />
+        <h3>
+          Why Choose Our <span>Materials?</span>
+        </h3>
+
+        <div className="dealer-materials__small-line" />
+
+
+        {[
+          ["✦", "Premium Quality Guaranteed",
+            "Quality-focused materials for premium projects."],
+
+          ["▣", "Factory Direct Pricing",
+            "Competitive dealer pricing directly from the source."],
+
+          ["◈", "Consistent Stock Supply",
+            "Reliable availability to support your ongoing projects."],
+
+          ["➜", "Fast & Safe Delivery",
+            "Efficient and secure material delivery."],
+
+          ["◉", "Technical Support",
+            "Professional technical assistance whenever required."],
+        ].map(([icon, title, description]) => (
+
+          <div className="material-benefit" key={title}>
+
+            <div className="material-benefit__icon">
+              {icon}
+            </div>
+
+            <div>
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </div>
+
+          </div>
+
+        ))}
+
+
+        {/* BOTTOM MINI HIGHLIGHTS */}
+
+        <div className="dealer-materials__highlights">
+
+          <div>
+            <span>⚒</span>
+            <strong>
+              Professional<br />
+              Installation Support
+            </strong>
+          </div>
+
+          <div>
+            <span>◉</span>
+            <strong>
+              Training &<br />
+              Workshop
+            </strong>
+          </div>
+
+          <div>
+            <span>▣</span>
+            <strong>
+              Free<br />
+              Dealers
+            </strong>
+          </div>
 
         </div>
 
@@ -741,7 +543,6 @@ export default function Dealership() {
   </div>
 
 </section>
-
 {/* =========================================================
     SECTION 5 — COMPLETE SUPPORT
 ========================================================= */}

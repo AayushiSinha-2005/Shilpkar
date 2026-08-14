@@ -1741,6 +1741,7 @@
 .investment-summary b {
   color: #e7c98f !important;
 }
+
 /* =========================================================
    SECTION 3 — WHAT YOU GET
 ========================================================= */
@@ -2187,449 +2188,7 @@
 
 }
 
-/* =========================================================
-   SECTION 4 — EXCLUSIVE TERRITORY
-========================================================= */
 
-.dealership-territory {
-  position: relative;
-
-  padding: 135px 0;
-
-  background: #081712;
-
-  overflow: hidden;
-}
-
-
-/* Subtle decorative circle */
-
-.dealership-territory::before {
-  content: "";
-
-  position: absolute;
-
-  width: 520px;
-  height: 520px;
-
-  right: -330px;
-  top: -180px;
-
-  border: 1px solid rgba(199, 160, 93, 0.10);
-
-  border-radius: 50%;
-
-  pointer-events: none;
-}
-
-
-/* =========================================================
-   GRID
-========================================================= */
-
-.territory-grid {
-  position: relative;
-  z-index: 2;
-
-  display: grid;
-
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-
-  align-items: center;
-
-  gap: 70px;
-}
-
-
-/* =========================================================
-   LEFT CONTENT
-========================================================= */
-
-.territory-content {
-  max-width: 700px;
-}
-
-
-/* =========================================================
-   EYEBROW
-========================================================= */
-
-.territory-eyebrow {
-  display: flex;
-
-  align-items: center;
-
-  gap: 17px;
-
-  margin-bottom: 28px;
-
-  color: #e7c98f;
-
-  font-size: 0.72rem;
-
-  font-weight: 600;
-
-  letter-spacing: 0.36em;
-
-  text-transform: uppercase;
-}
-
-
-.territory-eyebrow span {
-  width: 42px;
-
-  height: 1px;
-
-  background: #c7a05d;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.territory-content h2 {
-  margin: 0;
-
-  color: #f7f5ef !important;
-
-  font-family: var(--font-heading);
-
-  font-size: clamp(3.2rem, 5vw, 5.4rem);
-
-  font-weight: 700;
-
-  line-height: 0.98;
-
-  letter-spacing: -0.055em;
-}
-
-
-.territory-content h2 span {
-  color: #e7c98f !important;
-}
-
-
-/* =========================================================
-   GOLD LINE
-========================================================= */
-
-.territory-line {
-  width: 62px;
-
-  height: 2px;
-
-  margin: 32px 0 28px;
-
-  background: #c7a05d;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.territory-description {
-  max-width: 620px;
-
-  margin: 0;
-
-  color: rgba(247, 245, 239, 0.72) !important;
-
-  font-size: 1rem;
-
-  font-weight: 300;
-
-  line-height: 1.85;
-}
-
-
-/* =========================================================
-   TERRITORY CARD
-========================================================= */
-
-.territory-card {
-  display: flex;
-
-  align-items: center;
-
-  gap: 24px;
-
-  margin-top: 42px;
-
-  padding: 28px 30px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #1c1b10,
-      #15150c
-    );
-
-  border: 1px solid rgba(199, 160, 93, 0.32);
-
-  transition:
-    transform 0.45s var(--ease-lux),
-    border-color 0.45s var(--ease-lux),
-    box-shadow 0.45s var(--ease-lux);
-}
-
-
-.territory-card:hover {
-  transform: translateY(-5px);
-
-  border-color: rgba(231, 201, 143, 0.65);
-
-  box-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.30);
-}
-
-
-/* =========================================================
-   CARD ICON
-========================================================= */
-
-.territory-card__icon {
-  flex-shrink: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 58px;
-  height: 58px;
-
-  border: 1px solid rgba(199, 160, 93, 0.55);
-
-  border-radius: 50%;
-
-  color: #e7c98f;
-
-  font-size: 1.2rem;
-}
-
-
-/* =========================================================
-   CARD CONTENT
-========================================================= */
-
-.territory-card__content h3 {
-  margin: 0 0 7px;
-
-  color: #f7f5ef !important;
-
-  font-family: var(--font-heading);
-
-  font-size: 1.25rem;
-
-  font-weight: 700;
-}
-
-
-.territory-card__content p {
-  margin: 0;
-
-  color: rgba(247, 245, 239, 0.62) !important;
-
-  font-size: 0.88rem;
-
-  line-height: 1.75;
-}
-
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
-.territory-image {
-  position: relative;
-
-  width: 100%;
-}
-
-
-/* Gold outer frame */
-
-.territory-image__frame {
-  position: relative;
-
-  padding: 8px;
-
-  background: rgba(199, 160, 93, 0.12);
-
-  border: 1px solid rgba(199, 160, 93, 0.34);
-
-  overflow: hidden;
-}
-
-
-/* Image */
-
-.territory-image__frame img {
-  width: 100%;
-
-  aspect-ratio: 1.25 / 1;
-
-  object-fit: cover;
-
-  display: block;
-
-  transition:
-    transform 0.8s var(--ease-lux);
-}
-
-
-.territory-image__frame:hover img {
-  transform: scale(1.035);
-}
-
-
-/* =========================================================
-   IMAGE CORNER DETAIL
-========================================================= */
-
-.territory-image__frame::before {
-  content: "";
-
-  position: absolute;
-
-  top: 18px;
-  left: 18px;
-
-  width: 45px;
-  height: 45px;
-
-  border-top: 1px solid #e7c98f;
-
-  border-left: 1px solid #e7c98f;
-
-  z-index: 2;
-
-  pointer-events: none;
-}
-
-
-.territory-image__frame::after {
-  content: "";
-
-  position: absolute;
-
-  right: 18px;
-  bottom: 18px;
-
-  width: 45px;
-  height: 45px;
-
-  border-right: 1px solid #e7c98f;
-
-  border-bottom: 1px solid #e7c98f;
-
-  z-index: 2;
-
-  pointer-events: none;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-  .dealership-territory {
-    padding: 110px 0;
-  }
-
-  .territory-grid {
-    grid-template-columns: 1fr;
-
-    gap: 60px;
-  }
-
-  .territory-content {
-    max-width: 800px;
-  }
-
-  .territory-image {
-    max-width: 800px;
-
-    margin: 0 auto;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-  .dealership-territory {
-    padding: 85px 0;
-  }
-
-  .territory-grid {
-    gap: 45px;
-  }
-
-  .territory-eyebrow {
-    gap: 10px;
-
-    font-size: 0.62rem;
-
-    letter-spacing: 0.27em;
-  }
-
-  .territory-eyebrow span {
-    width: 25px;
-  }
-
-  .territory-content h2 {
-    font-size: 3rem;
-
-    line-height: 1;
-  }
-
-  .territory-line {
-    margin: 25px 0 22px;
-  }
-
-  .territory-description {
-    font-size: 0.92rem;
-  }
-
-  .territory-card {
-    align-items: flex-start;
-
-    gap: 17px;
-
-    margin-top: 30px;
-
-    padding: 23px 20px;
-  }
-
-  .territory-card__icon {
-    width: 48px;
-    height: 48px;
-
-    font-size: 1rem;
-  }
-
-  .territory-card__content h3 {
-    font-size: 1.08rem;
-  }
-
-  .territory-card__content p {
-    font-size: 0.82rem;
-  }
-
-  .territory-image__frame {
-    padding: 5px;
-  }
-
-}
 /* =========================================================
    SECTION 5 — COMPLETE SUPPORT
 ========================================================= */
@@ -3828,6 +3387,796 @@
     font-size: 0.85rem;
 
     line-height: 1.75;
+  }
+
+}
+/* =========================================================
+   SECTION 2 — DEALERSHIP OPPORTUNITY
+   Same SHILPKAR theme / fonts / colors
+========================================================= */
+
+.dealership-opportunity-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  min-height: 500px;
+
+  border: 1px solid rgba(199, 160, 93, 0.28);
+
+  background: rgba(16, 40, 30, 0.72);
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.dealership-opportunity-left {
+  padding: 55px 50px;
+
+  border-right: 1px solid rgba(199, 160, 93, 0.25);
+}
+
+
+.dealership-opportunity-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+}
+
+
+.dealership-opportunity-number {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border: 1px solid rgba(199, 160, 93, 0.5);
+
+  border-radius: 50%;
+
+  color: var(--gold-soft);
+
+  font-family: var(--font-heading);
+
+  font-size: 0.9rem;
+}
+
+
+.dealership-opportunity-content {
+  flex: 1;
+}
+
+
+.dealership-opportunity-label {
+  margin-bottom: 14px;
+
+  color: var(--gold-soft);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+
+.dealership-opportunity-content h3 {
+  margin: 0 0 16px;
+
+  color: var(--off-white);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(1.7rem, 2.4vw, 2.35rem);
+
+  font-weight: 500;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.025em;
+}
+
+
+.dealership-opportunity-content p {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.68);
+
+  font-family: var(--font-body);
+
+  font-size: 0.96rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.dealership-opportunity-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 45px 0;
+
+  background: rgba(199, 160, 93, 0.18);
+}
+
+
+/* =========================================================
+   ELIGIBILITY
+========================================================= */
+
+.dealership-eligibility {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.dealership-eligibility p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.7);
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.dealership-opportunity-right {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(199, 160, 93, 0.07),
+      rgba(8, 23, 18, 0.18)
+    );
+}
+
+
+.dealership-investment-box {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 60px 45px;
+
+  text-align: center;
+
+  border: 1px solid rgba(199, 160, 93, 0.4);
+
+  background: rgba(8, 23, 18, 0.5);
+}
+
+
+.dealership-investment-box .dealership-opportunity-label {
+  margin-bottom: 28px;
+}
+
+
+.dealership-investment-price {
+  color: var(--off-white);
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 5vw, 4.8rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+
+.dealership-investment-price small {
+  color: var(--gold-soft);
+
+  font-family: var(--font-body);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+}
+
+
+.dealership-investment-line {
+  width: 55px;
+  height: 2px;
+
+  margin: 28px auto 24px;
+
+  background: var(--gold);
+}
+
+
+.dealership-investment-box p {
+  max-width: 300px;
+
+  margin: 0 auto;
+
+  color: rgba(247, 245, 239, 0.68);
+
+  font-size: 0.92rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HEADING SPACING
+========================================================= */
+
+.dealership-advantages__header {
+  margin-bottom: 60px;
+}
+
+
+.dealership-advantages__header h2 {
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .dealership-opportunity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealership-opportunity-left {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(199, 160, 93, 0.25);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .dealership-opportunity-left {
+    padding: 35px 25px;
+  }
+
+  .dealership-opportunity-right {
+    padding: 30px 22px;
+  }
+
+  .dealership-opportunity-row {
+    gap: 15px;
+  }
+
+  .dealership-opportunity-number {
+    width: 44px;
+    height: 44px;
+  }
+
+  .dealership-investment-box {
+    padding: 45px 25px;
+  }
+
+  .dealership-investment-price {
+    font-size: 3rem;
+  }
+
+}
+
+
+/* =========================================================
+   BENEFIT VALUE
+========================================================= */
+
+.benefit-value {
+  position: relative;
+  z-index: 2;
+
+  margin: -4px 0 18px;
+
+  color: #e7c98f;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.35rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+}
+/* =========================================================
+   SECTION 4 — DEALER MATERIALS
+========================================================= */
+
+.dealer-materials {
+  position: relative;
+
+  padding: 125px 0 135px;
+
+  background: #081712;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.dealer-materials__heading {
+  max-width: 1000px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+
+.dealer-materials__eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+
+  color: #e7c98f;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.38em;
+
+  text-transform: uppercase;
+}
+
+
+.dealer-materials__eyebrow span {
+  width: 42px;
+  height: 1px;
+
+  background: #c7a05d;
+}
+
+
+.dealer-materials__heading h2 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+}
+
+
+.dealer-materials__heading h2 span {
+  color: #e7c98f;
+}
+
+
+.dealer-materials__line {
+  width: 52px;
+  height: 2px;
+
+  margin: 28px auto 0;
+
+  background: #c7a05d;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.dealer-materials__layout {
+  display: grid;
+
+  grid-template-columns: 1.7fr 0.9fr;
+
+  border: 1px solid rgba(199, 160, 93, 0.28);
+
+  background: #111d17;
+}
+
+
+/* =========================
+   PANELS
+========================= */
+
+.dealer-materials__price-panel {
+  padding: 45px 35px;
+
+  border-right: 1px solid rgba(199, 160, 93, 0.25);
+}
+
+
+.dealer-materials__why-panel {
+  padding: 45px 32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(199, 160, 93, 0.06),
+      rgba(8, 23, 18, 0.2)
+    );
+}
+
+
+.dealer-materials__panel-label {
+  margin-bottom: 16px;
+
+  color: #e7c98f;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+}
+
+
+.dealer-materials__price-panel h3,
+.dealer-materials__why-panel h3 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.8rem;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+}
+
+
+.dealer-materials__why-panel h3 span {
+  color: #e7c98f;
+}
+
+
+.dealer-materials__small-line {
+  width: 52px;
+  height: 2px;
+
+  margin: 18px 0 30px;
+
+  background: #c7a05d;
+}
+
+
+/* =========================
+   MATERIAL GROUP
+========================= */
+
+.material-group {
+  margin-bottom: 28px;
+
+  border: 1px solid rgba(199, 160, 93, 0.2);
+
+  background: #1c1b10;
+}
+
+
+.material-group__title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 62px;
+
+  padding: 0 22px;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  border-bottom: 1px solid rgba(199, 160, 93, 0.2);
+}
+
+
+.material-group__title span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(199, 160, 93, 0.55);
+
+  border-radius: 50%;
+
+  color: #e7c98f;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   PRICE ROW
+========================= */
+
+.material-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  min-height: 55px;
+
+  padding: 0 22px;
+
+  border-bottom: 1px solid rgba(199, 160, 93, 0.12);
+
+  color: rgba(247, 245, 239, 0.7);
+
+  font-family: var(--font-body);
+
+  font-size: 0.88rem;
+}
+
+
+.material-row:last-child {
+  border-bottom: none;
+}
+
+
+.material-row strong {
+  flex-shrink: 0;
+
+  color: #e7c98f;
+
+  font-size: 0.92rem;
+}
+
+
+.material-row strong small {
+  color: rgba(247, 245, 239, 0.55);
+
+  font-weight: 400;
+}
+
+
+.material-new {
+  display: inline-block;
+
+  margin-right: 8px;
+
+  padding: 2px 6px;
+
+  color: #111;
+
+  background: #e7c98f;
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.material-benefit {
+  display: flex;
+
+  gap: 16px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid rgba(199, 160, 93, 0.16);
+}
+
+
+.material-benefit__icon {
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid rgba(199, 160, 93, 0.55);
+
+  border-radius: 50%;
+
+  color: #e7c98f;
+}
+
+
+.material-benefit h4 {
+  margin: 0 0 7px;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+}
+
+
+.material-benefit p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.6);
+
+  font-size: 0.82rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.dealer-materials__highlights {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+
+.dealer-materials__highlights > div {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100px;
+
+  padding: 15px 8px;
+
+  text-align: center;
+
+  border: 1px solid rgba(199, 160, 93, 0.2);
+
+  background: rgba(8, 23, 18, 0.45);
+}
+
+
+.dealer-materials__highlights span {
+  margin-bottom: 9px;
+
+  color: #e7c98f;
+
+  font-size: 1.1rem;
+}
+
+
+.dealer-materials__highlights strong {
+  color: rgba(247, 245, 239, 0.78);
+
+  font-size: 0.65rem;
+
+  line-height: 1.45;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .dealer-materials__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-materials__price-panel {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(199, 160, 93, 0.25);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .dealer-materials {
+    padding: 90px 0;
+  }
+
+  .dealer-materials__price-panel,
+  .dealer-materials__why-panel {
+    padding: 32px 22px;
+  }
+
+  .material-row {
+    align-items: flex-start;
+
+    padding: 15px;
+
+    font-size: 0.8rem;
+  }
+
+  .material-row strong {
+    text-align: right;
+  }
+
+  .dealer-materials__highlights {
+    grid-template-columns: 1fr;
   }
 
 }

@@ -17,6 +17,7 @@ import hero3 from "../assets/images/hero3.webp";
 import hero4 from "../assets/images/hero4.webp";
 import shilpkarDealershipTerritory from "../assets/images/shilpkar-dealership-territory.png";
 import shilpkarAssociateProjectSupport from "../assets/images/shilpkar-associate-project-support.png";
+import associateCover from "../assets/images/associate-cover.webp";
 import shilpkarDealershipHero from "../assets/images/shilpkar-dealership-hero.png";
 
 const u = (id, w = 1600) =>
@@ -36,6 +37,7 @@ heroSlides: [
   ownerPhoto: ownerPortrait,
   creativeDirector,
   shilpkarDealershipHero,
+  associateCover,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),
 
