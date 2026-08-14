@@ -19,6 +19,7 @@ import shilpkarDealershipTerritory from "../assets/images/shilpkar-dealership-te
 import shilpkarAssociateProjectSupport from "../assets/images/shilpkar-associate-project-support.png";
 import associateCover from "../assets/images/associate-cover.webp";
 import shilpkarDealershipHero from "../assets/images/shilpkar-dealership-hero.png";
+import shopBackground from "../assets/images/shopbycategory hero.png";
 
 const u = (id, w = 1600) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
@@ -40,6 +41,7 @@ heroSlides: [
   associateCover,
   ownerBackdrop: u("photo-1600210492486-724fe5c67fb0", 1800),
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),
+  shopBackground,
 
   service1: u("photo-1600607687939-ce8a6c25118c", 1200),
   service2: u("photo-1616137466211-f939a420be84", 1200),

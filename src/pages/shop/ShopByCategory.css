@@ -14,20 +14,25 @@
 
 .shop-category-page__hero {
   position: relative;
+  isolation: isolate;
 
-  padding: 175px 0 110px;
+  min-height: 680px;
+  padding: 195px 0px 210px;
 
-  background:
-    linear-gradient(
-      180deg,
-      #071410 0%,
-      #0b211b 100%
-    );
+  background-color: #071410;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   text-align: center;
   color: #fff;
 }
 
+/* Keep all hero content above background */
+.shop-category-page__hero .container {
+  position: relative;
+  z-index: 2;
+}
 
 .shop-category-page__hero h1 {
   margin: 22px 0 0;
@@ -44,6 +49,9 @@
   text-align: center;
   line-height: 1.05;
   width: 100%;
+  text-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.55);
+
 }
 
 
@@ -54,6 +62,8 @@
   margin: 30px auto;
 
   background: #d4af37;
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.35);
 }
 
 
@@ -67,6 +77,8 @@
   font-size: 17px;
 
   line-height: 1.85;
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.65);
 }
 
 

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiArrowRight } from "react-icons/fi";
 import shopCategories from "../../data/shopCategories";
 import wallpaperCategories from "../../data/wallpaperCategories";
+import shopHeroBg from "../../assets/images/shopbycategory hero.png";
 import "./ShopByCategory.css";
 // =========================
 // COLLECTION DATA
@@ -412,7 +413,19 @@ const closeWallpaperMenu = () => {
           HERO
       ========================= */}
 
-      <section className="shop-category-page__hero">
+      <section
+  className="shop-category-page__hero"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(4, 14, 11, 0.68),
+        rgba(4, 14, 11, 0.82)
+      ),
+      url(${shopHeroBg})
+    `,
+  }}
+>
+        
 
         <div className="container">
 
