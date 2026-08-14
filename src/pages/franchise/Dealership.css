@@ -4180,3 +4180,575 @@
   }
 
 }
+
+/* ==========================================
+   DEALER APPLICATION FORM
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#dealer-form {
+  scroll-margin-top: 90px;
+}
+
+
+.dealer-form-section {
+  background: #0b0c0d;
+  color: #ffffff;
+}
+
+
+.dealer-form-wrapper {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 34% 66%;
+
+  min-height: 1000px;
+}
+
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.dealer-form-info {
+  padding: 80px 55px;
+
+  background: #0b0c0d;
+
+  border-right: 1px solid
+    rgba(212, 175, 55, 0.25);
+}
+
+
+.dealer-form-brand {
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+
+.dealer-form-info h2 {
+  margin: 25px 0 20px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(48px, 5vw, 68px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+}
+
+
+.dealer-form-info h2 span {
+  color: #d4af37;
+}
+
+
+.dealer-form-gold-line {
+  width: 62px;
+  height: 2px;
+
+  margin-bottom: 28px;
+
+  background: #d4af37;
+}
+
+
+.dealer-form-intro,
+.dealer-form-info > p {
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+.dealer-info-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 45px 0;
+
+  background:
+    rgba(212, 175, 55, 0.18);
+}
+
+
+.dealer-info-label {
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.25em;
+}
+
+
+.dealer-form-info h3 {
+  margin: 16px 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 34px;
+
+  font-weight: 500;
+}
+
+
+.dealer-form-info h3 span {
+  color: #d4af37;
+}
+
+
+/* ==========================================
+   INVESTMENT BOX
+========================================== */
+
+.dealer-investment-box {
+  margin-top: 40px;
+
+  padding: 32px 30px;
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.28);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.10),
+      rgba(212, 175, 55, 0.03)
+    );
+}
+
+
+.dealer-investment-box > span {
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.24em;
+}
+
+
+.dealer-investment-box h4 {
+  margin: 22px 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 38px;
+
+  font-weight: 500;
+}
+
+
+.dealer-investment-box h4 small {
+  color: #d4af37;
+
+  font-size: 18px;
+}
+
+
+.dealer-investment-line {
+  width: 100%;
+  height: 1px;
+
+  margin-bottom: 24px;
+
+  background:
+    rgba(212, 175, 55, 0.20);
+}
+
+
+.dealer-investment-box h5 {
+  margin: 0 0 10px;
+
+  color: #e8cb70;
+
+  font-family: var(--font-heading);
+
+  font-size: 21px;
+}
+
+
+.dealer-investment-box p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* REVIEW NOTE */
+
+.dealer-review-note {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  align-items: flex-start;
+}
+
+
+.dealer-review-note span {
+  color: #d4af37;
+
+  font-size: 18px;
+}
+
+
+.dealer-review-note p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   RIGHT FORM
+========================================== */
+
+.dealer-form-content {
+  padding: 80px 55px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #201c10,
+      #17150f
+    );
+}
+
+
+.dealer-application-form {
+  width: 100%;
+}
+
+
+.dealer-form-block {
+  padding-bottom: 65px;
+
+  margin-bottom: 60px;
+
+  border-bottom: 1px solid
+    rgba(212, 175, 55, 0.12);
+}
+
+
+.dealer-form-block:last-child {
+  border-bottom: none;
+}
+
+
+.dealer-section-number {
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.24em;
+}
+
+
+.dealer-form-block h2 {
+  margin: 16px 0 30px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: 32px;
+
+  font-weight: 500;
+}
+
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.dealer-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px 22px;
+}
+
+
+.dealer-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.dealer-field--full {
+  margin-top: 25px;
+}
+
+
+.dealer-field label {
+  color: rgba(255, 255, 255, 0.86);
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.dealer-field input,
+.dealer-field select,
+.dealer-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 16px 17px;
+
+  outline: none;
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.28);
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 0, 0, 0.20);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  transition: 0.25s ease;
+}
+
+
+.dealer-field input {
+  height: 54px;
+}
+
+
+.dealer-field select {
+  height: 54px;
+
+  cursor: pointer;
+}
+
+
+.dealer-field textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+
+.dealer-field input::placeholder,
+.dealer-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+
+.dealer-field select option {
+  background: #17150f;
+
+  color: #ffffff;
+}
+
+
+.dealer-field input:focus,
+.dealer-field select:focus,
+.dealer-field textarea:focus {
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(212, 175, 55, 0.08);
+}
+
+
+/* ==========================================
+   CHECKBOX
+========================================== */
+
+.dealer-checkbox {
+  display: flex;
+
+  gap: 13px;
+
+  align-items: flex-start;
+
+  margin: 30px 0;
+
+  cursor: pointer;
+}
+
+
+.dealer-checkbox input {
+  width: 18px;
+
+  height: 18px;
+
+  margin-top: 2px;
+
+  accent-color: #d4af37;
+
+  cursor: pointer;
+}
+
+
+.dealer-checkbox span {
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.dealer-submit-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 22px;
+
+  width: 100%;
+
+  min-height: 62px;
+
+  border: 1px solid #d4af37;
+
+  background: #d4af37;
+
+  color: #111;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+
+.dealer-submit-btn span {
+  font-size: 20px;
+}
+
+
+.dealer-submit-btn:hover {
+  background: transparent;
+
+  color: #d4af37;
+}
+
+
+.dealer-submit-note {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .dealer-form-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-form-info {
+    border-right: none;
+
+    border-bottom: 1px solid
+      rgba(212, 175, 55, 0.25);
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .dealer-form-info,
+  .dealer-form-content {
+    padding: 60px 22px;
+  }
+
+
+  .dealer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .dealer-form-info h2 {
+    font-size: 48px;
+  }
+
+
+  .dealer-form-block h2 {
+    font-size: 28px;
+  }
+
+
+  .dealer-investment-box h4 {
+    font-size: 32px;
+  }
+
+}

@@ -9,6 +9,7 @@ import ServiceCategory from "../pages/ServiceCategory.jsx";
 import ServiceDetail from "../pages/ServiceDetail.jsx";
 import ServiceType from "../pages/ServiceType.jsx";
 import Dealership from "../pages/franchise/Dealership.jsx";
+import DealershipApplication from "../pages/franchise/DealershipApplication.jsx";
 import Associate from "../pages/franchise/Associate.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
 import Gallery from "../pages/Gallery.jsx";
@@ -174,6 +175,10 @@ export default function AppRouter() {
       <Dealership />
     </Page>
   }
+/>
+<Route
+  path="/franchise/dealership-application"
+  element={<DealershipApplication />}
 />
 
 <Route
