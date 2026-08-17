@@ -1,0 +1,667 @@
+/* =========================================================
+   SHILPKAR ASSOCIATE APPLICATION
+========================================================= */
+
+.associate-application-page {
+  min-height: 100vh;
+  background: var(--green-black);
+  color: var(--off-white);
+}
+
+
+.associate-application {
+  width: min(1500px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 390px minmax(0, 1fr);
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT STATIC SIDEBAR
+========================================================= */
+
+.associate-application__sidebar {
+  position: sticky;
+  top: var(--nav-height, 94px);
+
+  align-self: start;
+
+  height: calc(100vh - var(--nav-height, 94px));
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  padding: 55px 42px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d211a,
+      #081712
+    ) !important;
+
+  border-right: 1px solid rgba(199, 160, 93, 0.22);
+
+  z-index: 20;
+}
+
+.associate-application__sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+
+.associate-application__brand {
+  color: #e7c98f !important;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+
+.associate-application__sidebar h1 {
+  margin: 24px 0 0;
+
+  color: #f7f5ef !important;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3.1rem, 4vw, 4.8rem);
+
+  font-weight: 500;
+
+  line-height: 0.98;
+}
+
+
+.associate-application__sidebar h1 span {
+  color: #e7c98f !important;
+}
+
+
+.associate-application__line {
+  width: 55px;
+  height: 2px;
+
+  margin: 28px 0;
+
+  background: #e7c98f;
+}
+
+
+.associate-application__sidebar > p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.72) !important;
+
+  font-size: 0.92rem;
+
+  line-height: 1.8;
+}
+
+
+.associate-application__divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 40px 0;
+
+  background: rgba(199, 160, 93, 0.16);
+}
+
+
+.associate-application__label {
+  margin-bottom: 13px;
+
+  color: #e7c98f !important;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  letter-spacing: 0.25em;
+}
+
+
+.associate-application__sidebar h2 {
+  margin: 0 0 14px;
+
+  color: #f7f5ef !important;
+
+  font-family: var(--font-heading);
+
+  font-size: 2rem;
+
+  font-weight: 500;
+}
+
+
+.associate-application__sidebar h2 span {
+  color: #e7c98f !important;
+}
+
+
+.associate-application__sidebar h2 + p {
+  color: rgba(247, 245, 239, 0.68) !important;
+
+  font-size: 0.88rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.associate-application__benefits {
+  display: grid;
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+
+.associate-application__benefits div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.associate-application__benefits span {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(229, 194, 122, 0.5);
+
+  border-radius: 50%;
+
+  color: #e7c98f;
+  font-size: 0.7rem;
+}
+
+
+.associate-application__benefits p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.72);
+
+  font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   FREE PROGRAM CARD
+========================================================= */
+
+.associate-application__investment {
+  margin-top: 30px;
+
+  padding: 28px 24px;
+
+  border: 1px solid rgba(199, 160, 93, 0.3);
+
+  background: #111c16;
+}
+
+
+.associate-application__investment > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #e7c98f;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.25em;
+}
+
+
+.associate-application__investment strong {
+  display: block;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: 2.6rem;
+}
+
+
+.associate-application__investment > div {
+  width: 45px;
+  height: 2px;
+
+  margin: 20px 0;
+
+  background: #e7c98f;
+}
+
+
+.associate-application__investment h3 {
+  margin: 0 0 8px;
+
+  color: #e7c98f;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.15rem;
+}
+
+
+.associate-application__investment p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.62);
+
+  font-size: 0.8rem;
+
+  line-height: 1.7;
+}
+
+
+/* NOTE */
+
+.associate-application__note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 26px;
+}
+
+
+.associate-application__note span {
+  color: #e7c98f;
+}
+
+
+.associate-application__note p {
+  margin: 0;
+
+  color: rgba(247, 245, 239, 0.55);
+
+  font-size: 0.75rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   RIGHT FORM
+========================================================= */
+
+.associate-application__form-area {
+  min-width: 0;
+
+  padding: 70px 65px 100px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #10231b,
+      #0b1913
+    ) !important;
+}
+
+
+.associate-application__form {
+  width: 100%;
+  max-width: 980px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.associate-application__section {
+  padding-bottom: 58px;
+
+  margin-bottom: 58px;
+
+  border-bottom: 1px solid rgba(199, 160, 93, 0.16);
+}
+
+
+.associate-application__section:last-child {
+  margin-bottom: 0;
+
+  border-bottom: none;
+}
+
+
+.associate-application__section-number {
+  margin-bottom: 14px;
+
+  color: #e7c98f;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  letter-spacing: 0.24em;
+}
+
+
+.associate-application__section h2 {
+  margin: 0 0 30px;
+
+  color: #f7f5ef !important;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2rem, 3vw, 2.8rem);
+
+  font-weight: 500;
+
+  line-height: 1.1;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.associate-application__grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 23px 20px;
+}
+
+
+/* =========================================================
+   FIELDS
+========================================================= */
+
+.associate-application__field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+.associate-application__field--full {
+  margin-top: 23px;
+}
+
+
+.associate-application__field label {
+  color: #f7f5ef !important;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+}
+
+
+.associate-application__field input,
+.associate-application__field select,
+.associate-application__field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(199, 160, 93, 0.24);
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: rgba(8, 23, 18, 0.65) !important;
+
+  color: #f7f5ef !important;
+
+  font-family: var(--font-body);
+
+  font-size: 0.9rem;
+
+  transition: 0.25s ease;
+}
+
+
+.associate-application__field input,
+.associate-application__field select {
+  height: 55px;
+
+  padding: 0 16px;
+}
+
+
+.associate-application__field textarea {
+  min-height: 125px;
+
+  padding: 15px 16px;
+
+  resize: vertical;
+}
+
+
+.associate-application__field input::placeholder,
+.associate-application__field textarea::placeholder {
+  color: rgba(247, 245, 239, 0.3);
+}
+
+
+.associate-application__field select {
+  cursor: pointer;
+
+  appearance: none;
+}
+
+
+.associate-application__field select option {
+  background: #10231b;
+
+  color: #ffffff;
+}
+
+
+.associate-application__field input:focus,
+.associate-application__field select:focus,
+.associate-application__field textarea:focus {
+  border-color: rgba(231, 201, 143, 0.75);
+
+  box-shadow:
+    0 0 0 3px rgba(199, 160, 93, 0.06);
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.associate-application__checkbox {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin: 30px 0;
+
+  cursor: pointer;
+}
+
+
+.associate-application__checkbox input {
+  width: 18px;
+  height: 18px;
+
+  margin-top: 2px;
+
+  accent-color: #e7c98f;
+}
+
+
+.associate-application__checkbox span {
+  color: rgba(247, 245, 239, 0.65);
+
+  font-size: 0.82rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.associate-application__submit {
+  width: 100%;
+
+  min-height: 60px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  border: 1px solid #e7c98f;
+
+  background: #e7c98f;
+
+  color: #111;
+
+  font-family: var(--font-body);
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+
+.associate-application__submit:hover {
+  background: transparent;
+
+  color: #e7c98f;
+}
+
+
+.associate-application__note {
+  margin: 18px 0 0;
+
+  color: rgba(247, 245, 239, 0.35);
+
+  font-size: 0.7rem;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .associate-application {
+    grid-template-columns: 330px minmax(0, 1fr);
+  }
+
+  .associate-application__sidebar {
+    padding: 50px 28px;
+  }
+
+  .associate-application__form-area {
+    padding: 55px 35px 80px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .associate-application {
+    grid-template-columns: 1fr;
+  }
+
+  .associate-application__sidebar {
+    position: relative;
+
+    top: auto;
+
+    height: auto;
+
+    min-height: 0;
+
+    overflow: visible;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(199, 160, 93, 0.22);
+  }
+
+  .associate-application__form-area {
+    padding: 55px 28px 80px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .associate-application__sidebar {
+    padding: 45px 20px;
+  }
+
+  .associate-application__form-area {
+    padding: 45px 18px 70px;
+  }
+
+  .associate-application__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .associate-application__section h2 {
+    font-size: 2rem;
+  }
+
+  .associate-application__sidebar h1 {
+    font-size: 3.2rem;
+  }
+
+  .associate-application__investment strong {
+    font-size: 2.25rem;
+  }
+}

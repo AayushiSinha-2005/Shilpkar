@@ -863,6 +863,37 @@
   text-align: center;
 }
 
+/* =========================================================
+   NEW PRODUCT BADGE
+========================================================= */
+
+.associate-rate-new {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 10px;
+  padding: 3px 7px;
+
+  color: #111 !important;
+
+  background: #e7c98f;
+
+  font-family: var(--font-body);
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  vertical-align: middle;
+}
 
 /* =========================================================
    RIGHT — BENEFITS

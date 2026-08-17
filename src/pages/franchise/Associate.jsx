@@ -125,12 +125,12 @@ export default function Associate() {
             >
 
               <a
-                href="#opportunity"
-                className="associate-btn associate-btn--primary"
-              >
-                BECOME AN ASSOCIATE
-                <span>→</span>
-              </a>
+  href="/franchise/associate-application"
+  className="associate-btn associate-btn--primary"
+>
+  BECOME AN ASSOCIATE
+  <span>→</span>
+</a>
 
 
               <a
@@ -162,15 +162,13 @@ export default function Associate() {
 ========================================================= */}
 
 <section className="associate-investment" id="investment">
-
   <div className="container">
-
     {/* Section Heading */}
     <div className="associate-section-heading">
 
       <div className="associate-eyebrow">
         <span />
-        INVESTMENT
+        PARTNERSHIP OPPORTUNITY
         <span />
       </div>
 
@@ -275,6 +273,437 @@ export default function Associate() {
 
 </section>
 
+{/* =========================================================
+    SECTION — ASSOCIATE RATE LIST
+========================================================= */}
+
+<section className="associate-rate-list" id="rate-list">
+
+  <div className="container">
+
+    {/* =====================================================
+        SECTION HEADING
+    ===================================================== */}
+
+    <div className="associate-rate-list__heading">
+
+      <div className="associate-eyebrow">
+        <span />
+        ASSOCIATE RATE LIST
+        <span />
+      </div>
+
+      <h2>
+        Stretch Ceiling <span>Rate List</span>
+      </h2>
+
+      <p>
+        Premium solutions and exclusive pricing for
+        Shilpkar Associates.
+      </p>
+
+      <div className="associate-rate-list__heading-line" />
+
+    </div>
+
+
+    {/* =====================================================
+        RATE GRID
+    ===================================================== */}
+
+    <div className="associate-rate-list__grid">
+
+
+      {/* =================================================
+          A — TRANSLUCENT STRETCH CEILING
+      ================================================= */}
+
+      <div className="associate-rate-card">
+
+        <div className="associate-rate-card__header">
+
+          <div className="associate-rate-card__letter">
+            A
+          </div>
+
+          <h3>
+            Translucent Stretch Ceiling
+          </h3>
+
+        </div>
+
+
+        <div className="associate-rate-card__body">
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">01</span>
+
+            <span className="associate-rate-row__name">
+              FIX CCT TRANSLUCENT 3K/4K/6K/10K
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹350 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">02</span>
+
+            <span className="associate-rate-row__name">
+              D&T TRANSLUCENT WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹450 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">03</span>
+
+            <span className="associate-rate-row__name">
+              RGBW TRANSLUCENT WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹550 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">04</span>
+
+            <span className="associate-rate-row__name">
+              RGBW PIXEL TRANSLUCENT WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹650 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">05</span>
+
+            <span className="associate-rate-row__name">
+              WOODEN STRUCTURE WITH PRIMER
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹350 / SQFT
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* =================================================
+          B — UV PRINTED STRETCH CEILING
+      ================================================= */}
+
+      <div className="associate-rate-card">
+
+        <div className="associate-rate-card__header">
+
+          <div className="associate-rate-card__letter">
+            B
+          </div>
+
+          <h3>
+            UV Printed Stretch Ceiling
+          </h3>
+
+        </div>
+
+
+        <div className="associate-rate-card__body">
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">01</span>
+
+            <span className="associate-rate-row__name">
+              FIX CCT PRINTED 3K/4K/6K/10K
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹450 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">02</span>
+
+            <span className="associate-rate-row__name">
+              D&T PRINTED WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹550 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">03</span>
+
+            <span className="associate-rate-row__name">
+              RGBW PRINTED WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹650 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">04</span>
+
+            <span className="associate-rate-row__name">
+              RGBW PIXEL PRINTED WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹650 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">05</span>
+
+            <span className="associate-rate-row__name">
+              WOODEN STRUCTURE WITH PRIMER
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹350 / SQFT
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* =================================================
+          C — FIBER OPTIC CEILING
+      ================================================= */}
+
+      <div className="associate-rate-card">
+
+        <div className="associate-rate-card__header">
+
+          <div className="associate-rate-card__letter">
+            C
+          </div>
+
+          <h3>
+            Fiber Optic Ceiling
+          </h3>
+
+        </div>
+
+
+        <div className="associate-rate-card__body">
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">01</span>
+
+            <span className="associate-rate-row__name">
+              TWINKLE + STAR CEILING WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹450 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">02</span>
+
+            <span className="associate-rate-row__name">
+              TWINKLE + SHOOTING STAR CEILING WITH REMOTE / APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹550 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">03</span>
+
+            <span className="associate-rate-row__name">
+              GALAXY + TWINKLE + SHOOTING WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹650 / SQFT
+            </span>
+          </div>
+
+
+          <div className="associate-rate-row">
+            <span className="associate-rate-row__number">04</span>
+
+            <span className="associate-rate-row__name">
+              PRINTED MURAL CEILING + TWINKLE + SHOOTING STAR
+              WITH REMOTE AND APP
+            </span>
+
+            <span className="associate-rate-row__price">
+              ₹750 / SQFT
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* =================================================
+          D — EXCLUSIVE CEILING
+      ================================================= */}
+
+      <div className="associate-rate-card">
+
+        <div className="associate-rate-card__header">
+
+          <div className="associate-rate-card__letter">
+            D
+          </div>
+
+          <h3>
+            Exclusive Ceiling
+          </h3>
+
+        </div>
+
+
+       <div className="associate-rate-card__body">
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">01</span>
+
+    <span className="associate-rate-row__name">
+      CLOUDWAVE TEXTILE CEILING
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹550 / SQFT
+    </span>
+  </div>
+
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">02</span>
+
+    <span className="associate-rate-row__name">
+      CLOUDWAVE TEXTILE CEILING WITH TRANSLUCENT
+      CEILING D&T
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹950 / SQFT
+    </span>
+  </div>
+
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">03</span>
+
+    <span className="associate-rate-row__name">
+      WINDFABRIC TEXTILE CEILING
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹750 / RUNNING FEET
+    </span>
+  </div>
+
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">04</span>
+
+    <span className="associate-rate-row__name">
+      SKYLUME 22×22 PANEL
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹1850 / PCS
+    </span>
+  </div>
+
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">05</span>
+
+    <span className="associate-rate-row__name">
+      SUNROOF CEILING AND WINDOW WITH WOODEN STRUCTURE
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹2000 / SQFT
+    </span>
+  </div>
+
+
+  <div className="associate-rate-row">
+    <span className="associate-rate-row__number">06</span>
+
+    <span className="associate-rate-row__name">
+      SUNROOF CEILING AND WINDOW WITHOUT WOODEN STRUCTURE
+      <span className="associate-rate-new">NEW</span>
+    </span>
+
+    <span className="associate-rate-row__price">
+      ₹750 / SQFT
+    </span>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+    {/* =====================================================
+        NOTE
+    ===================================================== */}
+
+    <div className="associate-rate-note">
+
+      <div className="associate-rate-note__label">
+        NOTE
+      </div>
+
+      <p>
+        Transport, team travelling and GST will be extra.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
     {/* =========================================================
     SECTION 3 — ASSOCIATE BENEFITS
 ========================================================= */}
@@ -323,13 +752,12 @@ export default function Associate() {
         <div className="associate-card-line" />
 
         <h3>
-          Official Associate Identity
+          Fixed Price List of Services
         </h3>
-
+  
         <p>
-          Receive your official Shilpkar Associate identity and
-          become a recognized business partner within the
-          Shilpkar Factory network.
+          Access a structured and transparent project pricing system for all Shilpkar solutions, 
+          helping you plan your quotations and business margins with confidence.
         </p>
 
       </div>
@@ -670,430 +1098,7 @@ export default function Associate() {
 
 </section>
 
-{/* =========================================================
-    SECTION — ASSOCIATE RATE LIST
-========================================================= */}
 
-<section className="associate-rate-list" id="rate-list">
-
-  <div className="container">
-
-    {/* =====================================================
-        SECTION HEADING
-    ===================================================== */}
-
-    <div className="associate-rate-list__heading">
-
-      <div className="associate-eyebrow">
-        <span />
-        ASSOCIATE RATE LIST
-        <span />
-      </div>
-
-      <h2>
-        Stretch Ceiling <span>Rate List</span>
-      </h2>
-
-      <p>
-        Premium solutions and exclusive pricing for
-        Shilpkar Associates.
-      </p>
-
-      <div className="associate-rate-list__heading-line" />
-
-    </div>
-
-
-    {/* =====================================================
-        RATE GRID
-    ===================================================== */}
-
-    <div className="associate-rate-list__grid">
-
-
-      {/* =================================================
-          A — TRANSLUCENT STRETCH CEILING
-      ================================================= */}
-
-      <div className="associate-rate-card">
-
-        <div className="associate-rate-card__header">
-
-          <div className="associate-rate-card__letter">
-            A
-          </div>
-
-          <h3>
-            Translucent Stretch Ceiling
-          </h3>
-
-        </div>
-
-
-        <div className="associate-rate-card__body">
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">01</span>
-
-            <span className="associate-rate-row__name">
-              FIX CCT TRANSLUCENT 3K/4K/6K/10K
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹350 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">02</span>
-
-            <span className="associate-rate-row__name">
-              D&T TRANSLUCENT WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹450 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">03</span>
-
-            <span className="associate-rate-row__name">
-              RGBW TRANSLUCENT WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹550 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">04</span>
-
-            <span className="associate-rate-row__name">
-              RGBW PIXEL TRANSLUCENT WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹650 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">05</span>
-
-            <span className="associate-rate-row__name">
-              WOODEN STRUCTURE WITH PRIMER
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹350 / SQFT
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* =================================================
-          B — UV PRINTED STRETCH CEILING
-      ================================================= */}
-
-      <div className="associate-rate-card">
-
-        <div className="associate-rate-card__header">
-
-          <div className="associate-rate-card__letter">
-            B
-          </div>
-
-          <h3>
-            UV Printed Stretch Ceiling
-          </h3>
-
-        </div>
-
-
-        <div className="associate-rate-card__body">
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">01</span>
-
-            <span className="associate-rate-row__name">
-              FIX CCT PRINTED 3K/4K/6K/10K
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹450 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">02</span>
-
-            <span className="associate-rate-row__name">
-              D&T PRINTED WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹550 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">03</span>
-
-            <span className="associate-rate-row__name">
-              RGBW PRINTED WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹650 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">04</span>
-
-            <span className="associate-rate-row__name">
-              RGBW PIXEL PRINTED WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹650 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">05</span>
-
-            <span className="associate-rate-row__name">
-              WOODEN STRUCTURE WITH PRIMER
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹350 / SQFT
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* =================================================
-          C — FIBER OPTIC CEILING
-      ================================================= */}
-
-      <div className="associate-rate-card">
-
-        <div className="associate-rate-card__header">
-
-          <div className="associate-rate-card__letter">
-            C
-          </div>
-
-          <h3>
-            Fiber Optic Ceiling
-          </h3>
-
-        </div>
-
-
-        <div className="associate-rate-card__body">
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">01</span>
-
-            <span className="associate-rate-row__name">
-              TWINKLE + STAR CEILING WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹450 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">02</span>
-
-            <span className="associate-rate-row__name">
-              TWINKLE + SHOOTING STAR CEILING WITH REMOTE / APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹550 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">03</span>
-
-            <span className="associate-rate-row__name">
-              GALAXY + TWINKLE + SHOOTING WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹650 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">04</span>
-
-            <span className="associate-rate-row__name">
-              PRINTED MURAL CEILING + TWINKLE + SHOOTING STAR
-              WITH REMOTE AND APP
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹750 / SQFT
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* =================================================
-          D — EXCLUSIVE CEILING
-      ================================================= */}
-
-      <div className="associate-rate-card">
-
-        <div className="associate-rate-card__header">
-
-          <div className="associate-rate-card__letter">
-            D
-          </div>
-
-          <h3>
-            Exclusive Ceiling
-          </h3>
-
-        </div>
-
-
-        <div className="associate-rate-card__body">
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">01</span>
-
-            <span className="associate-rate-row__name">
-              CLOUDWAVE TEXTILE CEILING
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹550 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">02</span>
-
-            <span className="associate-rate-row__name">
-              CLOUDWAVE TEXTILE CEILING WITH TRANSLUCENT
-              CEILING D&T
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹950 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">03</span>
-
-            <span className="associate-rate-row__name">
-              WINDFABRIC TEXTILE CEILING
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹750 / RUNNING FEET
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">04</span>
-
-            <span className="associate-rate-row__name">
-              SKYLUME 22×22 PANEL
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹1850 / PCS
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">05</span>
-
-            <span className="associate-rate-row__name">
-              SUNROOF CEILING AND WINDOW WITH WOODEN STRUCTURE
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹2000 / SQFT
-            </span>
-          </div>
-
-
-          <div className="associate-rate-row">
-            <span className="associate-rate-row__number">06</span>
-
-            <span className="associate-rate-row__name">
-              SUNROOF CEILING AND WINDOW WITHOUT WOODEN STRUCTURE
-            </span>
-
-            <span className="associate-rate-row__price">
-              ₹750 / SQFT
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* =====================================================
-        NOTE
-    ===================================================== */}
-
-    <div className="associate-rate-note">
-
-      <div className="associate-rate-note__label">
-        NOTE
-      </div>
-
-      <p>
-        Transport, team travelling and GST will be extra.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
 
 
  {/* =====================================================

@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import images from "../../data/images";
+import { Link } from "react-router-dom";
 import "./Dealership.css";
 
 export default function Dealership() {
   return (
     <main className="dealership-page">
 
-      {/* =========================
+{/* =========================
     SECTION 1 — HERO
 ========================= */}
 <section className="dealership-hero">
@@ -49,456 +50,7 @@ export default function Dealership() {
     <p>Scroll</p>
   </div>
 </section>
-{/* =========================
-    DEALER APPLICATION FORM
-========================= */}
 
-<section id="dealer-form" className="dealer-form-section">
-  <div className="dealer-form-wrapper">
-
-    {/* LEFT SIDE */}
-    <aside className="dealer-form-info">
-
-      <div className="dealer-form-brand">
-        NOOH ELEVATED LIVING LLP
-      </div>
-
-      <h2>
-        Dealer <span>Application</span>
-      </h2>
-
-      <div className="dealer-form-gold-line" />
-
-      <p className="dealer-form-intro">
-        Take the first step towards becoming an authorized NOOH dealer
-        in your city.
-      </p>
-
-
-      <div className="dealer-info-divider" />
-
-
-      <span className="dealer-info-label">
-        DEALERSHIP PROGRAM
-      </span>
-
-      <h3>
-        Become A <span>NOOH</span> Dealer
-      </h3>
-
-      <p>
-        Fill in your details and our team will connect with you to
-        discuss the dealership opportunity, territory and next steps.
-      </p>
-
-
-      {/* INVESTMENT BOX */}
-
-      <div className="dealer-investment-box">
-
-        <span>DEALERSHIP INVESTMENT</span>
-
-        <h4>
-          ₹1,00,000 <small>+ GST</small>
-        </h4>
-
-        <div className="dealer-investment-line" />
-
-        <h5>
-          One City. One Dealership.
-        </h5>
-
-        <p>
-          Build your NOOH business with premium products,
-          training and dedicated support.
-        </p>
-
-      </div>
-
-
-      <div className="dealer-review-note">
-        <span>✦</span>
-
-        <p>
-          Our team will review your application and contact you
-          regarding the dealership opportunity.
-        </p>
-      </div>
-
-    </aside>
-
-
-    {/* RIGHT SIDE FORM */}
-
-    <div className="dealer-form-content">
-
-      <form className="dealer-application-form">
-
-
-        {/* =====================
-            01 PERSONAL DETAILS
-        ====================== */}
-
-        <div className="dealer-form-block">
-
-          <span className="dealer-section-number">
-            01 — PERSONAL DETAILS
-          </span>
-
-          <h2>Tell Us About Yourself</h2>
-
-
-          <div className="dealer-form-grid">
-
-            <div className="dealer-field">
-              <label>Full Name *</label>
-              <input
-                type="text"
-                placeholder="Enter your full name"
-              />
-            </div>
-
-            <div className="dealer-field">
-              <label>Mobile Number *</label>
-              <input
-                type="tel"
-                placeholder="Enter mobile number"
-              />
-            </div>
-
-            <div className="dealer-field">
-              <label>Email Address *</label>
-              <input
-                type="email"
-                placeholder="Enter email address"
-              />
-            </div>
-
-            <div className="dealer-field">
-              <label>WhatsApp Number</label>
-              <input
-                type="tel"
-                placeholder="Enter WhatsApp number"
-              />
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        {/* =====================
-            02 BUSINESS DETAILS
-        ====================== */}
-
-        <div className="dealer-form-block">
-
-          <span className="dealer-section-number">
-            02 — BUSINESS DETAILS
-          </span>
-
-          <h2>Your Business</h2>
-
-
-          <div className="dealer-form-grid">
-
-            <div className="dealer-field">
-              <label>Business / Company Name *</label>
-
-              <input
-                type="text"
-                placeholder="Enter business name"
-              />
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Current Business Type *</label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Interior Designer</option>
-                <option>Architect</option>
-                <option>Contractor</option>
-                <option>Builder</option>
-                <option>Retailer</option>
-                <option>Distributor</option>
-                <option>Manufacturer</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Years In Business</label>
-
-              <input
-                type="text"
-                placeholder="e.g. 5 years"
-              />
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Website / Instagram</label>
-
-              <input
-                type="text"
-                placeholder="Website or Instagram URL"
-              />
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        {/* =====================
-            03 LOCATION
-        ====================== */}
-
-        <div className="dealer-form-block">
-
-          <span className="dealer-section-number">
-            03 — LOCATION
-          </span>
-
-          <h2>Your Territory</h2>
-
-
-          <div className="dealer-form-grid">
-
-            <div className="dealer-field">
-              <label>State *</label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Andhra Pradesh</option>
-                <option>Arunachal Pradesh</option>
-                <option>Assam</option>
-                <option>Bihar</option>
-                <option>Chhattisgarh</option>
-                <option>Goa</option>
-                <option>Gujarat</option>
-                <option>Haryana</option>
-                <option>Himachal Pradesh</option>
-                <option>Jharkhand</option>
-                <option>Karnataka</option>
-                <option>Kerala</option>
-                <option>Madhya Pradesh</option>
-                <option>Maharashtra</option>
-                <option>Manipur</option>
-                <option>Meghalaya</option>
-                <option>Mizoram</option>
-                <option>Nagaland</option>
-                <option>Odisha</option>
-                <option>Punjab</option>
-                <option>Rajasthan</option>
-                <option>Sikkim</option>
-                <option>Tamil Nadu</option>
-                <option>Telangana</option>
-                <option>Tripura</option>
-                <option>Uttar Pradesh</option>
-                <option>Uttarakhand</option>
-                <option>West Bengal</option>
-                <option>Delhi</option>
-                <option>Jammu & Kashmir</option>
-                <option>Chandigarh</option>
-                <option>Puducherry</option>
-              </select>
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Current City *</label>
-
-              <input
-                type="text"
-                placeholder="Enter your current city"
-              />
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Preferred Dealership City *</label>
-
-              <input
-                type="text"
-                placeholder="Enter preferred city"
-              />
-            </div>
-
-          </div>
-
-
-          <div className="dealer-field dealer-field--full">
-
-            <label>Office / Showroom Address</label>
-
-            <textarea
-              placeholder="Enter your office or showroom address"
-              rows="4"
-            />
-
-          </div>
-
-        </div>
-
-
-
-        {/* =====================
-            04 BUSINESS PROFILE
-        ====================== */}
-
-        <div className="dealer-form-block">
-
-          <span className="dealer-section-number">
-            04 — BUSINESS PROFILE
-          </span>
-
-          <h2>Tell Us More</h2>
-
-
-          <div className="dealer-form-grid">
-
-            <div className="dealer-field">
-              <label>
-                Do You Have Interior / Architecture / Construction Experience?
-              </label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Yes — More than 5 years</option>
-                <option>Yes — 2 to 5 years</option>
-                <option>Yes — Less than 2 years</option>
-                <option>No</option>
-              </select>
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Existing Client Network</label>
-
-              <input
-                type="text"
-                placeholder="Tell us about your client network"
-              />
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Expected Monthly Business</label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Below ₹5 Lakh</option>
-                <option>₹5–10 Lakh</option>
-                <option>₹10–25 Lakh</option>
-                <option>₹25 Lakh+</option>
-                <option>Not Sure</option>
-              </select>
-            </div>
-
-          </div>
-
-
-          <div className="dealer-field dealer-field--full">
-
-            <label>
-              Why Do You Want To Become A NOOH Dealer?
-            </label>
-
-            <textarea
-              rows="5"
-              placeholder="Tell us why you are interested in becoming a NOOH dealer..."
-            />
-
-          </div>
-
-        </div>
-
-
-
-        {/* =====================
-            05 NEXT STEP
-        ====================== */}
-
-        <div className="dealer-form-block">
-
-          <span className="dealer-section-number">
-            05 — NEXT STEP
-          </span>
-
-          <h2>Let's Connect</h2>
-
-
-          <div className="dealer-form-grid">
-
-            <div className="dealer-field">
-              <label>
-                Are You Ready For The Dealership Investment? *
-              </label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Yes, I am ready</option>
-                <option>I would like to discuss first</option>
-                <option>I need more information</option>
-              </select>
-            </div>
-
-
-            <div className="dealer-field">
-              <label>Preferred Callback Time</label>
-
-              <select>
-                <option value="">Select an option</option>
-                <option>Morning — 9 AM to 12 PM</option>
-                <option>Afternoon — 12 PM to 4 PM</option>
-                <option>Evening — 4 PM to 7 PM</option>
-              </select>
-            </div>
-
-          </div>
-
-
-          <label className="dealer-checkbox">
-
-            <input type="checkbox" />
-
-            <span>
-              I confirm that the information provided above is accurate
-              and I agree to be contacted by the NOOH team regarding
-              the dealership opportunity.
-            </span>
-
-          </label>
-
-
-          <button
-            type="submit"
-            className="dealer-submit-btn"
-          >
-            SUBMIT DEALER APPLICATION
-            <span>→</span>
-          </button>
-
-
-          <p className="dealer-submit-note">
-            By submitting this form, you agree to be contacted regarding
-            the NOOH Dealership Program.
-          </p>
-
-        </div>
-
-      </form>
-
-    </div>
-
-  </div>
-</section>
 
 {/* =========================
     SECTION 3 — WHAT YOU RECEIVE
@@ -1270,70 +822,86 @@ export default function Dealership() {
     </motion.div>
 
 
-    {/* Journey */}
-    <div className="join-journey">
+   {/* Journey */}
+<div className="join-journey">
 
-      {[
-        {
-          number: "01",
-          title: "Apply",
-          description:
-            "Submit your interest and basic details to begin your dealership journey with Shilpkar.",
-        },
-        {
-          number: "02",
-          title: "Discussion",
-          description:
-            "Connect with the Shilpkar team and discuss the dealership opportunity and your business requirements.",
-        },
-        {
-          number: "03",
-          title: "Agreement",
-          description:
-            "Complete the agreement and investment process to officially begin your association with Shilpkar.",
-        },
-        {
-          number: "04",
-          title: "Get Started",
-          description:
-            "Receive your setup and training and start building your Shilpkar dealership business.",
-        },
-      ].map((step, index) => (
+  {[
+    {
+      number: "01",
+      title: "Apply",
+      description:
+        "Submit your interest and basic details to begin your dealership journey with Shilpkar.",
+      path: "/franchise/dealership-application",
+    },
+    {
+      number: "02",
+      title: "Discussion",
+      description:
+        "Connect with the Shilpkar team and discuss the dealership opportunity and your business requirements.",
+    },
+    {
+      number: "03",
+      title: "Agreement",
+      description:
+        "Complete the agreement and investment process to officially begin your association with Shilpkar.",
+    },
+    {
+      number: "04",
+      title: "Get Started",
+      description:
+        "Receive your setup and training and start building your Shilpkar dealership business.",
+    },
+  ].map((step, index) => (
 
-        <motion.div
-          className="join-step"
-          key={step.number}
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{
-            duration: 0.7,
-            delay: index * 0.1,
-            ease: [0.22, 1, 0.36, 1],
-          }}
+    <motion.div
+      className="join-step"
+      key={step.number}
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.7,
+        delay: index * 0.1,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+    >
+
+      {/* Number */}
+      <div className="join-step__number">
+        {step.number}
+      </div>
+
+      {/* APPLY CARD — CLICKABLE */}
+      {step.path ? (
+        <Link
+          to={step.path}
+          className="join-step__card join-step__card--clickable"
         >
+          <h3>{step.title}</h3>
 
-          {/* Number */}
-          <div className="join-step__number">
-            {step.number}
-          </div>
+          <div className="join-step__line" />
 
-          {/* Card */}
-          <div className="join-step__card">
+          <p>{step.description}</p>
 
-            <h3>{step.title}</h3>
+          <span className="join-step__apply">
+            APPLY NOW →
+          </span>
+        </Link>
+      ) : (
+        <div className="join-step__card">
+          <h3>{step.title}</h3>
 
-            <div className="join-step__line" />
+          <div className="join-step__line" />
 
-            <p>{step.description}</p>
+          <p>{step.description}</p>
+        </div>
+      )}
 
-          </div>
+    </motion.div>
 
-        </motion.div>
+  ))}
 
-      ))}
-
-    </div>
+</div>
 
   </div>
 
@@ -1445,6 +1013,15 @@ export default function Dealership() {
   </div>
 
 </section>
+{/* Floating Side Apply Button */}
+<Link
+  to="/franchise/dealership-application"
+  className="dealership-floating-apply"
+>
+  <span>Apply for</span>
+  <strong>Dealership</strong>
+  <i>→</i>
+</Link>
 
     </main>
   );

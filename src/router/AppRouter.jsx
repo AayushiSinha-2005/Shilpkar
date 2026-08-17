@@ -11,6 +11,7 @@ import ServiceType from "../pages/ServiceType.jsx";
 import Dealership from "../pages/franchise/Dealership.jsx";
 import DealershipApplication from "../pages/franchise/DealershipApplication.jsx";
 import Associate from "../pages/franchise/Associate.jsx";
+import AssociateApplication  from "../pages/franchise/AssociateApplication.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
 import Gallery from "../pages/Gallery.jsx";
 import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
@@ -188,6 +189,10 @@ export default function AppRouter() {
       <Associate />
     </Page>
   }
+/>
+<Route
+  path="/franchise/associate-application"
+  element={<AssociateApplication />}
 />
 
 <Route
