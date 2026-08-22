@@ -34,58 +34,115 @@ const services = [
   },
 
   {
-    title: "SHILPKAR™ Textile Ceiling Systems",
-    desc: "Innovative textile ceiling concepts that introduce depth, movement and architectural elegance to premium interior spaces.",
+  title: "SHILPWAVE™ Textile Ceiling Systems",
 
-    image: images.service2,
+  desc:
+    "Architectural textile ceiling solutions designed to introduce fluid movement, visual depth and distinctive character into luxury residential, commercial and hospitality interiors.",
 
-    features: [
-      "Acoustic Performance",
-      "Luxury Fabric",
-      "Custom Shapes",
-      "Lightweight Structure",
-    ],
+  image: images.service2,
 
-    pdf: "/pdf/textile-ceiling.pdf",
+  types: [
+    {
+      title: "SHILPWAVE™ WAVE",
+      subtitle: "Elegant Flowing Textile Ceiling",
+      link: "/services/textile-ceiling/wave",
+    },
+    {
+      title: "SHILPWAVE™ FRILL",
+      subtitle: "Decorative Layered Fabric Ceiling",
+      link: "/services/textile-ceiling/frill",
+    },
+    {
+      title: "SHILPWAVE™ SNAKE",
+      subtitle: "Dynamic Curved Textile Ceiling",
+      link: "/services/textile-ceiling/snake",
+    },
+    {
+      title: "SHILPWAVE™ CUSTOM",
+      subtitle: "Bespoke Textile Ceiling Design",
+      link: "/services/textile-ceiling/custom",
+    },
+  ],
 
-    view: "/solutions/ceilings/textile-ceiling",
-  },
+  pdf: "/pdf/textile-ceiling.pdf",
+
+  view: "/solutions/ceilings/textile-ceiling",
+},
 
   {
-    title: "SHILPKAR™ Fiber Optic Star Ceiling",
-    desc: "Transform ordinary ceilings into immersive night sky experiences with premium fiber optic lighting systems.",
+  title: "FIBERSKY™ Fiber Optic Star Ceiling",
 
-    image: images.service3,
+  desc:
+    "Premium fiber optic star ceiling systems designed to create immersive starry skies, dynamic twinkling effects, RGB lighting and spectacular galaxy-inspired ceiling experiences.",
 
-    features: [
-      "Galaxy Effect",
-      "RGB Lighting",
-      "Energy Efficient",
-      "Custom Patterns",
-    ],
+  image: images.service3,
 
-    pdf: "/pdf/fiber-optic.pdf",
+  types: [
+    {
+      title: "FIBERSKY™ STATIC",
+      subtitle: "Realistic Starry Night Ceiling",
+      link: "/services/fiber-optic/static",
+    },
 
-    view: "/solutions/ceilings/fiber-optic-ceiling",
-  },
+    {
+      title: "FIBERSKY™ TWINKLE",
+      subtitle: "Dynamic Twinkling Star Ceiling",
+      link: "/services/fiber-optic/twinkle",
+    },
 
-  {
-    title: " SHILPKAR™ Virtual Ceiling & Windows",
-    desc: "Beautiful illuminated virtual sky ceilings and window systems that create natural ambience in any environment.",
+    {
+      title: "FIBERSKY™ RGB",
+      subtitle: "Color-Changing RGB Star Ceiling",
+      link: "/services/fiber-optic/rgb",
+    },
 
-    image: images.service4,
+    {
+      title: "FIBERSKY™ GALAXY PRO",
+      subtitle: "Milky Way & Galaxy Ceiling",
+      link: "/services/fiber-optic/galaxy-pro",
+    },
+  ],
 
-    features: [
-      "Backlit System",
-      "Custom Artwork",
-      "Natural Sky Effect",
-      "Low Maintenance",
-    ],
+  pdf: "/pdf/fiber-optic.pdf",
+  view: "/solutions/ceilings/fiber-optic",
 
-    pdf: "/pdf/virtual-ceiling.pdf",
+},
 
-    view: "/solutions/ceilings/virtual-ceiling",
-  },
+ {
+  title: "SHILPVIRTUAL™ Virtual Ceiling & Window",
+
+  desc:
+    "Immersive illuminated ceiling and virtual window systems created to introduce the feeling of open skies, natural light and breathtaking architectural views into interior spaces.",
+
+  image: images.service4,
+
+  types: [
+    {
+      title: "SHILPVIRTUAL™ SKY",
+      subtitle: "Illuminated Virtual Sky Ceiling",
+      link: "/services/virtual-ceiling/virtual-sky",
+    },
+    {
+      title: "SHILPVIRTUAL™ WINDOW",
+      subtitle: "Realistic Illuminated Window System",
+      link: "/services/virtual-ceiling/virtual-window",
+    },
+    {
+      title: "SHILPVIRTUAL™ SUNLIGHT",
+      subtitle: "Natural Sunlight Simulation",
+      link: "/services/virtual-ceiling/virtual-sunlight",
+    },
+    {
+      title: "SHILPVIRTUAL™ CUSTOM",
+      subtitle: "Bespoke Virtual Ceiling & Window",
+      link: "/services/virtual-ceiling/virtual-custom",
+    },
+  ],
+
+  pdf: "/pdf/virtual-ceiling.pdf",
+
+  view: "/solutions/ceilings/virtual-ceiling",
+},
 ];
 
 export default services;

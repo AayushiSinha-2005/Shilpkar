@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import images from "../../data/images";
+import { Link } from "react-router-dom";
 import "./Associate.css";
 
 export default function Associate() {
@@ -2013,6 +2014,16 @@ export default function Associate() {
   </div>
 
 </section>
+
+{/* Floating Side Associate Button */}
+<Link
+  to="/franchise/associate-application"
+  className="associate-floating-apply"
+>
+  <span>Apply for</span>
+  <strong>Associate</strong>
+  <i>→</i>
+</Link>
 
     </main>
   );

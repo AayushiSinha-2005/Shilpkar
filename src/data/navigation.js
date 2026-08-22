@@ -46,8 +46,9 @@ const navigation = [
       path: "/franchise/associate",
     },
     {
-      label: "Installation Training",
+      label: " Training",
       path: "/franchise/installation-training",
+      
     },
   ],
 },

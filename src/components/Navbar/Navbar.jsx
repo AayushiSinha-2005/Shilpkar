@@ -31,8 +31,8 @@ export default function Navbar() {
       path: "/franchise/associate-application",
     },
     {
-      label: "INSTALLATION TRAINING",
-      path: "/franchise/installation-training",
+      label: " TRAINING",
+      path: "/franchise/training",
     },
     {
       label: "SHOP BY CATEGORY",

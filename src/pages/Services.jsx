@@ -62,15 +62,15 @@ export default function Services({ preview = false }) {
 
   {service.types?.map((type) => (
 
-    <a
-      key={type.title}
-      href={type.link}
-      className="type-card"
-    >
-      <h4>{type.title}</h4>
+    <Link
+  key={type.title}
+  to={type.link}
+  className="type-card"
+>
+  <h4>{type.title}</h4>
 
-      <p>{type.subtitle}</p>
-    </a>
+  <p>{type.subtitle}</p>
+</Link>
 
   ))}
 
@@ -86,12 +86,12 @@ export default function Services({ preview = false }) {
                     Download
                   </a>
 
-                  <a
-                    href={service.view}
-                    className="btn-dark"
-                  >
-                    View
-                  </a>
+                  <Link
+  to={service.view}
+  className="btn-dark"
+>
+  View
+</Link>
 
                 </div>
 
