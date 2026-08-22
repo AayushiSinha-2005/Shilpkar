@@ -1,4 +1,4 @@
-import images from "./images";
+import images from "./images.js";
 const serviceDetails = {
   "stretch-ceiling": {
     translucent: {
@@ -509,6 +509,7 @@ panel: {
       catalogue: "/pdf/textile-ceiling.pdf",
     },
   },
+ 
 
 
 frill: {
@@ -845,8 +846,7 @@ custom: {
     catalogue: "/pdf/textile-ceiling.pdf",
   },
 },
-},
-
+ },
 
   "fiber-optic": {
     static: {
@@ -1193,8 +1193,8 @@ catalogue: "",
   },
 },
 
-galaxyPro: {
-  hero: {
+"galaxy-pro": {
+    hero: {
     subtitle: "SHILPKAR™ Collection",
     title: "FIBERSKY™ GALAXY PRO",
     description:
@@ -1309,8 +1309,325 @@ galaxyPro: {
 catalogue: "",
   },
 },
+},
 
+"virtual-ceiling": {
+  "virtual-sky": {
+    hero: {
+      subtitle: "SHILPKAR™ Collection",
+      title: "SHILPVIRTUAL™ SKY",
+      description:
+        "A premium illuminated virtual ceiling system designed to recreate the visual openness of blue skies and natural daylight within interior spaces.",
+    },
+
+    sections: [
+      {
+        title: "SHILPVIRTUAL™ SKY",
+        subtitle: "Bring the Sky Indoors",
+        description:
+          "SHILPVIRTUAL™ SKY transforms enclosed interiors into brighter and more open environments with realistic sky visuals and integrated illumination.",
+        image: "/images/virtual-sky.jpg",
+
+        specs: [
+          { label: "SYSTEM", value: "Virtual Sky Ceiling" },
+          { label: "LIGHTING", value: "Integrated LED" },
+          { label: "DESIGN", value: "Custom Sky Visual" },
+          { label: "FINISH", value: "Premium Architectural" },
+        ],
+      },
+    ],
+
+    whyChoose: {
+      eyebrow: "WHY CHOOSE SHILPVIRTUAL™ SKY",
+      title: "Designed for Brighter Interiors",
+      items: [
+        {
+          title: "Realistic Sky Effect",
+          description:
+            "Creates the visual feeling of an open sky within enclosed interior spaces.",
+        },
+        {
+          title: "Integrated Illumination",
+          description:
+            "Balanced LED lighting provides a bright and visually comfortable experience.",
+        },
+        {
+          title: "Custom Visuals",
+          description:
+            "Sky scenes and artwork can be selected to complement the interior design.",
+        },
+        {
+          title: "Premium Integration",
+          description:
+            "Designed to integrate seamlessly into refined architectural interiors.",
+        },
+      ],
+    },
+
+    applications: {
+      eyebrow: "IDEAL APPLICATIONS",
+      title: "Designed for Inspiring Spaces",
+      items: [
+        "Luxury Homes",
+        "Bedrooms",
+        "Living Rooms",
+        "Offices",
+        "Hotels",
+        "Hospitals",
+        "Spa & Wellness",
+        "Restaurants",
+        "Commercial Interiors",
+        "Experience Centres",
+      ],
+    },
+
+    cta: {
+      eyebrow: "LET'S CREATE SOMETHING EXTRAORDINARY",
+      title: "Bring the Open Sky Indoors",
+      description:
+        "Create a brighter and more immersive interior with a customised SHILPVIRTUAL™ SKY solution.",
+      primaryText: "Request Free Consultation",
+      primaryLink: "/contact",
+    },
   },
+
+  "virtual-window": {
+    hero: {
+      subtitle: "SHILPKAR™ Collection",
+      title: "SHILPVIRTUAL™ WINDOW",
+      description:
+        "A premium illuminated virtual window system designed to introduce the feeling of outdoor views and natural openness into interior spaces.",
+    },
+
+    sections: [
+      {
+        title: "SHILPVIRTUAL™ WINDOW",
+        subtitle: "A View Beyond the Wall",
+        description:
+          "Transform ordinary walls into illuminated architectural features that create the impression of a beautiful view beyond the interior.",
+        image: "/images/virtual-window.jpg",
+
+        specs: [
+          { label: "SYSTEM", value: "Virtual Window" },
+          { label: "VISUAL", value: "Custom Outdoor View" },
+          { label: "LIGHTING", value: "Premium LED" },
+          { label: "FINISH", value: "Luxury Architectural" },
+        ],
+      },
+    ],
+
+    whyChoose: {
+      eyebrow: "WHY CHOOSE SHILPVIRTUAL™ WINDOW",
+      title: "Designed to Open Up Your Space",
+      items: [
+        {
+          title: "Realistic Views",
+          description:
+            "Creates the visual impression of an outdoor environment inside enclosed spaces.",
+        },
+        {
+          title: "Integrated Lighting",
+          description:
+            "Carefully balanced illumination creates a bright and realistic appearance.",
+        },
+        {
+          title: "Custom Artwork",
+          description:
+            "Choose landscapes, nature scenes or customised visuals for your project.",
+        },
+        {
+          title: "Architectural Feature",
+          description:
+            "Transforms a plain wall into a striking premium interior focal point.",
+        },
+      ],
+    },
+
+    applications: {
+      eyebrow: "IDEAL APPLICATIONS",
+      title: "Designed for Enclosed Interiors",
+      items: [
+        "Luxury Homes",
+        "Bedrooms",
+        "Basements",
+        "Offices",
+        "Hotels",
+        "Hospitals",
+        "Clinics",
+        "Spa & Wellness",
+        "Restaurants",
+        "Commercial Interiors",
+      ],
+    },
+
+    cta: {
+      eyebrow: "LET'S CREATE SOMETHING EXTRAORDINARY",
+      title: "Create a View Without a Window",
+      description:
+        "Bring visual depth, light and openness into your space with SHILPVIRTUAL™ WINDOW.",
+      primaryText: "Request Free Consultation",
+      primaryLink: "/contact",
+    },
+  },
+
+  "virtual-sunlight": {
+    hero: {
+      subtitle: "SHILPKAR™ Collection",
+      title: "SHILPVIRTUAL™ SUNLIGHT",
+      description:
+        "An advanced illuminated architectural system designed to recreate the warmth and ambience of natural daylight indoors.",
+    },
+
+    sections: [
+      {
+        title: "SHILPVIRTUAL™ SUNLIGHT",
+        subtitle: "Experience the Feeling of Daylight",
+        description:
+          "Designed for interiors with limited access to natural light, this system creates a bright and inviting architectural atmosphere.",
+        image: "/images/virtual-sunlight.jpg",
+
+        specs: [
+          { label: "SYSTEM", value: "Virtual Sunlight" },
+          { label: "LIGHTING", value: "Architectural LED" },
+          { label: "EFFECT", value: "Natural Daylight Feel" },
+          { label: "DESIGN", value: "Custom Installation" },
+        ],
+      },
+    ],
+
+    whyChoose: {
+      eyebrow: "WHY CHOOSE SHILPVIRTUAL™ SUNLIGHT",
+      title: "Designed for Natural Ambience",
+      items: [
+        {
+          title: "Daylight Inspired",
+          description:
+            "Creates a bright visual atmosphere inspired by natural daylight.",
+        },
+        {
+          title: "Enhanced Ambience",
+          description:
+            "Adds warmth and openness to enclosed architectural environments.",
+        },
+        {
+          title: "Seamless Integration",
+          description:
+            "Designed to become a refined part of ceilings and interior architecture.",
+        },
+        {
+          title: "Custom Planning",
+          description:
+            "Each installation can be planned around the specific space and concept.",
+        },
+      ],
+    },
+
+    applications: {
+      eyebrow: "IDEAL APPLICATIONS",
+      title: "Created for Comfortable Interiors",
+      items: [
+        "Luxury Homes",
+        "Living Rooms",
+        "Bedrooms",
+        "Basements",
+        "Offices",
+        "Hotels",
+        "Hospitals",
+        "Wellness Centres",
+        "Spa Spaces",
+        "Commercial Interiors",
+      ],
+    },
+
+    cta: {
+      eyebrow: "LET'S CREATE SOMETHING EXTRAORDINARY",
+      title: "Bring the Feeling of Sunlight Indoors",
+      description:
+        "Create a brighter and more inviting architectural environment with SHILPVIRTUAL™ SUNLIGHT.",
+      primaryText: "Request Free Consultation",
+      primaryLink: "/contact",
+    },
+  },
+
+  "virtual-custom": {
+    hero: {
+      subtitle: "SHILPKAR™ Collection",
+      title: "SHILPVIRTUAL™ CUSTOM",
+      description:
+        "A completely bespoke virtual ceiling and window solution developed around your unique architectural concept and creative vision.",
+    },
+
+    sections: [
+      {
+        title: "SHILPVIRTUAL™ CUSTOM",
+        subtitle: "Designed Around Your Vision",
+        description:
+          "From custom artwork and dimensions to lighting effects and architectural integration, every SHILPVIRTUAL™ CUSTOM installation is created specifically for the project.",
+        image: "/images/virtual-custom.jpg",
+
+        specs: [
+          { label: "SYSTEM", value: "Bespoke Virtual Solution" },
+          { label: "DESIGN", value: "Fully Customised" },
+          { label: "LIGHTING", value: "Integrated LED" },
+          { label: "APPLICATION", value: "Ceiling & Wall" },
+        ],
+      },
+    ],
+
+    whyChoose: {
+      eyebrow: "WHY CHOOSE SHILPVIRTUAL™ CUSTOM",
+      title: "Unlimited Creative Possibilities",
+      items: [
+        {
+          title: "Bespoke Concepts",
+          description:
+            "Create a personalised visual experience designed specifically for your project.",
+        },
+        {
+          title: "Custom Dimensions",
+          description:
+            "Developed around the exact architectural requirements of the space.",
+        },
+        {
+          title: "Integrated Lighting",
+          description:
+            "Lighting can be planned to create the desired atmosphere and visual depth.",
+        },
+        {
+          title: "Premium Finish",
+          description:
+            "Every installation is designed as a refined and distinctive architectural feature.",
+        },
+      ],
+    },
+
+    applications: {
+      eyebrow: "IDEAL APPLICATIONS",
+      title: "Created for Unique Projects",
+      items: [
+        "Luxury Residences",
+        "Villas",
+        "Hotels",
+        "Restaurants",
+        "Retail Spaces",
+        "Corporate Offices",
+        "Experience Centres",
+        "Wellness Spaces",
+        "Entertainment Areas",
+        "Premium Commercial Interiors",
+      ],
+    },
+
+       cta: {
+      eyebrow: "LET'S CREATE SOMETHING EXTRAORDINARY",
+      title: "Let's Create Your Custom Experience",
+      description:
+        "Share your concept with our team and create a customised SHILPVIRTUAL™ solution for your space.",
+      primaryText: "Request Free Consultation",
+      primaryLink: "/contact",
+    },
+  },
+},
 };
 
 export default serviceDetails;

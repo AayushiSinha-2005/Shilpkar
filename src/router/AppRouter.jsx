@@ -76,15 +76,6 @@ export default function AppRouter() {
     </Page>
   }
 />
-<Route
-  path="/services/:serviceSlug/:categorySlug/:typeSlug"
-  element={
-    <Page>
-      <ServiceType />
-    </Page>
-  }
-/>
-
           <Route path="/gallery" element={<Page><Gallery /></Page>} />
           <Route path="/gallery/circular" element={<Page><CircularGalleryPage /></Page>} />
           <Route path="/contact" element={<Page><Contact /></Page>} />
