@@ -43,7 +43,7 @@ const services = [
     desc:
       "Contemporary textile ceiling concepts that bring softness, movement, depth and distinctive architectural character to premium interior spaces.",
 
-    image: images.service2,
+    image: images.textile.main,
 
     types: [
       {
@@ -79,7 +79,7 @@ const services = [
     desc:
       "Advanced fiber optic ceiling systems designed to create realistic star fields, animated twinkling effects, vibrant RGB lighting and immersive galaxy-inspired environments.",
 
-    image: images.service3,
+    image: images.fiberOptic.main,
 
     types: [
       {
@@ -115,7 +115,7 @@ const services = [
   desc:
     "Premium illuminated virtual ceiling and window systems designed to introduce open skies, natural ambience, scenic views and immersive architectural experiences.",
 
-  image: images.service4,
+  image: images.virtualCeiling.main,
 
   types: [
     {

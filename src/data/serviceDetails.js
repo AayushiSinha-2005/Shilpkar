@@ -15,7 +15,7 @@ const serviceDetails = {
           title: "Shilpkar™ Static White",
           subtitle: "Fixed White LED Stretch Ceiling System",
 
-          image: images.service1,
+image: images.translucent.staticWhite,
 
           description:
             "This configuration uses a single fixed color-temperature LED such as 3000K, 4000K, 6000K or 10000K depending on the desired visual effect. The ceiling remains consistently illuminated at the selected white-light temperature.",
@@ -48,7 +48,7 @@ const serviceDetails = {
           title: " Shilpkar™ CCT White",
           subtitle: "Dimmable + Tunable CCT LED System",
 
-          image: images.service2,
+          image: images.translucent.cctWhite,
 
           description:
             "Type 2 provides complete control over both brightness and white-light temperature. The ambience can be adjusted from warmer to cooler white according to the application, time of day and desired mood.",
@@ -80,7 +80,7 @@ const serviceDetails = {
           title: "Shilpkar™ RGBW White",
           subtitle: "RGBW Color Changing LED System",
 
-          image: images.service3,
+          image: images.translucent.rgbw,
 
           description:
             "Type 3 integrates RGBW LED technology, providing premium white illumination together with a wide range of coloured lighting effects. Users can control brightness, white-light settings and RGB colours from a single system.A printed sky ceiling can appear as natural daylight, then transition into sunset, blue sky or decorative colour scenes to create completely different moods.",
@@ -113,7 +113,7 @@ const serviceDetails = {
           title: "Shilpkar™ RGBW Pixel + DMX White.",
           subtitle: "Programmable Dynamic Lighting System",
 
-          image: images.service4,
+         image: images.translucent.rgbwProgramming,
 
           description:
             "Professional programmable pixel lighting system compatible with DMX and MADRIX controllers, enabling dynamic lighting scenes, animations and immersive architectural experiences.",
@@ -157,7 +157,7 @@ const serviceDetails = {
           title: "Shilpkar™ Static Print",
           subtitle: "Printed Stretch Ceiling",
 
-          image: images.service5,
+          image: images.printed.staticPrint,
 
           description:
             "High-resolution printed stretch ceiling with fixed white illumination, delivering vivid graphics and elegant architectural lighting.",
@@ -190,7 +190,7 @@ const serviceDetails = {
           title: "Shilpkar™ CCT Print",
           subtitle: "Printed Tunable White Ceiling",
 
-          image: images.service6,
+          image: images.printed.cctPrint,
 
           description:
             "Premium printed ceiling with adjustable brightness and colour temperature for creating the perfect ambience.",
@@ -223,7 +223,7 @@ const serviceDetails = {
           title: "Shilpkar™ RGBW Print",
           subtitle: "RGBW Printed Ceiling",
 
-          image: images.service7,
+          image: images.printed.rgbw,
 
           description:
             "Create immersive printed ceiling experiences with vibrant RGBW lighting and premium quality printed graphics.",
@@ -256,7 +256,7 @@ const serviceDetails = {
           title: "Shilpkar™ RGBW + DMX Print",
           subtitle: "Programmable Printed Ceiling",
 
-          image: images.service8,
+          image: images.printed.rgbwProgramming,
 
           description:
             "Fully programmable printed stretch ceiling system with DMX and MADRIX compatibility for premium dynamic lighting experiences.",
@@ -299,7 +299,7 @@ gloss: {
       title: "Premium High-Gloss Reflective Ceiling",
       subtitle: "Mirror Finish Luxury Ceiling",
 
-      image: images.service1,
+      image: images.gloss.main,
 
       description:
         "Shilpkar™ GLOSS is engineered to deliver a perfectly smooth, seamless and highly reflective ceiling surface. The premium stretch membrane is tensioned over a precision aluminium profile to eliminate joints, cracks and uneven finishes while creating a luxurious mirror-like appearance.\n\nThe reflective surface enhances both natural and artificial lighting, making interiors feel brighter, larger and significantly more elegant.",
@@ -320,7 +320,7 @@ gloss: {
       title: "The Beauty of Reflection",
       subtitle: "Elegant Visual Depth",
 
-      image: images.service2,
+      image: images.gloss.reflection,
 
       description:
         "The defining characteristic of Shilpkar™ GLOSS is its exceptional reflective finish. Chandeliers, pendant lights, decorative fixtures and architectural elements are beautifully reflected across the ceiling, creating an additional dimension throughout the space.\n\nThe result is a brighter, more spacious environment with a sophisticated luxury appearance that immediately enhances the overall interior experience.",
@@ -353,7 +353,7 @@ panel: {
 
       subtitle: "Premium Modular LED Panels",
 
-      image: images.service3,
+image: images.panel.grid,
 
       description:
         "Shilpkar™ Backlit Panels are specially engineered for Grid and T-Grid ceiling systems. Individual ceiling tiles can be replaced with illuminated printed panels, transforming ordinary modular ceilings into decorative architectural features with minimal installation time.\n\nThe system is ideal for both new construction projects and renovation of existing modular ceilings.",
@@ -376,7 +376,7 @@ panel: {
 
       subtitle: "Custom Printed Backlit Panels",
 
-      image: images.service4,
+      image: images.panel.design,
 
       description:
         "Every Shilpkar™ Backlit Panel can be customised with premium artwork including blue skies, clouds, nature scenes, abstract graphics, architectural designs, corporate branding and themed visuals. Multiple panels can be combined to create one continuous illuminated ceiling experience.",
@@ -412,7 +412,7 @@ panel: {
         description:
           "Inspired by the natural rhythm of flowing forms, SHILPWAVE™ WAVE transforms ceilings into a striking architectural feature. Its graceful textile curves create depth, softness and visual movement while maintaining a refined premium finish.",
 
-        image: "/images/shilpwave-wave.jpg",
+        image: images.textile.wave,
 
         specs: [
           {
@@ -527,7 +527,7 @@ frill: {
       description:
         "SHILPWAVE™ FRILL transforms the ceiling into a decorative architectural surface through carefully arranged textile layers and flowing contours. The result is a rich visual composition that adds depth, texture and a distinctive sense of luxury to the space.",
 
-      image: "/images/shilpwave-frill.jpg",
+      image: images.textile.frill,
 
       specs: [
         {
@@ -638,7 +638,7 @@ frill: {
       description:
         "SHILPWAVE™ SNAKE transforms the ceiling into a continuous architectural composition inspired by fluid movement. Its sweeping curves and sculptural textile forms create a powerful sense of depth, direction and visual energy, making it an ideal feature for contemporary luxury interiors.",
 
-      image: "/images/shilpwave-snake.jpg",
+      image: images.textile.snake,
 
       specs: [
         {
@@ -750,7 +750,7 @@ custom: {
       description:
         "Every SHILPWAVE™ CUSTOM installation is designed around the architecture of your space. From the shape and scale of the textile forms to the layout, depth and lighting integration, each element can be carefully developed to create a one-of-a-kind ceiling experience.",
 
-      image: "/images/shilpwave-custom.jpg",
+      image: images.textile.custom,
 
       specs: [
         {
@@ -846,7 +846,7 @@ custom: {
     catalogue: "/pdf/textile-ceiling.pdf",
   },
 },
- },
+},
 
   "fiber-optic": {
     static: {
@@ -866,7 +866,7 @@ custom: {
       description:
         "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky.",
 
-      image: "/images/fibersky-static.jpg",
+      image: images.fiberOptic.static,
 
       specs: [
         {
@@ -982,7 +982,7 @@ twinkle: {
       description:
         "FIBERSKY™ TWINKLE transforms ordinary ceilings into a living night sky. Advanced fiber optic technology creates thousands of luminous star points that gently shimmer and twinkle, bringing depth, movement and a sense of calm to luxury interiors.",
 
-      image: "/images/fibersky-twinkle.jpg",
+      image: images.fiberOptic.twinkle,
 
       specs: [
         {
@@ -1098,7 +1098,7 @@ rgb: {
       description:
         "FIBERSKY™ RGB brings colour, movement and atmosphere together in one immersive ceiling experience. Advanced programmable fiber optic technology allows the star field to transform through a spectrum of colours and dynamic lighting effects, creating a striking visual feature tailored to the mood and character of your space.",
 
-      image: "/images/fibersky-rgb.jpg",
+      image: images.fiberOptic.rgb,
 
       specs: [
         {
@@ -1210,7 +1210,7 @@ catalogue: "",
       description:
         "Inspired by the breathtaking beauty of our galaxy, FIBERSKY™ GALAXY PRO transforms ceilings into spectacular cosmic landscapes. Carefully composed star clusters, varying densities and dramatic illumination create the flowing depth and visual character of a galaxy, turning the ceiling into an unforgettable architectural centrepiece.",
 
-      image: "/images/fibersky-galaxy-pro.jpg",
+      image: images.fiberOptic.galaxyPro,
 
       specs: [
         {
@@ -1326,7 +1326,7 @@ catalogue: "",
         subtitle: "Bring the Sky Indoors",
         description:
           "SHILPVIRTUAL™ SKY transforms enclosed interiors into brighter and more open environments with realistic sky visuals and integrated illumination.",
-        image: "/images/virtual-sky.jpg",
+        image: images.virtualCeiling.sky,
 
         specs: [
           { label: "SYSTEM", value: "Virtual Sky Ceiling" },
@@ -1405,7 +1405,7 @@ catalogue: "",
         subtitle: "A View Beyond the Wall",
         description:
           "Transform ordinary walls into illuminated architectural features that create the impression of a beautiful view beyond the interior.",
-        image: "/images/virtual-window.jpg",
+        image: images.virtualCeiling.window,
 
         specs: [
           { label: "SYSTEM", value: "Virtual Window" },
@@ -1484,7 +1484,7 @@ catalogue: "",
         subtitle: "Experience the Feeling of Daylight",
         description:
           "Designed for interiors with limited access to natural light, this system creates a bright and inviting architectural atmosphere.",
-        image: "/images/virtual-sunlight.jpg",
+       image: images.virtualCeiling.sunlight,
 
         specs: [
           { label: "SYSTEM", value: "Virtual Sunlight" },
@@ -1563,7 +1563,7 @@ catalogue: "",
         subtitle: "Designed Around Your Vision",
         description:
           "From custom artwork and dimensions to lighting effects and architectural integration, every SHILPVIRTUAL™ CUSTOM installation is created specifically for the project.",
-        image: "/images/virtual-custom.jpg",
+       image: images.virtualCeiling.custom,
 
         specs: [
           { label: "SYSTEM", value: "Bespoke Virtual Solution" },

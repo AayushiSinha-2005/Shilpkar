@@ -43,10 +43,192 @@ heroSlides: [
   servicesCover: u("photo-1600585154340-be6161a56a0c", 1400),
   shopBackground,
 
-  service1: u("photo-1600607687939-ce8a6c25118c", 1200),
-  service2: u("photo-1616137466211-f939a420be84", 1200),
-  service3: u("photo-1583847268964-b28dc8f51f92", 1200),
-  service4: u("photo-1598928506311-c55ded91a20c", 1200),
+service1: new URL(
+  "../assets/images/services/stretch-ceiling/main/stretch-ceiling-main.png",
+  import.meta.url
+).href,
+
+translucent: {
+  main: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/stretch ceiling 1.png",
+    import.meta.url
+  ).href,
+
+  staticWhite: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/static-white.png",
+    import.meta.url
+  ).href,
+
+  cctWhite: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/cct-white.png",
+    import.meta.url
+  ).href,
+
+  rgbw: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/RGBW Stretch Ceiling.png",
+    import.meta.url
+  ).href,
+
+  rgbwProgramming: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/RGBW Programming.png",
+    import.meta.url
+  ).href,
+},
+
+printed: {
+  staticPrint: new URL(
+    "../assets/images/services/stretch-ceiling/printed/static-print.png",
+    import.meta.url
+  ).href,
+
+  cctPrint: new URL(
+    "../assets/images/services/stretch-ceiling/printed/cct-print.png",
+    import.meta.url
+  ).href,
+
+  rgbw: new URL(
+    "../assets/images/services/stretch-ceiling/printed/Printed RGBW.png",
+    import.meta.url
+  ).href,
+
+  rgbwProgramming: new URL(
+    "../assets/images/services/stretch-ceiling/printed/Printed RGBW Programming.png",
+    import.meta.url
+  ).href,
+
+  printed4k: new URL(
+    "../assets/images/services/stretch-ceiling/printed/Printed 4k png.png",
+    import.meta.url
+  ).href,
+
+  main: new URL(
+    "../assets/images/services/stretch-ceiling/printed/Printed Stretch Ceiling.png",
+    import.meta.url
+  ).href,
+},
+
+gloss: {
+  main: new URL(
+    "../assets/images/services/stretch-ceiling/gloss/Glossy Stretch Ceiling.png",
+    import.meta.url
+  ).href,
+
+  reflection: new URL(
+    "../assets/images/services/stretch-ceiling/gloss/glossy 2.jpg",
+    import.meta.url
+  ).href,
+},
+
+panel: {
+  grid: new URL(
+    "../assets/images/services/stretch-ceiling/panel/2x2 pannel.png",
+    import.meta.url
+  ).href,
+
+  design: new URL(
+    "../assets/images/services/stretch-ceiling/panel/Pannel 2.png",
+    import.meta.url
+  ).href,
+},
+
+textile: {
+  main: new URL(
+    "../assets/images/services/textile-ceiling/main/Textile main.png",
+    import.meta.url
+  ).href,
+
+  wave: new URL(
+    "../assets/images/services/textile-ceiling/wave/textile wave.webp",
+    import.meta.url
+  ).href,
+
+  frill: new URL(
+    "../assets/images/services/textile-ceiling/frill/textile frill.webp",
+    import.meta.url
+  ).href,
+
+  snake: new URL(
+    "../assets/images/services/textile-ceiling/snake/textile snake.webp",
+    import.meta.url
+  ).href,
+
+  custom: new URL(
+    "../assets/images/services/textile-ceiling/custom/Textile Ceiling.png",
+    import.meta.url
+  ).href,
+},
+
+fiberOptic: {
+  main: new URL(
+    "../assets/images/services/fiber-optic/main/fiber-optic-static.png",
+    import.meta.url
+  ).href,
+
+  static: new URL(
+    "../assets/images/services/fiber-optic/static/fiber-optic-static.avif",
+    import.meta.url
+  ).href,
+
+  twinkle: new URL(
+    "../assets/images/services/fiber-optic/twinkle/twinkle-star-fiber-optic.png",
+    import.meta.url
+  ).href,
+
+  rgb: new URL(
+    "../assets/images/services/fiber-optic/rgb/fiber-optic-rgb.avif",
+    import.meta.url
+  ).href,
+
+  galaxyPro: new URL(
+    "../assets/images/services/fiber-optic/galaxy-pro/Galaxy-Design-Fiber-Light.jpg",
+    import.meta.url
+  ).href,
+},
+
+
+virtualCeiling: {
+  main: new URL(
+    "../assets/images/services/virtual-ceiling/main/virtual ceiling main.webp",
+    import.meta.url
+  ).href,
+
+  sky: new URL(
+    "../assets/images/services/virtual-ceiling/sky/Sunlight virtual.png",
+    import.meta.url
+  ).href,
+
+  window: new URL(
+    "../assets/images/services/virtual-ceiling/window/virtual window.webp",
+    import.meta.url
+  ).href,
+
+  sunlight: new URL(
+    "../assets/images/services/virtual-ceiling/sunlight/Sunlight virtual image.png",
+    import.meta.url
+  ).href,
+
+  custom: new URL(
+    "../assets/images/services/virtual-ceiling/custom/virtual ceiling.webp",
+    import.meta.url
+  ).href,
+},
+
+
+service2: new URL(
+  "../assets/images/services/textile-ceiling/main/Textile main.png",
+  import.meta.url
+).href,
+
+service3: new URL(
+  "../assets/images/services/fiber-optic/main/fiber-optic-static.png",
+  import.meta.url
+).href,
+
+service4: new URL(
+  "../assets/images/services/virtual-ceiling/main/virtual ceiling main.webp",
+  import.meta.url
+).href,
+
   service5: u("photo-1591474200742-8e512e6f98f8", 1200),
   service6: u("photo-1524758631624-e2822e304c36", 1200),
   service7: u("photo-1616137466211-f939a420be84", 1200),
