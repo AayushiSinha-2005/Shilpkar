@@ -34,7 +34,21 @@ heroSlides: [
   heroAlt: u("photo-1616486338812-3dadae4b4ace", 2000),
   territory: shilpkarDealershipTerritory,
   associateProjectSupport: shilpkarAssociateProjectSupport,
-  aboutPreview: u("photo-1615874959474-d609969a20ed", 1400),
+aboutPreview: new URL(
+  "../assets/images/home/about-preview/about-preview.png",
+  import.meta.url
+).href,
+
+aboutHero: new URL(
+  "../assets/images/about/about-hero.png",
+  import.meta.url
+).href,
+
+aboutStory: new URL(
+  "../assets/images/about/about-story.png",
+  import.meta.url
+).href,
+
   ownerPhoto: ownerPortrait,
   creativeDirector,
   shilpkarDealershipHero,
@@ -236,18 +250,63 @@ service4: new URL(
 
 
   gallery: [
-    u("photo-1519710164239-da123dc03ef4", 1400),
-    u("photo-1493809842364-78817add7ffb", 1400),
-    u("photo-1484154218962-a197022b5858", 1400),
-    u("photo-1560184897-ae75f418493e", 1400),
-    u("photo-1567538096630-e0c55bd6374c", 1400),
-    u("photo-1571508601891-ca5e7a713859", 1400),
-    u("photo-1505873242700-f289a29e1e0f", 1400),
-    u("photo-1505691938895-1758d7feb511", 1400),
-    u("photo-1522771739844-6a9f6d5f14af", 1400),
-    u("photo-1615529182904-14819c35db37", 1400),
-    u("photo-1616046229478-9901c5536a45", 1400),
-    u("photo-1631679706909-1844bbd07221", 1400),
+  // 01 — Stretch Ceiling
+  new URL(
+    "../assets/images/services/stretch-ceiling/main/stretch-ceiling-main.png",
+    import.meta.url
+  ).href,
+
+  // 02 — Translucent Stretch Ceiling
+  new URL(
+    "../assets/images/services/stretch-ceiling/translucent/stretch ceiling 1.png",
+    import.meta.url
+  ).href,
+
+  // 03 — Printed Stretch Ceiling
+  new URL(
+    "../assets/images/services/stretch-ceiling/printed/Printed Stretch Ceiling.png",
+    import.meta.url
+  ).href,
+
+  // 04 — Glossy Stretch Ceiling
+  new URL(
+    "../assets/images/services/stretch-ceiling/gloss/Glossy Stretch Ceiling.png",
+    import.meta.url
+  ).href,
+
+  // 05 — Textile Wave
+  new URL(
+    "../assets/images/services/textile-ceiling/wave/textile wave.webp",
+    import.meta.url
+  ).href,
+
+  // 06 — Fiber Optic Galaxy
+  new URL(
+    "../assets/images/services/fiber-optic/galaxy-pro/Galaxy-Design-Fiber-Light.jpg",
+    import.meta.url
+  ).href,
+
+  // 07 — Virtual Sky
+  new URL(
+    "../assets/images/services/virtual-ceiling/sky/Sunlight virtual.png",
+    import.meta.url
+  ).href,
+
+  // 08 — 2x2 Panel
+  new URL(
+    "../assets/images/services/stretch-ceiling/panel/2x2 pannel.png",
+    import.meta.url
+  ).href,
+
+  // Existing Gallery Images — keep for Gallery page
+  u("photo-1522771739844-6a9f6d5f14af", 1400),
+  u("photo-1615529182904-14819c35db37", 1400),
+  u("photo-1616046229478-9901c5536a45", 1400),
+  u("photo-1631679706909-1844bbd07221", 1400),
+  u("photo-1522771739844-6a9f6d5f14af", 1400),
+  u("photo-1615529182904-14819c35db37", 1400),
+  u("photo-1616046229478-9901c5536a45", 1400),
+  u("photo-1631679706909-1844bbd07221", 1400),
   ],
 
   projects: [

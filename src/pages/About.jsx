@@ -15,33 +15,27 @@ export default function About() {
   const [expanded, setExpanded] = useState(false);
   return (
     <div className="about-page">
-      <section className="section-dark about-hero">
-        <div className="container">
-          <span className="eyebrow">
-About Shilpkar Factory
-</span>
+    {/* ================= ABOUT HERO ================= */}
 
-<SplitText
-as="h1"
-className="chisel about-hero__title"
-text="Craftsmanship Meets Modern Innovation"
-/>
+<section className="section-dark about-hero">
 
-<p className="about-hero__lede">
+  <div className="about-hero__background">
+    <img
+      src={images.aboutHero}
+      alt="Shilpkar Factory premium architectural solutions"
+    />
+  </div>
 
-Shilpkar Factory is a premium manufacturer of stretch ceilings,
-decorative wall systems, epoxy flooring and bespoke architectural
-solutions crafted for luxury residential and commercial interiors.
-
-</p>
-        </div>
-      </section>
+</section>
 
       <section className="section about-story">
         <div className="container about-story__grid">
           <div className="about-story__image">
-            <img src={images.ownerBackdrop} alt="Shilpkar Factory workshop with timber and material samples" />
-          </div>
+  <img
+    src={images.aboutStory}
+    alt="Luxury Shilpkar Factory interior featuring premium ceiling and architectural wall design"
+  />
+</div>
           <div className="about-story__text">
 
   <SplitText
