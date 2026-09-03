@@ -7,6 +7,8 @@ const serviceDetails = {
         subtitle: "Translucent & Illuminated Ceiling",
         description:
           "Premium translucent stretch ceiling systems engineered to create seamless illuminated architectural interiors with elegant lighting and luxury finishes.",
+
+          image: images.translucent.heroBanner,
       },
 
       sections: [
@@ -149,6 +151,8 @@ image: images.translucent.staticWhite,
         subtitle: "Customized Printed Stretch Ceiling",
         description:
           "Premium customized printed stretch ceiling systems combining high-resolution graphics with advanced lighting technologies.",
+
+          image: images.printed.heroBanner,
       },
 
       sections: [
@@ -291,6 +295,7 @@ gloss: {
     subtitle: "Premium High-Gloss Reflective Ceiling",
     description:
       "Shilpkar™ GLOSS is a premium reflective stretch ceiling system designed to create seamless mirror-like surfaces that enhance lighting, add visual depth and transform interiors into elegant luxury spaces.",
+      image: images.gloss.heroBanner,
   },
 
   sections: [
@@ -343,6 +348,7 @@ panel: {
     subtitle: "Modular Printed & Illuminated Panel Systems",
     description:
       "Premium modular backlit panel systems designed for Grid and T-Grid ceilings, combining uniform LED illumination with high-resolution custom printing for commercial and architectural interiors.",
+      image: images.panel.heroBanner,
   },
 
   sections: [
@@ -397,13 +403,16 @@ image: images.panel.grid,
 },
 
  "textile-ceiling": {
+  
   wave: {
     hero: {
-      subtitle: "SHILPWAVE™ Collection",
-      title: "SHILPWAVE™ WAVE",
-      description:
-        "SHILPWAVE™ WAVE is a premium textile ceiling system designed to introduce elegant movement, flowing forms and architectural depth into luxury interior spaces.",
-    },
+  subtitle: "SHILPWAVE™ Collection",
+  title: "SHILPWAVE™ WAVE",
+  description:
+    "SHILPWAVE™ WAVE is a premium textile ceiling system designed to introduce elegant movement, flowing forms and architectural depth into luxury interior spaces.",
+
+  image: images.textile.waveHeroBanner,
+},
 
     sections: [
       {
@@ -513,12 +522,14 @@ image: images.panel.grid,
 
 
 frill: {
-  hero: {
-    subtitle: "SHILPWAVE™ Collection",
-    title: "SHILPWAVE™ FRILL",
-    description:
-      "SHILPWAVE™ FRILL is a premium textile ceiling system created to add sculptural texture, softness and decorative character to sophisticated interior spaces.",
-  },
+ hero: {
+  subtitle: "SHILPWAVE™ Collection",
+  title: "SHILPWAVE™ FRILL",
+  description:
+    "SHILPWAVE™ FRILL is a premium textile ceiling system created to add sculptural texture, softness and decorative character to sophisticated interior spaces.",
+
+  image: images.textile.frillHeroBanner,
+},
 
   sections: [
     {
@@ -623,13 +634,15 @@ frill: {
   },
 },
 
-    snake: {
-  hero: {
-    subtitle: "SHILPWAVE™ Collection",
-    title: "SHILPWAVE™ SNAKE",
-    description:
-      "SHILPWAVE™ SNAKE is a bold architectural textile ceiling system designed with dynamic curves and continuous flowing forms to create a dramatic visual identity.",
-  },
+snake: {
+ hero: {
+  subtitle: "SHILPWAVE™ Collection",
+  title: "SHILPWAVE™ SNAKE",
+  description:
+    "SHILPWAVE™ SNAKE is a bold architectural textile ceiling system designed with dynamic curves and continuous flowing forms to create a dramatic visual identity.",
+
+  image: images.textile.snakeHeroBanner,
+},
 
   sections: [
     {
@@ -736,11 +749,13 @@ frill: {
 
 custom: {
   hero: {
-    subtitle: "SHILPWAVE™ Collection",
-    title: "SHILPWAVE™ CUSTOM",
-    description:
-      "SHILPWAVE™ CUSTOM is a fully bespoke textile ceiling solution created for interiors that demand a unique architectural identity, tailored dimensions and complete design flexibility.",
-  },
+  subtitle: "SHILPWAVE™ Collection",
+  title: "SHILPWAVE™ CUSTOM",
+  description:
+    "SHILPWAVE™ CUSTOM is a fully bespoke textile ceiling solution created for interiors that demand a unique architectural identity, tailored dimensions and complete design flexibility.",
+
+  image: images.textile.customHeroBanner,
+},
 
   sections: [
     {
@@ -855,7 +870,9 @@ custom: {
     title: "FIBERSKY™ STATIC",
     description:
       "FIBERSKY™ STATIC is a premium fiber optic star ceiling solution designed to recreate the mesmerizing beauty of a clear, star-filled night sky within luxury interiors.",
-  },
+      image: images.fiberOptic.staticHeroBanner,
+
+    },
 
   sections: [
     {
@@ -967,11 +984,13 @@ catalogue: "",
 
 twinkle: {
   hero: {
-    subtitle: "SHILPKAR™ Collection",
-    title: "FIBERSKY™ TWINKLE",
-    description:
-      "FIBERSKY™ TWINKLE is a premium dynamic fiber optic ceiling designed to bring the captivating movement of a naturally star-filled night sky into luxury interiors.",
-  },
+  subtitle: "SHILPKAR™ Collection",
+  title: "FIBERSKY™ TWINKLE",
+  description:
+    "FIBERSKY™ TWINKLE is a premium dynamic fiber optic ceiling designed to bring the captivating movement of a naturally star-filled night sky into luxury interiors.",
+
+  image: images.fiberOptic.twinkleHeroBanner,
+},
 
   sections: [
     {
@@ -1082,12 +1101,14 @@ catalogue: "",
 },
 
 rgb: {
-  hero: {
-    subtitle: "SHILPKAR™ Collection",
-    title: "FIBERSKY™ RGB",
-    description:
-      "FIBERSKY™ RGB is an advanced colour-changing fiber optic ceiling system that combines programmable illumination with the timeless beauty of a star-filled night sky.",
-  },
+ hero: {
+  subtitle: "SHILPKAR™ Collection",
+  title: "FIBERSKY™ RGB",
+  description:
+    "FIBERSKY™ RGB is an advanced colour-changing fiber optic ceiling system that combines programmable illumination with the timeless beauty of a star-filled night sky.",
+
+  image: images.fiberOptic.rgbHeroBanner,
+},
 
   sections: [
     {
@@ -1195,11 +1216,13 @@ catalogue: "",
 
 "galaxy-pro": {
     hero: {
-    subtitle: "SHILPKAR™ Collection",
-    title: "FIBERSKY™ GALAXY PRO",
-    description:
-      "FIBERSKY™ GALAXY PRO is an advanced luxury fiber optic ceiling system inspired by the breathtaking depth, movement and brilliance of the cosmos.",
-  },
+  subtitle: "SHILPKAR™ Collection",
+  title: "FIBERSKY™ GALAXY PRO",
+  description:
+    "FIBERSKY™ GALAXY PRO is an advanced luxury fiber optic ceiling system inspired by the breathtaking depth, movement and brilliance of the cosmos.",
+
+  image: images.fiberOptic.galaxyProHeroBanner,
+},
 
   sections: [
     {
@@ -1314,11 +1337,13 @@ catalogue: "",
 "virtual-ceiling": {
   "virtual-sky": {
     hero: {
-      subtitle: "SHILPKAR™ Collection",
-      title: "SHILPVIRTUAL™ SKY",
-      description:
-        "A premium illuminated virtual ceiling system designed to recreate the visual openness of blue skies and natural daylight within interior spaces.",
-    },
+  subtitle: "SHILPKAR™ Collection",
+  title: "SHILPVIRTUAL™ SKY",
+  description:
+    "A premium illuminated virtual ceiling system designed to recreate the visual openness of blue skies and natural daylight within interior spaces.",
+
+  image: images.virtualCeiling.skyHeroBanner,
+},
 
     sections: [
       {
@@ -1397,7 +1422,8 @@ catalogue: "",
       title: "SHILPVIRTUAL™ WINDOW",
       description:
         "A premium illuminated virtual window system designed to introduce the feeling of outdoor views and natural openness into interior spaces.",
-    },
+      image: images.virtualCeiling.windowHeroBanner,
+      },
 
     sections: [
       {
@@ -1476,7 +1502,8 @@ catalogue: "",
       title: "SHILPVIRTUAL™ SUNLIGHT",
       description:
         "An advanced illuminated architectural system designed to recreate the warmth and ambience of natural daylight indoors.",
-    },
+      image: images.virtualCeiling.sunlightHeroBanner,
+      },
 
     sections: [
       {
@@ -1555,7 +1582,8 @@ catalogue: "",
       title: "SHILPVIRTUAL™ CUSTOM",
       description:
         "A completely bespoke virtual ceiling and window solution developed around your unique architectural concept and creative vision.",
-    },
+      image: images.virtualCeiling.customHeroBanner,
+      },
 
     sections: [
       {

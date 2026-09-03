@@ -63,8 +63,14 @@ service1: new URL(
 ).href,
 
 translucent: {
+  
   main: new URL(
     "../assets/images/services/stretch-ceiling/translucent/stretch ceiling 1.png",
+    import.meta.url
+  ).href,
+
+    heroBanner: new URL(
+    "../assets/images/services/stretch-ceiling/translucent/banner/translucent-hero-banner.webp",
     import.meta.url
   ).href,
 
@@ -90,6 +96,11 @@ translucent: {
 },
 
 printed: {
+  heroBanner: new URL(
+    "../assets/images/services/stretch-ceiling/printed/banner/print-hero-banner.png",
+    import.meta.url
+  ).href,
+
   staticPrint: new URL(
     "../assets/images/services/stretch-ceiling/printed/static-print.png",
     import.meta.url
@@ -122,11 +133,17 @@ printed: {
 },
 
 gloss: {
-  main: new URL(
+   main: new URL(
     "../assets/images/services/stretch-ceiling/gloss/Glossy Stretch Ceiling.png",
     import.meta.url
   ).href,
 
+   heroBanner: new URL(
+    "../assets/images/services/stretch-ceiling/gloss/banner/gloss-hero-banner.png",
+    import.meta.url
+  ).href,
+
+ 
   reflection: new URL(
     "../assets/images/services/stretch-ceiling/gloss/glossy 2.jpg",
     import.meta.url
@@ -134,6 +151,11 @@ gloss: {
 },
 
 panel: {
+  heroBanner: new URL(
+    "../assets/images/services/stretch-ceiling/panel/banner/panel-hero-banner.png",
+    import.meta.url
+  ).href,
+
   grid: new URL(
     "../assets/images/services/stretch-ceiling/panel/2x2 pannel.png",
     import.meta.url
@@ -156,8 +178,18 @@ textile: {
     import.meta.url
   ).href,
 
+  waveHeroBanner: new URL(
+    "../assets/images/services/textile-ceiling/wave/banner/wave-hero-banner.png",
+    import.meta.url
+  ).href,
+
   frill: new URL(
     "../assets/images/services/textile-ceiling/frill/textile frill.webp",
+    import.meta.url
+  ).href,
+
+  frillHeroBanner: new URL(
+    "../assets/images/services/textile-ceiling/frill/banner/frill-hero-banner.png",
     import.meta.url
   ).href,
 
@@ -166,8 +198,18 @@ textile: {
     import.meta.url
   ).href,
 
+  snakeHeroBanner: new URL(
+    "../assets/images/services/textile-ceiling/snake/banner/snake-hero-banner.png",
+    import.meta.url
+  ).href,
+
   custom: new URL(
     "../assets/images/services/textile-ceiling/custom/Textile Ceiling.png",
+    import.meta.url
+  ).href,
+
+  customHeroBanner: new URL(
+    "../assets/images/services/textile-ceiling/custom/banner/custom-hero-banner.png",
     import.meta.url
   ).href,
 },
@@ -183,8 +225,18 @@ fiberOptic: {
     import.meta.url
   ).href,
 
+  staticHeroBanner: new URL(
+    "../assets/images/services/fiber-optic/static/banner/fiber-optic-hero-banner.png",
+    import.meta.url
+  ).href,
+
   twinkle: new URL(
     "../assets/images/services/fiber-optic/twinkle/twinkle-star-fiber-optic.png",
+    import.meta.url
+  ).href,
+
+  twinkleHeroBanner: new URL(
+    "../assets/images/services/fiber-optic/twinkle/banner/fiber-twinkle-hero-banner.png",
     import.meta.url
   ).href,
 
@@ -193,8 +245,18 @@ fiberOptic: {
     import.meta.url
   ).href,
 
+  rgbHeroBanner: new URL(
+    "../assets/images/services/fiber-optic/rgb/banner/fiber-optic-rgb-banner.png",
+    import.meta.url
+  ).href,
+
   galaxyPro: new URL(
     "../assets/images/services/fiber-optic/galaxy-pro/Galaxy-Design-Fiber-Light.jpg",
+    import.meta.url
+  ).href,
+
+  galaxyProHeroBanner: new URL(
+    "../assets/images/services/fiber-optic/galaxy-pro/banner/fiber-optic-galaxy-pro-hero-banner.png",
     import.meta.url
   ).href,
 },
@@ -211,8 +273,18 @@ virtualCeiling: {
     import.meta.url
   ).href,
 
+  skyHeroBanner: new URL(
+    "../assets/images/services/virtual-ceiling/sky/banner/virtual-sky-hero-banner.png",
+    import.meta.url
+  ).href,
+
   window: new URL(
     "../assets/images/services/virtual-ceiling/window/virtual window.webp",
+    import.meta.url
+  ).href,
+
+  windowHeroBanner: new URL(
+    "../assets/images/services/virtual-ceiling/window/banner/virtual-window-hero-banner.png",
     import.meta.url
   ).href,
 
@@ -221,12 +293,21 @@ virtualCeiling: {
     import.meta.url
   ).href,
 
+  sunlightHeroBanner: new URL(
+    "../assets/images/services/virtual-ceiling/sunlight/banner/virtual-sunlight-hero-banner.png",
+    import.meta.url
+  ).href,
+
   custom: new URL(
     "../assets/images/services/virtual-ceiling/custom/virtual ceiling.webp",
     import.meta.url
   ).href,
-},
 
+  customHeroBanner: new URL(
+    "../assets/images/services/virtual-ceiling/custom/banner/virtual-custom-hero-banner.png",
+    import.meta.url
+  ).href,
+},
 
 service2: new URL(
   "../assets/images/services/textile-ceiling/main/Textile main.png",

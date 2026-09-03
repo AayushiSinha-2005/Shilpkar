@@ -21,8 +21,17 @@ export default function ServiceDetail() {
 
       {/* ================= HERO ================= */}
 
-      <section className="service-detail-hero">
-        <div className="container">
+<section
+  className="service-detail-hero"
+  style={
+    service.hero?.image
+      ? {
+          backgroundImage: `url(${service.hero.image})`,
+        }
+      : undefined
+  }
+>
+          <div className="container">
 
           {service.hero?.subtitle && (
             <span className="eyebrow">

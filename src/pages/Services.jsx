@@ -3,31 +3,51 @@ import SplitText from "../components/Effects/SplitText.jsx";
 import services from "../data/services.js";
 import "./Services.css";
 import { Link } from "react-router-dom";
+import servicesBanner from "../assets/images/services/banner/services-stretch-ceiling-banner.webp";
+
+
 
 export default function Services({ preview = false }) {
   const items = preview ? services.slice(0, 3) : services;
 
-  return (
-    <section className="section services-section">
-      <div className="container">
+return (
+  <>
+    {!preview && (
+      <section
+        className="services-banner"
+        style={{
+          backgroundImage: `url(${servicesBanner})`,
+        }}
+      >
+        <div className="services-banner__overlay">
+          <div className="container services-banner__content">
+            <span className="eyebrow">
+              OUR EXPERTISE
+            </span>
 
-        <div className="services-section__head">
-          <span className="eyebrow">OUR EXPERTISE</span>
+            <h1 className="chisel">
+              Luxury Ceiling Solutions
+            </h1>
 
-<SplitText
-  as="h2"
-  className="chisel"
-  text="Luxury Ceiling Solutions"
-/>
-
-
-          {preview && (
-            <a href="/services" className="services-section__more">
-              View All →
-            </a>
-          )}
+            <p>
+              Discover premium stretch ceiling solutions designed
+              to transform interiors with light, texture and
+              limitless creative possibilities.
+            </p>
+          </div>
         </div>
+      </section>
+    )}
 
+    <section className="section services-section">      <div className="container">
+
+        {preview && (
+  <div className="services-section__head">
+    <a href="/services" className="services-section__more">
+      View All →
+    </a>
+  </div>
+)}
         <div className="services-list">
 
           {items.map((service, index) => (
@@ -104,6 +124,7 @@ export default function Services({ preview = false }) {
         </div>
 
       </div>
-    </section>
+       </section>
+  </>
   );
 }

@@ -1,3 +1,100 @@
+/* ============================= */
+/* SERVICES BANNER */
+/* ============================= */
+
+.services-banner {
+  min-height: 600px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.services-banner__overlay {
+  width: 100%;
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 25, 21, 0.78) 0%,
+      rgba(5, 25, 21, 0.52) 45%,
+      rgba(5, 25, 21, 0.18) 100%
+    );
+}
+.services-banner__content {
+  max-width: 600px;
+  color: #fff;
+}
+
+.services-banner__content .eyebrow {
+  display: inline-block;
+
+  color: #D4AF37;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 20px;
+}
+
+.services-banner__content h1 {
+  color: #fff;
+
+  font-size: clamp(52px, 7vw, 95px);
+
+  line-height: 1.05;
+
+  margin: 0 0 25px;
+}
+
+.services-banner__content p {
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 19px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .services-banner,
+  .services-banner__overlay {
+    min-height: 450px;
+  }
+
+  .services-banner {
+    background-position: center;
+  }
+
+  .services-banner__content h1 {
+    font-size: 52px;
+  }
+
+  .services-banner__content p {
+    font-size: 16px;
+  }
+
+}
+
 /* -------------------- */
 /* SERVICES LIST */
 /* -------------------- */
@@ -6,7 +103,7 @@
     display:flex;
     flex-direction:column;
     gap:90px;
-    margin-top:80px;
+    margin-top:0;
 }
 
 .service-row{
@@ -23,7 +120,9 @@
 .service-row.reverse .service-content{
     order:1;
 }
-
+.services-section{
+    padding-top:0;
+}
 /* -------------------- */
 /* IMAGE */
 /* -------------------- */
