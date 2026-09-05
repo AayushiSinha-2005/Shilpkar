@@ -66,7 +66,15 @@ export default function AppRouter() {
           <Route path="/shop" element={<Page><ShopByCategory /></Page>} />
           <Route path="/about" element={<Page><About /></Page>} />
           <Route path="/services" element={<Page><Services /></Page>} />
-          
+
+<Route
+  path="/services/:serviceSlug/:categorySlug/:typeSlug"
+  element={
+    <Page>
+      <ServiceDetail />
+    </Page>
+  }
+/>  
 
 <Route
   path="/services/:serviceSlug/:categorySlug"

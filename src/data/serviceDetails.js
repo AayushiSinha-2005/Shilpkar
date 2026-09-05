@@ -13,135 +13,638 @@ const serviceDetails = {
 
       sections: [
         {
-          tag: "TYPE 1",
-          title: "Shilpkar™ Static White",
-          subtitle: "Fixed White LED Stretch Ceiling System",
+  tag: "TYPE 1",
+  title: "Shilpkar™ Static White",
+  subtitle: "Fixed White LED Stretch Ceiling System",
 
-image: images.translucent.staticWhite,
+  image: images.translucent.staticWhite,
 
-          description:
-            "This configuration uses a single fixed color-temperature LED such as 3000K, 4000K, 6000K or 10000K depending on the desired visual effect. The ceiling remains consistently illuminated at the selected white-light temperature.",
+  description:
+    "This configuration uses a single fixed colour-temperature LED such as 3000K, 4000K, 6000K or 10000K depending on the desired visual effect. The ceiling remains consistently illuminated at the selected white-light temperature.",
 
-          bestFor:
-            "Ceilings, Offices, Retail Spaces, Corridors and projects requiring simple, clean and consistent illumination.",
+  bestFor:
+    "Ceilings, Offices, Retail Spaces, Corridors and projects requiring simple, clean and consistent illumination.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "ON / OFF",
-            },
-            {
-              label: "CCT",
-              value: "Fixed",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "No",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "No",
-            },
-          ],
-        },
+  specs: [
+    {
+      label: "CONTROL",
+      value: "ON / OFF",
+    },
+    {
+      label: "CCT",
+      value: "Fixed",
+    },
+    {
+      label: "COLOR CHANGING",
+      value: "No",
+    },
+    {
+      label: "DYNAMIC EFFECTS",
+      value: "No",
+    },
+  ],
+
+
+  /* ================= WHY CHOOSE ================= */
+
+    whyChoose: {
+    eyebrow: "WHY CHOOSE STATIC WHITE",
+    title: "Designed for Modern Interiors",
+    items: [
+      {
+        title: "CONTROL",
+        description: "ON / OFF",
+      },
+      {
+        title: "CCT",
+        description: "Fixed",
+      },
+      {
+        title: "COLOR CHANGING",
+        description: "No",
+      },
+      {
+        title: "DYNAMIC EFFECTS",
+        description: "No",
+      },
+    ],
+  },
+
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "Advanced Lighting Experience",
+    items: [
+      {
+        title: "3000K",
+        subtitle: "Warm White",
+        description:
+          "Creates a warm, comfortable and inviting atmosphere for elegant residential and hospitality interiors.",
+      },
+      {
+        title: "4000K",
+        subtitle: "Natural White",
+        description:
+          "Provides balanced and comfortable illumination suitable for modern everyday environments.",
+      },
+      {
+        title: "6000K",
+        subtitle: "Cool White",
+        description:
+          "Delivers bright and crisp illumination for functional and contemporary spaces.",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Premium Spaces",
+    description:
+      "Ceilings, offices, retail spaces, corridors and projects requiring simple and consistent illumination.",
+    items: [
+      "Offices",
+      "Retail Spaces",
+      "Corridors",
+      "Commercial Interiors",
+      "Residential Spaces",
+      "Hospitality Projects",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+    items: [
+      {
+        label: "LIGHTING TYPE",
+        value: "Static White LED",
+      },
+      {
+        label: "CCT",
+        value: "Fixed Colour Temperature",
+      },
+      {
+        label: "CONTROL",
+        value: "ON / OFF",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "No",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Translucent",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Built for Long-Term Performance",
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
 
         {
-          tag: "TYPE 2",
-          title: " Shilpkar™ CCT White",
-          subtitle: "Dimmable + Tunable CCT LED System",
+  tag: "TYPE 2",
+  title: "Shilpkar™ CCT White",
+  subtitle: "Dimmable + Tunable CCT LED System",
 
-          image: images.translucent.cctWhite,
+  image: images.translucent.cctWhite,
 
-          description:
-            "Type 2 provides complete control over both brightness and white-light temperature. The ambience can be adjusted from warmer to cooler white according to the application, time of day and desired mood.",
-        bestFor:
-            "Luxury Homes, Villas, Hotels, Restaurants and Premium Commercial Interiors.",
+  description:
+    "Shilpkar™ CCT White combines a premium translucent stretch ceiling with adjustable white-light technology. Both brightness and colour temperature can be tuned to create the desired visual atmosphere throughout the day, from warm and intimate illumination to crisp, contemporary white light.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "Dimming + CCT",
-            },
-            {
-              label: "BRIGHTNESS",
-              value: "Adjustable",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "No",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "No",
-            },
-          ],
-        },
+  bestFor:
+    "Luxury Residences, Villas, Hotels, Restaurants, Wellness Spaces, Premium Offices and Commercial Interiors.",
+
+  specs: [
+    {
+      label: "CONTROL",
+      value: "Dimming + CCT",
+    },
+    {
+      label: "BRIGHTNESS",
+      value: "Adjustable",
+    },
+    {
+      label: "COLOUR TEMPERATURE",
+      value: "Adjustable White",
+    },
+    {
+      label: "COLOR CHANGING",
+      value: "No",
+    },
+  ],
+
+  /* ================= WHY CHOOSE ================= */
+
+  whyChoose: {
+    eyebrow: "WHY CHOOSE CCT WHITE",
+    title: "Lighting That Adapts to Your Space",
+    items: [
+      {
+        title: "Tunable White Lighting",
+        description:
+          "Adjust the character of the illumination from a warm, relaxed atmosphere to a brighter and cooler architectural appearance.",
+      },
+      {
+        title: "Adjustable Brightness",
+        description:
+          "Control the intensity of the illumination according to the activity, time of day and desired ambience.",
+      },
+      {
+        title: "Seamless Illumination",
+        description:
+          "The translucent stretch membrane distributes the integrated light across the ceiling to create a clean and visually continuous illuminated surface.",
+      },
+      {
+        title: "Day-to-Night Flexibility",
+        description:
+          "Create softer lighting for relaxed environments and brighter illumination when the space requires greater visual clarity.",
+      },
+      {
+        title: "Premium Architectural Finish",
+        description:
+          "The seamless stretch ceiling surface combines advanced lighting functionality with a refined, contemporary architectural appearance.",
+      },
+      {
+        title: "One System, Multiple Moods",
+        description:
+          "A single lighting system can support different ambience requirements without changing the ceiling finish or visual design.",
+      },
+    ],
+  },
+
+  /* ================= LIGHTING TECHNOLOGY ================= */
+
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "Tunable White Lighting Experience",
+    items: [
+      {
+        title: "Warm White",
+        subtitle: "Relaxed & Inviting",
+        description:
+          "Creates a softer and warmer atmosphere suited to lounges, bedrooms, restaurants, hospitality spaces and relaxed residential environments.",
+      },
+      {
+        title: "Neutral White",
+        subtitle: "Balanced & Comfortable",
+        description:
+          "Provides balanced illumination for everyday activities, contemporary interiors, offices, retail environments and premium living spaces.",
+      },
+      {
+        title: "Cool White",
+        subtitle: "Crisp & Contemporary",
+        description:
+          "Creates a brighter and cleaner visual appearance for functional areas, modern commercial interiors and spaces requiring enhanced visual clarity.",
+      },
+    ],
+  },
+
+  /* ================= APPLICATIONS ================= */
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Flexible Interior Environments",
+    description:
+      "CCT White is ideal for spaces where lighting ambience needs to adapt throughout the day, supporting both relaxed and functional interior environments.",
+
+    items: [
+      "Luxury Residences",
+      "Living Rooms",
+      "Master Bedrooms",
+      "Luxury Villas",
+      "Hotel Rooms & Suites",
+      "Restaurants",
+      "Lounges",
+      "Spa & Wellness Spaces",
+      "Premium Offices",
+      "Retail Interiors",
+      "Showrooms",
+      "Hospitality Projects",
+    ],
+  },
+
+  /* ================= TECHNICAL SPECIFICATIONS ================= */
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "LIGHTING TYPE",
+        value: "Tunable White LED",
+      },
+      {
+        label: "CONTROL",
+        value: "Dimming + CCT",
+      },
+      {
+        label: "BRIGHTNESS",
+        value: "Adjustable",
+      },
+      {
+        label: "COLOUR TEMPERATURE",
+        value: "Adjustable White",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "No",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Translucent",
+      },
+    ],
+  },
+
+  /* ================= QUALITY ASSURANCE ================= */
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
+
+/* ================= SHILPKAR TRANSLUCENT ================= */
+
+       {
+  tag: "TYPE 3",
+  title: "Shilpkar™ RGBW White",
+  subtitle: "RGBW Color Changing LED System",
+
+  image: images.translucent.rgbw,
+
+  description:
+    "Shilpkar™ RGBW White combines the refined appearance of a translucent stretch ceiling with RGBW lighting technology, allowing the same ceiling surface to deliver clean white illumination as well as a wide range of decorative colours. Designed for spaces where lighting is an important part of the interior experience, the system supports flexible colour selection and dynamic lighting scenes through convenient control options.",
+
+  bestFor:
+    "Hotels, Restaurants, Lounges, Clubs, Retail Interiors, Showrooms, Entertainment Spaces, Luxury Residences and Experiential Commercial Projects.",
+
+  specs: [
+    { label: "CONTROL", value: "Remote / App" },
+    { label: "LIGHTING", value: "RGBW LED" },
+    { label: "WHITE LIGHT", value: "Dedicated White + RGB" },
+    { label: "COLOR CHANGING", value: "Yes" },
+    { label: "DYNAMIC EFFECTS", value: "Standard Scenes" },
+  ],
+
+  whyChoose: {
+    eyebrow: "WHY CHOOSE RGBW WHITE",
+    title: "Lighting That Transforms the Atmosphere",
+    items: [
+      {
+        title: "White + Colour in One System",
+        description:
+          "Combines dedicated white illumination with RGB colour channels, allowing the ceiling to perform as both an architectural light source and a decorative lighting feature.",
+      },
+      {
+        title: "Flexible Colour Selection",
+        description:
+          "Choose from a broad range of colours to complement the interior design, branding, event theme or desired atmosphere of the space.",
+      },
+      {
+        title: "Designed for Ambience",
+        description:
+          "Create subtle colour accents for relaxed environments or stronger colour expressions for entertainment, hospitality and experiential interiors.",
+      },
+      {
+        title: "Seamless Illuminated Surface",
+        description:
+          "The translucent stretch membrane creates a continuous illuminated ceiling appearance without visually interrupting the architectural surface.",
+      },
+      {
+        title: "Scene-Based Lighting",
+        description:
+          "Standard lighting scenes allow the character of the space to be changed according to different activities, moods and interior requirements.",
+      },
+      {
+        title: "Architectural & Decorative",
+        description:
+          "Provides functional illumination while also becoming an integral part of the visual identity and atmosphere of the interior.",
+      },
+    ],
+  },
+
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "RGBW Lighting Experience",
+    items: [
+      {
+        title: "Dedicated White",
+        subtitle: "Clean Architectural Illumination",
+        description:
+          "The dedicated white channel provides clean illumination when the space requires a refined and functional white-light appearance.",
+      },
+      {
+        title: "RGB Colour",
+        subtitle: "Expressive Ambient Lighting",
+        description:
+          "RGB colour channels introduce vibrant or subtle colour illumination, enabling the ceiling to complement different interior themes and visual experiences.",
+      },
+      {
+        title: "Scene Control",
+        subtitle: "Mood & Atmosphere",
+        description:
+          "Selectable lighting scenes make it possible to change the ambience of the space for different moments, activities and hospitality experiences.",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Experiential Interiors",
+    description:
+      "RGBW White is suited to interiors where lighting needs to contribute to both architectural illumination and the overall visual atmosphere of the space.",
+
+    items: [
+      "Luxury Hotels",
+      "Hotel Lobbies",
+      "Restaurants",
+      "Bars & Lounges",
+      "Clubs",
+      "Retail Spaces",
+      "Showrooms",
+      "Entertainment Areas",
+      "Luxury Residences",
+      "Gaming Spaces",
+      "Event Venues",
+      "Experiential Interiors",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "LIGHTING TYPE",
+        value: "RGBW LED",
+      },
+      {
+        label: "CONTROL",
+        value: "Remote / App",
+      },
+      {
+        label: "WHITE LIGHT",
+        value: "Dedicated White + RGB",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "Yes",
+      },
+      {
+        label: "DYNAMIC EFFECTS",
+        value: "Standard Scenes",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Translucent",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
+
 
         {
-          tag: "TYPE 3",
-          title: "Shilpkar™ RGBW White",
-          subtitle: "RGBW Color Changing LED System",
+  tag: "TYPE 4",
+  title: "Shilpkar™ RGBW Pixel + DMX White",
+  subtitle: "Programmable Pixel & DMX Lighting System",
 
-          image: images.translucent.rgbw,
+  image: images.translucent.rgbwProgramming,
 
-          description:
-            "Type 3 integrates RGBW LED technology, providing premium white illumination together with a wide range of coloured lighting effects. Users can control brightness, white-light settings and RGB colours from a single system.A printed sky ceiling can appear as natural daylight, then transition into sunset, blue sky or decorative colour scenes to create completely different moods.",
-          
-            bestFor:
-            "Restaurants, Hotels, Lounges, Gaming Zones and Luxury Entertainment Spaces.",
+  description:
+    "Shilpkar™ RGBW Pixel + DMX White is an advanced dynamic lighting system that combines a translucent stretch ceiling with individually controllable pixel lighting and professional DMX control. The system enables programmable colour sequences, gradients, animations and immersive lighting scenes, transforming the ceiling into a dynamic architectural lighting surface.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "Remote / App",
-            },
-            {
-              label: "CCT",
-              value: "RGBW",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "Yes",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "Standard Effects",
-            },
-          ],
-        },
+  bestFor:
+    "Luxury Hotels, Clubs, Nightlife Venues, Auditoriums, Theatres, Exhibition Spaces, Experience Centres, Entertainment Interiors and Signature Architectural Projects.",
 
-        {
-          tag: "TYPE 4",
-          title: "Shilpkar™ RGBW Pixel + DMX White.",
-          subtitle: "Programmable Dynamic Lighting System",
+  specs: [
+    { label: "CONTROL", value: "DMX / Pixel" },
+    { label: "LIGHTING", value: "RGBW Pixel LED" },
+    { label: "PROGRAMMING", value: "Programmable" },
+    { label: "COLOR CHANGING", value: "Yes" },
+    { label: "DYNAMIC EFFECTS", value: "Advanced" },
+  ],
 
-         image: images.translucent.rgbwProgramming,
+  whyChoose: {
+    eyebrow: "WHY CHOOSE RGBW PIXEL + DMX",
+    title: "A Ceiling Designed to Perform",
+    items: [
+      {
+        title: "Individually Controlled Pixels",
+        description:
+          "Pixel-based lighting allows sections of the illuminated ceiling to be controlled independently, creating more detailed and expressive lighting compositions.",
+      },
+      {
+        title: "Professional DMX Control",
+        description:
+          "DMX compatibility provides professional control over colour, intensity and programmed lighting behaviour for advanced architectural lighting applications.",
+      },
+      {
+        title: "Programmable Lighting Scenes",
+        description:
+          "Create customised lighting sequences and scenes designed around the mood, activity, branding or experience required within the space.",
+      },
+      {
+        title: "Dynamic Visual Effects",
+        description:
+          "Support gradients, colour transitions, movement-based effects and programmed sequences that turn the ceiling into an active visual element.",
+      },
+      {
+        title: "Immersive Architectural Experience",
+        description:
+          "The illuminated ceiling becomes part of the overall spatial experience, working alongside interior architecture, media and other lighting elements.",
+      },
+      {
+        title: "Designed for Signature Projects",
+        description:
+          "An advanced solution for projects where conventional static or colour-changing lighting cannot deliver the required level of visual control and impact.",
+      },
+    ],
+  },
 
-          description:
-            "Professional programmable pixel lighting system compatible with DMX and MADRIX controllers, enabling dynamic lighting scenes, animations and immersive architectural experiences.",
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "Programmable Pixel Lighting",
+    items: [
+      {
+        title: "Pixel-Level Control",
+        subtitle: "Independent Lighting Zones",
+        description:
+          "Individual pixels or defined lighting zones can be controlled to create detailed patterns, colour movements and layered visual compositions across the illuminated ceiling.",
+      },
+      {
+        title: "RGBW Colour System",
+        subtitle: "White + Full Colour",
+        description:
+          "RGBW technology combines dedicated white illumination with RGB colour capabilities, providing both architectural white light and expressive colour scenes.",
+      },
+      {
+        title: "DMX Programming",
+        subtitle: "Professional Lighting Control",
+        description:
+          "DMX-based control enables programmed lighting behaviour and synchronised scenes for sophisticated hospitality, entertainment and architectural environments.",
+      },
+      {
+        title: "Dynamic Effects",
+        subtitle: "Motion, Colour & Transitions",
+        description:
+          "Programmable effects can introduce colour transitions, gradients, sequences and visual movement to create a changing ceiling experience.",
+      },
+    ],
+  },
 
-          bestFor:
-            "Luxury Hotels, Clubs, Auditoriums, Exhibition Spaces and Signature Architectural Projects.",
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Created for High-Impact Spaces",
+    description:
+      "RGBW Pixel + DMX White is designed for projects where lighting itself becomes a major part of the architectural identity and visitor experience.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "DMX / Pixel",
-            },
-            {
-              label: "CCT",
-              value: "RGBW",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "Yes",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "Unlimited",
-            },
-          ],
-        },
+    items: [
+      "Luxury Hotel Lobbies",
+      "Nightclubs",
+      "Premium Lounges",
+      "Auditoriums",
+      "Theatres",
+      "Exhibition Spaces",
+      "Experience Centres",
+      "Entertainment Venues",
+      "Event Spaces",
+      "Retail Experiences",
+      "Signature Residences",
+      "Architectural Feature Spaces",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "LIGHTING TYPE",
+        value: "RGBW Pixel LED",
+      },
+      {
+        label: "CONTROL",
+        value: "DMX / Pixel",
+      },
+      {
+        label: "PROGRAMMING",
+        value: "Programmable",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "Yes",
+      },
+      {
+        label: "DYNAMIC EFFECTS",
+        value: "Advanced",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Translucent",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
+
       ],
     },
 
@@ -157,145 +660,653 @@ image: images.translucent.staticWhite,
 
       sections: [
         {
-          tag: "TYPE 1",
-          title: "Shilpkar™ Static Print",
-          subtitle: "Printed Stretch Ceiling",
+  tag: "TYPE 1",
+  title: "Shilpkar™ Static Print",
+  subtitle: "High-Definition Printed Stretch Ceiling",
 
-          image: images.printed.staticPrint,
+  image: images.printed.staticPrint,
 
-          description:
-            "High-resolution printed stretch ceiling with fixed white illumination, delivering vivid graphics and elegant architectural lighting.",
+  description:
+    "Shilpkar™ Static Print combines a seamless stretch ceiling surface with high-definition custom printing, allowing architectural imagery, patterns, textures and artwork to become an integrated part of the ceiling design. The system is ideal for creating visually distinctive interiors without compromising the clean, continuous appearance of a stretch ceiling.",
 
-          bestFor:
-            "Homes, Retail Stores, Offices, Reception Areas and Commercial Interiors.",
+  bestFor:
+    "Luxury Residences, Hotels, Restaurants, Retail Interiors, Showrooms, Reception Areas, Hospitality Spaces and Feature Ceilings.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "ON / OFF",
-            },
-            {
-              label: "CCT",
-              value: "Fixed",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "No",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "No",
-            },
-          ],
-        },
+  specs: [
+    { label: "PRINTING", value: "High-Definition Custom Print" },
+    { label: "DESIGN", value: "Custom Artwork / Graphics" },
+    { label: "SURFACE", value: "Seamless Stretch Membrane" },
+    { label: "ILLUMINATION", value: "Non-Illuminated" },
+    { label: "APPLICATION", value: "Interior Ceiling" },
+  ],
+
+  whyChoose: {
+    eyebrow: "WHY CHOOSE STATIC PRINT",
+    title: "Turn the Ceiling into a Design Surface",
+    items: [
+      {
+        title: "Custom Visual Identity",
+        description:
+          "Bring artwork, architectural graphics, patterns or bespoke imagery directly onto the ceiling surface to create a distinctive interior identity.",
+      },
+      {
+        title: "High-Definition Printing",
+        description:
+          "Detailed graphics and imagery can be reproduced across the stretch membrane for a refined and visually rich finish.",
+      },
+      {
+        title: "Seamless Appearance",
+        description:
+          "The stretch membrane creates a clean continuous surface, helping the printed design read as an integrated architectural element.",
+      },
+      {
+        title: "Unlimited Creative Direction",
+        description:
+          "From abstract artwork and geometric patterns to nature-inspired visuals and branded graphics, the ceiling can be customised around the design concept.",
+      },
+      {
+        title: "Design-Led Architecture",
+        description:
+          "A printed ceiling can become a focal feature without requiring conventional decorative ceiling treatments or visually heavy construction.",
+      },
+      {
+        title: "Suitable for Feature Spaces",
+        description:
+          "Ideal when the ceiling needs to contribute strongly to the visual character of a room rather than remaining a neutral architectural surface.",
+      },
+    ],
+  },
+
+  lightingTechnology: {
+    eyebrow: "DESIGN TECHNOLOGY",
+    title: "High-Definition Architectural Printing",
+    items: [
+      {
+        title: "Custom Artwork",
+        subtitle: "Your Design, Your Ceiling",
+        description:
+          "Client-supplied artwork, patterns, illustrations or approved graphics can be developed into a customised ceiling surface.",
+      },
+      {
+        title: "Architectural Graphics",
+        subtitle: "Designed for Interior Spaces",
+        description:
+          "Graphic compositions can be created specifically for the proportions, geometry and visual language of the interior.",
+      },
+      {
+        title: "Continuous Visual Surface",
+        subtitle: "Seamless Design Expression",
+        description:
+          "The printed membrane maintains the clean visual character of a stretch ceiling while carrying the selected design across the surface.",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Signature Interiors",
+    description:
+      "Static Print is ideal for interiors where customised graphics, artwork or architectural patterns are central to the design concept.",
+
+    items: [
+      "Luxury Residences",
+      "Hotel Interiors",
+      "Restaurants",
+      "Retail Spaces",
+      "Showrooms",
+      "Reception Areas",
+      "Feature Ceilings",
+      "Hospitality Interiors",
+      "Corporate Interiors",
+      "Boutique Spaces",
+      "Entertainment Interiors",
+      "Designer Interiors",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "PRODUCT TYPE",
+        value: "Printed Stretch Ceiling",
+      },
+      {
+        label: "PRINTING",
+        value: "High-Definition Custom Print",
+      },
+      {
+        label: "DESIGN",
+        value: "Custom Artwork / Graphics",
+      },
+      {
+        label: "SURFACE",
+        value: "Seamless Stretch Membrane",
+      },
+      {
+        label: "ILLUMINATION",
+        value: "Non-Illuminated",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Printed",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Built for a Refined Architectural Finish",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "Print Finish",
+        value: "High-Definition Surface Printing",
+      },
+    ],
+  },
+},
+
+{
+  tag: "TYPE 2",
+  title: "Shilpkar™ CCT Print",
+  subtitle: "Tunable White Illuminated Printed Stretch Ceiling",
+
+  image: images.printed.cctPrint,
+
+  description:
+    "Shilpkar™ CCT Print combines customised high-definition ceiling graphics with tunable white illumination. The printed stretch membrane becomes an illuminated design surface while the lighting system allows the character of the white light to be adjusted to suit different activities, moods and times of day.",
+
+  bestFor:
+    "Luxury Residences, Hotels, Restaurants, Wellness Spaces, Premium Offices, Retail Interiors, Showrooms and Hospitality Projects.",
+
+  specs: [
+    { label: "PRINTING", value: "High-Definition Custom Print" },
+    { label: "LIGHTING", value: "Tunable White LED" },
+    { label: "CONTROL", value: "Dimming + CCT" },
+    { label: "BRIGHTNESS", value: "Adjustable" },
+    { label: "COLOUR CHANGING", value: "No" },
+  ],
+
+  whyChoose: {
+    eyebrow: "WHY CHOOSE CCT PRINT",
+    title: "Custom Design with Adaptive White Light",
+    items: [
+      {
+        title: "Printed + Illuminated",
+        description:
+          "Combines a customised printed membrane with integrated illumination, allowing artwork and lighting to work together as one architectural surface.",
+      },
+      {
+        title: "Tunable White Technology",
+        description:
+          "Adjust the character of the white illumination to create warmer or cooler lighting conditions according to the requirements of the space.",
+      },
+      {
+        title: "Adjustable Brightness",
+        description:
+          "Lighting intensity can be controlled to create softer ambience or brighter illumination for different activities and interior requirements.",
+      },
+      {
+        title: "Enhanced Printed Graphics",
+        description:
+          "Backlighting adds depth and visual presence to selected graphics, patterns and imagery across the ceiling surface.",
+      },
+      {
+        title: "Flexible Day-to-Night Ambience",
+        description:
+          "The same printed ceiling can create different visual atmospheres throughout the day without changing the architectural finish.",
+      },
+      {
+        title: "Bespoke Architectural Expression",
+        description:
+          "Ideal for projects where customised artwork and controllable illumination are both important elements of the interior design.",
+      },
+    ],
+  },
+
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "Tunable White Illumination",
+    items: [
+      {
+        title: "Warm White",
+        subtitle: "Soft & Atmospheric",
+        description:
+          "Creates a warmer and more relaxed atmosphere, particularly suited to hospitality, residential and leisure environments.",
+      },
+      {
+        title: "Neutral White",
+        subtitle: "Balanced Illumination",
+        description:
+          "Provides a balanced white-light appearance for everyday use across premium commercial, retail and residential interiors.",
+      },
+      {
+        title: "Cool White",
+        subtitle: "Crisp & Contemporary",
+        description:
+          "Produces a brighter and cleaner visual character for functional environments and contemporary architectural applications.",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Illuminated Feature Interiors",
+    description:
+      "CCT Print is suited to projects where customised ceiling graphics need to be combined with flexible white illumination.",
+
+    items: [
+      "Luxury Residences",
+      "Living Rooms",
+      "Bedrooms",
+      "Hotel Rooms & Suites",
+      "Hotel Lobbies",
+      "Restaurants",
+      "Spa & Wellness Spaces",
+      "Premium Offices",
+      "Retail Interiors",
+      "Showrooms",
+      "Reception Areas",
+      "Hospitality Projects",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "PRODUCT TYPE",
+        value: "Illuminated Printed Stretch Ceiling",
+      },
+      {
+        label: "PRINTING",
+        value: "High-Definition Custom Print",
+      },
+      {
+        label: "LIGHTING TYPE",
+        value: "Tunable White LED",
+      },
+      {
+        label: "CONTROL",
+        value: "Dimming + CCT",
+      },
+      {
+        label: "BRIGHTNESS",
+        value: "Adjustable",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "No",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Printed",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
+
+       {
+  tag: "TYPE 3",
+  title: "Shilpkar™ RGBW Print",
+  subtitle: "RGBW Illuminated Printed Stretch Ceiling",
+
+  image: images.printed.rgbw,
+
+  description:
+    "Shilpkar™ RGBW Print combines high-definition custom printing with RGBW illumination to create a ceiling surface that can change both its visual artwork and lighting atmosphere. The translucent printed membrane allows integrated RGBW lighting to enhance the depth, colour and character of the selected design.",
+
+  bestFor:
+    "Hotels, Restaurants, Lounges, Retail Spaces, Showrooms, Entertainment Areas, Luxury Residences, Clubs and Experiential Interiors.",
+
+  specs: [
+    { label: "PRINTING", value: "High-Definition Custom Print" },
+    { label: "LIGHTING", value: "RGBW LED" },
+    { label: "CONTROL", value: "Remote / App" },
+    { label: "COLOUR CHANGING", value: "Yes" },
+    { label: "DYNAMIC EFFECTS", value: "Standard Scenes" },
+  ],
+
+  whyChoose: {
+    eyebrow: "WHY CHOOSE RGBW PRINT",
+    title: "Printed Design with Dynamic Illumination",
+    items: [
+      {
+        title: "Custom Printed Visuals",
+        description:
+          "Create a bespoke ceiling using approved artwork, photographic imagery, patterns, branding or architectural graphics.",
+      },
+      {
+        title: "RGBW Illumination",
+        description:
+          "Dedicated white and RGB lighting provide both clean illumination and expressive colour options within the same ceiling system.",
+      },
+      {
+        title: "Enhanced Graphic Depth",
+        description:
+          "Integrated illumination can bring greater visual depth and presence to selected imagery, artwork and graphic compositions.",
+      },
+      {
+        title: "Colour-Based Ambience",
+        description:
+          "Change the lighting colour to complement different moods, interior themes, events or hospitality experiences.",
+      },
+      {
+        title: "Seamless Design Surface",
+        description:
+          "The stretch membrane maintains a continuous architectural appearance while integrating the customised printed design and lighting system.",
+      },
+      {
+        title: "Multi-Functional Feature Ceiling",
+        description:
+          "Combines decorative artwork, architectural illumination and colour-changing capability in one coordinated ceiling solution.",
+      },
+    ],
+  },
+
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "RGBW Illumination Behind Custom Graphics",
+    items: [
+      {
+        title: "Dedicated White",
+        subtitle: "Architectural Illumination",
+        description:
+          "The dedicated white channel provides a clean illuminated appearance when the space requires functional or refined white lighting.",
+      },
+      {
+        title: "RGB Colour",
+        subtitle: "Creative Colour Expression",
+        description:
+          "RGB channels introduce colour into the illuminated ceiling, allowing the lighting atmosphere to complement the printed artwork and interior design.",
+      },
+      {
+        title: "Scene Control",
+        subtitle: "Flexible Visual Atmosphere",
+        description:
+          "Standard lighting scenes allow the colour and character of the ceiling to be adapted for different activities and ambience requirements.",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for Creative & Experiential Spaces",
+    description:
+      "RGBW Print is ideal for projects where customised imagery needs to work together with colour-changing illumination to create a stronger visual experience.",
+
+    items: [
+      "Luxury Hotels",
+      "Hotel Lobbies",
+      "Restaurants",
+      "Bars & Lounges",
+      "Clubs",
+      "Retail Interiors",
+      "Showrooms",
+      "Entertainment Spaces",
+      "Gaming Areas",
+      "Luxury Residences",
+      "Event Spaces",
+      "Experiential Interiors",
+    ],
+  },
+
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
+
+    items: [
+      {
+        label: "PRODUCT TYPE",
+        value: "RGBW Printed Stretch Ceiling",
+      },
+      {
+        label: "PRINTING",
+        value: "High-Definition Custom Print",
+      },
+      {
+        label: "LIGHTING TYPE",
+        value: "RGBW LED",
+      },
+      {
+        label: "CONTROL",
+        value: "Remote / App",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "Yes",
+      },
+      {
+        label: "DYNAMIC EFFECTS",
+        value: "Standard Scenes",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Printed",
+      },
+    ],
+  },
+
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
+
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
 
         {
-          tag: "TYPE 2",
-          title: "Shilpkar™ CCT Print",
-          subtitle: "Printed Tunable White Ceiling",
+  tag: "TYPE 4",
+  title: "Shilpkar™ RGBW Pixel + DMX Print",
+  subtitle: "Programmable Pixel & DMX Printed Ceiling",
 
-          image: images.printed.cctPrint,
+  image: images.printed.rgbwProgramming,
 
-          description:
-            "Premium printed ceiling with adjustable brightness and colour temperature for creating the perfect ambience.",
+  description:
+    "Shilpkar™ RGBW Pixel + DMX Print combines a customised printed stretch ceiling with programmable RGBW pixel lighting and professional DMX control. The system allows the printed surface to become a dynamic architectural feature through programmable colour sequences, gradients, transitions and immersive lighting scenes.",
 
-          bestFor:
-            "Luxury Homes, Hotels, Cafés and Premium Commercial Projects.",
+  bestFor:
+    "Luxury Hotels, Nightclubs, Premium Lounges, Auditoriums, Theatres, Exhibition Spaces, Experience Centres, Entertainment Venues and Signature Architectural Projects.",
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "Dimming + CCT",
-            },
-            {
-              label: "CCT",
-              value: "2700K - 6500K",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "No",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "No",
-            },
-          ],
-        },
+  specs: [
+    { label: "PRINTING", value: "High-Definition Custom Print" },
+    { label: "LIGHTING", value: "RGBW Pixel LED" },
+    { label: "CONTROL", value: "DMX / Pixel" },
+    { label: "PROGRAMMING", value: "Programmable" },
+    { label: "COLOR CHANGING", value: "Yes" },
+    { label: "DYNAMIC EFFECTS", value: "Advanced" },
+  ],
 
-        {
-          tag: "TYPE 3",
-          title: "Shilpkar™ RGBW Print",
-          subtitle: "RGBW Printed Ceiling",
+  whyChoose: {
+    eyebrow: "WHY CHOOSE RGBW PIXEL + DMX PRINT",
+    title: "Where Printed Design Meets Dynamic Lighting",
+    items: [
+      {
+        title: "Bespoke Printed Surface",
+        description:
+          "Integrate customised artwork, imagery, patterns or branded graphics into a ceiling designed specifically around the project's visual identity.",
+      },
+      {
+        title: "Pixel-Level Lighting",
+        description:
+          "Individually controllable lighting pixels or defined zones enable detailed colour patterns and dynamic visual compositions across the ceiling.",
+      },
+      {
+        title: "Professional DMX Control",
+        description:
+          "DMX-based control provides precise management of colour, intensity and programmed lighting behaviour for advanced architectural applications.",
+      },
+      {
+        title: "Animated Visual Effects",
+        description:
+          "Create programmed colour movements, gradients, transitions and sequences that interact with the printed ceiling design.",
+      },
+      {
+        title: "Immersive Design Experience",
+        description:
+          "The printed membrane and dynamic illumination work together to create a ceiling that actively contributes to the atmosphere and identity of the space.",
+      },
+      {
+        title: "Signature Architectural Solution",
+        description:
+          "Designed for projects where a conventional printed ceiling or standard colour-changing system cannot deliver the required level of visual impact.",
+      },
+    ],
+  },
 
-          image: images.printed.rgbw,
+  lightingTechnology: {
+    eyebrow: "LIGHTING TECHNOLOGY",
+    title: "Programmable RGBW Pixel Illumination",
+    items: [
+      {
+        title: "Pixel Control",
+        subtitle: "Detailed Lighting Composition",
+        description:
+          "Pixel-based control allows individual lighting points or defined zones to participate in programmed colour patterns, transitions and visual sequences.",
+      },
+      {
+        title: "RGBW Technology",
+        subtitle: "White + Full Colour",
+        description:
+          "Dedicated white illumination works alongside RGB colour channels, providing both architectural white light and expressive colour effects.",
+      },
+      {
+        title: "DMX Programming",
+        subtitle: "Professional Control",
+        description:
+          "DMX control enables sophisticated programming of lighting scenes and coordinated dynamic effects across the illuminated ceiling.",
+      },
+      {
+        title: "Dynamic Effects",
+        subtitle: "Movement & Visual Transitions",
+        description:
+          "Programmed gradients, colour transitions and lighting sequences can create changing visual effects across the printed architectural surface.",
+      },
+    ],
+  },
 
-          description:
-            "Create immersive printed ceiling experiences with vibrant RGBW lighting and premium quality printed graphics.",
+  applications: {
+    eyebrow: "IDEAL APPLICATIONS",
+    title: "Designed for High-Impact Visual Environments",
+    description:
+      "RGBW Pixel + DMX Print is intended for projects where customised graphics and programmable lighting need to operate together as a single experiential architectural feature.",
 
-          bestFor:
-            "Restaurants, Gaming Zones, Entertainment Spaces and Luxury Interiors.",
+    items: [
+      "Luxury Hotel Lobbies",
+      "Nightclubs",
+      "Premium Lounges",
+      "Auditoriums",
+      "Theatres",
+      "Exhibition Spaces",
+      "Experience Centres",
+      "Entertainment Venues",
+      "Event Spaces",
+      "Retail Experiences",
+      "Gaming Environments",
+      "Signature Interiors",
+    ],
+  },
 
-          specs: [
-            {
-              label: "CONTROL",
-              value: "Remote / App",
-            },
-            {
-              label: "CCT",
-              value: "RGBW",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "Yes",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "Standard Effects",
-            },
-          ],
-        },
+  technicalSpecifications: {
+    eyebrow: "TECHNICAL SPECIFICATIONS",
+    title: "Product Details",
 
-        {
-          tag: "TYPE 4",
-          title: "Shilpkar™ RGBW + DMX Print",
-          subtitle: "Programmable Printed Ceiling",
+    items: [
+      {
+        label: "PRODUCT TYPE",
+        value: "Programmable Printed Stretch Ceiling",
+      },
+      {
+        label: "PRINTING",
+        value: "High-Definition Custom Print",
+      },
+      {
+        label: "LIGHTING TYPE",
+        value: "RGBW Pixel LED",
+      },
+      {
+        label: "CONTROL",
+        value: "DMX / Pixel",
+      },
+      {
+        label: "PROGRAMMING",
+        value: "Programmable",
+      },
+      {
+        label: "COLOUR CHANGING",
+        value: "Yes",
+      },
+      {
+        label: "DYNAMIC EFFECTS",
+        value: "Advanced",
+      },
+      {
+        label: "CEILING SYSTEM",
+        value: "SHILPKAR™ Printed",
+      },
+    ],
+  },
 
-          image: images.printed.rgbwProgramming,
+  qualityAssurance: {
+    eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+    title: "Engineered for Long-Term Performance",
 
-          description:
-            "Fully programmable printed stretch ceiling system with DMX and MADRIX compatibility for premium dynamic lighting experiences.",
-
-          bestFor:
-            "Luxury Hotels, Clubs, Auditoriums, Exhibition Spaces and High-End Commercial Projects.",
-
-          specs: [
-            {
-              label: "CONTROL",
-              value: "DMX / MADRIX",
-            },
-            {
-              label: "CCT",
-              value: "RGBW",
-            },
-            {
-              label: "COLOR CHANGING",
-              value: "Yes",
-            },
-            {
-              label: "DYNAMIC EFFECTS",
-              value: "Unlimited",
-            },
-          ],
-        },
+    items: [
+      {
+        label: "Stretch Fabric Warranty",
+        value: "21 Years",
+      },
+      {
+        label: "LED Lighting Warranty",
+        value: "7 Years",
+      },
+    ],
+  },
+},
       ],
     },
+
 gloss: {
   hero: {
     title: "Shilpkar™ GLOSS",
     subtitle: "Premium High-Gloss Reflective Ceiling",
     description:
       "Shilpkar™ GLOSS is a premium reflective stretch ceiling system designed to create seamless mirror-like surfaces that enhance lighting, add visual depth and transform interiors into elegant luxury spaces.",
-      image: images.gloss.heroBanner,
+    image: images.gloss.heroBanner,
   },
 
   sections: [
@@ -318,6 +1329,142 @@ gloss: {
         { label: "REFLECTION", value: "High Reflective" },
         { label: "MAINTENANCE", value: "Easy Cleaning" },
       ],
+
+      whyChoose: {
+        eyebrow: "WHY CHOOSE SHILPKAR™ GLOSS",
+        title: "A Premium Reflective Architectural Finish",
+        items: [
+          {
+            title: "Mirror-Like Surface",
+            description:
+              "Creates a highly reflective ceiling plane that introduces a sophisticated mirror effect without the visual weight of conventional ceiling finishes.",
+          },
+          {
+            title: "Seamless Appearance",
+            description:
+              "The stretch membrane creates a continuous surface with minimal visual interruption, delivering a clean and refined architectural finish.",
+          },
+          {
+            title: "Enhanced Spatial Perception",
+            description:
+              "Reflection across the ceiling adds visual depth and can make the interior feel more open, expansive and visually connected.",
+          },
+          {
+            title: "Enhanced Light Reflection",
+            description:
+              "Natural light and selected artificial lighting elements are reflected across the surface, helping create a brighter and more dramatic interior environment.",
+          },
+          {
+            title: "Luxury Aesthetic",
+            description:
+              "The polished high-gloss finish adds an unmistakably premium character to residential, hospitality and commercial interiors.",
+          },
+          {
+            title: "Clean Contemporary Design",
+            description:
+              "Its smooth reflective appearance complements modern architecture, decorative lighting and carefully detailed luxury interiors.",
+          },
+        ],
+      },
+
+      designTechnology: {
+        eyebrow: "DESIGN CHARACTER",
+        title: "The Beauty of a Reflective Ceiling",
+        items: [
+          {
+            title: "Mirror Reflection",
+            subtitle: "Expanded Visual Depth",
+            description:
+              "The reflective membrane captures selected elements of the interior, creating additional visual layers and depth across the ceiling.",
+          },
+          {
+            title: "Lighting Interaction",
+            subtitle: "Light Becomes Part of the Design",
+            description:
+              "Chandeliers, pendants and architectural lighting can be visually enhanced as their forms and illumination interact with the reflective ceiling surface.",
+          },
+          {
+            title: "Spatial Continuity",
+            subtitle: "A Continuous Architectural Plane",
+            description:
+              "The smooth surface visually connects the ceiling with the surrounding interior, creating a clean and sophisticated overall composition.",
+          },
+        ],
+      },
+
+      applications: {
+        eyebrow: "IDEAL APPLICATIONS",
+        title: "Designed for Luxury Interiors",
+        description:
+          "Shilpkar™ GLOSS is ideal for spaces where reflection, visual depth and a premium architectural ceiling finish are important to the overall design.",
+
+        items: [
+          "Luxury Residences",
+          "Luxury Living Rooms",
+          "Villas",
+          "Hotel Lobbies",
+          "Restaurants",
+          "Reception Areas",
+          "Retail Stores",
+          "Showrooms",
+          "Salons",
+          "Spas",
+          "Premium Offices",
+          "Entertainment Spaces",
+        ],
+      },
+
+      technicalSpecifications: {
+        eyebrow: "TECHNICAL SPECIFICATIONS",
+        title: "Product Details",
+
+        items: [
+          {
+            label: "PRODUCT TYPE",
+            value: "High-Gloss Stretch Ceiling",
+          },
+          {
+            label: "FINISH",
+            value: "Mirror High Gloss",
+          },
+          {
+            label: "SURFACE",
+            value: "Smooth & Reflective",
+          },
+          {
+            label: "REFLECTION",
+            value: "High Reflective",
+          },
+          {
+            label: "SURFACE APPEARANCE",
+            value: "Joint-Free",
+          },
+          {
+            label: "MAINTENANCE",
+            value: "Easy Cleaning",
+          },
+          {
+            label: "CEILING SYSTEM",
+            value: "SHILPKAR™ GLOSS",
+          },
+        ],
+      },
+
+      qualityAssurance: {
+        eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+        title: "Built for a Refined Architectural Finish",
+
+        items: [
+          {
+            label: "Stretch Fabric Warranty",
+            value: "21 Years",
+          },
+          {
+            label: "Surface Finish",
+            value: "Premium High Gloss",
+          },
+        ],
+      },
     },
 
     {
@@ -339,16 +1486,153 @@ gloss: {
         { label: "ROOM EFFECT", value: "Spacious Feel" },
         { label: "DESIGN IMPACT", value: "Luxury Finish" },
       ],
+
+      whyChoose: {
+        eyebrow: "WHY CHOOSE REFLECTIVE DEPTH",
+        title: "Designed to Multiply the Visual Experience",
+        items: [
+          {
+            title: "Reflects Architectural Elements",
+            description:
+              "The ceiling visually captures chandeliers, pendants, decorative fixtures and selected architectural features to create a layered interior experience.",
+          },
+          {
+            title: "Creates Visual Depth",
+            description:
+              "Reflection introduces another visual plane above the room, adding dimension and sophistication to the overall interior composition.",
+          },
+          {
+            title: "Makes Interiors Feel Larger",
+            description:
+              "The reflective surface can visually extend the room and create a more open and spacious impression.",
+          },
+          {
+            title: "Highlights Decorative Lighting",
+            description:
+              "Decorative lighting fixtures become part of the reflected composition, strengthening their presence within the interior.",
+          },
+          {
+            title: "Luxury Interior Statement",
+            description:
+              "The reflective ceiling becomes a design feature rather than simply a functional overhead surface.",
+          },
+          {
+            title: "Works with Contemporary Interiors",
+            description:
+              "Its reflective character complements premium materials, modern furniture, architectural lighting and sophisticated interior detailing.",
+          },
+        ],
+      },
+
+      designTechnology: {
+        eyebrow: "REFLECTIVE DESIGN",
+        title: "Architecture in Reflection",
+        items: [
+          {
+            title: "Lighting Reflection",
+            subtitle: "Amplified Visual Impact",
+            description:
+              "Decorative and architectural lighting elements are reflected across the ceiling, creating additional luminous layers within the space.",
+          },
+          {
+            title: "Interior Reflection",
+            subtitle: "A Second Visual Plane",
+            description:
+              "Selected elements of the room appear within the ceiling reflection, creating a distinctive visual relationship between architecture and ceiling.",
+          },
+          {
+            title: "Spatial Enhancement",
+            subtitle: "Greater Sense of Openness",
+            description:
+              "The reflective ceiling can visually expand the perceived volume of the room and contribute to a more open interior atmosphere.",
+          },
+        ],
+      },
+
+      applications: {
+        eyebrow: "IDEAL APPLICATIONS",
+        title: "Perfect for Statement Spaces",
+        description:
+          "The Beauty of Reflection is particularly effective in interiors where decorative lighting, spatial perception and luxury visual impact are central to the design.",
+
+        items: [
+          "Hotel Lobbies",
+          "Luxury Living Rooms",
+          "Reception Areas",
+          "Retail Stores",
+          "Luxury Showrooms",
+          "Salons",
+          "Spas",
+          "Restaurants",
+          "Lounges",
+          "Entertainment Spaces",
+          "Luxury Villas",
+          "Premium Commercial Interiors",
+        ],
+      },
+
+      technicalSpecifications: {
+        eyebrow: "TECHNICAL SPECIFICATIONS",
+        title: "Product Details",
+
+        items: [
+          {
+            label: "PRODUCT TYPE",
+            value: "Reflective High-Gloss Stretch Ceiling",
+          },
+          {
+            label: "VISUAL DEPTH",
+            value: "Enhanced",
+          },
+          {
+            label: "LIGHT REFLECTION",
+            value: "Maximum",
+          },
+          {
+            label: "ROOM EFFECT",
+            value: "Spacious Feel",
+          },
+          {
+            label: "DESIGN IMPACT",
+            value: "Luxury Finish",
+          },
+          {
+            label: "SURFACE",
+            value: "High Reflective",
+          },
+          {
+            label: "CEILING SYSTEM",
+            value: "SHILPKAR™ GLOSS",
+          },
+        ],
+      },
+
+      qualityAssurance: {
+        eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+        title: "Designed for Lasting Visual Impact",
+
+        items: [
+          {
+            label: "Stretch Fabric Warranty",
+            value: "21 Years",
+          },
+          {
+            label: "Surface Finish",
+            value: "Premium High Gloss",
+          },
+        ],
+      },
     },
   ],
 },
+
 panel: {
   hero: {
     title: "Shilpkar™ BACKLIT PANEL",
     subtitle: "Modular Printed & Illuminated Panel Systems",
     description:
       "Premium modular backlit panel systems designed for Grid and T-Grid ceilings, combining uniform LED illumination with high-resolution custom printing for commercial and architectural interiors.",
-      image: images.panel.heroBanner,
+    image: images.panel.heroBanner,
   },
 
   sections: [
@@ -359,10 +1643,10 @@ panel: {
 
       subtitle: "Premium Modular LED Panels",
 
-image: images.panel.grid,
+      image: images.panel.grid,
 
       description:
-        "Shilpkar™ Backlit Panels are specially engineered for Grid and T-Grid ceiling systems. Individual ceiling tiles can be replaced with illuminated printed panels, transforming ordinary modular ceilings into decorative architectural features with minimal installation time.\n\nThe system is ideal for both new construction projects and renovation of existing modular ceilings.",
+        "Shilpkar™ Backlit Panels are specially engineered for Grid and T-Grid ceiling systems. Individual ceiling tiles can be replaced with illuminated printed panels, transforming ordinary modular ceilings into decorative architectural features with minimal installation time.\n\nThe modular format makes the system particularly suitable for both new construction and renovation projects where existing ceiling grids need to be upgraded with a more visually distinctive and illuminated finish.",
 
       bestFor:
         "Corporate Offices, Hospitals, Schools, Retail Stores, Hotels and Commercial Buildings.",
@@ -373,6 +1657,138 @@ image: images.panel.grid,
         { label: "INSTALLATION", value: "Modular" },
         { label: "APPLICATION", value: "Indoor" },
       ],
+
+      whyChoose: {
+        eyebrow: "WHY CHOOSE BACKLIT PANEL",
+        title: "Transform Existing Grid Ceilings",
+        items: [
+          {
+            title: "Grid-Compatible Design",
+            description:
+              "Designed around standard modular ceiling concepts, allowing selected grid ceiling positions to be converted into illuminated architectural panels.",
+          },
+          {
+            title: "Modular Installation",
+            description:
+              "Individual panels can be installed within the ceiling grid system, making the solution practical for phased projects, renovations and selective ceiling upgrades.",
+          },
+          {
+            title: "Uniform Illumination",
+            description:
+              "Integrated LED backlighting is designed to provide an evenly illuminated visual surface behind the selected panel graphic.",
+          },
+          {
+            title: "Upgrade Without Complete Replacement",
+            description:
+              "Existing modular ceiling environments can gain a decorative illuminated feature without requiring the entire ceiling system to be redesigned.",
+          },
+          {
+            title: "Functional + Decorative",
+            description:
+              "Combines the practical modular format of a grid ceiling with the visual impact of illuminated architectural graphics.",
+          },
+          {
+            title: "Suitable for Large Projects",
+            description:
+              "The modular panel format is well suited to commercial interiors where multiple ceiling modules need to follow a coordinated design language.",
+          },
+        ],
+      },
+
+      installationTechnology: {
+        eyebrow: "SYSTEM TECHNOLOGY",
+        title: "A Modular Approach to Illuminated Ceilings",
+        items: [
+          {
+            title: "Grid Integration",
+            subtitle: "Designed for Modular Ceilings",
+            description:
+              "The panel format is developed for integration with Grid and T-Grid ceiling environments, allowing illuminated modules to become part of the existing ceiling layout.",
+          },
+          {
+            title: "LED Backlighting",
+            subtitle: "Illuminated Panel Surface",
+            description:
+              "Integrated LED lighting provides the illumination behind the panel surface, creating a clean and visually continuous backlit appearance.",
+          },
+          {
+            title: "Modular Replacement",
+            subtitle: "Flexible Installation",
+            description:
+              "Individual ceiling modules can be replaced or positioned according to the project's architectural and design requirements.",
+          },
+        ],
+      },
+
+      applications: {
+        eyebrow: "IDEAL APPLICATIONS",
+        title: "Designed for Commercial & Architectural Interiors",
+        description:
+          "Shilpkar™ Backlit Panels are particularly effective where modular ceiling functionality needs to be combined with decorative illumination and architectural graphics.",
+
+        items: [
+          "Corporate Offices",
+          "Hospitals",
+          "Schools",
+          "Retail Stores",
+          "Hotels",
+          "Commercial Buildings",
+          "Reception Areas",
+          "Corridors",
+          "Waiting Areas",
+          "Showrooms",
+          "Institutional Interiors",
+          "Public Interiors",
+        ],
+      },
+
+      technicalSpecifications: {
+        eyebrow: "TECHNICAL SPECIFICATIONS",
+        title: "System Details",
+
+        items: [
+          {
+            label: "SYSTEM TYPE",
+            value: "Modular Backlit Panel",
+          },
+          {
+            label: "CEILING COMPATIBILITY",
+            value: "Grid / T-Grid",
+          },
+          {
+            label: "LIGHTING",
+            value: "LED Backlit",
+          },
+          {
+            label: "INSTALLATION",
+            value: "Modular",
+          },
+          {
+            label: "APPLICATION",
+            value: "Indoor",
+          },
+          {
+            label: "CEILING SYSTEM",
+            value: "SHILPKAR™ BACKLIT PANEL",
+          },
+        ],
+      },
+
+      qualityAssurance: {
+        eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+        title: "Engineered for Reliable Modular Integration",
+
+        items: [
+          {
+            label: "System Format",
+            value: "Modular Grid Compatible",
+          },
+          {
+            label: "Lighting",
+            value: "Integrated LED Backlighting",
+          },
+        ],
+      },
     },
 
     {
@@ -396,10 +1812,149 @@ image: images.panel.grid,
         { label: "FRAME", value: "Aluminium" },
         { label: "DESIGN", value: "Unlimited" },
       ],
+
+      whyChoose: {
+        eyebrow: "WHY CHOOSE CUSTOM BACKLIT PANELS",
+        title: "Turn Modular Panels into Architectural Features",
+        items: [
+          {
+            title: "Custom HD Graphics",
+            description:
+              "Create personalised ceiling visuals using approved artwork, nature imagery, architectural graphics, abstract designs or branded content.",
+          },
+          {
+            title: "Sky & Nature Concepts",
+            description:
+              "Blue skies, clouds, daylight-inspired visuals and nature scenes can introduce a softer and more open visual character into interior spaces.",
+          },
+          {
+            title: "Brand Integration",
+            description:
+              "Corporate graphics, identity elements and themed visuals can be incorporated into the panel design for branded commercial environments.",
+          },
+          {
+            title: "Continuous Multi-Panel Design",
+            description:
+              "Multiple individual panels can be coordinated to create a larger visual composition across the ceiling rather than treating every panel as a separate graphic.",
+          },
+          {
+            title: "Flexible Design Language",
+            description:
+              "From subtle architectural graphics to bold statement imagery, the printed surface can be developed around the project's interior concept.",
+          },
+          {
+            title: "Decorative Illumination",
+            description:
+              "Backlighting enhances the printed artwork and transforms the ceiling panel into a visible design feature.",
+          },
+        ],
+      },
+
+      designTechnology: {
+        eyebrow: "DESIGN TECHNOLOGY",
+        title: "Custom Graphics with Integrated Illumination",
+        items: [
+          {
+            title: "High-Definition Printing",
+            subtitle: "Detailed Visual Reproduction",
+            description:
+              "Custom graphics can be reproduced across the panel surface to create detailed and visually rich ceiling compositions.",
+          },
+          {
+            title: "Illuminated Artwork",
+            subtitle: "Graphics with Light",
+            description:
+              "Integrated backlighting gives the selected artwork an illuminated appearance and increases its visual presence within the interior.",
+          },
+          {
+            title: "Multi-Panel Composition",
+            subtitle: "One Coordinated Visual",
+            description:
+              "Multiple panels can be designed as a coordinated composition to create larger ceiling graphics and continuous visual themes.",
+          },
+        ],
+      },
+
+      applications: {
+        eyebrow: "IDEAL APPLICATIONS",
+        title: "Designed for High-Visibility Spaces",
+        description:
+          "Custom Printed Backlit Panels are ideal for spaces where the ceiling needs to contribute to branding, atmosphere, wayfinding or the overall visual identity of the interior.",
+
+        items: [
+          "Reception Areas",
+          "Shopping Malls",
+          "Airports",
+          "Hotels",
+          "Luxury Homes",
+          "Restaurants",
+          "Showrooms",
+          "Retail Interiors",
+          "Corporate Spaces",
+          "Experience Centres",
+          "Hospitality Interiors",
+          "Commercial Interiors",
+        ],
+      },
+
+      technicalSpecifications: {
+        eyebrow: "TECHNICAL SPECIFICATIONS",
+        title: "Product Details",
+
+        items: [
+          {
+            label: "PRODUCT TYPE",
+            value: "Custom Printed Backlit Panel",
+          },
+          {
+            label: "PRINT",
+            value: "Custom HD Graphics",
+          },
+          {
+            label: "PANEL SIZE",
+            value: "Custom Options",
+          },
+          {
+            label: "FRAME",
+            value: "Aluminium",
+          },
+          {
+            label: "DESIGN",
+            value: "Custom",
+          },
+          {
+            label: "LIGHTING",
+            value: "Integrated LED Backlighting",
+          },
+          {
+            label: "SYSTEM",
+            value: "Grid / T-Grid Compatible",
+          },
+        ],
+      },
+
+      qualityAssurance: {
+        eyebrow: "SHILPKAR™ QUALITY ASSURANCE",
+        title: "Designed for Consistent Architectural Presentation",
+
+        items: [
+          {
+            label: "Panel Construction",
+            value: "Modular Aluminium Frame",
+          },
+          {
+            label: "Print",
+            value: "Custom HD Graphics",
+          },
+          {
+            label: "Lighting",
+            value: "Integrated LED Backlighting",
+          },
+        ],
+      },
     },
   ],
 },
-
 },
 
  "textile-ceiling": {

@@ -1,6 +1,187 @@
 import images from "./images.js";
+import serviceDetails from "./serviceDetails.js";
+
+const translucent =
+  serviceDetails?.["stretch-ceiling"]?.["translucent"];
+
+const printed =
+  serviceDetails?.["stretch-ceiling"]?.["printed"];
+
+const gloss =
+  serviceDetails?.["stretch-ceiling"]?.["gloss"];
+
+const panel =
+  serviceDetails?.["stretch-ceiling"]?.["panel"];
+
 
 const services = [
+
+  /* =========================================================
+     01 — SHILPKAR™ TRANSLUCENT
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ TRANSLUCENT",
+
+    desc:
+      translucent?.hero?.description ||
+      "Premium Translucent & Illuminated Stretch Ceiling System",
+
+    image:
+      translucent?.hero?.image ||
+      images.translucent.main,
+
+    types: [
+      {
+        title: "STATIC WHITE",
+        subtitle: "Uniform Architectural White Illumination",
+        link: "/services/stretch-ceiling/translucent/static-white",
+      },
+      {
+        title: "CCT WHITE",
+        subtitle: "Adjustable Warm to Cool White Lighting",
+        link: "/services/stretch-ceiling/translucent/cct-white",
+      },
+      {
+        title: "RGBW WHITE",
+        subtitle: "Custom Colour & White Lighting Experience",
+        link: "/services/stretch-ceiling/translucent/rgbw-white",
+      },
+      {
+        title: "RGBW PIXEL + DMX WHITE",
+        subtitle: "Programmable Animated Lighting Effects",
+        link: "/services/stretch-ceiling/translucent/rgbw-pixel-dmx",
+      },
+    ],
+
+    pdf: translucent?.pdf,
+
+    view: "/services/stretch-ceiling/translucent",
+  },
+
+
+  /* =========================================================
+     02 — SHILPKAR™ PRINT
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ PRINT",
+
+    desc:
+      printed?.hero?.description ||
+      "Premium Printed & Illuminated Stretch Ceiling System",
+
+    image:
+      printed?.hero?.image ||
+      images.printed.main,
+
+    types: [
+      {
+        title: "STATIC PRINT",
+        subtitle: "Fixed Colour Temperature Illuminated Print Ceiling",
+        link: "/services/stretch-ceiling/printed/static-print",
+      },
+      {
+        title: "CCT PRINT",
+        subtitle: "Adjustable Warm to Cool White Printed Ceiling",
+        link: "/services/stretch-ceiling/printed/cct-print",
+      },
+      {
+        title: "RGBW PRINT",
+        subtitle: "Custom Colour & White Illuminated Print Ceiling",
+        link: "/services/stretch-ceiling/printed/rgbw-print",
+      },
+      {
+        title: "RGBW PIXEL + DMX PRINT",
+        subtitle:
+          "Programmable Animated Lighting for Immersive Ceiling Effects",
+        link: "/services/stretch-ceiling/printed/rgbw-pixel-dmx-print",
+      },
+    ],
+
+    pdf: printed?.pdf,
+
+    view: "/services/stretch-ceiling/printed",
+  },
+
+
+  /* =========================================================
+     03 — SHILPKAR™ GLOSS
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ GLOSS",
+
+    desc:
+      gloss?.hero?.description ||
+      "Premium High-Gloss Reflective Stretch Ceiling",
+
+    image:
+      gloss?.hero?.image ||
+      images.gloss.main,
+
+    types: [
+      {
+        title: "HIGH GLOSS",
+        subtitle: "Mirror-Like Reflective Ceiling Finish",
+        link: "/services/stretch-ceiling/gloss/high-gloss",
+      },
+    ],
+
+    pdf: gloss?.pdf,
+
+    view: "/services/stretch-ceiling/gloss",
+  },
+
+
+  /* =========================================================
+     04 — SHILPKAR™ PANEL
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ PANEL",
+
+    desc:
+      panel?.hero?.description ||
+      "Premium Backlit Stretch Panel Lighting Systems",
+
+    image:
+      panel?.hero?.image ||
+      images.panel.grid,
+
+    types: [
+      {
+        title: "PANEL WHITE",
+        subtitle: "Uniform Backlit White Panel Lighting",
+        link: "/services/stretch-ceiling/panel/panel-white",
+      },
+      {
+        title: "PANEL TUNABLE",
+        subtitle: "Adjustable Warm-to-Cool White Lighting",
+        link: "/services/stretch-ceiling/panel/panel-tunable",
+      },
+      {
+        title: "PANEL PRINT",
+        subtitle: "Custom Backlit Printed Panel Ceiling",
+        link: "/services/stretch-ceiling/panel/panel-print",
+      },
+      {
+        title: "PANEL RGBW",
+        subtitle: "Dynamic Colour-Changing Panel Lighting",
+        link: "/services/stretch-ceiling/panel/panel-rgbw",
+      },
+    ],
+
+    pdf: panel?.pdf,
+
+    view: "/services/stretch-ceiling/panel",
+  },
+
+
+  /* =========================================================
+     05 — SHILPKAR™ STRETCH CEILING SYSTEMS
+     ========================================================= */
+
   {
     title: "SHILPKAR™ Stretch Ceiling Systems",
 
@@ -11,22 +192,22 @@ const services = [
 
     types: [
       {
-        title: "SHILPKAR™ TRANSLUCENT",
-        subtitle: "Illuminated Translucent Ceiling System",
+        title: "TRANSLUCENT",
+        subtitle: "Premium Illuminated Stretch Ceiling",
         link: "/services/stretch-ceiling/translucent",
       },
       {
-        title: "SHILPKAR™ PRINT",
+        title: "PRINT",
         subtitle: "Custom Printed Stretch Ceiling",
         link: "/services/stretch-ceiling/printed",
       },
       {
-        title: "SHILPKAR™ GLOSS",
-        subtitle: "High-Gloss Reflective Ceiling",
+        title: "GLOSS",
+        subtitle: "High-Gloss Reflective Stretch Ceiling",
         link: "/services/stretch-ceiling/gloss",
       },
       {
-        title: "SHILPKAR™ PANEL",
+        title: "PANEL",
         subtitle: "Decorative Ceiling Panel System",
         link: "/services/stretch-ceiling/panel",
       },
@@ -36,6 +217,11 @@ const services = [
 
     view: "/services/stretch-ceiling/translucent",
   },
+
+
+  /* =========================================================
+     SHILPWAVE™ TEXTILE CEILING SYSTEMS
+     ========================================================= */
 
   {
     title: "SHILPWAVE™ Textile Ceiling Systems",
@@ -73,6 +259,11 @@ const services = [
     view: "/services/textile-ceiling/wave",
   },
 
+
+  /* =========================================================
+     FIBERSKY™ FIBER OPTIC STAR CEILING
+     ========================================================= */
+
   {
     title: "FIBERSKY™ Fiber Optic Star Ceiling",
 
@@ -109,41 +300,46 @@ const services = [
     view: "/services/fiber-optic/static",
   },
 
- {
-  title: "SHILPVIRTUAL™ Virtual Ceiling & Window",
 
-  desc:
-    "Premium illuminated virtual ceiling and window systems designed to introduce open skies, natural ambience, scenic views and immersive architectural experiences.",
+  /* =========================================================
+     SHILPVIRTUAL™
+     ========================================================= */
 
-  image: images.virtualCeiling.main,
+  {
+    title: "SHILPVIRTUAL™ Virtual Ceiling & Window",
 
-  types: [
-    {
-      title: "SHILPVIRTUAL™ SKY",
-      subtitle: "Illuminated Virtual Sky Ceiling",
-      link: "/services/virtual-ceiling/virtual-sky",
-    },
-    {
-      title: "SHILPVIRTUAL™ WINDOW",
-      subtitle: "Realistic Illuminated Window System",
-      link: "/services/virtual-ceiling/virtual-window",
-    },
-    {
-      title: "SHILPVIRTUAL™ SUNLIGHT",
-      subtitle: "Natural Sunlight Simulation",
-      link: "/services/virtual-ceiling/virtual-sunlight",
-    },
-    {
-      title: "SHILPVIRTUAL™ CUSTOM",
-      subtitle: "Custom Virtual Ceiling & Window",
-      link: "/services/virtual-ceiling/virtual-custom",
-    },
-  ],
+    desc:
+      "Premium illuminated virtual ceiling and window systems designed to introduce open skies, natural ambience, scenic views and immersive architectural experiences.",
 
-  pdf: "/pdf/virtual-ceiling.pdf",
+    image: images.virtualCeiling.main,
 
-  view: "/services/virtual-ceiling/virtual-sky",
-},
+    types: [
+      {
+        title: "SHILPVIRTUAL™ SKY",
+        subtitle: "Illuminated Virtual Sky Ceiling",
+        link: "/services/virtual-ceiling/virtual-sky",
+      },
+      {
+        title: "SHILPVIRTUAL™ WINDOW",
+        subtitle: "Realistic Illuminated Window System",
+        link: "/services/virtual-ceiling/virtual-window",
+      },
+      {
+        title: "SHILPVIRTUAL™ SUNLIGHT",
+        subtitle: "Natural Sunlight Simulation",
+        link: "/services/virtual-ceiling/virtual-sunlight",
+      },
+      {
+        title: "SHILPVIRTUAL™ CUSTOM",
+        subtitle: "Custom Virtual Ceiling & Window",
+        link: "/services/virtual-ceiling/virtual-custom",
+      },
+    ],
+
+    pdf: "/pdf/virtual-ceiling.pdf",
+
+    view: "/services/virtual-ceiling/virtual-sky",
+  },
 ];
 
 export default services;
