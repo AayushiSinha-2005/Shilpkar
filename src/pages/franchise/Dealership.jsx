@@ -10,6 +10,9 @@ export default function Dealership() {
 {/* =========================
     SECTION 1 — HERO
 ========================= */}
+{/* =========================
+    SECTION 1 — HERO
+========================= */}
 <section className="dealership-hero">
 
   {/* Background Image */}
@@ -25,30 +28,44 @@ export default function Dealership() {
 
   {/* Center Buttons */}
   <div className="dealership-hero__actions">
-  <a
-  href="/franchise/dealership-application"
-  className="dealership-btn dealership-btn--primary"
->
-  BECOME A DEALER
-  <span>→</span>
-</a>
 
-  <a
-    href="/dealership-brochure.pdf"
-    className="dealership-btn dealership-btn--secondary"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    DOWNLOAD PDF
-    <span>↓</span>
-  </a>
-</div>
+    {/* Become a Dealer */}
+    <a
+      href="/franchise/dealership-application"
+      className="dealership-btn dealership-btn--primary"
+    >
+      BECOME A DEALER
+      <span>→</span>
+    </a>
+
+    {/* Our Dealers */}
+    <a
+      href="/franchise/dealers"
+      className="dealership-btn dealership-btn--secondary"
+    >
+      OUR DEALERS
+      <span>→</span>
+    </a>
+
+    {/* Download PDF */}
+    <a
+      href="/dealership-brochure.pdf"
+      className="dealership-btn dealership-btn--secondary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      DOWNLOAD PDF
+      <span>↓</span>
+    </a>
+
+  </div>
 
   {/* Bottom Scroll Indicator */}
   <div className="dealership-hero__scroll">
     <span />
     <p>Scroll</p>
   </div>
+
 </section>
 
 

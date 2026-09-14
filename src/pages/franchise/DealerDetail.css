@@ -1,0 +1,393 @@
+/* =====================================================
+   DEALER DETAIL PAGE
+===================================================== */
+
+.dealer-detail-page {
+  min-height: 100vh;
+  background: #071f1d;
+  color: #f5f1e8;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.dealer-detail-hero {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #071f1d;
+}
+
+.dealer-detail-hero__image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.dealer-detail-hero__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dealer-detail-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 31, 29, 0.88),
+      rgba(7, 31, 29, 0.58),
+      rgba(7, 31, 29, 0.82)
+    );
+}
+
+.dealer-detail-hero__content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1100px, 92%);
+  padding: 100px 20px 70px;
+
+  text-align: center;
+}
+
+.dealer-detail-hero h1 {
+  margin: 20px 0 0;
+
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  font-weight: 400;
+
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+.dealer-detail-hero p {
+  margin: 18px 0 8px;
+
+  color: #d4af37;
+
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.dealer-location {
+  color: rgba(245, 241, 232, 0.9);
+
+  font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.dealer-detail-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  color: #d4af37;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.dealer-detail-eyebrow span {
+  width: 42px;
+  height: 1px;
+  display: block;
+
+  background: #d4af37;
+}
+
+
+/* =====================================================
+   DEALER NUMBER
+===================================================== */
+
+.dealer-number {
+  width: 64px;
+  height: 64px;
+
+  margin: 30px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.7);
+
+  color: #d4af37;
+
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+
+/* =====================================================
+   DETAILS SECTION
+===================================================== */
+
+.dealer-detail-section {
+  padding: 90px 20px;
+}
+
+.dealer-detail-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.dealer-detail-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+
+/* IMPORTANT:
+   Only DealerDetail heading gets these colors.
+*/
+
+.dealer-detail-heading h2 {
+  margin: 22px 0;
+
+  color: #f5f1e8 !important;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.dealer-detail-heading h2 span {
+  color: #d4af37 !important;
+}
+
+.dealer-detail-line {
+  width: 55px;
+  height: 2px;
+
+  margin: 0 auto;
+
+  background: #c6a15b;
+}
+
+
+/* =====================================================
+   INFORMATION CARD
+===================================================== */
+
+.dealer-info-card {
+  margin-bottom: 28px;
+
+  border: 1px solid rgba(198, 161, 91, 0.35);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.dealer-info-card__title {
+  padding: 18px 25px;
+
+  border-bottom: 1px solid rgba(198, 161, 91, 0.25);
+
+  color: #d4af37;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+}
+
+.dealer-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* =====================================================
+   INFORMATION ITEM
+===================================================== */
+
+.dealer-info-item {
+  padding: 25px;
+
+  border-right: 1px solid rgba(198, 161, 91, 0.15);
+  border-bottom: 1px solid rgba(198, 161, 91, 0.15);
+}
+
+.dealer-info-item--full {
+  grid-column: 1 / -1;
+}
+
+.dealer-info-item span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #a99f8a;
+
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+}
+
+.dealer-info-item strong,
+.dealer-info-item a {
+  color: #f5f1e8;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+.dealer-info-item a:hover {
+  color: #d4af37;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.dealer-detail-back {
+  text-align: center;
+
+  margin-top: 55px;
+}
+
+.dealer-detail-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 25px;
+
+  border: 1px solid rgba(198, 161, 91, 0.55);
+
+  color: #f5f1e8;
+
+  text-decoration: none;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+
+  transition: 0.3s ease;
+}
+
+.dealer-detail-back a:hover {
+  background: #d4af37;
+  color: #071f1d;
+}
+
+.dealer-detail-back span {
+  font-size: 1.1rem;
+}
+
+
+/* =====================================================
+   DEALER NOT FOUND
+===================================================== */
+
+.dealer-not-found {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.dealer-not-found span {
+  color: #d4af37;
+
+  letter-spacing: 0.3em;
+}
+
+.dealer-not-found h1 {
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.dealer-not-found a {
+  margin-top: 20px;
+
+  color: #d4af37;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .dealer-detail-hero {
+    min-height: 520px;
+  }
+
+  .dealer-detail-hero__content {
+    padding: 100px 20px 60px;
+  }
+
+  .dealer-detail-eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    gap: 10px;
+  }
+
+  .dealer-detail-eyebrow span {
+    width: 25px;
+  }
+
+  .dealer-number {
+    width: 55px;
+    height: 55px;
+  }
+
+  .dealer-detail-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .dealer-detail-section {
+    padding: 65px 15px;
+  }
+
+  .dealer-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-info-item--full {
+    grid-column: auto;
+  }
+
+  .dealer-info-item {
+    border-right: none;
+  }
+
+  .dealer-detail-heading h2 {
+    font-size: 2.4rem;
+  }
+}

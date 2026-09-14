@@ -2301,3 +2301,145 @@
   }
 
 }
+
+/* ============================================================
+   CLOUDWAVE — SECTIONS WITHOUT IMAGES
+   ============================================================ */
+
+.service-section:not(:has(.section-image)) {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.service-section:not(:has(.section-image)) .section-content {
+  max-width: 900px;
+}
+
+.service-section:not(:has(.section-image)) .section-content > p {
+  max-width: 850px;
+}
+/* ============================================================
+   CLOUDWAVE / IMAGELESS PRODUCT SECTIONS
+   PREMIUM EDITORIAL LAYOUT
+   ============================================================ */
+
+.service-section:not(:has(.section-image)) {
+  display: block;
+  margin-bottom: 0;
+  padding: 85px 0;
+  position: relative;
+}
+
+.service-section:not(:has(.section-image)) .section-content {
+  max-width: 980px;
+  margin-left: 0;
+}
+
+.service-section:not(:has(.section-image)) .section-content > p {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* elegant divider between content sections */
+.service-section:not(:has(.section-image))
+  + .service-section:not(:has(.section-image)) {
+  border-top: 1px solid rgba(23, 51, 46, 0.10);
+}
+
+/* premium section number */
+.service-section:not(:has(.section-image)) .section-number {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 28px;
+  font-size: 12px;
+}
+
+/* heading */
+.service-section:not(:has(.section-image)) .section-content h2 {
+  max-width: 950px;
+  margin-bottom: 24px;
+}
+
+/* subtle gold accent */
+.service-section:not(:has(.section-image)) .section-content::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 1px;
+  margin-bottom: 24px;
+  background: #d4af37;
+}
+
+
+/* ============================================================
+   REDUCE OVERALL EMPTY SPACE
+   ============================================================ */
+
+.service-sections {
+  padding: 70px 0 20px;
+}
+
+
+/* ============================================================
+   CLOUDWAVE — CLEAN ALTERNATING BACKGROUND FEEL
+   ============================================================ */
+
+.service-section:not(:has(.section-image)):nth-child(even) {
+  background: rgba(242, 240, 234, 0.55);
+}
+
+.service-section:not(:has(.section-image)):nth-child(odd) {
+  background: transparent;
+}
+
+
+/* ============================================================
+   APPLICATION / NEXT SECTION TRANSITION
+   ============================================================ */
+
+.service-section:not(:has(.section-image)):last-child {
+  padding-bottom: 95px;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .service-sections {
+    padding: 40px 0 10px;
+  }
+
+  .service-section:not(:has(.section-image)) {
+    padding: 65px 0;
+  }
+
+  .service-section:not(:has(.section-image)) .section-content {
+    max-width: 100%;
+  }
+
+  .service-section:not(:has(.section-image)) .section-content > p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .service-section:not(:has(.section-image)) .section-content h2 {
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .service-section:not(:has(.section-image)) {
+    padding: 55px 0;
+  }
+
+  .service-section:not(:has(.section-image)) .section-content > p {
+    font-size: 15px;
+  }
+
+}

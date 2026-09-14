@@ -296,7 +296,7 @@ virtualCeiling: {
   sunlightHeroBanner: new URL(
     "../assets/images/services/virtual-ceiling/sunlight/banner/virtual-sunlight-hero-banner.png",
     import.meta.url
-  ).href,
+  ).href, 
 
   custom: new URL(
     "../assets/images/services/virtual-ceiling/custom/virtual ceiling.webp",
@@ -379,16 +379,203 @@ service4: new URL(
     import.meta.url
   ).href,
 
-  // Existing Gallery Images — keep for Gallery page
-  u("photo-1522771739844-6a9f6d5f14af", 1400),
-  u("photo-1615529182904-14819c35db37", 1400),
-  u("photo-1616046229478-9901c5536a45", 1400),
-  u("photo-1631679706909-1844bbd07221", 1400),
-  u("photo-1522771739844-6a9f6d5f14af", 1400),
-  u("photo-1615529182904-14819c35db37", 1400),
-  u("photo-1616046229478-9901c5536a45", 1400),
-  u("photo-1631679706909-1844bbd07221", 1400),
+    // 09 — Architectural Wall Art
+  new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  // 10 — MIRRORA
+  new URL(
+    "../assets/images/services/mirrora/main/mirrora-main.png",
+    import.meta.url
+  ).href,
+
+  // 11 — CLOUDWAVE Textile Ceiling
+  new URL(
+    "../assets/images/services/cloudwave/main/cloudwave-main.png",
+    import.meta.url
+  ).href,
+
+ // 12 — Dome Stretch Ceiling
+new URL(
+  "../assets/images/services/dome/main/dome-stretch-ceiling-main.png",
+  import.meta.url
+).href,
+
+// 13 — Kitchen Stretch Ceiling
+new URL(
+  "../assets/images/services/kitchen-stretch-ceilings/main/kitchen-stretch-ceiling-main.png",
+  import.meta.url
+).href,
+
+// 14 — 3D Epoxy Flooring
+new URL(
+  "../assets/images/services/3D-epoxy-floorings/main/epoxy-flooring-main.png",
+  import.meta.url
+).href,
+
+// 15 — Wallsculpt
+new URL(
+  "../assets/images/services/wallsculpt/main/wallsculpt-main.png",
+  import.meta.url
+).href,
+
+// 16 — Prism
+new URL(
+  "../assets/images/services/prism/main/prism-main.png",
+  import.meta.url
+).href,
+
+// 17 — Decorative Mirrors
+new URL(
+  "../assets/images/services/mirrora/main/mirrora-main.png",
+  import.meta.url
+).href,
+
+// 18 — Restaurant Decors
+new URL(
+  "../assets/images/services/restaurant-decors/main/restaurant-decors-main.png",
+  import.meta.url
+).href,
+
+// 19 — Architectural Wall Art
+new URL(
+  "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+  import.meta.url
+).href,
   ],
+
+  architecturalWallArt: {
+  main: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  bespokeWall: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  bespokeWallHeroBanner: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  patternLine: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  patternLineHeroBanner: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  embroWall: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+  embroWallHeroBanner: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+
+wallSculpt: new URL(
+  "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+  import.meta.url
+).href,
+
+
+  wallSculptHeroBanner: new URL(
+    "../assets/images/services/architectural-wall-art/main/architectural-wall-art-main.png",
+    import.meta.url
+  ).href,
+},
+mirrora: {
+  main: new URL(
+    "../assets/images/services/mirrora/main/mirrora-main.png",
+    import.meta.url
+  ).href,
+},
+
+cloudwave: {
+  main: new URL(
+    "../assets/images/services/cloudwave/main/cloudwave-main.png",
+    import.meta.url
+  ).href,
+},
+prism: {
+  main: new URL(
+    "../assets/images/services/prism/main/prism-main.png",
+    import.meta.url
+  ).href,
+},
+
+epoxyDecors: {
+  main: new URL(
+    "../assets/images/services/3D-epoxy-floorings/main/epoxy-flooring-main.png",
+    import.meta.url
+  ).href,
+},
+
+mirrors: {
+  main: new URL(
+    "../assets/images/services/mirrors/main/mirrors-main.png",
+    import.meta.url
+  ).href,
+},
+
+pillars: {
+  main: new URL(
+    "../assets/images/services/pillars/main/pillars-main.png",
+    import.meta.url
+  ).href,
+},
+/* =========================================================
+   SHILPKAR™ KITCHEN STRETCH CEILINGS
+   ========================================================= */
+
+kitchenStretchCeilings: {
+  main: new URL(
+    "../assets/images/services/kitchen-stretch-ceilings/main/kitchen-stretch-ceiling-main.png",
+    import.meta.url
+  ).href,
+},
+/* =========================================================
+   SHILPKAR™ DOME STRETCH CEILINGS
+   ========================================================= */
+
+domeStretchCeilings: {
+  main: new URL(
+    "../assets/images/services/dome/main/dome-stretch-ceiling-main.png",
+    import.meta.url
+  ).href,
+},
+
+/* =========================================================
+   SHILPKAR™ RESTAURANT DECORS
+   ========================================================= */
+
+restaurantDecors: {
+  main: new URL(
+    "../assets/images/services/restaurant-decors/main/restaurant-decors-main.png",
+    import.meta.url
+  ).href,
+},
+
+/* =========================================================
+   SHILPKAR™ WALLSCULPT
+   ========================================================= */
+
+wallsculpt: {
+  main: new URL(
+    "../assets/images/services/wallsculpt/main/wallsculpt-main.png",
+    import.meta.url
+  ).href,
+},
+
 
   projects: [
     { img: u("photo-1600566753086-00f18fb6b3ea", 1400), title: "Malabar Hill Residence", tag: "Residential" },

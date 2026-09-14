@@ -9,6 +9,8 @@ import ServiceDetail from "../pages/ServiceDetail.jsx";
 import ServiceType from "../pages/ServiceType.jsx";
 import Dealership from "../pages/franchise/Dealership.jsx";
 import DealershipApplication from "../pages/franchise/DealershipApplication.jsx";
+import Dealers from "../pages/franchise/Dealers.jsx";
+import DealerDetail from "../pages/franchise/DealerDetail.jsx";
 import Associate from "../pages/franchise/Associate.jsx";
 import AssociateApplication  from "../pages/franchise/AssociateApplication.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
@@ -28,13 +30,45 @@ import NotFound from "../pages/NotFound.jsx";
 
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" in window ? "instant" : "auto" });
-  }, [pathname]);
+    if (hash) {
+      const id = hash.substring(1);
+
+      let attempts = 0;
+
+      const timer = setInterval(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          clearInterval(timer);
+
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+
+        attempts++;
+
+        if (attempts > 40) {
+          clearInterval(timer);
+        }
+      }, 50);
+
+      return () => clearInterval(timer);
+    }
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant" in window ? "instant" : "auto",
+    });
+  }, [pathname, hash]);
+
   return null;
 }
-
 const variants = {
   initial: { opacity: 0, y: 18 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
@@ -61,8 +95,7 @@ export default function AppRouter() {
     <>
       <ScrollToTop />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Page><Home /></Page>} />
+<Routes location={location} key={location.pathname + location.hash}>          <Route path="/" element={<Page><Home /></Page>} />
           <Route path="/shop" element={<Page><ShopByCategory /></Page>} />
           <Route path="/about" element={<Page><About /></Page>} />
           <Route path="/services" element={<Page><Services /></Page>} />
@@ -168,6 +201,25 @@ export default function AppRouter() {
     </Page>
   }
 />
+
+<Route
+  path="/franchise/dealers"
+  element={
+    <Page>
+      <Dealers />
+    </Page>
+  }
+/>
+
+<Route
+  path="/franchise/dealers/:dealerId"
+  element={
+    <Page>
+      <DealerDetail />
+    </Page>
+  }
+/>
+
 <Route
   path="/franchise/dealership-application"
   element={<DealershipApplication />}

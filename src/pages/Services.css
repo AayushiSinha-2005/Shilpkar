@@ -1,16 +1,12 @@
 /* ============================= */
 /* SERVICES BANNER */
 /* ============================= */
-
 .services-banner {
   min-height: 600px;
-
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-
   position: relative;
-
   display: flex;
   align-items: center;
 }
@@ -18,62 +14,45 @@
 .services-banner__overlay {
   width: 100%;
   min-height: 600px;
-
   display: flex;
   align-items: center;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5, 25, 21, 0.78) 0%,
-      rgba(5, 25, 21, 0.52) 45%,
-      rgba(5, 25, 21, 0.18) 100%
-    );
+  /* Very light overlay — image remains the hero */
+  background: linear-gradient(
+    90deg,
+    rgba(5, 25, 21, 0.30) 0%,
+    rgba(5, 25, 21, 0.12) 45%,
+    rgba(5, 25, 21, 0.03) 100%
+  );
 }
+
 .services-banner__content {
-  max-width: 600px;
+  max-width: 700px;
   color: #fff;
 }
 
 .services-banner__content .eyebrow {
   display: inline-block;
-
   color: #D4AF37;
-
   font-size: 14px;
-
   font-weight: 700;
-
   letter-spacing: 5px;
-
   margin-bottom: 20px;
 }
 
 .services-banner__content h1 {
   color: #fff;
-
-  font-size: clamp(52px, 7vw, 95px);
-
+  font-size: clamp(48px, 6vw, 82px);
   line-height: 1.05;
-
-  margin: 0 0 25px;
+  margin: 0;
 }
 
 .services-banner__content p {
-  max-width: 650px;
-
-  color: rgba(255, 255, 255, 0.85);
-
-  font-size: 19px;
-
-  line-height: 1.8;
-
-  margin: 0;
+  display: none;
 }
 
 
 /* MOBILE */
-
 @media (max-width: 768px) {
 
   .services-banner,
@@ -82,17 +61,31 @@
   }
 
   .services-banner {
+    background-size: cover;
     background-position: center;
   }
 
+  .services-banner__overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(5, 25, 21, 0.38) 0%,
+      rgba(5, 25, 21, 0.12) 100%
+    );
+  }
+
+  .services-banner__content {
+    max-width: 90%;
+  }
+
+  .services-banner__content .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+  }
+
   .services-banner__content h1 {
-    font-size: 52px;
+    font-size: 42px;
   }
-
-  .services-banner__content p {
-    font-size: 16px;
-  }
-
 }
 
 /* -------------------- */
@@ -399,3 +392,4 @@ grid-template-columns:1fr;
 }
 
 }
+

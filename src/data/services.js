@@ -22,6 +22,7 @@ const services = [
 
   {
     title: "SHILPKAR™ TRANSLUCENT",
+    anchor: "translucent",
 
     desc:
       translucent?.hero?.description ||
@@ -66,6 +67,7 @@ const services = [
 
   {
     title: "SHILPKAR™ PRINT",
+    anchor: "print",
 
     desc:
       printed?.hero?.description ||
@@ -111,6 +113,7 @@ const services = [
 
   {
     title: "SHILPKAR™ GLOSS",
+    anchor: "gloss",
 
     desc:
       gloss?.hero?.description ||
@@ -140,6 +143,7 @@ const services = [
 
   {
     title: "SHILPKAR™ PANEL",
+    anchor: "panel",
 
     desc:
       panel?.hero?.description ||
@@ -184,6 +188,7 @@ const services = [
 
   {
     title: "SHILPKAR™ Stretch Ceiling Systems",
+    anchor: "stretch-ceiling",
 
     desc:
       "Premium stretch ceiling solutions created for modern residential, commercial and hospitality interiors with seamless finishes and integrated lighting options.",
@@ -225,6 +230,7 @@ const services = [
 
   {
     title: "SHILPWAVE™ Textile Ceiling Systems",
+    anchor: "textile-ceiling",
 
     desc:
       "Contemporary textile ceiling concepts that bring softness, movement, depth and distinctive architectural character to premium interior spaces.",
@@ -266,6 +272,7 @@ const services = [
 
   {
     title: "FIBERSKY™ Fiber Optic Star Ceiling",
+    anchor: "fiber-optic",
 
     desc:
       "Advanced fiber optic ceiling systems designed to create realistic star fields, animated twinkling effects, vibrant RGB lighting and immersive galaxy-inspired environments.",
@@ -307,7 +314,7 @@ const services = [
 
   {
     title: "SHILPVIRTUAL™ Virtual Ceiling & Window",
-
+    anchor: "virtual-ceiling",
     desc:
       "Premium illuminated virtual ceiling and window systems designed to introduce open skies, natural ambience, scenic views and immersive architectural experiences.",
 
@@ -340,6 +347,338 @@ const services = [
 
     view: "/services/virtual-ceiling/virtual-sky",
   },
+
+  {
+  title: "SHILPKAR™ ARCHITECTURAL WALL ART™",
+  anchor: "architectural-wall-art",
+  subheading: "Customized Wallpaper & Premium Architectural Wall Décor",
+
+  description:
+    "ARCHITECTURAL WALL ART™ transforms ordinary walls into distinctive interior experiences through customized murals, seamless repeat patterns, exclusive embroidered wall coverings, and architectural decorative panels. Each solution can be developed according to wall dimensions, interior style, colour palette, customer preference, and project requirements.",
+
+  categories: [
+    {
+      title: "BESPOKEWALL™",
+      subtitle: "Customized Wallpaper & Personalized Murals",
+      link: "/services/architectural-wall-art/bespokewall",
+    },
+    {
+      title: "PATTERNLINE™",
+      subtitle: "Seamless Repeat Pattern Wallpaper",
+      link: "/services/architectural-wall-art/patternline",
+    },
+    {
+      title: "EMBROWALL™",
+      subtitle: "Exclusive Embroidery Wallpaper",
+      link: "/services/architectural-wall-art/embrowall",
+    },
+    {
+      title: "WALLSCULPT™",
+      subtitle: "Architectural Wall Murals & Decorative Panels",
+      link: "/services/architectural-wall-art/wallsculpt",
+    },
+  ],
+
+image: images.architecturalWallArt.main,},
+
+{
+  title: "SHILPKAR™ MIRRORA™",
+  anchor: "mirrora",
+  subheading: "Illuminated Architectural Surface System",
+  description:
+    "MIRRORA™ is a flexible illuminated architectural surface system that transforms light, form and graphics into immersive architectural experiences. Designed for ceilings, suspended features, walls, partitions and decorative installations, MIRRORA™ combines translucent surfaces with integrated LED illumination, customized forms, printing and programmable lighting.",
+
+  categories: [
+    {
+      title: "MIRRORA™ WAVE",
+      subtitle: "Flowing Illuminated Architectural Forms",
+      link: "/services/mirrora/wave",
+    },
+    {
+      title: "MIRRORA™ RIBBON",
+      subtitle: "Continuous Suspended Illuminated Forms",
+      link: "/services/mirrora/ribbon",
+    },
+    {
+      title: "MIRRORA™ LOOP",
+      subtitle: "Circular & Elliptical Architectural Forms",
+      link: "/services/mirrora/loop",
+    },
+    {
+      title: "MIRRORA™ SPIRAL",
+      subtitle: "Sculptural Hanging Illuminated Forms",
+      link: "/services/mirrora/spiral",
+    },
+    {
+      title: "MIRRORA™ WALL",
+      subtitle: "Illuminated Vertical Architectural Features",
+      link: "/services/mirrora/wall",
+    },
+    {
+      title: "MIRRORA™ PRINT",
+      subtitle: "Customized Printed Illuminated Surfaces",
+      link: "/services/mirrora/print",
+    },
+    {
+      title: "MIRRORA™ RGB",
+      subtitle: "RGB & RGBW Colour-Changing Illumination",
+      link: "/services/mirrora/rgb",
+    },
+    {
+      title: "MIRRORA™ DYNAMIC",
+      subtitle: "Programmable & Chasing Light Effects",
+      link: "/services/mirrora/dynamic",
+    },
+  ],
+
+  image: images.mirrora.main,
+},
+
+{
+  title: "CLOUDWAVE™ TEXTILE CEILING",
+  anchor: "cloudwave",
+
+  subheading: "Premium Gloss Textile Ceiling Systems",
+
+  description:
+    "CLOUDWAVE™ is a premium decorative ceiling solution designed with sophisticated textile-inspired finishes and seamless architectural detailing. From high-gloss reflective surfaces to satin, textured, and custom-printed designs, CLOUDWAVE™ transforms ordinary ceilings into elegant visual features for luxury residential, hospitality, and commercial interiors.",
+
+  categories: [
+    {
+      title: "CLOUDWAVE™ GLOSS",
+      subtitle: "Premium High-Gloss Textile Ceiling",
+      link: "/services/cloudwave/gloss",
+    },
+    {
+      title: "CLOUDWAVE™ SATIN",
+      subtitle: "Soft Silk-Like Textile Ceiling Finish",
+      link: "/services/cloudwave/satin",
+    },
+    {
+      title: "CLOUDWAVE™ TEXTURE",
+      subtitle: "Decorative Textured Ceiling Finishes",
+      link: "/services/cloudwave/texture",
+    },
+    {
+      title: "CLOUDWAVE™ PRINT",
+      subtitle: "Custom Printed Architectural Ceiling",
+      link: "/services/cloudwave/print",
+    },
+  ],
+
+  image: images.cloudwave.main,
+},
+
+   /* =========================================================
+     10 — SHILPKAR™ PRISM
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ PRISM",
+    anchor: "prism",
+
+    desc:
+      "Architectural lighting and illuminated ceiling solutions designed to create refined, modern and immersive interior environments.",
+
+    image: images.prism.main,
+
+    types: [
+      {
+        title: "PRISM",
+        subtitle: "Architectural Lighting & Ceiling System",
+        link: "/services/prism/main",
+      },
+    ],
+
+    pdf: "#",
+
+    view: "/services/prism/main",
+  },
+
+
+  /* =========================================================
+     11 — SHILPKAR™ 3D EPOXY FLOORINGS
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ 3D EPOXY FLOORINGS",
+    anchor: "epoxy-decors",
+
+    desc:
+      "Premium 3D epoxy flooring solutions designed to transform floors into seamless decorative architectural surfaces.",
+
+    image: images.epoxyDecors.main,
+
+    types: [
+      {
+        title: "3D EPOXY FLOORING",
+        subtitle: "Custom Decorative Epoxy Flooring",
+        link: "/services/epoxy-decors/main",
+      },
+    ],
+
+    pdf: "#",
+
+    view: "/services/epoxy-decors/main",
+  },
+
+
+  /* =========================================================
+     12 — SHILPKAR™ MIRRORS
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ MIRRORS",
+    anchor: "mirrors",
+
+    desc:
+      "Premium decorative mirror solutions created to enhance interiors with reflection, depth, elegance and architectural character.",
+
+    image: images.mirrors.main,
+
+    types: [
+      {
+        title: "DECORATIVE MIRRORS",
+        subtitle: "Custom Architectural Mirror Solutions",
+        link: "/services/mirrors/main",
+      },
+    ],
+
+    pdf: "#",
+
+    view: "/services/mirrors/main",
+  },
+
+
+  /* =========================================================
+     13 — SHILPKAR™ PILLARS
+     ========================================================= */
+
+  {
+    title: "SHILPKAR™ PILLARS",
+    anchor: "pillars",
+
+    desc:
+      "Decorative architectural pillar solutions designed to transform structural elements into distinctive interior features.",
+
+    image: images.pillars.main,
+
+    types: [
+      {
+        title: "DECORATIVE PILLARS",
+        subtitle: "Architectural Pillar Finishing Solutions",
+        link: "/services/pillars/main",
+      },
+    ],
+
+    pdf: "#",
+
+    view: "/services/pillars/main",
+  },
+
+/* =========================================================
+   14 — SHILPKAR™ KITCHEN STRETCH CEILINGS
+   ========================================================= */
+
+{
+  title: "SHILPKAR™ KITCHEN STRETCH CEILINGS",
+  anchor: "kitchen-stretch-ceilings",
+
+  desc:
+    "Specialized stretch ceiling solutions for modern kitchens, combining seamless finishes, integrated lighting and easy-clean surfaces.",
+
+  image: images.kitchenStretchCeilings.main,
+
+  types: [
+    {
+      title: "KITCHEN STRETCH CEILING",
+      subtitle: "Seamless Stretch Ceiling for Kitchens",
+      link: "/services/kitchen-stretch-ceilings/main",
+    },
+  ],
+
+  pdf: "#",
+
+  view: "/services/kitchen-stretch-ceilings/main",
+},
+
+  /* =========================================================
+     15 — SHILPKAR™ DOME STRETCH CEILINGS
+     ========================================================= */
+{
+  title: "SHILPKAR™ DOME STRETCH CEILINGS",
+  anchor: "dome-stretch-ceilings",
+
+  desc:
+    "Custom stretch ceiling systems designed for curved and dome-shaped architectural spaces with seamless visual continuity.",
+
+  image: images.domeStretchCeilings.main,
+
+  types: [
+    {
+      title: "DOME STRETCH CEILING",
+      subtitle: "Custom Curved & Dome Ceiling System",
+      link: "/services/dome-stretch-ceilings/main",
+    },
+  ],
+
+  pdf: "#",
+
+  view: "/services/dome-stretch-ceilings/main",
+},
+
+  /* =========================================================
+   16 — SHILPKAR™ RESTAURANT DECORS
+   ========================================================= */
+
+{
+  title: "SHILPKAR™ RESTAURANT DECORS",
+  anchor: "restaurant-decors",
+
+  desc:
+    "Complete decorative ceiling, wall and lighting solutions designed to create distinctive restaurant environments and memorable dining experiences.",
+
+  image: images.restaurantDecors.main,
+
+  types: [
+    {
+      title: "RESTAURANT DECOR",
+      subtitle: "Premium Restaurant Interior Solutions",
+      link: "/services/restaurant-decors/main",
+    },
+  ],
+
+  pdf: "#",
+
+  view: "/services/restaurant-decors/main",
+},
+
+/* =========================================================
+   17 — SHILPKAR™ WALLSCULPT
+   ========================================================= */
+
+{
+  title: "SHILPKAR™ WALLSCULPT",
+  anchor: "wallsculpt",
+
+  desc:
+    "Architectural wall sculpture solutions that bring texture, depth, artistic expression and dimensional character to interior spaces.",
+
+  image: images.wallsculpt.main,
+
+  types: [
+    {
+      title: "WALLSCULPT",
+      subtitle: "Architectural Wall Sculptures & Panels",
+      link: "/services/wallsculpt/main",
+    },
+  ],
+
+  pdf: "#",
+
+  view: "/services/wallsculpt/main",
+},
+
 ];
 
 export default services;

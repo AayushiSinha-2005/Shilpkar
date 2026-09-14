@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SplitText from "../components/Effects/SplitText.jsx";
 import services from "../data/services.js";
 import "./Services.css";
@@ -21,25 +21,16 @@ return (
       >
         <div className="services-banner__overlay">
           <div className="container services-banner__content">
-            <span className="eyebrow">
-              OUR EXPERTISE
-            </span>
+            
 
-            <h1 className="chisel">
-              Luxury Ceiling Solutions
-            </h1>
-
-            <p>
-              Discover premium stretch ceiling solutions designed
-              to transform interiors with light, texture and
-              limitless creative possibilities.
-            </p>
+            
           </div>
         </div>
       </section>
     )}
 
-    <section className="section services-section">      <div className="container">
+    <section className="section services-section">   
+         <div className="container">
 
         {preview && (
   <div className="services-section__head">
@@ -53,10 +44,11 @@ return (
           {items.map((service, index) => (
 
             <div
+               id={service.anchor}
               key={service.title}
               className={`service-row ${
-                index % 2 !== 0 ? "reverse" : ""
-              }`}
+              index % 2 !== 0 ? "reverse" : ""
+             }`}
             >
 
               <div className="service-image">
@@ -76,21 +68,20 @@ return (
 
                 <h2>{service.title}</h2>
 
-                <p>{service.desc}</p>
+<p>{service.desc || service.description}</p>
+<div className="service-types">
 
-               <div className="service-types">
-
-  {service.types?.map((type) => (
+  {(service.types || service.categories)?.map((type) => (
 
     <Link
-  key={type.title}
-  to={type.link}
-  className="type-card"
->
-  <h4>{type.title}</h4>
+      key={type.title}
+      to={type.link}
+      className="type-card"
+    >
+      <h4>{type.title}</h4>
 
-  <p>{type.subtitle}</p>
-</Link>
+      <p>{type.subtitle}</p>
+    </Link>
 
   ))}
 

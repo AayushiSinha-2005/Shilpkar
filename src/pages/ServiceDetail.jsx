@@ -8,57 +8,57 @@ export default function ServiceDetail() {
   const service =
     serviceDetails?.[serviceSlug]?.[categorySlug];
 
+  /*
+  ============================================================
+  SERVICE NOT FOUND
+  ============================================================
+  */
+
   if (!service) {
     return (
       <div className="service-not-found">
         <h2>Service Not Found</h2>
+        <Link to="/services">Back to Services</Link>
       </div>
     );
   }
 
   /*
-    ============================================================
-    INDIVIDUAL TYPE PAGE
-    Example:
-    /services/stretch-ceiling/translucent/static-white
-    ============================================================
+  ============================================================
+  INDIVIDUAL TYPE PAGE
+  Existing products:
+  /services/stretch-ceiling/translucent/static-white
+  /services/stretch-ceiling/print/static-print
+  etc.
+  ============================================================
   */
 
   let activeService = service;
 
   if (typeSlug) {
     const typeIndexMap = {
-  /* ================= TRANSLUCENT ================= */
+      /* TRANSLUCENT */
+      "static-white": 0,
+      "cct-white": 1,
+      "rgbw-white": 2,
+      "rgbw-pixel-dmx": 3,
+      "rgbw-pixel-dmx-white": 3,
 
-  "static-white": 0,
-  "cct-white": 1,
-  "rgbw-white": 2,
+      /* PRINT */
+      "static-print": 0,
+      "cct-print": 1,
+      "rgbw-print": 2,
+      "rgbw-pixel-dmx-print": 3,
 
-  // Support both existing URL versions
-  "rgbw-pixel-dmx": 3,
-  "rgbw-pixel-dmx-white": 3,
+      /* GLOSS */
+      "high-gloss": 0,
 
-
-  /* ================= PRINT ================= */
-
-  "static-print": 0,
-  "cct-print": 1,
-  "rgbw-print": 2,
-  "rgbw-pixel-dmx-print": 3,
-
-
-  /* ================= GLOSS ================= */
-
-  "high-gloss": 0,
-
-
-  /* ================= PANEL ================= */
-
-  "panel-white": 0,
-  "panel-tunable": 0,
-  "panel-print": 1,
-  "panel-rgbw": 1,
-};
+      /* PANEL */
+      "panel-white": 0,
+      "panel-tunable": 0,
+      "panel-print": 1,
+      "panel-rgbw": 1,
+    };
 
     const sectionIndex = typeIndexMap[typeSlug];
 
@@ -69,44 +69,77 @@ export default function ServiceDetail() {
       return (
         <div className="service-not-found">
           <h2>Service Not Found</h2>
+          <Link to="/services">Back to Services</Link>
         </div>
       );
     }
 
-    /*
-      Keep the exact existing section data.
-      We are only showing the selected section.
-    */
+    const selectedSection = service.sections[sectionIndex];
 
     activeService = {
-  ...service,
-  sections: [service.sections[sectionIndex]],
+      ...service,
 
-  whyChoose: service.sections[sectionIndex].whyChoose,
+      sections: [selectedSection],
 
-  lightingTechnology:
-    service.sections[sectionIndex].lightingTechnology,
+      whyChoose:
+        selectedSection.whyChoose ||
+        service.whyChoose,
 
-  applications:
-    service.sections[sectionIndex].applications,
+      lightingTechnology:
+        selectedSection.lightingTechnology ||
+        service.lightingTechnology,
 
-  technicalSpecifications:
-    service.sections[sectionIndex].technicalSpecifications,
+      applications:
+        selectedSection.applications ||
+        service.applications,
 
-  qualityAssurance:
-    service.sections[sectionIndex].qualityAssurance,
+      technicalSpecifications:
+        selectedSection.technicalSpecifications ||
+        service.technicalSpecifications,
 
-  cta: service.cta,
-};
+      qualityAssurance:
+        selectedSection.qualityAssurance ||
+        service.qualityAssurance,
+
+      cta: selectedSection.cta || service.cta,
+    };
   }
+
   const isIndividualTypePage = Boolean(typeSlug);
+
+  /*
+  ============================================================
+  HELPER DATA
+  ============================================================
+  */
+
+  const collections =
+    activeService.collections ||
+    activeService.collection ||
+    [];
+
+  const materials =
+    activeService.materials ||
+    activeService.finishes ||
+    [];
+
+  const gallery =
+    activeService.gallery ||
+    activeService.images ||
+    [];
+
+  /*
+  ============================================================
+  RENDER
+  ============================================================
+  */
 
   return (
     <div className="service-detail-page">
 
-      {/* ============================================================
-          HERO
-      ============================================================ */}
+      {/* ======================================================
+          HERO BANNER
+      ====================================================== */}
 
       <section
         className="service-detail-hero"
@@ -126,9 +159,17 @@ export default function ServiceDetail() {
             </span>
           )}
 
-          <h1 className="chisel hero-title">
-            {activeService.hero?.title}
-          </h1>
+          {activeService.hero?.title && (
+            <h1 className="chisel hero-title">
+              {activeService.hero.title}
+            </h1>
+          )}
+
+          {activeService.hero?.tagline && (
+            <h2 className="hero-tagline">
+              {activeService.hero.tagline}
+            </h2>
+          )}
 
           {activeService.hero?.description && (
             <p>
@@ -136,14 +177,26 @@ export default function ServiceDetail() {
             </p>
           )}
 
+          {activeService.hero?.highlights?.length > 0 && (
+            <div className="hero-highlights">
+              {activeService.hero.highlights.map(
+                (item, index) => (
+                  <span key={index}>
+                    {item}
+                  </span>
+                )
+              )}
+            </div>
+          )}
+
         </div>
       </section>
 
 
-      {/* ============================================================
+      {/* ======================================================
           PRODUCT CATEGORIES
-          Only on category overview page
-      ============================================================ */}
+          ONLY CATEGORY OVERVIEW
+      ====================================================== */}
 
       {!isIndividualTypePage &&
         activeService.categories?.length > 0 && (
@@ -157,7 +210,6 @@ export default function ServiceDetail() {
                 PRODUCT CATEGORIES
               </span>
             </div>
-
 
             <div className="product-categories-grid">
 
@@ -180,9 +232,11 @@ export default function ServiceDetail() {
                       {category.title}
                     </h3>
 
-                    <p>
-                      {category.subtitle}
-                    </p>
+                    {category.subtitle && (
+                      <p>
+                        {category.subtitle}
+                      </p>
+                    )}
 
                   </div>
 
@@ -196,45 +250,15 @@ export default function ServiceDetail() {
 
             </div>
 
-
-            {/* ================= BUTTONS ================= */}
-
-            <div className="product-category-buttons">
-
-              {activeService.pdf && (
-                <a
-                  href={activeService.pdf}
-                  download
-                  className="product-download-btn"
-                >
-                  <span>↓</span>
-                  DOWNLOAD
-                </a>
-              )}
-
-
-              {activeService.categories?.[0]?.link && (
-                <Link
-                  to={activeService.categories[0].link}
-                  className="product-view-btn"
-                >
-                  VIEW
-                  <span>→</span>
-                </Link>
-              )}
-
-            </div>
-
           </div>
 
         </section>
-
       )}
 
 
-      {/* ============================================================
-          INDIVIDUAL TYPE CONTENT / EXISTING SECTIONS
-      ============================================================ */}
+      {/* ======================================================
+          INTRO / MAIN CONTENT SECTIONS
+      ====================================================== */}
 
       {activeService.sections?.length > 0 && (
 
@@ -248,21 +272,31 @@ export default function ServiceDetail() {
               <div
                 key={`${item.title}-${index}`}
                 className={`service-section ${
-                  index % 2 !== 0 ? "reverse" : ""
+                  index % 2 !== 0
+                    ? "reverse"
+                    : ""
                 }`}
               >
+
+                {/* IMAGE */}
 
                 {item.image && (
                   <div className="section-image">
 
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={
+                        item.imageAlt ||
+                        item.title ||
+                        "SHILPKAR product"
+                      }
                     />
 
                   </div>
                 )}
 
+
+                {/* CONTENT */}
 
                 <div className="section-content">
 
@@ -272,10 +306,17 @@ export default function ServiceDetail() {
                     </span>
                   )}
 
-                  <h2>
-                    {item.title}
-                  </h2>
+                  {item.eyebrow && (
+                    <span className="eyebrow">
+                      {item.eyebrow}
+                    </span>
+                  )}
 
+                  {item.title && (
+                    <h2>
+                      {item.title}
+                    </h2>
+                  )}
 
                   {item.subtitle && (
                     <h3 className="section-subtitle">
@@ -283,13 +324,19 @@ export default function ServiceDetail() {
                     </h3>
                   )}
 
-
                   {item.description && (
                     <p className="section-description">
                       {item.description}
                     </p>
                   )}
 
+                  {item.description2 && (
+                    <p className="section-description">
+                      {item.description2}
+                    </p>
+                  )}
+
+                  {/* BEST FOR */}
 
                   {item.bestFor && (
                     <div className="section-best-for">
@@ -305,16 +352,20 @@ export default function ServiceDetail() {
                     </div>
                   )}
 
+                  {/* SPECS */}
 
                   {item.specs?.length > 0 && (
 
                     <div className="detail-specs">
 
-                      {item.specs.map((spec) => (
+                      {item.specs.map(
+                        (spec, specIndex) => (
 
                         <div
                           className="spec-card"
-                          key={spec.label}
+                          key={
+                            `${spec.label}-${specIndex}`
+                          }
                         >
 
                           <span>
@@ -330,7 +381,6 @@ export default function ServiceDetail() {
                       ))}
 
                     </div>
-
                   )}
 
                 </div>
@@ -342,14 +392,12 @@ export default function ServiceDetail() {
           </div>
 
         </section>
-
       )}
 
 
-      {/* ============================================================
+      {/* ======================================================
           WHY CHOOSE
-          Existing content untouched
-      ============================================================ */}
+      ====================================================== */}
 
       {activeService.whyChoose?.items?.length > 0 && (
 
@@ -359,16 +407,17 @@ export default function ServiceDetail() {
 
             <div className="fiber-section-heading">
 
-              <span className="fiber-eyebrow">
-                {activeService.whyChoose.eyebrow}
-              </span>
+              {activeService.whyChoose.eyebrow && (
+                <span className="fiber-eyebrow">
+                  {activeService.whyChoose.eyebrow}
+                </span>
+              )}
 
               <h2>
                 {activeService.whyChoose.title}
               </h2>
 
             </div>
-
 
             <div className="fiber-features-grid">
 
@@ -403,55 +452,94 @@ export default function ServiceDetail() {
           </div>
 
         </section>
-
       )}
 
 
-      {/* ============================================================
-          APPLICATIONS
-          Existing content untouched
-      ============================================================ */}
+      {/* ======================================================
+          COLLECTIONS
+          For BESPOKEWALL / future products
+      ====================================================== */}
 
-      {activeService.applications && (
+      {collections.length > 0 && (
 
-        <section className="fiber-applications">
+        <section className="product-info-section product-collections-section">
 
           <div className="container">
 
-            <div className="fiber-section-heading">
+            <div className="product-section-heading">
 
-              <span className="fiber-eyebrow">
-                {activeService.applications.eyebrow}
-              </span>
+              {activeService.collectionsEyebrow && (
+                <span className="eyebrow">
+                  {activeService.collectionsEyebrow}
+                </span>
+              )}
+
+              {!activeService.collectionsEyebrow && (
+                <span className="eyebrow">
+                  COLLECTION
+                </span>
+              )}
 
               <h2>
-                {activeService.applications.title}
+                {activeService.collectionsTitle ||
+                  "EXPLORE COLLECTION"}
               </h2>
+
+              {activeService.collectionsDescription && (
+                <p>
+                  {activeService.collectionsDescription}
+                </p>
+              )}
 
             </div>
 
 
-            <div className="applications-grid">
+            <div className="product-collections-grid">
 
-              {activeService.applications.items.map(
+              {collections.map(
                 (item, index) => (
 
                 <div
-                  className="application-card"
-                  key={item}
+                  className="product-collection-card"
+                  key={`${item.title}-${index}`}
                 >
 
-                  <span className="application-number">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  {item.image && (
+                    <div className="product-collection-image">
 
-                  <h3>
-                    {item}
-                  </h3>
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                      />
 
-                  <span className="application-arrow">
-                    ↗
-                  </span>
+                    </div>
+                  )}
+
+                  <div className="product-collection-content">
+
+                    {item.number && (
+                      <span>
+                        {item.number}
+                      </span>
+                    )}
+
+                    <h3>
+                      {item.title}
+                    </h3>
+
+                    {item.subtitle && (
+                      <h4>
+                        {item.subtitle}
+                      </h4>
+                    )}
+
+                    {item.description && (
+                      <p>
+                        {item.description}
+                      </p>
+                    )}
+
+                  </div>
 
                 </div>
 
@@ -462,152 +550,429 @@ export default function ServiceDetail() {
           </div>
 
         </section>
-
       )}
 
 
-      {/* ============================================================
-    LIGHTING TECHNOLOGY
-============================================================ */}
+      {/* ======================================================
+          MATERIALS / FINISHES
+      ====================================================== */}
 
-{activeService.lightingTechnology?.items?.length > 0 && (
-  <section className="product-info-section lighting-technology-section">
-    <div className="container">
+      {materials.length > 0 && (
 
-      <div className="product-section-heading">
-        <span className="eyebrow">
-          {activeService.lightingTechnology.eyebrow}
-        </span>
+        <section className="product-info-section materials-section">
 
-        <h2>
-          {activeService.lightingTechnology.title}
-        </h2>
-      </div>
+          <div className="container">
 
-      <div className="lighting-technology-grid">
+            <div className="product-section-heading">
 
-        {activeService.lightingTechnology.items.map(
-          (item, index) => (
-            <div
-              className="lighting-technology-card"
-              key={`${item.title}-${index}`}
-            >
-
-              <span className="lighting-number">
-                {String(index + 1).padStart(2, "0")}
+              <span className="eyebrow">
+                {activeService.materialsEyebrow ||
+                  "MATERIALS & FINISH"}
               </span>
 
-              <h3>{item.title}</h3>
+              <h2>
+                {activeService.materialsTitle ||
+                  "SELECT YOUR FINISH"}
+              </h2>
 
-              {item.subtitle && (
-                <h4>{item.subtitle}</h4>
+              {activeService.materialsDescription && (
+                <p>
+                  {activeService.materialsDescription}
+                </p>
               )}
 
-              <p>{item.description}</p>
+            </div>
+
+
+            <div className="materials-grid">
+
+              {materials.map(
+                (item, index) => (
+
+                <div
+                  className="material-card"
+                  key={`${item.title}-${index}`}
+                >
+
+                  <span className="material-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  {item.image && (
+                    <div className="material-image">
+
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                      />
+
+                    </div>
+                  )}
+
+                  <h3>
+                    {item.title}
+                  </h3>
+
+                  {item.subtitle && (
+                    <h4>
+                      {item.subtitle}
+                    </h4>
+                  )}
+
+                  {item.description && (
+                    <p>
+                      {item.description}
+                    </p>
+                  )}
+
+                </div>
+
+              ))}
 
             </div>
-          )
-        )}
 
-      </div>
+          </div>
 
-    </div>
-  </section>
-)}
+        </section>
+      )}
 
 
-{/* ============================================================
-    TECHNICAL SPECIFICATIONS
-============================================================ */}
+      {/* ======================================================
+          APPLICATIONS
+      ====================================================== */}
 
-{activeService.technicalSpecifications?.items?.length > 0 && (
-  <section className="product-info-section technical-specifications-section">
-    <div className="container">
+      {activeService.applications?.items?.length > 0 && (
 
-      <div className="product-section-heading">
-        <span className="eyebrow">
-          {activeService.technicalSpecifications.eyebrow}
-        </span>
+        <section className="fiber-applications">
 
-        <h2>
-          {activeService.technicalSpecifications.title}
-        </h2>
-      </div>
+          <div className="container">
 
-      <div className="technical-specifications-list">
+            <div className="fiber-section-heading">
 
-        {activeService.technicalSpecifications.items.map(
-          (item, index) => (
-            <div
-              className="technical-specification-row"
-              key={`${item.label}-${index}`}
-            >
+              {activeService.applications.eyebrow && (
+                <span className="fiber-eyebrow">
+                  {activeService.applications.eyebrow}
+                </span>
+              )}
 
-              <span>{item.label}</span>
+              <h2>
+                {activeService.applications.title}
+              </h2>
 
-              <strong>{item.value}</strong>
+              {activeService.applications.description && (
+                <p>
+                  {activeService.applications.description}
+                </p>
+              )}
 
             </div>
-          )
-        )}
-
-      </div>
-
-    </div>
-  </section>
-)}
 
 
-{/* ============================================================
-    QUALITY ASSURANCE
-============================================================ */}
+            <div className="applications-grid">
 
-{activeService.qualityAssurance?.items?.length > 0 && (
-  <section className="product-info-section quality-assurance-section">
-    <div className="container">
+              {activeService.applications.items.map(
+                (item, index) => {
 
-      <div className="quality-assurance-wrapper">
+                  const application =
+                    typeof item === "string"
+                      ? {
+                          title: item,
+                        }
+                      : item;
 
-        <div className="product-section-heading">
-          <span className="eyebrow">
-            {activeService.qualityAssurance.eyebrow}
-          </span>
+                  return (
+                    <div
+                      className="application-card"
+                      key={`${application.title}-${index}`}
+                    >
 
-          <h2>
-            {activeService.qualityAssurance.title}
-          </h2>
-        </div>
+                      <span className="application-number">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
 
-        <div className="quality-assurance-grid">
+                      {application.image && (
+                        <img
+                          src={application.image}
+                          alt={application.title}
+                        />
+                      )}
 
-          {activeService.qualityAssurance.items.map(
-            (item, index) => (
-              <div
-                className="quality-assurance-card"
-                key={`${item.label}-${index}`}
-              >
+                      <h3>
+                        {application.title}
+                      </h3>
 
-                <span>{item.label}</span>
+                      {application.description && (
+                        <p>
+                          {application.description}
+                        </p>
+                      )}
 
-                <strong>{item.value}</strong>
+                      <span className="application-arrow">
+                        ↗
+                      </span>
+
+                    </div>
+                  );
+                }
+              )}
+
+            </div>
+
+          </div>
+
+        </section>
+      )}
+
+
+      {/* ======================================================
+          LIGHTING TECHNOLOGY
+      ====================================================== */}
+
+      {activeService.lightingTechnology?.items?.length > 0 && (
+
+        <section className="product-info-section lighting-technology-section">
+
+          <div className="container">
+
+            <div className="product-section-heading">
+
+              <span className="eyebrow">
+                {activeService.lightingTechnology.eyebrow}
+              </span>
+
+              <h2>
+                {activeService.lightingTechnology.title}
+              </h2>
+
+              {activeService.lightingTechnology.description && (
+                <p>
+                  {activeService.lightingTechnology.description}
+                </p>
+              )}
+
+            </div>
+
+
+            <div className="lighting-technology-grid">
+
+              {activeService.lightingTechnology.items.map(
+                (item, index) => (
+
+                <div
+                  className="lighting-technology-card"
+                  key={`${item.title}-${index}`}
+                >
+
+                  <span className="lighting-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <h3>
+                    {item.title}
+                  </h3>
+
+                  {item.subtitle && (
+                    <h4>
+                      {item.subtitle}
+                    </h4>
+                  )}
+
+                  {item.description && (
+                    <p>
+                      {item.description}
+                    </p>
+                  )}
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </section>
+      )}
+
+
+      {/* ======================================================
+          TECHNICAL SPECIFICATIONS
+      ====================================================== */}
+
+      {activeService.technicalSpecifications?.items?.length > 0 && (
+
+        <section className="product-info-section technical-specifications-section">
+
+          <div className="container">
+
+            <div className="product-section-heading">
+
+              <span className="eyebrow">
+                {activeService.technicalSpecifications.eyebrow}
+              </span>
+
+              <h2>
+                {activeService.technicalSpecifications.title}
+              </h2>
+
+              {activeService.technicalSpecifications.description && (
+                <p>
+                  {activeService.technicalSpecifications.description}
+                </p>
+              )}
+
+            </div>
+
+
+            <div className="technical-specifications-list">
+
+              {activeService.technicalSpecifications.items.map(
+                (item, index) => (
+
+                <div
+                  className="technical-specification-row"
+                  key={`${item.label}-${index}`}
+                >
+
+                  <span>
+                    {item.label}
+                  </span>
+
+                  <strong>
+                    {item.value}
+                  </strong>
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </section>
+      )}
+
+
+      {/* ======================================================
+          QUALITY ASSURANCE
+      ====================================================== */}
+
+      {activeService.qualityAssurance?.items?.length > 0 && (
+
+        <section className="product-info-section quality-assurance-section">
+
+          <div className="container">
+
+            <div className="quality-assurance-wrapper">
+
+              <div className="product-section-heading">
+
+                <span className="eyebrow">
+                  {activeService.qualityAssurance.eyebrow}
+                </span>
+
+                <h2>
+                  {activeService.qualityAssurance.title}
+                </h2>
+
+                {activeService.qualityAssurance.description && (
+                  <p>
+                    {activeService.qualityAssurance.description}
+                  </p>
+                )}
 
               </div>
-            )
-          )}
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-)}
 
 
-      {/* ============================================================
+              <div className="quality-assurance-grid">
+
+                {activeService.qualityAssurance.items.map(
+                  (item, index) => (
+
+                  <div
+                    className="quality-assurance-card"
+                    key={`${item.label}-${index}`}
+                  >
+
+                    <span>
+                      {item.label}
+                    </span>
+
+                    <strong>
+                      {item.value}
+                    </strong>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      )}
+
+
+      {/* ======================================================
+          GALLERY
+      ====================================================== */}
+
+      {gallery.length > 0 && (
+
+        <section className="product-gallery-section">
+
+          <div className="container">
+
+            <div className="product-gallery-grid">
+
+              {gallery.map(
+                (item, index) => {
+
+                  const image =
+                    typeof item === "string"
+                      ? item
+                      : item.image;
+
+                  const alt =
+                    typeof item === "string"
+                      ? activeService.hero?.title ||
+                        "SHILPKAR product"
+                      : item.alt ||
+                        item.title ||
+                        activeService.hero?.title ||
+                        "SHILPKAR product";
+
+                  return (
+                    <div
+                      className="product-gallery-item"
+                      key={`${image}-${index}`}
+                    >
+
+                      <img
+                        src={image}
+                        alt={alt}
+                      />
+
+                    </div>
+                  );
+                }
+              )}
+
+            </div>
+
+          </div>
+
+        </section>
+      )}
+
+
+      {/* ======================================================
           CTA
-          Existing content untouched
-      ============================================================ */}
+      ====================================================== */}
 
       {activeService.cta && (
 
@@ -615,29 +980,53 @@ export default function ServiceDetail() {
 
           <div className="fiber-cta-inner">
 
-            <span className="fiber-eyebrow">
-              {activeService.cta.eyebrow}
-            </span>
+            {activeService.cta.eyebrow && (
+              <span className="fiber-eyebrow">
+                {activeService.cta.eyebrow}
+              </span>
+            )}
 
             <h2>
               {activeService.cta.title}
             </h2>
 
-            <p>
-              {activeService.cta.description}
-            </p>
+            {activeService.cta.description && (
+              <p>
+                {activeService.cta.description}
+              </p>
+            )}
 
 
             <div className="fiber-cta-buttons">
 
               {activeService.cta.primaryText && (
-
                 <Link
-                  to={activeService.cta.primaryLink}
+                  to={
+                    activeService.cta.primaryLink ||
+                    "/contact"
+                  }
                   className="fiber-btn fiber-btn-primary"
                 >
 
                   {activeService.cta.primaryText}
+
+                  <span>
+                    →
+                  </span>
+
+                </Link>
+              )}
+
+
+              {activeService.cta.secondaryText &&
+                activeService.cta.secondaryLink && (
+
+                <Link
+                  to={activeService.cta.secondaryLink}
+                  className="fiber-btn fiber-btn-outline"
+                >
+
+                  {activeService.cta.secondaryText}
 
                   <span>
                     →
@@ -672,7 +1061,6 @@ export default function ServiceDetail() {
           </div>
 
         </section>
-
       )}
 
     </div>

@@ -1,0 +1,606 @@
+/* =========================================================
+   SHILPKAR DEALERS — PAGE
+========================================================= */
+
+.dealers-page {
+  width: 100%;
+  background: #081712;
+  color: #f7f5ef;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.dealers-hero {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 120px 20px 90px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(199, 160, 93, 0.10),
+      transparent 45%
+    ),
+    #081712;
+
+  overflow: hidden;
+}
+
+.dealers-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -280px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border: 1px solid rgba(199, 160, 93, 0.12);
+
+  border-radius: 50%;
+}
+
+.dealers-hero__content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.dealers-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  margin-bottom: 25px;
+
+  color: #e7c98f;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  letter-spacing: 0.38em;
+
+  text-transform: uppercase;
+}
+
+.dealers-eyebrow span {
+  width: 42px;
+  height: 1px;
+
+  background: #c7a05d;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.dealers-hero h1 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3.5rem, 6vw, 6rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+}
+
+.dealers-hero h1 span {
+  color: #e7c98f;
+}
+
+
+/* =========================================================
+   LINE
+========================================================= */
+
+.dealers-hero__line {
+  height: 2px;
+
+  margin: 28px auto 25px;
+
+  background: #c7a05d;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.dealers-hero p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: rgba(247, 245, 239, 0.68);
+
+  font-family: var(--font-body);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DEALER LIST
+========================================================= */
+
+.dealers-list {
+  position: relative;
+
+  padding: 120px 0 140px;
+
+  background: #0b1d17;
+
+  overflow: hidden;
+}
+
+.dealers-list::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  left: -400px;
+  top: 100px;
+
+  border: 1px solid rgba(199, 160, 93, 0.07);
+
+  border-radius: 50%;
+}
+
+.dealers-list::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -350px;
+  bottom: -250px;
+
+  border: 1px solid rgba(199, 160, 93, 0.07);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.dealers-section-heading {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+.dealers-section-eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  margin-bottom: 24px;
+
+  color: #e7c98f;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  letter-spacing: 0.38em;
+
+  text-transform: uppercase;
+}
+
+.dealers-section-eyebrow span {
+  width: 38px;
+  height: 1px;
+
+  background: #c7a05d;
+}
+
+.dealers-section-heading h2 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+.dealers-section-heading h2 span {
+  color: #e7c98f;
+}
+
+.dealers-section-line {
+  width: 52px;
+  height: 2px;
+
+  margin: 28px auto;
+
+  background: #c7a05d;
+}
+
+.dealers-section-heading p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: rgba(247, 245, 239, 0.65);
+
+  font-size: 0.98rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DEALERS GRID
+========================================================= */
+
+.dealers-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   DEALER CARD
+========================================================= */
+
+.dealer-card {
+  position: relative;
+
+  display: block;
+
+  text-decoration: none;
+
+  background: #13271f;
+
+  border: 1px solid rgba(199, 160, 93, 0.28);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.5s var(--ease-lux),
+    border-color 0.5s var(--ease-lux),
+    box-shadow 0.5s var(--ease-lux);
+}
+
+.dealer-card:hover {
+  transform: translateY(-9px);
+  border-color: rgba(231, 201, 143, 0.70);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.dealer-card__image {
+  position: relative;
+
+  height: 290px;
+
+  overflow: hidden;
+
+  background: #0a1712;
+}
+
+.dealer-card__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.7s var(--ease-lux);
+}
+
+.dealer-card:hover .dealer-card__image img {
+  transform: scale(1.06);
+}
+
+.dealer-card__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(4, 13, 10, 0.75),
+      transparent 65%
+    );
+}
+
+/* =========================================================
+   CARD NUMBER
+========================================================= */
+
+.dealer-card__number {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(231, 201, 143, 0.65);
+
+  color: #e7c98f;
+
+  background: rgba(5, 16, 12, 0.65);
+
+  backdrop-filter: blur(8px);
+
+  font-family: var(--font-heading);
+
+  font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.dealer-card__content {
+  padding: 28px 28px 25px;
+}
+
+.dealer-card__label {
+  margin-bottom: 12px;
+
+  color: rgba(231, 201, 143, 0.65);
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.dealer-card h3 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.65rem;
+
+  line-height: 1.15;
+}
+
+.dealer-card__location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 13px;
+
+  color: rgba(247, 245, 239, 0.62);
+
+  font-size: 0.86rem;
+}
+
+.dealer-card__location span {
+  color: #e7c98f;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   BOTTOM ACTION
+========================================================= */
+
+.dealer-card__bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 25px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(199, 160, 93, 0.20);
+
+  color: #e7c98f;
+
+  font-size: 0.66rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+.dealer-card__bottom strong {
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  transition: transform 0.3s ease;
+}
+
+.dealer-card:hover .dealer-card__bottom strong {
+  transform: translateX(6px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .dealers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .dealers-hero {
+    min-height: 430px;
+
+    padding: 100px 20px 70px;
+  }
+
+  .dealers-eyebrow {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+  }
+
+  .dealers-eyebrow span {
+    width: 24px;
+  }
+
+  .dealers-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .dealers-hero p {
+    font-size: 0.9rem;
+  }
+
+  .dealers-list {
+    padding: 85px 0 100px;
+  }
+
+  .dealers-section-heading {
+    margin-bottom: 45px;
+  }
+
+  .dealers-section-heading h2 {
+    font-size: 2.7rem;
+  }
+
+  .dealers-section-heading p {
+    font-size: 0.9rem;
+  }
+
+  .dealers-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .dealer-card__image {
+    height: 260px;
+  }
+
+}
+
+/* =========================
+   DEALERS PAGE VISIBILITY FIX
+========================= */
+
+.dealers-page {
+  background: #071a15;
+  color: #f7f4ed;
+}
+
+.dealers-list {
+  padding: 55px 0 90px;
+  min-height: calc(100vh - 250px);
+}
+
+.dealers-section-heading {
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.dealers-section-heading h1 {
+  display: block !important;
+  visibility: visible !important;
+
+  margin: 0 !important;
+
+  color: #f7f4ed !important;
+
+  font-family: var(--font-heading, Georgia, serif) !important;
+
+  font-size: clamp(42px, 5vw, 68px) !important;
+  line-height: 1.05 !important;
+
+  opacity: 1 !important;
+}
+
+.dealers-section-heading h1 span {
+  color: #e6c27a !important;
+}
+
+.dealers-section-eyebrow {
+  color: #e6c27a !important;
+  opacity: 1 !important;
+}
+
+.dealers-section-line {
+  background: #d4af37 !important;
+}
