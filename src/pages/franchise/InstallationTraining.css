@@ -1,0 +1,1120 @@
+/* =========================================================
+   SHILPKAR INSTALLATION TRAINING
+   Premium Dark Green + Champagne Gold
+========================================================= */
+
+.installation-training-page {
+  background: #071f1d;
+  color: #f5f1e8;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.training-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.training-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #d4af37;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.training-eyebrow span {
+  display: block;
+  width: 42px;
+  height: 1px;
+  background: #d4af37;
+}
+
+.training-line {
+  width: 56px;
+  height: 2px;
+  background: #d4af37;
+  margin: 25px auto 0;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.training-intro {
+  padding: 120px 0;
+  background:
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(212, 175, 55, 0.07),
+      transparent 35%
+    ),
+    #071f1d;
+}
+
+.training-container.training-intro__content {
+  width: min(1180px, 92%);
+}
+
+.training-intro .training-container {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.training-intro__content {
+  text-align: left;
+}
+
+.training-intro__content .training-eyebrow {
+  justify-content: flex-start;
+}
+
+.training-intro__content h2 {
+  margin: 25px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 1.02;
+  color: #f5f1e8;
+}
+
+.training-intro__content h2 em,
+.training-section-heading h2 em,
+.practical-training__content h2 em,
+.business-section h2 em,
+.training-cta h2 em {
+  color: #e4c27a;
+  font-style: normal;
+}
+
+.training-intro__content .training-line {
+  margin: 28px 0;
+}
+
+.training-intro__content p {
+  max-width: 760px;
+  margin: 0 0 22px;
+  color: rgba(245, 241, 232, 0.7);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.training-intro__statement {
+  min-height: 420px;
+  padding: 55px;
+  border: 1px solid rgba(198, 161, 91, 0.35);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(212, 175, 55, 0.07),
+      rgba(255, 255, 255, 0.015)
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.training-intro__statement::before,
+.training-intro__statement::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-color: rgba(212, 175, 55, 0.45);
+  border-style: solid;
+}
+
+.training-intro__statement::before {
+  top: 18px;
+  left: 18px;
+  border-width: 1px 0 0 1px;
+}
+
+.training-intro__statement::after {
+  right: 18px;
+  bottom: 18px;
+  border-width: 0 1px 1px 0;
+}
+
+.training-intro__statement > span {
+  color: #d4af37;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 25px;
+}
+
+.training-intro__statement strong {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  line-height: 1.12;
+  font-weight: 400;
+  color: #f5f1e8;
+}
+
+.training-intro__statement em {
+  color: #d4af37;
+  font-style: normal;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.training-section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.training-section-heading h2 {
+  margin: 22px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #f5f1e8;
+}
+
+.training-section-heading p {
+  max-width: 700px;
+  margin: 25px auto 0;
+  color: rgba(245, 241, 232, 0.65);
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.training-benefits {
+  padding: 120px 0;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(212, 175, 55, 0.055),
+      transparent 35%
+    ),
+    #081c19;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  min-height: 290px;
+  padding: 30px;
+  border: 1px solid rgba(198, 161, 91, 0.28);
+  background: rgba(255, 255, 255, 0.018);
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.7);
+}
+
+.benefit-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit-card__top span {
+  color: #c6a15b;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.benefit-card__top i {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4c27a;
+  font-style: normal;
+}
+
+.benefit-card__line {
+  width: 45px;
+  height: 1px;
+  background: #d4af37;
+  margin: 35px 0 25px;
+}
+
+.benefit-card h3 {
+  margin: 0 0 15px;
+  color: #e5c47b;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.benefit-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PRODUCT TRAINING
+========================================================= */
+
+.product-training {
+  padding: 130px 0;
+  background: #071f1d;
+}
+
+.product-training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.training-product-card {
+  border: 1px solid rgba(198, 161, 91, 0.35);
+  background: #121711;
+  overflow: hidden;
+  transition: border-color 0.35s ease;
+}
+
+.training-product-card.is-open {
+  border-color: rgba(212, 175, 55, 0.75);
+}
+
+.training-product-card__head {
+  width: 100%;
+  padding: 28px 30px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  grid-template-columns: 55px 55px 1fr 35px;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.training-product-card__number {
+  color: #d4af37;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.training-product-card__icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4c27a;
+}
+
+.training-product-card__title span {
+  color: #a99f8a;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+}
+
+.training-product-card__title h3 {
+  margin: 6px 0 0;
+  color: #f2d18a;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.training-product-card__arrow {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 50%;
+  color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.training-product-card__body {
+  padding: 0 30px 30px 160px;
+}
+
+.training-product-card__body > p {
+  margin: 0 0 20px;
+  color: rgba(245, 241, 232, 0.65);
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.product-days {
+  overflow: hidden;
+  border-top: 1px solid rgba(198, 161, 91, 0.2);
+  padding-top: 22px;
+}
+
+.product-day {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 22px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(198, 161, 91, 0.14);
+}
+
+.product-day:last-child {
+  border-bottom: 0;
+}
+
+.product-day__number {
+  color: #d4af37;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  padding-top: 5px;
+}
+
+.product-day__content h4 {
+  margin: 0 0 15px;
+  color: #f0cf87;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-day__content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-day__content li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 9px;
+  color: rgba(245, 241, 232, 0.62);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.product-day__content li span {
+  color: #d4af37;
+  font-size: 0.5rem;
+  padding-top: 6px;
+}
+
+.training-products-note {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  border-left: 2px solid #d4af37;
+  background: rgba(212, 175, 55, 0.04);
+}
+
+.training-products-note > span {
+  color: #d4af37;
+  font-size: 1.3rem;
+}
+
+.training-products-note p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.6);
+  font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   PRACTICAL TRAINING
+========================================================= */
+
+.practical-training {
+  padding: 120px 0;
+  background: #091b18;
+}
+
+.practical-training__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.practical-training__visual {
+  min-height: 520px;
+  padding: 22px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.practical-training__visual-inner {
+  min-height: 474px;
+  padding: 45px;
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(212, 175, 55, 0.12),
+      transparent 35%
+    ),
+    #101712;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.visual-number {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  color: #d4af37;
+  font-size: 4rem;
+  font-family: var(--font-heading);
+  opacity: 0.8;
+}
+
+.visual-label {
+  color: #d4af37;
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 25px;
+}
+
+.practical-training__visual h3 {
+  margin: 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.practical-training__visual h3 em {
+  color: #d4af37;
+  font-style: normal;
+}
+
+.visual-cross {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: #d4af37;
+  font-size: 2rem;
+}
+
+.practical-training__content .training-eyebrow {
+  justify-content: flex-start;
+}
+
+.practical-training__content h2 {
+  margin: 25px 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.practical-training__content .training-line {
+  margin: 25px 0;
+}
+
+.practical-training__content > p {
+  color: rgba(245, 241, 232, 0.68);
+  line-height: 1.9;
+}
+
+.practical-points {
+  margin-top: 35px;
+  border-top: 1px solid rgba(198, 161, 91, 0.25);
+}
+
+.practical-points div {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(198, 161, 91, 0.18);
+}
+
+.practical-points strong {
+  color: #d4af37;
+  font-size: 0.7rem;
+}
+
+.practical-points span {
+  color: #f5f1e8;
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   KNOWLEDGE
+========================================================= */
+
+.knowledge-section {
+  padding: 120px 0;
+  background: #071f1d;
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.knowledge-card {
+  min-height: 300px;
+  padding: 30px;
+  border: 1px solid rgba(198, 161, 91, 0.3);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.knowledge-card > span {
+  color: #d4af37;
+  font-size: 0.75rem;
+}
+
+.knowledge-card h3 {
+  margin: 65px 0 18px;
+  color: #e4c27a;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.knowledge-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.6);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.training-journey {
+  padding: 120px 0;
+  background: #091b18;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.journey-grid::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: rgba(212, 175, 55, 0.45);
+}
+
+.journey-card {
+  position: relative;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.journey-card__circle {
+  position: relative;
+  z-index: 2;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 35px;
+  border: 1px solid #d4af37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #091b18;
+  color: #e4c27a;
+  font-size: 0.85rem;
+}
+
+.journey-card h3 {
+  margin: 0;
+  color: #f0cf87;
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.journey-card__line {
+  width: 35px;
+  height: 1px;
+  background: #d4af37;
+  margin: 18px auto;
+}
+
+.journey-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.6);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CERTIFICATION
+========================================================= */
+
+.certification-section {
+  padding: 120px 0;
+  background: #071f1d;
+}
+
+.certification-box {
+  padding: 65px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(212, 175, 55, 0.08),
+      transparent 30%
+    ),
+    #101712;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.certification-box__left .training-eyebrow {
+  justify-content: flex-start;
+}
+
+.certification-box h2 {
+  margin: 22px 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.7rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.certification-box h2 em {
+  color: #e4c27a;
+  font-style: normal;
+}
+
+.certification-box__left .training-line {
+  margin: 25px 0;
+}
+
+.certification-box__left p {
+  max-width: 620px;
+  color: rgba(245, 241, 232, 0.65);
+  line-height: 1.9;
+}
+
+.certificate-mark {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-mark__inner {
+  width: 270px;
+  height: 270px;
+  border: 1px solid #d4af37;
+  outline: 1px solid rgba(212, 175, 55, 0.35);
+  outline-offset: 9px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.certificate-mark__inner span {
+  color: #d4af37;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+}
+
+.certificate-mark__inner strong {
+  margin: 12px 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.certificate-mark__inner small {
+  color: #d4af37;
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  max-width: 150px;
+}
+
+.certificate-mark__inner i {
+  margin-top: 15px;
+  color: #d4af37;
+  font-style: normal;
+}
+
+
+/* =========================================================
+   BUSINESS
+========================================================= */
+
+.business-section {
+  padding: 120px 0;
+  background:
+    linear-gradient(
+      120deg,
+      #091b18,
+      #071f1d
+    );
+}
+
+.business-section__content {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.business-section h2 {
+  margin: 25px 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.business-section__content > p {
+  color: rgba(245, 241, 232, 0.68);
+  line-height: 1.9;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.business-points {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.business-points span {
+  padding: 13px 18px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #e4c27a;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.training-faq {
+  padding: 120px 0;
+  background: #071f1d;
+}
+
+.faq-list {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+  border: 1px solid rgba(198, 161, 91, 0.28);
+  background: #121711;
+}
+
+.faq-item.is-open {
+  border-color: rgba(212, 175, 55, 0.65);
+}
+
+.faq-item button {
+  width: 100%;
+  padding: 25px 30px;
+  border: 0;
+  background: transparent;
+  color: #f5f1e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.faq-item button strong {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-weight: 400;
+}
+
+.faq-answer {
+  overflow: hidden;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 0 30px 28px;
+  max-width: 900px;
+  color: rgba(245, 241, 232, 0.62);
+  font-size: 0.85rem;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.training-cta {
+  padding: 140px 0;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(212, 175, 55, 0.1),
+      transparent 45%
+    ),
+    #0a1c19;
+  text-align: center;
+}
+
+.training-cta__content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.training-cta h2 {
+  margin: 25px 0;
+  color: #f5f1e8;
+  font-family: var(--font-heading);
+  font-size: clamp(3.3rem, 6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.training-cta p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: rgba(245, 241, 232, 0.65);
+  line-height: 1.9;
+}
+
+.training-cta__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.training-btn {
+  min-width: 230px;
+  padding: 18px 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+}
+
+.training-btn--primary {
+  background: #e2bd69;
+  color: #071f1d;
+}
+
+.training-btn--primary:hover {
+  background: #f0d28d;
+}
+
+.training-btn--secondary {
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  color: #f5f1e8;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.training-btn--secondary:hover {
+  background: #d4af37;
+  color: #071f1d;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+  .training-intro .training-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .training-intro__statement {
+    min-height: 300px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .knowledge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .practical-training__grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .certification-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .product-training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 0;
+  }
+
+  .journey-grid::before {
+    display: none;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .training-container {
+    width: min(92%, 540px);
+  }
+
+  .training-intro,
+  .training-benefits,
+  .product-training,
+  .practical-training,
+  .knowledge-section,
+  .training-journey,
+  .certification-section,
+  .business-section,
+  .training-faq {
+    padding: 80px 0;
+  }
+
+  .training-section-heading {
+    margin-bottom: 45px;
+  }
+
+  .training-eyebrow {
+    gap: 9px;
+    font-size: 0.55rem;
+    letter-spacing: 0.18em;
+  }
+
+  .training-eyebrow span {
+    width: 25px;
+  }
+
+  .benefits-grid,
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-product-card__head {
+    grid-template-columns: 35px 45px 1fr 30px;
+    gap: 12px;
+    padding: 22px 18px;
+  }
+
+  .training-product-card__icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .training-product-card__title h3 {
+    font-size: 1rem;
+  }
+
+  .training-product-card__body {
+    padding: 0 18px 25px;
+  }
+
+  .product-day {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .practical-training__visual {
+    min-height: 400px;
+  }
+
+  .practical-training__visual-inner {
+    min-height: 354px;
+    padding: 30px;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .certification-box {
+    padding: 35px 25px;
+  }
+
+  .certificate-mark__inner {
+    width: 220px;
+    height: 220px;
+  }
+
+  .training-cta {
+    padding: 90px 0;
+  }
+
+  .training-cta__buttons {
+    flex-direction: column;
+  }
+
+  .training-btn {
+    width: 100%;
+  }
+}
