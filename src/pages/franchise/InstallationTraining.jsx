@@ -1,284 +1,98 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import PageBanner from "../../components/Hero/PageBanner";
-import images from "../../data/images";
+import architecturalWallpaperTraining
+  from "../../assets/images/architectural-wallpaper-training.webp";
 import "./InstallationTraining.css";
 
 const trainingProducts = [
   {
     id: "stretch-ceiling",
     number: "01",
+    category: "INSTALLATION",
     title: "Stretch Ceiling Installation",
+    image: "/franchaise-hero/stretch-ceiling-training.png",
     short:
-      "Complete practical training in stretch ceiling systems, membrane handling, profiling, tensioning, lighting integration and final finishing.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Material & System Knowledge",
-        points: [
-          "Understanding stretch ceiling membrane types and applications",
-          "PVC membrane properties, thickness, flexibility and finish",
-          "Understanding profiles, harpoon systems and accessories",
-          "Room measurement and area calculation",
-          "Ceiling preparation and substrate inspection",
-          "Understanding lighting cavity and service requirements",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "Professional Installation",
-        points: [
-          "Profile marking, cutting and fixing techniques",
-          "Inside and outside corner treatment",
-          "Membrane preparation and safe handling",
-          "Heating and controlled stretching techniques",
-          "Harpoon insertion and proper tensioning",
-          "Cut-outs for lights, AC and other services",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Finishing & Quality Control",
-        points: [
-          "Wrinkle and wave correction",
-          "Edge finishing and detailing",
-          "Lighting alignment and diffuser positioning",
-          "Final surface inspection",
-          "Common installation mistakes and solutions",
-          "Professional handover and maintenance guidance",
-        ],
-      },
+      "Professional training in stretch ceiling technology, installation, lighting integration and practical site execution.",
+    highlights: [
+      "Hands-on Installation",
+      "Lighting Integration",
+      "Live Site Training",
     ],
   },
 
   {
     id: "cloudwave",
     number: "02",
-    title: "CloudWave Ceiling",
+    category: "DESIGN & BUSINESS",
+    title: "3D Cloudwave™ Ceiling",
+    image: "/franchaise-hero/cloudwave-training.png",
     short:
-      "Learn how to create premium textile ceiling forms including wave, curve and suspended visual effects with proper structural planning.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Design & Material Understanding",
-        points: [
-          "Understanding CloudWave textile systems",
-          "Textile behaviour, flexibility and visual characteristics",
-          "Understanding wave, curve and custom formations",
-          "Ceiling dimensions and structural planning",
-          "Support points and fixing requirements",
-          "Lighting integration planning",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "Form Creation & Installation",
-        points: [
-          "Profile and support preparation",
-          "Creating controlled wave formations",
-          "Textile positioning and tension management",
-          "Joint and edge detailing",
-          "Maintaining symmetry and design proportions",
-          "Working safely at height during installation",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Finishing & Lighting",
-        points: [
-          "Final textile alignment",
-          "Lighting placement and diffusion",
-          "Correction of uneven formations",
-          "Visual quality inspection",
-          "Cleaning and maintenance process",
-          "Professional project finishing standards",
-        ],
-      },
+      "Professional training in 3D Cloudwave™ textile ceiling design, fabric shaping, framework preparation, lighting integration, installation and business development.",
+    highlights: [
+      "3D Design & Fabric Shaping",
+      "Lighting Integration",
+      "Business Development",
     ],
   },
 
   {
-    id: "fiber-optic",
+    id: "fabric-ceiling",
     number: "03",
-    title: "Fiber Optic Ceiling",
+    category: "DESIGN & BUSINESS",
+    title: "3D Fabric Ceiling",
+    image: "/franchaise-hero/fabric-ceiling-training.png",
     short:
-      "Master star-field and custom fiber optic ceiling installation with fiber routing, light-engine integration and precise finishing.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Fiber Optic Technology",
-        points: [
-          "Understanding fiber optic ceiling systems",
-          "Fiber types, light engines and components",
-          "Planning star-field patterns",
-          "Fiber density and visual distribution",
-          "Ceiling preparation and mounting requirements",
-          "Electrical and lighting planning",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "Fiber Installation",
-        points: [
-          "Fiber routing and positioning",
-          "Creating random and programmed star patterns",
-          "Fiber fixing and securing techniques",
-          "Light engine placement and connection",
-          "Avoiding fiber damage during installation",
-          "Working with stretch and other ceiling surfaces",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Activation & Finishing",
-        points: [
-          "Fiber trimming and finishing",
-          "Light engine testing",
-          "Brightness and pattern inspection",
-          "Troubleshooting common fiber issues",
-          "Final ceiling cleaning",
-          "Professional quality-control checklist",
-        ],
-      },
-    ],
-  },
-
-  {
-    id: "epoxy",
-    number: "04",
-    title: "3D Epoxy Flooring",
-    short:
-      "Learn the complete 3D epoxy flooring process from substrate preparation and artwork placement to resin application and final finishing.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Surface & Material Science",
-        points: [
-          "Understanding epoxy resin systems",
-          "Resin and hardener relationship",
-          "Surface moisture and substrate inspection",
-          "Floor preparation and cleaning",
-          "Crack and surface treatment",
-          "Primer and base-coat requirements",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "3D Application Process",
-        points: [
-          "Artwork selection and positioning",
-          "Base preparation and levelling",
-          "Image installation and alignment",
-          "Resin mixing methodology",
-          "Controlled pouring and spreading",
-          "Bubble removal and surface control",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Final Coat & Finishing",
-        points: [
-          "Clear protective coat application",
-          "Gloss and depth control",
-          "Edge finishing",
-          "Surface inspection",
-          "Common epoxy defects and corrections",
-          "Maintenance and care instructions",
-        ],
-      },
+      "Professional training in 3D Fabric Ceiling design, frame preparation, fabric shaping, lighting integration, installation and business development.",
+    highlights: [
+      "3D Design & Fabric Shaping",
+      "Lighting Integration",
+      "Business Development",
     ],
   },
 
   {
     id: "skylume",
-    number: "05",
-    title: "SKYLUME Ceiling Installation",
+    number: "04",
+    category: "VIRTUAL DESIGN & BUSINESS",
+    title: "3D SkyLume™ Virtual Window & Ceiling",
+    image: "/franchaise-hero/skylume-training.png",
     short:
-      "Learn the installation of illuminated architectural ceiling systems designed to create realistic daylight, sky and premium backlit environments.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Lighting & System Knowledge",
-        points: [
-          "Understanding SKYLUME architectural lighting systems",
-          "Backlit panel construction and components",
-          "Light distribution and diffuser principles",
-          "Panel sizing and ceiling planning",
-          "LED placement and spacing",
-          "Electrical load and power planning",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "Panel & Lighting Installation",
-        points: [
-          "Frame and support preparation",
-          "Panel positioning and alignment",
-          "LED installation and spacing",
-          "Diffuser and backlit surface handling",
-          "Electrical connections and testing",
-          "Maintaining uniform illumination",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Calibration & Finishing",
-        points: [
-          "Light uniformity inspection",
-          "Dark-spot and hotspot correction",
-          "Panel alignment and edge finishing",
-          "Brightness calibration",
-          "Final electrical testing",
-          "Professional project handover",
-        ],
-      },
+      "Professional training in 3D SkyLume™ virtual window and ceiling design, frame fabrication, image and panel integration, installation and business development.",
+    highlights: [
+      "Virtual Design",
+      "Panel & Lighting Integration",
+      "Business Development",
     ],
   },
 
   {
-    id: "wall-mural",
-    number: "06",
-    title: "Wall Mural Installation",
+    id: "epoxy-flooring",
+    number: "05",
+    category: "FLOORING & BUSINESS",
+    title: "3D Epoxy Flooring",
+    image: "/franchaise-hero/epoxy-flooring-training.png",
     short:
-      "Learn professional architectural wall mural installation including surface preparation, artwork alignment, application and seamless finishing.",
-    days: [
-      {
-        day: "DAY 01",
-        title: "Surface & Print Preparation",
-        points: [
-          "Understanding architectural wall mural materials",
-          "Wall condition assessment",
-          "Surface preparation requirements",
-          "Artwork dimensions and scaling",
-          "Print quality and colour considerations",
-          "Planning seams and panel orientation",
-        ],
-      },
-      {
-        day: "DAY 02",
-        title: "Professional Application",
-        points: [
-          "Panel marking and positioning",
-          "Correct installation sequence",
-          "Alignment of printed artwork",
-          "Seam management",
-          "Avoiding bubbles and wrinkles",
-          "Working around corners and openings",
-        ],
-      },
-      {
-        day: "DAY 03",
-        title: "Detailing & Handover",
-        points: [
-          "Seam inspection and correction",
-          "Edge finishing",
-          "Corner detailing",
-          "Surface cleaning",
-          "Final artwork inspection",
-          "Client handover and maintenance guidance",
-        ],
-      },
+      "Professional training in 3D epoxy flooring design, surface preparation, epoxy application, 3D graphics, finishing techniques and business development.",
+    highlights: [
+      "3D Design & Application",
+      "Surface Preparation",
+      "Business Development",
+    ],
+  },
+
+  {
+    id: "architectural-wallpaper",
+    number: "06",
+    category: "DESIGN & BUSINESS",
+    title: "Architectural Wallpaper",
+    image: "/franchaise-hero/architectural-wallpaper-training.webp",
+    short:
+      "Professional training in architectural wallpaper selection, surface preparation, measurement, cutting, installation, finishing techniques and business development.",
+    highlights: [
+      "Design & Material Selection",
+      "Professional Installation",
+      "Business Development",
     ],
   },
 ];
@@ -385,14 +199,82 @@ export default function InstallationTraining() {
   return (
     <main className="installation-training-page">
 
-      {/* HERO */}
-      <PageBanner
-        eyebrow="SHILPKAR SKILL ACADEMY"
-        title="Professional Installation Training"
-        image={images.projects[2].img}
-        height="68vh"
-      />
+{/* =========================
+    TRAINING HERO
+========================= */}
+<section className="training-hero">
 
+  <div className="training-hero-image">
+    <img
+      src={architecturalWallpaperTraining}
+      alt="SHILPKAR Factory Training Program"
+    />
+  </div>
+
+  <div className="training-hero-overlay"></div>
+
+  <div className="training-hero-content">
+
+    <div className="training-hero-eyebrow">
+      <span></span>
+      SHILPKAR FACTORY
+      <span></span>
+    </div>
+
+    <div className="training-hero-label">
+      TRAINING PROGRAM
+    </div>
+
+    <h1>
+      Learn The Skills.
+      <br />
+      <em>Build The Business.</em>
+    </h1>
+
+    <div className="training-hero-line"></div>
+
+    <p>
+      SHILPKAR provides practical learning across premium interior
+      technologies, installation techniques and business development.
+    </p>
+
+    {/* =========================
+        HERO BUTTONS
+    ========================== */}
+    <div className="training-hero-buttons">
+
+      <Link
+        to="/franchise/training-application"
+        className="training-btn training-btn-primary"
+      >
+        APPLY FOR TRAINING
+        <span>→</span>
+      </Link>
+
+      <a
+        href="/pdf/shilpkar-training-program.pdf"
+        download
+        className="training-btn training-btn-secondary"
+      >
+        DOWNLOAD PDF
+        <span>→</span>
+      </a>
+
+    </div>
+
+    <div className="training-hero-meta">
+      THEORY
+      <span>•</span>
+      WORKSHOP
+      <span>•</span>
+      LIVE SITE
+      <span>•</span>
+      CERTIFICATE PROGRAMS
+    </div>
+
+  </div>
+
+</section>
       {/* INTRO */}
       <section className="training-intro">
         <div className="training-container">
@@ -499,124 +381,134 @@ export default function InstallationTraining() {
         </div>
       </section>
 
-      {/* PRODUCT TRAINING */}
-      <section className="product-training">
-        <div className="training-container">
+{/* =========================================================
+    PRODUCT TRAINING
+========================================================= */}
 
-          <div className="training-section-heading">
-            <div className="training-eyebrow">
-              <span />
-              PRODUCT SPECIALISATION
-              <span />
+<section className="product-training">
+  <div className="training-container">
+
+    {/* SECTION HEADING */}
+    <div className="training-section-heading">
+      <div className="training-eyebrow">
+        <span />
+        PRODUCT SPECIALISATION
+        <span />
+      </div>
+
+      <h2>
+        Choose Your
+        <br />
+        <em>Training Module</em>
+      </h2>
+
+      <div className="training-line" />
+
+      <p>
+        Select a product below to explore what you will learn during
+        the practical training program.
+      </p>
+    </div>
+
+
+    {/* PRODUCT CARDS */}
+    <div className="product-training-grid">
+
+      {trainingProducts.map((product, index) => (
+
+        <motion.article
+          className="training-product-card"
+          key={product.id}
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.12 }}
+          transition={{
+            duration: 0.65,
+            delay: index * 0.08,
+          }}
+        >
+
+          {/* IMAGE */}
+          <div className="training-product-card__image">
+
+            <img
+              src={product.image}
+              alt={product.title}
+            />
+
+            <div className="training-product-card__number">
+              {product.number}
             </div>
 
-            <h2>
-              Choose Your
-              <br />
-              <em>Training Module</em>
-            </h2>
-
-            <div className="training-line" />
-
-            <p>
-              Select a product below to explore what you will learn during
-              the practical training program.
-            </p>
           </div>
 
-          <div className="product-training-grid">
-            {trainingProducts.map((product, index) => {
-              const isOpen = activeProduct === product.id;
 
-              return (
-                <motion.div
-                  className={`training-product-card ${
-                    isOpen ? "is-open" : ""
-                  }`}
-                  key={product.id}
-                  initial={{ opacity: 0, y: 35 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.1 }}
-                  transition={{
-                    duration: 0.65,
-                    delay: index * 0.06,
-                  }}
+          {/* CONTENT */}
+          <div className="training-product-card__content">
+
+            {/* CATEGORY */}
+            <div className="training-product-card__category">
+              <span />
+              {product.category}
+            </div>
+
+
+            {/* TITLE */}
+            <h3>
+              {product.title}
+            </h3>
+
+
+            {/* DESCRIPTION */}
+            <p className="training-product-card__description">
+              {product.short}
+            </p>
+
+
+            {/* FEATURES */}
+            <div className="training-product-card__features">
+
+              {product.features?.map((feature) => (
+
+                <div
+                  className="training-product-card__feature"
+                  key={feature}
                 >
-                  <button
-                    className="training-product-card__head"
-                    onClick={() =>
-                      setActiveProduct(isOpen ? null : product.id)
-                    }
-                    type="button"
-                  >
-                    <div className="training-product-card__number">
-                      {product.number}
-                    </div>
+                  <span />
+                  {feature}
+                </div>
 
-                    <div className="training-product-card__icon">
-                      ✦
-                    </div>
+              ))}
 
-                    <div className="training-product-card__title">
-                      <span>PRODUCT TRAINING</span>
-                      <h3>{product.title}</h3>
-                    </div>
+            </div>
 
-                    <div className="training-product-card__arrow">
-                      {isOpen ? "−" : "+"}
-                    </div>
-                  </button>
 
-                  <div className="training-product-card__body">
-                    <p>{product.short}</p>
+            {/* FOOTER */}
+            <div className="training-product-card__footer">
 
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          className="product-days"
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.45 }}
-                        >
-                          {product.days.map((day) => (
-                            <div className="product-day" key={day.day}>
-                              <div className="product-day__number">
-                                {day.day}
-                              </div>
+              <span>
+                EXPLORE PROGRAM
+              </span>
 
-                              <div className="product-day__content">
-                                <h4>{day.title}</h4>
+              <a
+                href={`/franchise/installation-training/${product.id}`}
+                className="training-product-card__explore"
+              >
+                →
+              </a>
 
-                                <ul>
-                                  {day.points.map((point) => (
-                                    <li key={point}>
-                                      <span>◆</span>
-                                      {point}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          ))}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </motion.div>
-              );
-            })}
+            </div>
+
           </div>
 
-          <div className="training-products-note">
-            <span>+</span>
-            <p>
-              Product modules can be combined according to the participant's
-              training requirement and professional objective.
-            </p>
-          </div>
-        </div>
-      </section>
+        </motion.article>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       {/* PRACTICAL TRAINING */}
       <section className="practical-training">

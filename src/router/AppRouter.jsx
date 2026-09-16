@@ -7,15 +7,17 @@ import About from "../pages/About.jsx";
 import Services from "../pages/Services.jsx";
 import ServiceDetail from "../pages/ServiceDetail.jsx";
 import ServiceType from "../pages/ServiceType.jsx";
+
 import Dealership from "../pages/franchise/Dealership.jsx";
 import DealershipApplication from "../pages/franchise/DealershipApplication.jsx";
 import Dealers from "../pages/franchise/Dealers.jsx";
 import DealerDetail from "../pages/franchise/DealerDetail.jsx";
 import Associate from "../pages/franchise/Associate.jsx";
-import AssociateApplication  from "../pages/franchise/AssociateApplication.jsx";
+import AssociateApplication from "../pages/franchise/AssociateApplication.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
-import Gallery from "../pages/Gallery.jsx";
-import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
+import TrainingApplication from "../pages/franchise/TrainingApplication.jsx";
+import TrainingDetail from "../pages/franchise/TrainingDetail.jsx";
+import Gallery from "../pages/Gallery.jsx";import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
 import Certifications from "../pages/company/Certifications";
 import Contact from "../pages/Contact.jsx";
 import WallpaperCategory from "../pages/shop/WallpaperCategory.jsx";
@@ -192,7 +194,6 @@ export default function AppRouter() {
     </Page>
   }
 />
-
 <Route
   path="/franchise/dealership"
   element={
@@ -222,7 +223,11 @@ export default function AppRouter() {
 
 <Route
   path="/franchise/dealership-application"
-  element={<DealershipApplication />}
+  element={
+    <Page>
+      <DealershipApplication />
+    </Page>
+  }
 />
 
 <Route
@@ -233,9 +238,14 @@ export default function AppRouter() {
     </Page>
   }
 />
+
 <Route
   path="/franchise/associate-application"
-  element={<AssociateApplication />}
+  element={
+    <Page>
+      <AssociateApplication />
+    </Page>
+  }
 />
 
 <Route
@@ -243,6 +253,23 @@ export default function AppRouter() {
   element={
     <Page>
       <InstallationTraining />
+    </Page>
+  }
+/>
+<Route
+  path="/franchise/installation-training/:trainingId"
+  element={
+    <Page>
+      <TrainingDetail />
+    </Page>
+  }
+/>
+
+<Route
+  path="/franchise/training-application"
+  element={
+    <Page>
+      <TrainingApplication />
     </Page>
   }
 />

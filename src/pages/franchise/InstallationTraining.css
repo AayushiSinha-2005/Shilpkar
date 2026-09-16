@@ -1,3 +1,429 @@
+/* =========================================
+   SHILPKAR TRAINING HERO
+========================================= */
+
+.training-hero {
+  position: relative;
+  width: 100%;
+  height: 78vh;
+  min-height: 620px;
+  overflow: hidden;
+  background: #080808;
+}
+
+
+/* IMAGE */
+
+.training-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.training-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+/* DARK LUXURY OVERLAY */
+
+.training-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 5, 5, 0.94) 0%,
+      rgba(5, 5, 5, 0.78) 30%,
+      rgba(5, 5, 5, 0.38) 58%,
+      rgba(5, 5, 5, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.05) 45%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+
+/* GOLD BOTTOM BORDER */
+
+.training-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #d8b43c;
+
+  z-index: 5;
+}
+
+
+/* CONTENT */
+
+.training-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1400px, 90%);
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 35px;
+}
+
+
+/* TOP EYEBROW */
+
+.training-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  color: #dfbb3e;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+.training-hero-eyebrow span {
+  width: 42px;
+  height: 1px;
+  background: #dfbb3e;
+}
+
+
+/* TRAINING LABEL */
+
+.training-hero-label {
+  margin-bottom: 18px;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
+/* MAIN TITLE */
+
+.training-hero-content h1 {
+  margin: 0;
+
+  max-width: 850px;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(52px, 6vw, 92px);
+  font-weight: 500;
+
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.training-hero-content h1 em {
+  color: #e2bd40;
+  font-style: normal;
+}
+
+
+/* GOLD LINE */
+
+.training-hero-line {
+  width: 72px;
+  height: 2px;
+
+  background: #dfbb3e;
+
+  margin: 30px 0 22px;
+}
+
+
+/* DESCRIPTION */
+
+.training-hero-content > p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* META */
+
+.training-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 30px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+}
+
+.training-hero-meta span {
+  color: #dfbb3e;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .training-hero {
+    height: 72vh;
+    min-height: 560px;
+  }
+
+  .training-hero-content {
+    width: 86%;
+  }
+
+  .training-hero-content h1 {
+    font-size: clamp(45px, 8vw, 72px);
+  }
+
+  .training-hero-content > p {
+    max-width: 550px;
+    font-size: 15px;
+  }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .training-hero {
+    height: 75vh;
+    min-height: 560px;
+  }
+
+  .training-hero-image img {
+    object-position: 65% center;
+  }
+
+  .training-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5, 5, 5, 0.93) 0%,
+        rgba(5, 5, 5, 0.65) 75%,
+        rgba(5, 5, 5, 0.30) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.75)
+      );
+  }
+
+  .training-hero-content {
+    width: 88%;
+    padding-top: 55px;
+  }
+
+  .training-hero-eyebrow {
+    gap: 9px;
+
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .training-hero-eyebrow span {
+    width: 25px;
+  }
+
+  .training-hero-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+
+  .training-hero-content h1 {
+    font-size: 43px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .training-hero-line {
+    width: 50px;
+    margin: 22px 0 16px;
+  }
+
+  .training-hero-content > p {
+    max-width: 340px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .training-hero-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 22px;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+  }
+
+}
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.training-hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.training-btn {
+  min-width: 210px;
+  height: 56px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.training-btn span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+/* PRIMARY */
+
+.training-btn-primary {
+  background: #dfbb3e;
+  color: #090909;
+
+  border: 1px solid #dfbb3e;
+}
+
+.training-btn-primary:hover {
+  background: #f0d15d;
+  border-color: #f0d15d;
+
+  transform: translateY(-2px);
+}
+
+
+/* SECONDARY */
+
+.training-btn-secondary {
+  background: transparent;
+  color: #ffffff;
+
+  border: 1px solid rgba(223, 187, 62, 0.65);
+}
+
+.training-btn-secondary:hover {
+  background: #dfbb3e;
+  color: #090909;
+
+  border-color: #dfbb3e;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .training-hero-buttons {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 26px;
+  }
+
+  .training-btn {
+    width: 100%;
+    max-width: 300px;
+
+    height: 52px;
+  }
+
+}
+
 /* =========================================================
    SHILPKAR INSTALLATION TRAINING
    Premium Dark Green + Champagne Gold
@@ -273,158 +699,378 @@
 
 /* =========================================================
    PRODUCT TRAINING
+   NOOH-STYLE PREMIUM CARDS
 ========================================================= */
 
 .product-training {
-  padding: 130px 0;
+  padding: 130px 0 150px;
   background: #071f1d;
 }
 
+
+/* GRID */
+
 .product-training-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
 }
+
+
+/* =========================================================
+   CARD
+========================================================= */
 
 .training-product-card {
-  border: 1px solid rgba(198, 161, 91, 0.35);
-  background: #121711;
+  position: relative;
   overflow: hidden;
-  transition: border-color 0.35s ease;
+
+  background: #0b1210;
+
+  border: 1px solid rgba(212, 175, 55, 0.22);
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease;
 }
 
-.training-product-card.is-open {
-  border-color: rgba(212, 175, 55, 0.75);
+.training-product-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(212, 175, 55, 0.65);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35);
 }
 
-.training-product-card__head {
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.training-product-card__image {
+  position: relative;
+
   width: 100%;
-  padding: 28px 30px;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  display: grid;
-  grid-template-columns: 55px 55px 1fr 35px;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
-  text-align: left;
+  aspect-ratio: 16 / 8.7;
+
+  overflow: hidden;
+
+  background: #111;
 }
+
+
+.training-product-card__image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.12) 45%,
+      rgba(0, 0, 0, 0.55) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.training-product-card__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.8s ease;
+}
+
+
+.training-product-card:hover
+.training-product-card__image img {
+  transform: scale(1.035);
+}
+
+
+/* NUMBER */
 
 .training-product-card__number {
-  color: #d4af37;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-}
+  position: absolute;
 
-.training-product-card__icon {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(212, 175, 55, 0.55);
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+
+  width: 52px;
+  height: 52px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e4c27a;
-}
 
-.training-product-card__title span {
-  color: #a99f8a;
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-}
+  background: #071f1d;
 
-.training-product-card__title h3 {
-  margin: 6px 0 0;
-  color: #f2d18a;
-  font-size: 1.35rem;
-  font-weight: 500;
-}
-
-.training-product-card__arrow {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(212, 175, 55, 0.45);
-  border-radius: 50%;
   color: #d4af37;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  border-right: 1px solid rgba(212, 175, 55, 0.35);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.training-product-card__content {
+  padding: 34px 32px 28px;
+}
+
+
+/* CATEGORY */
+
+.training-product-card__category {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
+  gap: 13px;
 
-.training-product-card__body {
-  padding: 0 30px 30px 160px;
-}
+  margin-bottom: 17px;
 
-.training-product-card__body > p {
-  margin: 0 0 20px;
-  color: rgba(245, 241, 232, 0.65);
-  line-height: 1.8;
-  font-size: 0.9rem;
-}
-
-.product-days {
-  overflow: hidden;
-  border-top: 1px solid rgba(198, 161, 91, 0.2);
-  padding-top: 22px;
-}
-
-.product-day {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 22px;
-  padding: 22px 0;
-  border-bottom: 1px solid rgba(198, 161, 91, 0.14);
-}
-
-.product-day:last-child {
-  border-bottom: 0;
-}
-
-.product-day__number {
   color: #d4af37;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  padding-top: 5px;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-.product-day__content h4 {
-  margin: 0 0 15px;
-  color: #f0cf87;
-  font-size: 1rem;
-  font-weight: 500;
+
+.training-product-card__category span {
+  width: 38px;
+  height: 1px;
+
+  background: #d4af37;
+
+  display: block;
 }
 
-.product-day__content ul {
-  list-style: none;
+
+/* TITLE */
+
+.training-product-card__content h3 {
   margin: 0;
-  padding: 0;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.5px;
 }
 
-.product-day__content li {
+
+/* DESCRIPTION */
+
+.training-product-card__description {
+  max-width: 650px;
+
+  margin: 25px 0 30px;
+
+  color: rgba(245, 241, 232, 0.68);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   FEATURE BOXES
+========================================================= */
+
+.training-product-card__features {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 5px;
+}
+
+
+.training-product-card__feature {
+  min-height: 94px;
+
+  padding: 18px 15px;
+
   display: flex;
-  gap: 10px;
-  margin-bottom: 9px;
-  color: rgba(245, 241, 232, 0.62);
-  font-size: 0.78rem;
-  line-height: 1.6;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border: 1px solid rgba(212, 175, 55, 0.28);
+
+  background: rgba(212, 175, 55, 0.035);
+
+  color: #d9bb67;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  line-height: 1.7;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease;
 }
 
-.product-day__content li span {
-  color: #d4af37;
-  font-size: 0.5rem;
-  padding-top: 6px;
+
+.training-product-card__feature:hover {
+  background: rgba(212, 175, 55, 0.08);
+
+  border-color: rgba(212, 175, 55, 0.55);
 }
 
-.training-products-note {
-  margin-top: 30px;
+
+.training-product-card__feature span {
+  width: 23px;
+  height: 1px;
+
+  margin-bottom: 15px;
+
+  background: #d4af37;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.training-product-card__footer {
+  margin-top: 32px;
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.16);
+
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 20px 25px;
-  border-left: 2px solid #d4af37;
-  background: rgba(212, 175, 55, 0.04);
+  justify-content: space-between;
+}
+
+
+.training-product-card__footer > span {
+  color: rgba(245, 241, 232, 0.72);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.training-product-card__explore {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.5);
+
+  color: #d4af37;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.training-product-card__explore:hover {
+  background: #d4af37;
+
+  color: #071f1d;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .product-training-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .product-training {
+    padding: 85px 0 100px;
+  }
+
+  .training-product-card__content {
+    padding: 26px 20px 22px;
+  }
+
+  .training-product-card__content h3 {
+    font-size: 2rem;
+  }
+
+  .training-product-card__description {
+    font-size: 13px;
+  }
+
+  .training-product-card__features {
+    grid-template-columns: 1fr;
+  }
+
+  .training-product-card__feature {
+    min-height: auto;
+  }
+
+  .training-product-card__footer > span {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
 }
 
 .training-products-note > span {
@@ -1116,5 +1762,428 @@
 
   .training-btn {
     width: 100%;
+  }
+}
+/* =========================================
+   PRODUCT TRAINING
+========================================= */
+
+.product-training {
+  position: relative;
+  background: #071d19;
+  padding: 130px 0 140px;
+  overflow: hidden;
+}
+
+.training-container {
+  width: min(1380px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.training-section-heading {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.training-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  color: #d7b65b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.training-eyebrow span {
+  width: 55px;
+  height: 1px;
+  background: #d7b65b;
+}
+
+.training-section-heading h2 {
+  margin: 25px 0 20px;
+
+  color: #f4f0e7;
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(48px, 5vw, 78px);
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.training-section-heading h2 em {
+  color: #d7b65b;
+  font-style: normal;
+}
+
+.training-line {
+  width: 55px;
+  height: 2px;
+  background: #d7b65b;
+  margin: 28px auto;
+}
+
+.training-section-heading p {
+  max-width: 720px;
+  margin: 0 auto;
+
+  color: rgba(236, 232, 220, 0.68);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.product-training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+}
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.training-product-card {
+  position: relative;
+
+  background: #080d0b;
+  border: 1px solid rgba(215, 182, 91, 0.22);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.training-product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(215, 182, 91, 0.55);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.training-product-card__image {
+  position: relative;
+
+  width: 100%;
+  height: 390px;
+
+  overflow: hidden;
+  background: #101613;
+}
+
+.training-product-card__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.training-product-card:hover
+.training-product-card__image img {
+  transform: scale(1.04);
+}
+
+/* DARK IMAGE OVERLAY */
+
+.training-product-card__image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 30%,
+      rgba(0, 0, 0, 0.82) 100%
+    );
+
+  pointer-events: none;
+}
+
+/* NUMBER */
+
+.training-product-card__number {
+  position: absolute;
+
+  top: 20px;
+  left: 25px;
+
+  z-index: 2;
+
+  color: #d7b65b;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.training-product-card__content {
+  padding: 32px 30px 28px;
+}
+
+/* CATEGORY */
+
+.training-product-card__category {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: #d7b65b;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.training-product-card__category span {
+  width: 38px;
+  height: 1px;
+
+  background: #d7b65b;
+}
+
+/* TITLE */
+
+.training-product-card__content h3 {
+  margin: 0 0 20px;
+
+  color: #f4f0e7;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(28px, 2.5vw, 40px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* DESCRIPTION */
+
+.training-product-card__description {
+  margin: 0 0 30px;
+
+  color: rgba(236, 232, 220, 0.68);
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.training-product-card__highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.training-product-card__highlight {
+  min-height: 95px;
+
+  padding: 17px 16px;
+
+  background: rgba(215, 182, 91, 0.06);
+  border: 1px solid rgba(215, 182, 91, 0.22);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.highlight-line {
+  width: 22px;
+  height: 1px;
+
+  background: #d7b65b;
+}
+
+.training-product-card__highlight strong {
+  color: #d7b65b;
+
+  font-size: 10px;
+  line-height: 1.6;
+
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   FOOTER / EXPLORE
+========================================= */
+
+.training-product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(215, 182, 91, 0.16);
+}
+
+.training-product-card__footer > span {
+  color: rgba(236, 232, 220, 0.68);
+
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.training-product-card__explore {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(215, 182, 91, 0.55);
+
+  color: #d7b65b;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.training-product-card__explore:hover {
+  background: #d7b65b;
+  color: #071d19;
+
+  transform: translateX(3px);
+}
+
+/* =========================================
+   NOTE
+========================================= */
+
+.training-products-note {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  max-width: 850px;
+
+  margin: 55px auto 0;
+  padding: 22px 25px;
+
+  border-top: 1px solid rgba(215, 182, 91, 0.18);
+  border-bottom: 1px solid rgba(215, 182, 91, 0.18);
+}
+
+.training-products-note span {
+  color: #d7b65b;
+  font-size: 22px;
+}
+
+.training-products-note p {
+  margin: 0;
+
+  color: rgba(236, 232, 220, 0.58);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .product-training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-product-card__image {
+    height: 420px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .product-training {
+    padding: 90px 0;
+  }
+
+  .training-container {
+    width: 92%;
+  }
+
+  .training-section-heading {
+    margin-bottom: 45px;
+  }
+
+  .training-section-heading h2 {
+    font-size: 48px;
+  }
+
+  .training-product-card__image {
+    height: 280px;
+  }
+
+  .training-product-card__content {
+    padding: 25px 20px;
+  }
+
+  .training-product-card__content h3 {
+    font-size: 30px;
+  }
+
+  .training-product-card__highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .training-product-card__highlight {
+    min-height: auto;
+    gap: 12px;
+  }
+
+  .training-product-card__footer > span {
+    font-size: 9px;
+    letter-spacing: 2.5px;
   }
 }

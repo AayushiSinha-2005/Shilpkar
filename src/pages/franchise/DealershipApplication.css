@@ -845,3 +845,26 @@
 .application-checkbox span {
   color: rgba(247, 245, 239, 0.68) !important;
 }
+
+/* =========================================
+   TRAINING APPLICATION
+========================================= */
+
+.training-focus-list {
+  list-style: none;
+  padding: 18px 0 0;
+  margin: 0;
+}
+
+.training-focus-list li {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+.dealership-application__investment strong small {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e6c66b;
+}

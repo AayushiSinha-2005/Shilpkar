@@ -1,0 +1,772 @@
+/* =========================================================
+   SHILPKAR TRAINING DETAIL
+========================================================= */
+
+.training-detail {
+  background: #071f1d;
+  color: #f5f1e8;
+  min-height: 100vh;
+}
+
+.training-detail-container {
+  width: min(1280px, 90%);
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.training-detail-hero {
+  position: relative;
+  min-height: 72vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 150px 0 90px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(212, 175, 55, 0.08),
+      transparent 35%
+    ),
+    #071f1d;
+
+  overflow: hidden;
+}
+
+.training-detail-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 31, 29, 0.98),
+      rgba(7, 31, 29, 0.75),
+      rgba(7, 31, 29, 0.35)
+    );
+
+  pointer-events: none;
+}
+
+.training-detail-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 950px;
+}
+
+.training-detail-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.training-detail-eyebrow span {
+  width: 42px;
+  height: 1px;
+
+  display: block;
+
+  background: #d4af37;
+}
+
+.training-detail-number {
+  margin: 32px 0 12px;
+
+  color: rgba(212, 175, 55, 0.38);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+}
+
+.training-detail-hero h1 {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 7vw, 100px);
+  font-weight: 400;
+
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+.training-detail-line {
+  width: 60px;
+  height: 2px;
+
+  margin: 32px 0;
+
+  background: #d4af37;
+}
+
+.training-detail-hero p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: rgba(245, 241, 232, 0.68);
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   COURSE INFORMATION
+========================================================= */
+
+.training-course-info {
+  border-top: 1px solid rgba(212, 175, 55, 0.16);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.16);
+
+  background: #0a1513;
+}
+
+.training-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.training-info-item {
+  padding: 38px 40px;
+
+  min-height: 130px;
+}
+
+.training-info-item + .training-info-item {
+  border-left: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+.training-info-item span {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: #d4af37;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.training-info-item strong {
+  color: #f5f1e8;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   OBJECTIVE
+========================================================= */
+
+.training-objective {
+  padding: 130px 0;
+}
+
+.training-detail-section-heading {
+  max-width: 850px;
+}
+
+.training-detail-section-heading h2 {
+  margin: 25px 0 0;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 400;
+
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+}
+
+.training-detail-section-heading h2 em {
+  color: #d4af37;
+  font-style: normal;
+}
+
+.training-objective-text {
+  max-width: 900px;
+
+  margin: 55px 0 0;
+
+  padding-left: 45px;
+
+  border-left: 1px solid #d4af37;
+
+  color: rgba(245, 241, 232, 0.72);
+
+  font-size: 18px;
+  line-height: 2;
+}
+
+
+/* =========================================================
+   7 DAY SCHEDULE
+========================================================= */
+
+.training-schedule {
+  padding: 130px 0 150px;
+
+  background: #091614;
+}
+
+.training-days {
+  margin-top: 70px;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.training-day-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.training-day-number {
+  padding: 42px 25px;
+
+  color: #d4af37;
+
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.training-day-content {
+  padding: 42px 45px;
+
+  border-left: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.training-day-label {
+  margin-bottom: 10px;
+
+  color: rgba(212, 175, 55, 0.65);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.training-day-content h3 {
+  margin: 0 0 28px;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.training-day-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 15px 45px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.training-day-content li {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+
+  color: rgba(245, 241, 232, 0.68);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.training-day-content li span {
+  flex-shrink: 0;
+
+  margin-top: 7px;
+
+  color: #d4af37;
+
+  font-size: 6px;
+}
+
+
+/* =========================================================
+   FACILITIES
+========================================================= */
+
+.training-facilities {
+  padding: 130px 0;
+}
+
+.training-facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: 70px;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  border-left: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.training-facility-card {
+  min-height: 145px;
+
+  padding: 30px;
+
+  border-right: 1px solid rgba(212, 175, 55, 0.18);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.training-facility-card span {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: rgba(212, 175, 55, 0.6);
+
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.training-facility-card p {
+  margin: 0;
+
+  color: rgba(245, 241, 232, 0.75);
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CERTIFICATION
+========================================================= */
+
+.training-certification {
+  padding: 120px 0;
+
+  background: #0a1513;
+}
+
+.training-certification-box {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: 75px 70px;
+
+  text-align: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(212, 175, 55, 0.07),
+      transparent 60%
+    );
+}
+
+.training-certification-box
+.training-detail-eyebrow {
+  justify-content: center;
+}
+
+.training-certification-box
+.training-detail-line {
+  margin: 30px auto;
+}
+
+.training-certification-box h2 {
+  margin: 25px 0;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 5vw, 70px);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.training-certification-box h2 em {
+  color: #d4af37;
+  font-style: normal;
+}
+
+.training-certification-box > p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: rgba(245, 241, 232, 0.62);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.training-certificate-name {
+  margin: 40px auto 25px;
+
+  padding: 22px 30px;
+
+  max-width: 750px;
+
+  border: 1px solid rgba(212, 175, 55, 0.32);
+
+  color: #d4af37;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.training-certification-line {
+  width: 50px;
+  height: 1px;
+
+  margin: 30px auto;
+
+  background: #d4af37;
+}
+
+.training-tagline {
+  color: rgba(245, 241, 232, 0.7) !important;
+
+  font-family: var(--font-heading);
+
+  font-size: 19px !important;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.training-detail-cta {
+  padding: 110px 0;
+
+  background: #071f1d;
+}
+
+.training-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding: 60px;
+
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.training-cta-inner > div > span {
+  color: #d4af37;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.training-cta-inner h2 {
+  margin: 18px 0 0;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 400;
+
+  line-height: 0.95;
+}
+
+.training-cta-inner h2 em {
+  color: #d4af37;
+  font-style: normal;
+}
+
+.training-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+
+  padding: 19px 27px;
+
+  border: 1px solid #d4af37;
+
+  color: #d4af37;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.training-cta-button span {
+  font-size: 18px;
+}
+
+.training-cta-button:hover {
+  background: #d4af37;
+  color: #071f1d;
+}
+
+
+/* =========================================================
+   BACK LINK
+========================================================= */
+
+.training-back {
+  padding: 30px 5% 45px;
+
+  text-align: center;
+
+  background: #071f1d;
+}
+
+.training-back a {
+  color: rgba(245, 241, 232, 0.55);
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition: color 0.3s ease;
+}
+
+.training-back a:hover {
+  color: #d4af37;
+}
+
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.training-detail-not-found {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #071f1d;
+
+  text-align: center;
+}
+
+.training-detail-not-found span {
+  color: #d4af37;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.training-detail-not-found h1 {
+  margin: 20px 0 30px;
+
+  color: #f5f1e8;
+
+  font-family: var(--font-heading);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.training-detail-not-found a {
+  color: #d4af37;
+  text-decoration: none;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .training-detail-hero {
+    min-height: 65vh;
+  }
+
+  .training-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-info-item + .training-info-item {
+    border-left: 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.16);
+  }
+
+  .training-day-card {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .training-day-content {
+    padding: 35px 30px;
+  }
+
+  .training-day-content ul {
+    grid-template-columns: 1fr;
+  }
+
+  .training-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .training-detail-container {
+    width: 91%;
+  }
+
+  .training-detail-hero {
+    min-height: 70vh;
+
+    padding: 120px 0 65px;
+  }
+
+  .training-detail-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1px;
+  }
+
+  .training-detail-hero p {
+    font-size: 14px;
+  }
+
+  .training-detail-section-heading h2 {
+    font-size: 48px;
+  }
+
+  .training-objective,
+  .training-schedule,
+  .training-facilities {
+    padding: 90px 0;
+  }
+
+  .training-objective-text {
+    padding-left: 25px;
+
+    margin-top: 40px;
+
+    font-size: 15px;
+  }
+
+  .training-day-card {
+    display: block;
+  }
+
+  .training-day-number {
+    padding: 25px 20px 0;
+  }
+
+  .training-day-content {
+    padding: 20px;
+    border-left: 0;
+  }
+
+  .training-day-content h3 {
+    font-size: 30px;
+  }
+
+  .training-day-content li {
+    font-size: 13px;
+  }
+
+  .training-facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-certification {
+    padding: 80px 0;
+  }
+
+  .training-certification-box {
+    padding: 45px 22px;
+  }
+
+  .training-certification-box h2 {
+    font-size: 42px;
+  }
+
+  .training-certificate-name {
+    padding: 18px 15px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+  }
+
+  .training-cta-inner {
+    padding: 35px 25px;
+  }
+
+  .training-cta-inner h2 {
+    font-size: 45px;
+  }
+
+  .training-cta-button {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+}
