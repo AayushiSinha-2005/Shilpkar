@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import architecturalWallpaperTraining
-  from "../../assets/images/architectural-wallpaper-training.webp";
+
 import "./InstallationTraining.css";
 
+import stretchCeilingTraining from "../../assets/images/stretch-ceiling-training.webp";
+import cloudwaveTraining from "../../assets/images/cloudwave-training.webp";
+import fabricCeilingTraining from "../../assets/images/fabric-ceiling-training.webp";
+import skylumeTraining from "../../assets/images/skylume-training.webp";
+import epoxyFlooringTraining from "../../assets/images/epoxy-flooring-training.webp";
+import architecturalWallpaperTraining from "../../assets/images/architectural-wallpaper-training1.webp";
 const trainingProducts = [
   {
     id: "stretch-ceiling",
     number: "01",
     category: "INSTALLATION",
     title: "Stretch Ceiling Installation",
-    image: "/franchaise-hero/stretch-ceiling-training.png",
+    image: stretchCeilingTraining,
     short:
       "Professional training in stretch ceiling technology, installation, lighting integration and practical site execution.",
     highlights: [
@@ -26,7 +31,7 @@ const trainingProducts = [
     number: "02",
     category: "DESIGN & BUSINESS",
     title: "3D Cloudwave™ Ceiling",
-    image: "/franchaise-hero/cloudwave-training.png",
+    image: cloudwaveTraining,
     short:
       "Professional training in 3D Cloudwave™ textile ceiling design, fabric shaping, framework preparation, lighting integration, installation and business development.",
     highlights: [
@@ -41,7 +46,7 @@ const trainingProducts = [
     number: "03",
     category: "DESIGN & BUSINESS",
     title: "3D Fabric Ceiling",
-    image: "/franchaise-hero/fabric-ceiling-training.png",
+    image: fabricCeilingTraining,
     short:
       "Professional training in 3D Fabric Ceiling design, frame preparation, fabric shaping, lighting integration, installation and business development.",
     highlights: [
@@ -56,7 +61,7 @@ const trainingProducts = [
     number: "04",
     category: "VIRTUAL DESIGN & BUSINESS",
     title: "3D SkyLume™ Virtual Window & Ceiling",
-    image: "/franchaise-hero/skylume-training.png",
+    image: skylumeTraining,
     short:
       "Professional training in 3D SkyLume™ virtual window and ceiling design, frame fabrication, image and panel integration, installation and business development.",
     highlights: [
@@ -71,7 +76,7 @@ const trainingProducts = [
     number: "05",
     category: "FLOORING & BUSINESS",
     title: "3D Epoxy Flooring",
-    image: "/franchaise-hero/epoxy-flooring-training.png",
+    image: epoxyFlooringTraining,
     short:
       "Professional training in 3D epoxy flooring design, surface preparation, epoxy application, 3D graphics, finishing techniques and business development.",
     highlights: [
@@ -86,7 +91,7 @@ const trainingProducts = [
     number: "06",
     category: "DESIGN & BUSINESS",
     title: "Architectural Wallpaper",
-    image: "/franchaise-hero/architectural-wallpaper-training.webp",
+    image: architecturalWallpaperTraining,
     short:
       "Professional training in architectural wallpaper selection, surface preparation, measurement, cutting, installation, finishing techniques and business development.",
     highlights: [

@@ -698,70 +698,142 @@
 
 
 /* =========================================================
-   PRODUCT TRAINING
-   NOOH-STYLE PREMIUM CARDS
-========================================================= */
+   SHILPKAR — PRODUCT TRAINING CARDS FINAL FIX
+   ========================================================= */
 
 .product-training {
-  padding: 130px 0 150px;
-  background: #071f1d;
+  position: relative;
+  background: #071d19;
+  padding: 110px 0 130px;
+  overflow: hidden;
+}
+
+.product-training .training-container {
+  width: min(1380px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================
+   SECTION HEADING
+   ========================= */
+
+.product-training .training-section-heading {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.product-training .training-section-heading h2 {
+  margin: 22px 0 18px;
+  color: #f4f0e7;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 5vw, 72px);
+  line-height: 0.98;
+  font-weight: 400;
+}
+
+.product-training .training-section-heading h2 em {
+  color: #d7b65b;
+  font-style: normal;
+}
+
+.product-training .training-section-heading p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(236, 232, 220, 0.68);
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 
-/* GRID */
+/* =========================
+   GRID
+   ========================= */
 
-.product-training-grid {
+.product-training .product-training-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 34px;
+  gap: 30px;
+  align-items: stretch;
 }
 
 
-/* =========================================================
+/* =========================
    CARD
-========================================================= */
+   ========================= */
 
-.training-product-card {
+.product-training .training-product-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background: #080d0b;
+  border: 1px solid rgba(215, 182, 91, 0.22);
+
   overflow: hidden;
 
-  background: #0b1210;
-
-  border: 1px solid rgba(212, 175, 55, 0.22);
+  min-width: 0;
 
   transition:
-    transform 0.45s ease,
-    border-color 0.45s ease,
-    box-shadow 0.45s ease;
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
-.training-product-card:hover {
-  transform: translateY(-7px);
-
-  border-color: rgba(212, 175, 55, 0.65);
+.product-training .training-product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(215, 182, 91, 0.6);
 
   box-shadow:
-    0 25px 70px rgba(0, 0, 0, 0.35);
+    0 25px 60px rgba(0, 0, 0, 0.35);
 }
 
 
 /* =========================================================
-   IMAGE
-========================================================= */
+   IMAGE — MAIN FIX
+   ========================================================= */
 
-.training-product-card__image {
+.product-training .training-product-card__image {
   position: relative;
 
   width: 100%;
-  aspect-ratio: 16 / 8.7;
+
+  /*
+    Previous: 390px
+    Now shorter so the complete image composition
+    doesn't feel excessively cropped.
+  */
+  height: 330px;
 
   overflow: hidden;
+  background: #101613;
 
-  background: #111;
+  flex-shrink: 0;
+}
+
+.product-training .training-product-card__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.8s ease;
+}
+
+.product-training .training-product-card:hover
+.training-product-card__image img {
+  transform: scale(1.025);
 }
 
 
-.training-product-card__image::after {
+/* =========================
+   IMAGE OVERLAY
+   ========================= */
+
+.product-training .training-product-card__image::after {
   content: "";
 
   position: absolute;
@@ -769,247 +841,236 @@
 
   background:
     linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.05) 0%,
-      rgba(0, 0, 0, 0.12) 45%,
-      rgba(0, 0, 0, 0.55) 100%
+      to bottom,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0.06) 45%,
+      rgba(0, 0, 0, 0.62) 100%
     );
 
   pointer-events: none;
 }
 
 
-.training-product-card__image img {
-  width: 100%;
-  height: 100%;
+/* =========================
+   NUMBER
+   ========================= */
 
-  object-fit: cover;
-
-  display: block;
-
-  transition: transform 0.8s ease;
-}
-
-
-.training-product-card:hover
-.training-product-card__image img {
-  transform: scale(1.035);
-}
-
-
-/* NUMBER */
-
-.training-product-card__number {
+.product-training .training-product-card__number {
   position: absolute;
 
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 25px;
 
-  z-index: 2;
+  z-index: 3;
 
-  width: 52px;
+  min-width: 52px;
   height: 52px;
+
+  padding: 0 14px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #071f1d;
+  background: #071d19;
 
-  color: #d4af37;
+  border-right: 1px solid rgba(215, 182, 91, 0.35);
+  border-bottom: 1px solid rgba(215, 182, 91, 0.35);
+
+  color: #d7b65b;
 
   font-family: Arial, sans-serif;
   font-size: 11px;
   font-weight: 600;
-
-  letter-spacing: 2px;
-
-  border-right: 1px solid rgba(212, 175, 55, 0.35);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+  letter-spacing: 3px;
 }
 
 
-/* =========================================================
+/* =========================
    CONTENT
-========================================================= */
+   ========================= */
 
-.training-product-card__content {
-  padding: 34px 32px 28px;
+.product-training .training-product-card__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 28px 30px 26px;
 }
 
 
-/* CATEGORY */
+/* =========================
+   CATEGORY
+   ========================= */
 
-.training-product-card__category {
+.product-training .training-product-card__category {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 12px;
 
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 
-  color: #d4af37;
+  color: #d7b65b;
 
-  font-family: Arial, sans-serif;
   font-size: 10px;
   font-weight: 600;
-
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
 }
 
-
-.training-product-card__category span {
+.product-training .training-product-card__category span {
   width: 38px;
   height: 1px;
+  flex-shrink: 0;
 
-  background: #d4af37;
-
-  display: block;
+  background: #d7b65b;
 }
 
 
-/* TITLE */
+/* =========================
+   TITLE
+   ========================= */
 
-.training-product-card__content h3 {
-  margin: 0;
+.product-training .training-product-card__content h3 {
+  margin: 0 0 17px;
 
-  color: #f5f1e8;
+  color: #f4f0e7;
 
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(27px, 2.4vw, 37px);
   font-weight: 400;
 
-  line-height: 1.05;
-
-  letter-spacing: -0.5px;
+  line-height: 1.08;
 }
 
 
-/* DESCRIPTION */
+/* =========================
+   DESCRIPTION
+   ========================= */
 
-.training-product-card__description {
-  max-width: 650px;
+.product-training .training-product-card__description {
+  margin: 0 0 24px;
 
-  margin: 25px 0 30px;
-
-  color: rgba(245, 241, 232, 0.68);
+  color: rgba(236, 232, 220, 0.68);
 
   font-family: Arial, sans-serif;
 
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.75;
 }
 
 
 /* =========================================================
-   FEATURE BOXES
-========================================================= */
+   HIGHLIGHTS
+   ========================================================= */
 
-.training-product-card__features {
+.product-training .training-product-card__highlights {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-  gap: 12px;
+  gap: 10px;
 
-  margin-top: 5px;
+  margin-top: auto;
+  margin-bottom: 25px;
 }
 
+.product-training .training-product-card__highlight {
+  min-width: 0;
+  min-height: 82px;
 
-.training-product-card__feature {
-  min-height: 94px;
-
-  padding: 18px 15px;
+  padding: 14px 13px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 
-  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(215, 182, 91, 0.045);
 
-  background: rgba(212, 175, 55, 0.035);
+  border: 1px solid rgba(215, 182, 91, 0.2);
 
-  color: #d9bb67;
+  gap: 10px;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.product-training .training-product-card__highlight:hover {
+  background: rgba(215, 182, 91, 0.08);
+  border-color: rgba(215, 182, 91, 0.5);
+}
+
+.product-training .highlight-line {
+  width: 20px;
+  height: 1px;
+
+  background: #d7b65b;
+}
+
+.product-training .training-product-card__highlight strong {
+  color: #d7b65b;
 
   font-family: Arial, sans-serif;
 
   font-size: 9px;
   font-weight: 600;
 
-  line-height: 1.7;
+  line-height: 1.55;
 
-  letter-spacing: 1.5px;
+  letter-spacing: 1.1px;
 
   text-transform: uppercase;
 
-  transition:
-    background 0.35s ease,
-    border-color 0.35s ease;
+  overflow-wrap: break-word;
 }
 
 
-.training-product-card__feature:hover {
-  background: rgba(212, 175, 55, 0.08);
-
-  border-color: rgba(212, 175, 55, 0.55);
-}
-
-
-.training-product-card__feature span {
-  width: 23px;
-  height: 1px;
-
-  margin-bottom: 15px;
-
-  background: #d4af37;
-}
-
-
-/* =========================================================
+/* =========================
    FOOTER
-========================================================= */
+   ========================= */
 
-.training-product-card__footer {
-  margin-top: 32px;
-  padding-top: 22px;
-
-  border-top: 1px solid rgba(212, 175, 55, 0.16);
-
+.product-training .training-product-card__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-top: 19px;
+
+  border-top: 1px solid rgba(215, 182, 91, 0.16);
 }
 
-
-.training-product-card__footer > span {
-  color: rgba(245, 241, 232, 0.72);
+.product-training .training-product-card__footer > span {
+  color: rgba(236, 232, 220, 0.68);
 
   font-family: Arial, sans-serif;
 
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 9px;
+  font-weight: 500;
 
   letter-spacing: 3px;
 
   text-transform: uppercase;
 }
 
+.product-training .training-product-card__explore {
+  width: 42px;
+  height: 42px;
 
-.training-product-card__explore {
-  width: 44px;
-  height: 44px;
+  flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(212, 175, 55, 0.5);
+  border: 1px solid rgba(215, 182, 91, 0.55);
 
-  color: #d4af37;
+  color: #d7b65b;
 
   text-decoration: none;
 
-  font-size: 20px;
+  font-size: 19px;
 
   transition:
     background 0.3s ease,
@@ -1017,62 +1078,100 @@
     transform 0.3s ease;
 }
 
-
-.training-product-card__explore:hover {
-  background: #d4af37;
-
-  color: #071f1d;
-
+.product-training .training-product-card__explore:hover {
+  background: #d7b65b;
+  color: #071d19;
   transform: translateX(3px);
 }
 
 
 /* =========================================================
-   RESPONSIVE
-========================================================= */
+   TABLET
+   ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
-  .product-training-grid {
+  .product-training .product-training-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-training .training-product-card__image {
+    height: 400px;
   }
 
 }
 
 
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
 
   .product-training {
-    padding: 85px 0 100px;
+    padding: 80px 0 90px;
   }
 
-  .training-product-card__content {
-    padding: 26px 20px 22px;
+  .product-training .training-container {
+    width: 92%;
   }
 
-  .training-product-card__content h3 {
-    font-size: 2rem;
+  .product-training .training-section-heading {
+    margin-bottom: 42px;
   }
 
-  .training-product-card__description {
+  .product-training .training-section-heading h2 {
+    font-size: 46px;
+  }
+
+  .product-training .training-section-heading p {
     font-size: 13px;
   }
 
-  .training-product-card__features {
+  .product-training .training-product-card__image {
+    height: 270px;
+  }
+
+  .product-training .training-product-card__number {
+    top: 15px;
+    left: 15px;
+
+    min-width: 45px;
+    height: 45px;
+
+    font-size: 10px;
+  }
+
+  .product-training .training-product-card__content {
+    padding: 24px 20px 22px;
+  }
+
+  .product-training .training-product-card__content h3 {
+    font-size: 29px;
+  }
+
+  .product-training .training-product-card__description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .product-training .training-product-card__highlights {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 
-  .training-product-card__feature {
+  .product-training .training-product-card__highlight {
     min-height: auto;
+    padding: 13px 14px;
   }
 
-  .training-product-card__footer > span {
+  .product-training .training-product-card__footer > span {
     font-size: 8px;
     letter-spacing: 2px;
   }
 
 }
-
 .training-products-note > span {
   color: #d4af37;
   font-size: 1.3rem;
