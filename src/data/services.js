@@ -28,10 +28,10 @@ const services = [
       translucent?.hero?.description ||
       "Premium Translucent & Illuminated Stretch Ceiling System",
 
-    image:
-      translucent?.hero?.image ||
-      images.translucent.main,
-
+   image: new URL(
+  "../assets/images/services/stretch-ceiling/translucent/translucent-main.webp",
+  import.meta.url
+).href,
     types: [
       {
         title: "STATIC WHITE",
@@ -179,48 +179,6 @@ const services = [
     pdf: panel?.pdf,
 
     view: "/services/stretch-ceiling/panel",
-  },
-
-
-  /* =========================================================
-     05 — SHILPKAR™ STRETCH CEILING SYSTEMS
-     ========================================================= */
-
-  {
-    title: "SHILPKAR™ Stretch Ceiling Systems",
-    anchor: "stretch-ceiling",
-
-    desc:
-      "Premium stretch ceiling solutions created for modern residential, commercial and hospitality interiors with seamless finishes and integrated lighting options.",
-
-    image: images.service1,
-
-    types: [
-      {
-        title: "TRANSLUCENT",
-        subtitle: "Premium Illuminated Stretch Ceiling",
-        link: "/services/stretch-ceiling/translucent",
-      },
-      {
-        title: "PRINT",
-        subtitle: "Custom Printed Stretch Ceiling",
-        link: "/services/stretch-ceiling/printed",
-      },
-      {
-        title: "GLOSS",
-        subtitle: "High-Gloss Reflective Stretch Ceiling",
-        link: "/services/stretch-ceiling/gloss",
-      },
-      {
-        title: "PANEL",
-        subtitle: "Decorative Ceiling Panel System",
-        link: "/services/stretch-ceiling/panel",
-      },
-    ],
-
-    pdf: "/pdf/stretch-ceiling.pdf",
-
-    view: "/services/stretch-ceiling/translucent",
   },
 
 

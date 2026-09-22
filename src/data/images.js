@@ -64,10 +64,10 @@ service1: new URL(
 
 translucent: {
   
-  main: new URL(
-    "../assets/images/services/stretch-ceiling/translucent/stretch ceiling 1.png",
-    import.meta.url
-  ).href,
+ main: new URL(
+  "../assets/images/home/hero/translucent.webp",
+  import.meta.url
+).href,
 
     heroBanner: new URL(
     "../assets/images/services/stretch-ceiling/translucent/banner/translucent-hero-banner.webp",
@@ -126,10 +126,10 @@ printed: {
     import.meta.url
   ).href,
 
-  main: new URL(
-    "../assets/images/services/stretch-ceiling/printed/Printed Stretch Ceiling.png",
-    import.meta.url
-  ).href,
+ main: new URL(
+  "../assets/images/home/hero/print.webp",
+  import.meta.url
+).href,
 },
 
 gloss: {
@@ -157,9 +157,9 @@ panel: {
   ).href,
 
   grid: new URL(
-    "../assets/images/services/stretch-ceiling/panel/2x2 pannel.png",
-    import.meta.url
-  ).href,
+  "../assets/images/home/hero/panel.webp",
+  import.meta.url
+).href,
 
   design: new URL(
     "../assets/images/services/stretch-ceiling/panel/Pannel 2.png",
@@ -264,9 +264,9 @@ fiberOptic: {
 
 virtualCeiling: {
   main: new URL(
-    "../assets/images/services/virtual-ceiling/main/virtual ceiling main.webp",
-    import.meta.url
-  ).href,
+  "../assets/images/home/hero/virtual.webp",
+  import.meta.url
+).href,
 
   sky: new URL(
     "../assets/images/services/virtual-ceiling/sky/Sunlight virtual.png",
@@ -508,7 +508,7 @@ cloudwave: {
 },
 prism: {
   main: new URL(
-    "../assets/images/services/prism/main/prism-main.png",
+    "../assets/images/home/hero/prism.webp",
     import.meta.url
   ).href,
 },
@@ -560,7 +560,7 @@ domeStretchCeilings: {
 
 restaurantDecors: {
   main: new URL(
-    "../assets/images/services/restaurant-decors/main/restaurant-decors-main.png",
+    "../assets/images/home/hero/restaurantdecor.webp",
     import.meta.url
   ).href,
 },
@@ -571,7 +571,7 @@ restaurantDecors: {
 
 wallsculpt: {
   main: new URL(
-    "../assets/images/services/wallsculpt/main/wallsculpt-main.png",
+    "../assets/images/home/hero/wallsculpture.webp",
     import.meta.url
   ).href,
 },

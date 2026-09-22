@@ -665,3 +665,70 @@
     font-size: 2.25rem;
   }
 }
+/* =====================================================
+   COMPACT ASSOCIATE CONTACT CTA
+===================================================== */
+
+.associate-application__contact-card {
+  margin-top: 45px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(214, 174, 76, 0.22);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.associate-application__contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.associate-application__contact-label {
+  color: #d9b65c;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.associate-application__contact-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+}
+
+.associate-application__contact-content a {
+  color: #f0d28b;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.associate-application__contact-content a:hover {
+  color: #fff;
+}
+
+.associate-application__contact-card
+.associate-application__submit {
+  min-width: 300px;
+  margin: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .associate-application__contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .associate-application__contact-card
+  .associate-application__submit {
+    width: 100%;
+    min-width: 0;
+  }
+}

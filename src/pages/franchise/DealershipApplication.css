@@ -792,6 +792,7 @@
   color: #e7c98f !important;
 }
 
+
 .dealership-application__investment h3 {
   color: #e7c98f !important;
 }
@@ -867,4 +868,160 @@
   font-size: 20px;
   font-weight: 400;
   color: #e6c66b;
+}
+
+/* =========================================
+   COMPACT DEALERSHIP / TRAINING FORM
+========================================= */
+
+.application-intro {
+  max-width: 680px;
+  margin: 0 0 38px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.application-contact-card {
+  margin-top: 45px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(214, 174, 76, 0.22);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.application-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.application-contact-label {
+  color: #d9b65c;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.application-contact-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+}
+
+.application-contact-content a {
+  color: #f0d28b;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.application-contact-content a:hover {
+  color: #ffffff;
+}
+
+.application-contact-card .application-submit {
+  min-width: 300px;
+  margin: 0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .application-contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .application-contact-card .application-submit {
+    width: 100%;
+    min-width: 0;
+  }
+
+}
+
+/* =========================================
+   COMPACT DEALERSHIP APPLICATION
+========================================= */
+
+.application-intro {
+  max-width: 680px;
+  margin: 0 0 38px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.application-contact-card {
+  margin-top: 45px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(214, 174, 76, 0.22);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.application-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.application-contact-label {
+  color: #d9b65c;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.application-contact-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+}
+
+.application-contact-content a {
+  color: #f0d28b;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.application-contact-content a:hover {
+  color: #ffffff;
+}
+
+.application-contact-card .application-submit {
+  min-width: 300px;
+  margin: 0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .application-contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .application-contact-card .application-submit {
+    width: 100%;
+    min-width: 0;
+  }
+
 }
