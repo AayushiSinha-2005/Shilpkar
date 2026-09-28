@@ -17,19 +17,17 @@ import AssociateApplication from "../pages/franchise/AssociateApplication.jsx";
 import InstallationTraining from "../pages/franchise/InstallationTraining.jsx";
 import TrainingApplication from "../pages/franchise/TrainingApplication.jsx";
 import TrainingDetail from "../pages/franchise/TrainingDetail.jsx";
-import Gallery from "../pages/Gallery.jsx";import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
+
+import Gallery from "../pages/Gallery.jsx";
+import CircularGalleryPage from "../pages/CircularGalleryPage.jsx";
 import Certifications from "../pages/company/Certifications";
 import Contact from "../pages/Contact.jsx";
+
 import WallpaperCategory from "../pages/shop/WallpaperCategory.jsx";
 import WallpaperProduct from "../pages/shop/WallpaperProduct.jsx";
 import ShopByCategory from "../pages/shop/ShopByCategory.jsx";
-import Solutions from "../pages/Solutions.jsx";
-import SolutionCategory from "../pages/SolutionCategory.jsx";
-import ProductCategory from "../pages/ProductCategory.jsx";
-import VariantCategory from "../pages/VariantCategory.jsx";
-import ProductDetail from "../pages/ProductDetail.jsx";
-import NotFound from "../pages/NotFound.jsx";
 
+import NotFound from "../pages/NotFound.jsx";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -122,34 +120,10 @@ export default function AppRouter() {
           <Route path="/gallery" element={<Page><Gallery /></Page>} />
           <Route path="/gallery/circular" element={<Page><CircularGalleryPage /></Page>} />
           <Route path="/contact" element={<Page><Contact /></Page>} />
-          <Route
-  path="/solutions"
-  element={
-    <Page>
-      <Solutions />
-    </Page>
-  }
-/>
+          
 
 
 
-<Route
-  path="/solutions/:category"
-  element={
-    <Page>
-      <SolutionCategory />
-    </Page>
-  }
-/>
-
-<Route
-  path="/solutions/:category/:product"
-  element={
-    <Page>
-      <ProductCategory />
-    </Page>
-  }
-/>
 
 <Route
   path="/shop/:categorySlug/:productSlug"
@@ -160,32 +134,6 @@ export default function AppRouter() {
   }
 />
 
-<Route
-  path="/solutions/:category/:product/:item"
-  element={
-    <Page>
-      <VariantCategory />
-    </Page>
-  }
-/>
-
-<Route
-  path="/solutions/:category/:product/:item/:variant"
-  element={
-    <Page>
-      <ProductDetail />
-    </Page>
-  }
-/>
-
-<Route
-  path="/solutions/:category/:product/:item"
-  element={
-    <Page>
-      <ProductDetail />
-    </Page>
-  }
-/>
 <Route
   path="/shop/:categorySlug"
   element={

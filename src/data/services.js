@@ -12,8 +12,6 @@ const gloss =
 
 const panel =
   serviceDetails?.["stretch-ceiling"]?.["panel"];
-
-
 const services = [
 
   /* =========================================================

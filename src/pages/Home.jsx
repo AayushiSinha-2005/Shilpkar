@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero/Hero.jsx";
-import AboutPreview from "../components/AboutPreview.jsx";
 import OwnerSection from "../components/OwnerSection.jsx";
 import OrbitImages from "../components/Effects/OrbitImages.jsx";
 import SplitText from "../components/Effects/SplitText.jsx";
@@ -117,25 +116,19 @@ const homeServices = [
 export default function Home() {
   return (
     <>
+      {/* ================= HERO ================= */}
       <Hero />
-      <AboutPreview />
 
-      {/* HOME SERVICES */}
+      {/* ================= OUR PRODUCTS ================= */}
       <section className="section home-services">
         <div className="container">
-          <div className="home-services__head">
-            <span className="eyebrow">Our Expertise</span>
 
+          <div className="home-services__head">
             <SplitText
               as="h2"
               className="chisel"
-              text="Crafted for Extraordinary Spaces"
+              text="Our Products"
             />
-
-            <p>
-              Explore our collection of architectural ceiling, wall,
-              flooring and interior solutions.
-            </p>
           </div>
 
           <div className="home-services__grid">
@@ -166,17 +159,20 @@ export default function Home() {
                   <p>{service.subtitle}</p>
 
                   <span className="home-service-card__arrow">
-                    Explore →
+                    View →
                   </span>
                 </div>
               </Link>
             ))}
           </div>
+
         </div>
       </section>
 
+      {/* ================= GALLERY ================= */}
       <section className="section home-gallery-preview">
         <div className="container home-gallery-preview__grid">
+
           <div className="home-gallery-preview__text">
             <span className="eyebrow">The Gallery</span>
 
@@ -204,22 +200,31 @@ export default function Home() {
           </div>
 
           <div className="home-gallery-preview__orbit">
-            <OrbitImages images={images.gallery.slice(0, 8)} size={440} />
+            <OrbitImages
+              images={images.gallery.slice(0, 8)}
+              size={440}
+            />
           </div>
+
         </div>
       </section>
 
+      {/* ================= OWNER ================= */}
       <OwnerSection />
 
+      {/* ================= CTA ================= */}
       <section className="section home-cta">
         <div className="container home-cta__inner">
+
           <SplitText
             as="h2"
             className="chisel"
             text="Have a space in mind?"
           />
 
-          <p>Tell us about it — we reply within one business day.</p>
+          <p>
+            Tell us about it — we reply within one business day.
+          </p>
 
           <AnimatedContent delay={0.15}>
             <Link
@@ -230,6 +235,7 @@ export default function Home() {
               Start a Conversation
             </Link>
           </AnimatedContent>
+
         </div>
       </section>
     </>

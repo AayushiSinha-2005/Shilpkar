@@ -1,10 +1,11 @@
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import serviceDetails from "../data/serviceDetails";
 import "./ServiceDetail.css";
-
+import QuotationModal from "../components/QuotationModal.jsx";
 export default function ServiceDetail() {
+  const [quotationOpen, setQuotationOpen] = useState(false);
   const { serviceSlug, categorySlug, typeSlug } = useParams();
-
   const service =
     serviceDetails?.[serviceSlug]?.[categorySlug];
 
@@ -442,7 +443,6 @@ export default function ServiceDetail() {
                   <p>
                     {item.description}
                   </p>
-
                 </div>
 
               ))}
@@ -540,7 +540,6 @@ export default function ServiceDetail() {
                     )}
 
                   </div>
-
                 </div>
 
               ))}
@@ -551,7 +550,6 @@ export default function ServiceDetail() {
 
         </section>
       )}
-
 
       {/* ======================================================
           MATERIALS / FINISHES
@@ -884,7 +882,6 @@ export default function ServiceDetail() {
 
               </div>
 
-
               <div className="quality-assurance-grid">
 
                 {activeService.qualityAssurance.items.map(
@@ -999,7 +996,16 @@ export default function ServiceDetail() {
 
             <div className="fiber-cta-buttons">
 
-              {activeService.cta.primaryText && (
+  <button
+    type="button"
+    className="fiber-btn fiber-btn-primary"
+    onClick={() => setQuotationOpen(true)}
+  >
+    Get Quotation
+    <span>→</span>
+  </button>
+
+  {activeService.cta.primaryText && (
                 <Link
                   to={
                     activeService.cta.primaryLink ||
@@ -1062,6 +1068,14 @@ export default function ServiceDetail() {
 
         </section>
       )}
+
+      <QuotationModal
+        open={quotationOpen}
+        onClose={() => setQuotationOpen(false)}
+        service={serviceSlug}
+        category={categorySlug}
+        type={typeSlug}
+      />
 
     </div>
   );

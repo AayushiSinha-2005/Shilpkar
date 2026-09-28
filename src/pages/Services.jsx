@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import QuotationModal from "../components/QuotationModal.jsx";
 import SplitText from "../components/Effects/SplitText.jsx";
 import services from "../data/services.js";
 import "./Services.css";
@@ -8,8 +9,10 @@ import servicesBanner from "../assets/images/services/banner/services-stretch-ce
 
 
 export default function Services({ preview = false }) {
-  const items = preview ? services.slice(0, 3) : services;
+  const [quotationOpen, setQuotationOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
 
+  const items = preview ? services.slice(0, 3) : services;
 return (
   <>
     {!preview && (
@@ -21,10 +24,12 @@ return (
       >
         <div className="services-banner__overlay">
           <div className="container services-banner__content">
-            
+  <span className="services-banner__eyebrow">SERVICES</span>
 
-            
-          </div>
+  <h1>Ceilings • Walls • Floors</h1>
+
+  <p>Elevated surfaces. Refined spaces.</p>
+</div>
         </div>
       </section>
     )}
@@ -87,35 +92,51 @@ return (
 
 </div>
 
-                <div className="service-buttons">
+<div className="service-buttons">
 
-                  <a
-                    href={service.pdf}
-                    className="btn-outline"
-                    download
-                  >
-                    Download
-                  </a>
+  <a
+    href={service.pdf}
+    className="btn-outline"
+    download
+  >
+    Download
+  </a>
 
-                  <Link
-  to={service.view}
+  <Link
+    to={service.view}
+    className="btn-dark"
+  >
+    View
+  </Link>
+
+<button
+  type="button"
   className="btn-dark"
+  onClick={() => {
+    setSelectedService(service);
+    setQuotationOpen(true);
+  }}
 >
-  View
-</Link>
+  Get Quotation
+</button>
 
-                </div>
+</div>
 
               </div>
 
             </div>
 
           ))}
-
         </div>
-
       </div>
-       </section>
+    </section>
+    <QuotationModal
+      open={quotationOpen}
+      onClose={() => setQuotationOpen(false)}
+      service={selectedService?.title}
+      category=""
+      type=""
+    />
   </>
-  );
+);
 }

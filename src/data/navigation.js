@@ -10,26 +10,6 @@ const navigation = [
   },
 
   {
-    label: "Solutions",
-    children: [
-      {
-        label: "Ceilings",
-        path: "/solutions/ceilings",
-      },
-
-      {
-        label: "Walls",
-        path: "/solutions/walls",
-      },
-
-      {
-        label: "Floors",
-        path: "/solutions/floors",
-      },
-    ],
-  },
-
-  {
     label: "Services",
     path: "/services",
   },
