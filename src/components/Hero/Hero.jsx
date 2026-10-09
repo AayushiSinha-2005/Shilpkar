@@ -478,41 +478,6 @@ export default function Hero() {
       </div>
 
 
-      {/* ================= SOCIAL ICONS ================= */}
-
-      <div className="hero__socials">
-
-        <a
-          href="https://www.instagram.com/shilpkar_factory/"
-          target="_blank"
-          rel="noreferrer"
-          className="hero__social"
-          aria-label="Instagram"
-        >
-          <FaInstagram />
-        </a>
-
-        <a
-          href="https://wa.me/918171771229"
-          target="_blank"
-          rel="noreferrer"
-          className="hero__social"
-          aria-label="WhatsApp"
-        >
-          <FaWhatsapp />
-        </a>
-
-        <a
-          href="tel:+918171771229"
-          className="hero__social"
-          aria-label="Call"
-        >
-          <FiPhoneCall />
-        </a>
-
-      </div>
-
-
       {/* ================= SCROLL ================= */}
 
       <div className="hero__scroll">
