@@ -1,0 +1,122 @@
+/* =========================================
+   SHILPKAR FLOATING ACTIONS
+========================================= */
+
+.floating-actions {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  z-index: 99990;
+}
+
+/* COMMON BUTTON */
+
+.floating-action {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: #fff;
+  font-size: 25px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.floating-action:hover {
+  transform: translateY(-4px) scale(1.06);
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* WHATSAPP */
+
+.floating-whatsapp {
+  background: #25d366;
+}
+
+/* CALL */
+
+.floating-call {
+  background: #ef4444;
+}
+
+/* INSTAGRAM */
+
+.floating-instagram {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
+}
+
+/* YOUTUBE */
+
+.floating-youtube {
+  background: #ff0000;
+}
+
+/* SHILPKAR AI */
+
+.floating-ai {
+  background:
+    linear-gradient(
+      145deg,
+      #182d25,
+      #07110e
+    );
+
+  color: #e7c98f;
+
+  border: 1px solid rgba(231, 201, 143, 0.75);
+
+  font-size: 26px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    inset 0 0 18px rgba(231, 201, 143, 0.08);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .floating-actions {
+    right: 16px;
+    bottom: 18px;
+    gap: 9px;
+  }
+
+  .floating-action {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .floating-ai {
+    font-size: 23px;
+  }
+}

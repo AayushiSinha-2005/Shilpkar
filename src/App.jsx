@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Cursor from "./components/Cursor/Cursor.jsx";
+import ChatbotWidget from "./components/Chatbot/ChatbotWidget.jsx";
+import FloatingActions from "./components/FloatingActions/FloatingActions.jsx";
 import AppRouter from "./router/AppRouter.jsx";
 
 const tickerItems = [
@@ -156,9 +158,13 @@ export default function App() {
         </div>
       </div>
 
-      <AppRouter />
+<AppRouter />
 
-      <Footer />
+<Footer />
+
+<FloatingActions />
+
+<ChatbotWidget />
     </>
   );
 }
